@@ -28,9 +28,9 @@ export default function ProjectCard({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      transition={{ duration: 0.6, delay }}
-      whileHover={{ y: -8, scale: 1.02 }}
-      className="bg-gradient-to-br from-white via-accent/20 to-pink-50 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-shadow duration-200 border-2 border-primary/20 cursor-pointer group"
+      transition={{ duration: 0.2 }}
+      whileHover={{ y: -4 }}
+      className="bg-gradient-to-br from-white via-accent/20 to-pink-50 rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border-2 border-primary/20 cursor-pointer group h-full flex flex-col"
     >
       {/* Icon or Image */}
       {image ? (
@@ -53,7 +53,7 @@ export default function ProjectCard({
       </h3>
 
       {/* Description */}
-      <p className="text-brown mb-6 leading-relaxed">
+      <p className="text-brown mb-6 leading-relaxed flex-grow">
         {description}
       </p>
 

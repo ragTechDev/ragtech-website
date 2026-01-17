@@ -1,13 +1,25 @@
 'use client';
 
+import { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FaMicrophone, FaGamepad, FaLightbulb, FaUsers } from 'react-icons/fa';
+import { FaMicrophone, FaGamepad, FaLightbulb, FaUsers, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import Hero from './components/Hero';
 import ProjectCard from './components/ProjectCard';
 
 export default function Home() {
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (carouselRef.current) {
+      const scrollAmount = carouselRef.current.offsetWidth * 0.8;
+      carouselRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
   return (
     <main>
       {/* Hero Section */}
@@ -51,28 +63,64 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ProjectCard
-              title="ragTech Podcast"
-              description="A tech podcast that simplifies complex topics and makes technology accessible to everyone. Join Saloni, Victoria, and Natasha as they break down tech concepts with humor and insight."
-              link="https://www.youtube.com/@ragTechDev"
-              linkText="Watch on YouTube"
-              image="/assets/subscribe.png"
-            />
-            <ProjectCard
-              title="Techie Taboo Game"
-              description="The ultimate tech communication challenge! Explain complex tech concepts, programming languages, and industry buzzwords without using the obvious terms. Perfect for tech teams and coding bootcamps."
-              link="/techie-taboo"
-              linkText="Join Waitlist"
-              image="/assets/games.png"
-            />
-            <ProjectCard
-              title="Workshops"
-              description="Interactive workshops designed to help engineers communicate more effectively and empower non-technical folks to understand technology better. Bridge the gap between tech and non-tech."
-              link="/contact"
-              linkText="Get in Touch"
-              image="/assets/teacher.png"
-            />
+          {/* Carousel Container */}
+          <div className="relative max-w-7xl mx-auto">
+            {/* Left Arrow */}
+            <button
+              onClick={() => scroll('left')}
+              className="absolute -left-4 md:-left-6 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-neutral-800 rounded-full p-3 shadow-lg hover:bg-primary hover:text-white transition-colors border-2 border-primary/20"
+              aria-label="Scroll left"
+            >
+              <FaChevronLeft className="text-xl" />
+            </button>
+
+            {/* Right Arrow */}
+            <button
+              onClick={() => scroll('right')}
+              className="absolute -right-4 md:-right-6 top-1/2 -translate-y-1/2 z-10 bg-white dark:bg-neutral-800 rounded-full p-3 shadow-lg hover:bg-primary hover:text-white transition-colors border-2 border-primary/20"
+              aria-label="Scroll right"
+            >
+              <FaChevronRight className="text-xl" />
+            </button>
+
+            <div ref={carouselRef} className="flex gap-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4 px-4 py-2">
+              <div className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] snap-start h-full">
+                <ProjectCard
+                  title="ragTech Podcast"
+                  description="A tech podcast that simplifies complex topics and makes technology accessible to everyone. Join Saloni, Victoria, and Natasha as they break down tech concepts with humor and insight."
+                  link="https://www.youtube.com/@ragTechDev"
+                  linkText="Watch on YouTube"
+                  image="/assets/subscribe.png"
+                />
+              </div>
+              <div className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] snap-start h-full">
+                <ProjectCard
+                  title="Techie Taboo Game"
+                  description="The ultimate tech communication challenge! Explain complex tech concepts, programming languages, and industry buzzwords without using the obvious terms. Perfect for tech teams and coding bootcamps."
+                  link="/techie-taboo"
+                  linkText="Join Waitlist"
+                  image="/assets/games.png"
+                />
+              </div>
+              <div className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] snap-start h-full">
+                <ProjectCard
+                  title="FutureNet"
+                  description="Giving our children a chance to grow up, like we did. A technologist-led research initiative into the digital landscape for children, adolescents, and their parents in today's connected world."
+                  link="https://futurenet.ragtechdev.com/"
+                  linkText="Learn More"
+                  image="/assets/futurenet.png"
+                />
+              </div>
+              <div className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] snap-start h-full">
+                <ProjectCard
+                  title="Workshops"
+                  description="Interactive workshops designed to help engineers communicate more effectively and empower non-technical folks to understand technology better. Bridge the gap between tech and non-tech."
+                  link="/contact"
+                  linkText="Get in Touch"
+                  image="/assets/teacher.png"
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -95,8 +143,8 @@ export default function Home() {
               </p>
               <p className="text-lg text-brown mb-8 leading-relaxed">
                 From podcasts that simplify complex tech topics to interactive games that challenge your communication skills, 
-                and workshops that help engineers communicate better and non-techies understand technology—we believe 
-                technology shouldn&apos;t be intimidating, it should be an adventure
+                and research initiatives like FutureNet that explore the digital landscape for children and families—we believe 
+                technology shouldn&apos;t be intimidating, it should be an adventure.
               </p>
               <Link
                 href="/about"

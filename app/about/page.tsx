@@ -121,14 +121,15 @@ export default function AboutPage() {
                 technology and everyday understanding.
               </p>
               <p>
-                From our <strong className="text-primary">podcast</strong> to the upcoming 
-                <strong className="text-secondary"> Techie Taboo game</strong>, and our 
-                <strong className="text-brown"> workshops</strong>, we create experiences that educate, 
-                entertain, and foster a sense of community among tech enthusiasts and curious learners alike.
+                From our <strong className="text-primary">podcast</strong> that demystifies tech, to the upcoming 
+                <strong className="text-secondary"> Techie Taboo game</strong> that challenges how we communicate about technology, 
+                and <strong className="text-brown">FutureNet</strong>—our research initiative exploring the digital landscape for 
+                children and families—we create experiences that educate, entertain, and foster meaningful conversations.
               </p>
               <p>
-                Beyond the podcast, we offer <strong className="text-brown">workshops</strong> designed to bridge communication gaps: 
-                helping engineers communicate more effectively and empowering non-technical folks to understand technology better.
+                Through <strong className="text-brown">FutureNet</strong>, we&apos;re taking a deeper look at how technology impacts 
+                the next generation, giving our children a chance to grow up like we did—with thoughtful guidance from technologists 
+                who understand both the opportunities and challenges of the digital world.
               </p>
               <p>
                 We stand for innovation that challenges the norm, conversations that matter, and projects that 
