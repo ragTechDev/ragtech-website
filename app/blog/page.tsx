@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { fetchBeehiivPosts, loadArchivedPosts } from '@/lib/beehiiv';
+import { fetchBeehiivPosts, loadArchivedPosts, BeehiivPostsResponse, ArchivedPost } from '@/lib/beehiiv';
 import BlogPosts from './BlogPosts';
 import NewsletterSection from './NewsletterSection';
 
@@ -8,8 +8,8 @@ export const revalidate = 0;
 
 export default async function BlogPage() {
   // Fetch data with error handling - don't let API errors block the page
-  let beehiivResponse;
-  let archivedPosts;
+  let beehiivResponse: BeehiivPostsResponse;
+  let archivedPosts: ArchivedPost[];
   
   try {
     beehiivResponse = await fetchBeehiivPosts(1, 6);
