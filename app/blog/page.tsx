@@ -7,8 +7,29 @@ export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 export default async function BlogPage() {
-  const beehiivResponse = await fetchBeehiivPosts(1, 6);
-  const archivedPosts = await loadArchivedPosts();
+  // Fetch data with error handling - don't let API errors block the page
+  let beehiivResponse;
+  let archivedPosts;
+  
+  try {
+    beehiivResponse = await fetchBeehiivPosts(1, 6);
+  } catch (error) {
+    console.error('Failed to fetch Beehiiv posts:', error);
+    beehiivResponse = {
+      data: [],
+      page: 1,
+      limit: 6,
+      total_results: 0,
+      total_pages: 0,
+    };
+  }
+  
+  try {
+    archivedPosts = await loadArchivedPosts();
+  } catch (error) {
+    console.error('Failed to load archived posts:', error);
+    archivedPosts = [];
+  }
 
   return (
     <main>

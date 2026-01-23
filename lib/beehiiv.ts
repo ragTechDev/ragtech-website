@@ -51,36 +51,61 @@ function getPublicationId(): string {
 
 /**
  * Fetch posts from Beehiiv with page-based pagination
+ * Returns empty response on error to prevent blocking the blog page
  */
 export async function fetchBeehiivPosts(
   page: number = 1,
   limit: number = 6
 ): Promise<BeehiivPostsResponse> {
-  const publicationId = getPublicationId();
-  
-  const params = new URLSearchParams({
-    status: 'confirmed',
-    limit: limit.toString(),
-    page: page.toString(),
-    expand: 'free_web_content',
-  });
+  try {
+    const publicationId = getPublicationId();
+    
+    const params = new URLSearchParams({
+      status: 'confirmed',
+      limit: limit.toString(),
+      page: page.toString(),
+      expand: 'free_web_content',
+    });
 
-  const url = `${BEEHIIV_API_BASE}/publications/${publicationId}/posts?${params}`;
+    const url = `${BEEHIIV_API_BASE}/publications/${publicationId}/posts?${params}`;
 
-  const response = await fetch(url, {
-    method: 'GET',
-    headers: getBeehiivHeaders(),
-    cache: 'no-store', // No caching - always fetch fresh data
-  });
+    const response = await fetch(url, {
+      method: 'GET',
+      headers: getBeehiivHeaders(),
+      cache: 'no-store', // No caching - always fetch fresh data
+    });
 
-  if (!response.ok) {
-    const error: BeehiivErrorResponse = await response.json().catch(() => ({
-      error: { message: 'Failed to fetch posts from Beehiiv' },
-    }));
-    throw new Error(error.error.message);
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.error('Beehiiv API Error:', {
+        status: response.status,
+        statusText: response.statusText,
+        url,
+        response: errorText,
+      });
+      
+      // Return empty response instead of throwing
+      return {
+        data: [],
+        page: 1,
+        limit: limit,
+        total_results: 0,
+        total_pages: 0,
+      };
+    }
+
+    return response.json();
+  } catch (error) {
+    console.error('Error fetching Beehiiv posts:', error);
+    // Return empty response on any error to prevent blocking the blog page
+    return {
+      data: [],
+      page: 1,
+      limit: limit,
+      total_results: 0,
+      total_pages: 0,
+    };
   }
-
-  return response.json();
 }
 
 /**
