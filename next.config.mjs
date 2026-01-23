@@ -1,10 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "",
     reactStrictMode: true,
-    skipTrailingSlashRedirect: true,
     images: {
-      unoptimized: true,
       remotePatterns: [
         {
           protocol: 'https',
