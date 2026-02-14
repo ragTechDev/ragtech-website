@@ -90,6 +90,8 @@ export async function createBlogPostBroadcast(
         author: post.author.name,
         publishedAt: publishedDate,
         tags: post.tags.map((t) => t.name),
+        instagramEmbeds: post.instagramEmbeds,
+        tiktokEmbeds: post.tiktokEmbeds,
       })
     );
 

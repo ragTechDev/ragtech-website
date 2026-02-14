@@ -18,6 +18,8 @@ interface BlogPostNewsletterProps {
   author: string;
   publishedAt: string;
   tags: string[];
+  instagramEmbeds?: { [postId: string]: string };
+  tiktokEmbeds?: { [videoId: string]: string };
 }
 
 export default function BlogPostNewsletter({
@@ -29,6 +31,8 @@ export default function BlogPostNewsletter({
   author,
   publishedAt,
   tags,
+  instagramEmbeds,
+  tiktokEmbeds,
 }: BlogPostNewsletterProps) {
   const postUrl = `https://ragtechdev.com/blog/${slug}`;
 
@@ -79,7 +83,7 @@ export default function BlogPostNewsletter({
       <Section style={contentSection}>
         <div
           dangerouslySetInnerHTML={{
-            __html: sanitizeEmailContent(content),
+            __html: sanitizeEmailContent(content, instagramEmbeds, tiktokEmbeds),
           }}
         />
       </Section>
@@ -102,13 +106,33 @@ export default function BlogPostNewsletter({
 }
 
 // Helper to sanitize and truncate content for email
-function sanitizeEmailContent(html: string | undefined | null): string {
+function sanitizeEmailContent(html: string | undefined | null, instagramEmbeds?: { [postId: string]: string }, tiktokEmbeds?: { [videoId: string]: string }): string {
   if (!html) {
     return '<p>Content preview not available.</p>';
   }
 
+  let clean = html;
+  
+  // Replace TikTok blockquote embeds BEFORE removing script tags
+  clean = clean.replace(
+    /<blockquote[^>]*class="tiktok-embed"[^>]*cite="https:\/\/www\.tiktok\.com\/@([^/]+)\/video\/(\d+)"[^>]*>[\s\S]*?<\/blockquote>\s*<script[^>]*src="https:\/\/www\.tiktok\.com\/embed\.js"[^>]*><\/script>/gi,
+    (match, username, videoId) => {
+      const videoUrl = `https://www.tiktok.com/@${username}/video/${videoId}`;
+      
+      // Use fallback cover image from frontmatter if available
+      if (tiktokEmbeds && tiktokEmbeds[videoId]) {
+        const coverImage = tiktokEmbeds[videoId];
+        return `<a href="${videoUrl}" style="display: block; margin: 20px auto; text-align: center;"><img src="${coverImage}" alt="Watch on TikTok" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 0 auto;" /><p style="color: #333; font-weight: 600; margin-top: 12px; font-size: 14px;">🎵 Watch on TikTok</p></a>`;
+      }
+      
+      // Default placeholder if no cover image
+      const thumbnailUrl = `https://www.tiktok.com/favicon.ico`;
+      return `<a href="${videoUrl}" style="display: block; margin: 20px auto; text-align: center; padding: 20px; background-color: #000000; border-radius: 8px; max-width: 400px;"><img src="${thumbnailUrl}" alt="Watch on TikTok" style="width: 64px; height: 64px; margin: 0 auto 12px;" /><p style="color: #ffffff; font-weight: 600; margin: 0;">🎵 Watch on TikTok</p></a>`;
+    }
+  );
+  
   // Remove script tags
-  let clean = html.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
+  clean = clean.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
   
   // Remove style tags
   clean = clean.replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '');
@@ -137,6 +161,25 @@ function sanitizeEmailContent(html: string | undefined | null): string {
       return `<a href="${videoUrl}" style="display: block; margin: 20px 0;"><img src="${thumbnailUrl}" alt="Watch on YouTube" style="width: 100%; max-width: 560px; height: auto; border-radius: 8px;" /></a><p style="text-align: center; margin-top: 8px;"><a href="${videoUrl}" style="color: #5da9a4; text-decoration: underline;">▶ Watch on YouTube</a></p>`;
     }
   );
+  
+  // Replace Instagram iframes with linked thumbnails
+  clean = clean.replace(
+    /<iframe[^>]*src="https:\/\/www\.instagram\.com\/p\/([a-zA-Z0-9_-]+)\/embed"[^>]*>.*?<\/iframe>/gi,
+    (match, postId) => {
+      const postUrl = `https://www.instagram.com/p/${postId}/`;
+      
+      // Use fallback image from frontmatter if available
+      if (instagramEmbeds && instagramEmbeds[postId]) {
+        const fallbackImage = instagramEmbeds[postId];
+        return `<a href="${postUrl}" style="display: block; margin: 20px auto; text-align: center;"><img src="${fallbackImage}" alt="View on Instagram" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 0 auto;" /><p style="color: #333; font-weight: 600; margin-top: 12px; font-size: 14px;">📸 View this post on Instagram</p></a>`;
+      }
+      
+      // Default placeholder if no fallback image
+      const thumbnailUrl = `https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png`;
+      return `<a href="${postUrl}" style="display: block; margin: 20px auto; text-align: center; padding: 20px; background-color: #f8f9fa; border-radius: 8px; max-width: 400px;"><img src="${thumbnailUrl}" alt="View on Instagram" style="width: 64px; height: 64px; margin: 0 auto 12px;" /><p style="color: #333; font-weight: 600; margin: 0;">View this post on Instagram</p></a>`;
+    }
+  );
+  
   
   // Remove any remaining iframes (fallback)
   clean = clean.replace(/<iframe\b[^<]*(?:(?!<\/iframe>)<[^<]*)*<\/iframe>/gi, '');

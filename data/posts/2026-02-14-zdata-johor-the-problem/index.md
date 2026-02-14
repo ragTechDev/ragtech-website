@@ -1,12 +1,12 @@
 ---
-title: "The Zdata Problem: Why This Data Center Protest Matters More Than You Think"
+title: "Why This Data Center Protest Matters More Than You Think"
 slug: "zdata-johor-data-center-problem"
 author:
   name: "ragTech Team"
   email: "hello@ragtechdev.com"
-  profilePicture: "/assets/authors/ragtech-team.png"
-publishedAt: "2026-02-13T12:00:00Z"
-coverImage: "/posts/2026-02-13-zdata-johor-the-problem/cover-image.webp"
+  profilePicture: "/assets/profilePics/natasha.png"
+publishedAt: "2026-02-14T12:00:00Z"
+coverImage: "/posts/2026-02-14-zdata-johor-the-problem/blogpost-cover-image.png"
 brief: "Zdata's response to the Johor protest contradicts their own loan documents. As a software engineer, I'm excited about tech—but not at the cost of communities. Here's why this particular data center is more problematic than others."
 tags: ["AI", "data centers", "Zdata", "Malaysia", "responsible tech", "software engineering"]
 topic:
@@ -21,19 +21,32 @@ newsletter:
 seo:
   metaDescription: "Zdata's Johor data center response contradicts their AIIB loan application. Why this protest matters and how responsible tech companies do it differently."
   keywords: ["Zdata data center", "Johor protest", "responsible tech", "AIIB loan", "data center water consumption", "Equinix community engagement", "software engineer perspective"]
+instagramEmbeds:
+  DUsLBiiAK0B: "https://instagram.fsin12-1.fna.fbcdn.net/v/t51.82787-15/629781316_18562348423023743_2811602084962513843_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=MzgzMTQ4NTg2NzI5NDI0MDAwMTE4NTYyMzQ4NDE3MDIzNzQz.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=Kfp2W73O7McQ7kNvwEEmjyC&_nc_oc=AdlsihJo6ZLiNx6OrMaZgjDkmpqsjoPgzVUK2J98Zrk3ASDpC9kFdDhgwM3BaENqFaIIDkgSql_6355StgfnUwib&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fsin12-1.fna&_nc_gid=OutYJZ6qrXhbW5_tB0L5DA&oh=00_Afu5b6F-bA--GTO_wN9SrRoDgf7S4cBOQBZ6P7HzP_o1Qg&oe=6995D583"
+tiktokEmbeds:
+  "7541624942006390034": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo346t5aLMjmS6Oh0YAEeYG2zqWvHBxiT3NQ&s"
 ---
 
-Last week, I wrote about [Malaysia's first data center protest in Johor](../2026-02-12-johor-data-center-protest-new). The response from readers was overwhelming—but one question kept coming up: "Aren't all data centers like this? Why single out this one?"
+I made a video and wrote about [Malaysia's first data center protest in Johor](../2026-02-12-johor-data-center-protest-new), and since then, I've been looking more into this particular data center that was the center of the protests.
 
-Fair question. And the answer is: **No, not all data centers are built this way.** The Zdata facility in Gelang Patah represents a particularly problematic approach to infrastructure development—one that contradicts the company's own statements and ignores best practices that other companies have successfully implemented.
+I made a follow-up video to explain why this particular data center is more problematic than others:
+
+<div style="max-width: 50%; margin: 2rem auto; width: 100%;">
+  <iframe src="https://www.instagram.com/p/DUsLBiiAK0B/embed" width="100%" height="700" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+</div>
+
+First, I want to make clear that **not all data centers are built this way.** The Zdata facility in Gelang Patah represents a particularly problematic approach to infrastructure development—one that contradicts the company's own statements and ignores best practices that other companies have successfully implemented.
 
 As a software engineer, I'm genuinely excited about technological advancement. But because of what I know about how tech infrastructure works, I have a responsibility to advocate for doing it right. Let me explain why this specific case matters.
+
+![Artist Impression of The Data Center by ZData technologies](https://www.lowyat.net/wp-content/uploads/2026/02/zdata-data-centre-protest-johor-1.jpg)
+*Source: [Lowyat.NET](https://www.lowyat.net/2026/381039/malaysia-witnesses-first-ai-data-centre-protest-in-johor/)*
 
 ## Zdata's Response: A Contradiction
 
 On February 11, 2026, [Zdata Technologies released a statement](https://www.lowyat.net/2026/382868/zdata-technologies-responds-to-protests-of-ai-datacentre-in-johor/) addressing the protests. Their key claims:
 
-> "We regret that these reports have inaccurately identified ZDATA Technologies Co.'s facility as the source of dust pollution and potential potable water shortages. It is important to clarify that there are currently minimal construction activities contributing to dust pollution taking place at ZDATA's site."
+> We regret that these reports have inaccurately identified ZDATA Technologies Co.'s facility as the source of dust pollution and potential potable water shortages. It is important to clarify that there are currently minimal construction activities contributing to dust pollution taking place at ZDATA's site.
 
 They also assured residents that the facility is "designed to use alternative water sources like reclaimed water, and not draw from the state's domestic water supply."
 
@@ -45,15 +58,18 @@ In 2025, Zdata applied for a USD $40 million equity investment from the Asian In
 
 Here's what their own Environmental and Social Information section states:
 
-> "While during operations, given the nature of the Project, **the likely adverse impacts of the Project will be largely due to its heavy requirements of water and electricity.**"
+> While during operations, given the nature of the Project, **the likely adverse impacts of the Project will be largely due to its heavy requirements of water and electricity.**
 
 The document explicitly lists anticipated environmental impacts during construction:
 
-> "These include surface water, groundwater and soil contamination, generation of air (dusts/ particulates and gaseous), noise pollution, and waste including spoils, accumulation of solid and hazardous wastes."
+> These include surface water, groundwater and soil contamination, generation of air (dusts/ particulates and gaseous), noise pollution, and waste including spoils, accumulation of solid and hazardous wastes.
 
 So let me get this straight: In their loan application to secure funding, Zdata acknowledges that their projects will have "heavy requirements of water" and will generate "dusts/particulates" during construction. But when residents protest about exactly these issues, the company claims the reports are "inaccurate"?
 
 This isn't just a communication problem. It's a credibility problem.
+
+![AIIB Project Forest](https://media.licdn.com/dms/image/v2/D5622AQFpCwXiB8TWNQ/feedshare-shrink_800/B56ZdDWKZdGQAg-/0/1749181574387?e=2147483647&v=beta&t=0SANdk-L4HdaSOW2m-I_dFpXD5N0d1XLmQdOnsGQBoo)
+*Image from AIIB LinkedIn: [Loan application documents reveal contradictions with public statements](https://www.linkedin.com/posts/asian-infrastructure-investment-bank-aiib-_worldenvironmentday-activity-7336602746168479746-5MC_/)*
 
 ## The Location Problem
 
@@ -68,6 +84,9 @@ According to the [South China Morning Post](https://www.scmp.com/news/asia/south
 
 When you build critical infrastructure this close to where people live, community engagement isn't optional—it's essential. Which brings us to the next problem.
 
+![Residential area near data center construction](https://web14.bernama.com/storage/photos/86aaf73136f9b56c2a47f0ecd2e584ef68a6a0e8392cb)
+*Image from [Bername](https://web14.bernama.com/storage/photos/86aaf73136f9b56c2a47f0ecd2e584ef68a6a0e8392cb): Data centers built too close to residential areas create conflicts*
+
 ## The Water Question Officials Won't Answer
 
 In November 2025, Johor [halted approvals for Tier 1 and 2 data centers](https://www.lowyat.net/2025/374704/johor-data-centre-approvals/) due to water consumption concerns. These facilities can consume up to **50 million liters of water per day**—enough to fill 20 Olympic-sized swimming pools.
@@ -80,9 +99,18 @@ According to [Mordor Intelligence's study on data center water consumption in Ma
 
 This isn't a hypothetical concern. This is a documented, escalating resource crisis. And when a company building a massive facility near residential areas won't disclose basic information about their water consumption tier, residents have every right to be concerned.
 
+![Water consumption statistics and projections](https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800)
+*Illustration: Malaysia's data center water consumption projected to reach 93 billion liters by 2030*
+
 ## The Track Record Problem
 
-Let's talk about Zdata's history in Johor. In 2025, local authorities issued a **two-week stop-work order** due to poor construction standards.
+Let's talk about Zdata's history in Johor. In 2025, local authorities issued a [**two-week stop-work order**](https://www.bernama.com/en/news.php?id=2459007) due to poor construction standards. State Housing and Local Government Committee chairman Datuk Mohd Jafni Md Shukor said the action was taken following public complaints over earthworks, dirty roads, the absence of hoarding, and construction activities carried out late at night. 
+
+Datuk Mohd Jafni Md Shukor took it upon himself to go on-site and issue the stop work order in person, and even recorded a 30min video of the incident which went viral (see below). While the data center company was not named in the video, a man wearing a Zdata shirt can be seen in the background.
+
+<div style="max-width: 50%; margin: 2rem auto; width: 100%;">
+  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@majoritiofficial/video/7541624942006390034" data-video-id="7541624942006390034" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@majoritiofficial" href="https://www.tiktok.com/@majoritiofficial?refer=embed">@majoritiofficial</a> <p></p> <a target="_blank" title="♬ original sound - Majoriti" href="https://www.tiktok.com/music/original-sound-7541624949081721618?refer=embed">♬ original sound - Majoriti</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
+</div>
 
 When work resumed, so did the problems. This isn't speculation—it's documented fact.
 
@@ -97,9 +125,15 @@ Zdata Technologies is a leading third-party data center developer and operator i
 - **Specialization**: One of the few players in China capable of building, operating, and maintaining hyperscale data centers
 - **Major facilities**: Four out of only eight hyperscale data center parks each exceeding 500MW in frontier provinces (Inner Mongolia, Shanxi, Hebei, and Ningxia)
 
+![Zdata hyperscale data center facilities in North China](https://www.cnispgroup.com/public/storage/upload/files/20240303/04585c28bfc79892a45de41655fa3294.png)
+*Image from [CNISP Group](https://www.cnispgroup.com/public/storage/upload/files/20240303/04585c28bfc79892a45de41655fa3294.png)*
+
 They're expanding aggressively into Southeast Asia, with Malaysia being a key target market. The Johor facility is part of this regional expansion strategy.
 
 But here's the thing: being big doesn't mean being responsible. And Zdata's approach in Johor suggests they're prioritizing speed and cost over community impact.
+
+![Zdata Johor data center groundbreaking](https://www.lowyat.net/wp-content/uploads/2026/02/ZDATA-Groundbreaking-1.jpg)
+*Image from [Lowyat](https://www.lowyat.net/wp-content/uploads/2026/02/ZDATA-Groundbreaking-1.jpg)*
 
 ## The Financing Risk: Building While Fundraising
 
@@ -141,6 +175,9 @@ The GRM is supposed to include:
 - Addressing concerns within a defined timeframe
 - Clear communications to complainants at each stage
 
+![GRM Structure](https://cdn.prod.website-files.com/65aa9d8a1f82997158b05473/66022f0582f31264c9d1a2e0_65f8b7146e869b6e5499362d_GRM%20Structure_final_page-0001.jpg)
+*Illustration from [SLURESDP](https://www.sluresdp.com/grievance-redress-mechanism)*: Grievance Redress Mechanism Structure
+
 Yet when over 50 residents protested outside the construction site on February 7th with legitimate concerns about dust pollution and water usage, Zdata's response was to issue a public statement claiming the reports were "inaccurate" and deflecting blame to "adjacent plots of land."
 
 There was no evidence of an accessible grievance mechanism. No transparent process. No formal engagement with the affected community. Just a defensive PR statement that contradicted their own loan documentation.
@@ -158,6 +195,9 @@ The AIIB's own documentation categorizes this as "Category B" with "limited" env
 
 **The bottom line:** This financing approach, combined with stop-work orders, community protests, contradictory public statements, and lack of transparency, paints a picture of a company that may have prioritized speed and cost-cutting over proper planning and stakeholder management. That's a risky approach for any infrastructure project, especially one requiring significant ongoing capital.
 
+![AIIB Loan Documentation](https://www.thewirechina.com/wp-content/uploads/2025/12/Project-Forest-China.png)
+*Image from [The Wire China](https://www.thewirechina.com/2025/12/14/jin-liqun-on-running-chinas-answer-to-the-world-bank/): Seeking financing during active construction raises red flags about project capitalization*
+
 ## How Responsible Companies Do It Differently
 
 Not all data center companies operate this way. Let me give you a concrete example.
@@ -172,6 +212,9 @@ This isn't just good PR—it's good engineering. When you engage early:
 - You build trust and social license to operate
 - You identify and mitigate problems before they become crises
 
+![Equinix facility in Johor Bahru](https://soyacincau.com/wp-content/uploads/2024/05/equinix-jh1-sc05.jpg)
+*Photo from [Soyacincau](https://soyacincau.com/wp-content/uploads/2024/05/equinix-jh1-sc05.jpg)*
+
 Other examples of responsible data center development include:
 
 **Sustainable cooling technologies**: Companies like AirTrunk in Malaysia are using indirect evaporative cooling (IEC) combined with direct-to-chip liquid cooling, achieving a potential 20% reduction in energy consumption.
@@ -183,6 +226,9 @@ Other examples of responsible data center development include:
 **Transparent disclosure**: Responsible operators disclose their tier classifications, water usage projections, and environmental impact assessments before construction begins.
 
 These aren't impossible standards. They're industry best practices. And yes, they cost more upfront. But they also prevent the kind of community backlash that can delay or halt projects entirely—which costs far more in the long run.
+
+![Airtrunks's sustainable water initiative](https://media.licdn.com/dms/image/v2/D5622AQHflT24AZLAlg/feedshare-shrink_800/B56ZX4g2cTGcAg-/0/1743631119572?e=2147483647&v=beta&t=-KQ54_VrzFXLS26ZOYzvAgE0K7uOCdFjUsP0gBBG2R0)
+*Image from Airtrunk's LinkedIn on their sustainable water initiative
 
 ## The Real Cost of Cutting Corners
 
@@ -196,6 +242,9 @@ By not engaging with the community early, by building unusually close to residen
 4. **Project delays become likely**: Community opposition can and does halt construction
 
 All of this could have been avoided with upfront investment in community engagement and sustainable design.
+
+![Broken trust and community opposition](https://w.media/wp-content/uploads/2026/02/cantbreathe.jpg)
+*Photo is a representative image of the protest and does not show actual participants. Image credit: Pexelstory scrutiny*
 
 ## Why I'm Speaking Up
 
@@ -213,6 +262,9 @@ We've already gone through decades of irresponsible, unsurveilled tech advanceme
 
 Turning a blind eye now, when some of us have the information and platform to speak up, is the irresponsible thing to do.
 
+![Responsible advocacy](https://www.cam.ac.uk/sites/default/files/styles/content-885x432/public/news/research/news/orbenpic.jpg?itok=1Be8Rmvj)
+*Photo credit: [Cambridge University](https://www.cam.ac.uk/sites/default/files/styles/content-885x432/public/news/research/news/orbenpic.jpg?itok=1Be8Rmvj)*
+
 ## The Path Forward
 
 There are better ways to build data centers. We know this because companies are already doing it:
@@ -227,6 +279,9 @@ There are better ways to build data centers. We know this because companies are 
 These aren't radical demands. They're reasonable expectations for any major infrastructure project in 2026.
 
 And yes, they cost more upfront. But the alternative—the Zdata approach—costs communities their water, their air quality, and their trust. That's not a trade-off we should accept.
+
+![Sustainable data center model](https://cdn.greenmatch.co.uk/cdn-cgi/image/format=auto/2/2024/09/Sustainable-Data-Centre-Model.png)
+*Illustration from [Greenmatch](https://cdn.greenmatch.co.uk/cdn-cgi/image/format=auto/2/2024/09/Sustainable-Data-Centre-Model.png)*
 
 ## What You Can Do
 
@@ -250,9 +305,9 @@ If you're an investor or decision-maker:
 
 ## My Commitment
 
-At ragTech, we'll continue covering this story and others like it. Not because we're against technology, but because we believe technology should serve everyone—not just those who profit from it.
+At ragTech, we'll continue covering similar stories and others like it. Not because we're against technology, but because we believe technology should serve everyone—not just those who profit from it.
 
-I'll be writing a follow-up article highlighting specific examples of sustainable data center development and what we can learn from them. Because criticism without solutions isn't helpful.
+I'll be writing a follow-up article highlighting specific examples of sustainable data center development and what we can learn from them, and we'll also be sharing more technical knowledge related to how data centers work. Because criticism without solutions isn't helpful.
 
 But for now, I want to be clear: **The Zdata project in Johor is not representative of all data centers. It's an example of how not to do it.**
 
@@ -270,6 +325,6 @@ And as someone who builds technology for a living, I refuse to stay silent when 
 
 ---
 
-*This is part of an ongoing series on responsible tech infrastructure. Read the first article: [Johor's Data Center Protest: A Wake-Up Call on AI's Hidden Costs](../2026-02-12-johor-data-center-protest)*
+*This is part of an ongoing series on responsible tech infrastructure. Read the first article: [Johor's Data Center Protest: A Wake-Up Call on AI's Hidden Costs](../blog/johor-data-center-protest-hidden-costs-ai)*
 
 *Want to learn more about sustainable data center practices? Stay tuned for our next article highlighting companies doing it right.*
