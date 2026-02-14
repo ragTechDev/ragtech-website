@@ -5,8 +5,8 @@ author:
   name: "ragTech Team"
   email: "hello@ragtechdev.com"
   profilePicture: "/assets/profilePics/natasha.png"
-publishedAt: "2026-02-14T12:00:00Z"
-coverImage: "/posts/2026-02-14-zdata-johor-the-problem/blogpost-cover-image.png"
+publishedAt: "2026-02-15T12:00:00Z"
+coverImage: "/posts/2026-02-15-zdata-johor-the-problem/blogpost-cover-image.png"
 brief: "Zdata's response to the Johor protest contradicts their own loan documents. As a software engineer, I'm excited about tech—but not at the cost of communities. Here's why this particular data center is more problematic than others."
 tags: ["AI", "data centers", "Zdata", "Malaysia", "responsible tech", "software engineering"]
 topic:
@@ -108,9 +108,8 @@ Let's talk about Zdata's history in Johor. In 2025, local authorities issued a [
 
 Datuk Mohd Jafni Md Shukor took it upon himself to go on-site and issue the stop work order in person, and even recorded a 30min video of the incident which went viral (see below). While the data center company was not named in the video, a man wearing a Zdata shirt can be seen in the background.
 
-<div style="max-width: 50%; margin: 2rem auto; width: 100%;">
-  <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@majoritiofficial/video/7541624942006390034" data-video-id="7541624942006390034" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@majoritiofficial" href="https://www.tiktok.com/@majoritiofficial?refer=embed">@majoritiofficial</a> <p></p> <a target="_blank" title="♬ original sound - Majoriti" href="https://www.tiktok.com/music/original-sound-7541624949081721618?refer=embed">♬ original sound - Majoriti</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
-</div>
+
+<blockquote class="tiktok-embed" cite="https://www.tiktok.com/@majoritiofficial/video/7541624942006390034" data-video-id="7541624942006390034" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@majoritiofficial" href="https://www.tiktok.com/@majoritiofficial?refer=embed">@majoritiofficial</a> <p></p> <a target="_blank" title="♬ original sound - Majoriti" href="https://www.tiktok.com/music/original-sound-7541624949081721618?refer=embed">♬ original sound - Majoriti</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
 
 When work resumed, so did the problems. This isn't speculation—it's documented fact.
 

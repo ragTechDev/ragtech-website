@@ -5,8 +5,8 @@ author:
   name: "Natasha"
   email: "natasha@ragtechdev.com"
   profilePicture: "/assets/profilePics/natasha.png"
-publishedAt: "2026-02-14T12:00:00Z"
-coverImage: "/posts/2026-02-14-johor-data-center-protest-hidden-costs-ai/blogpost-cover-image.png"
+publishedAt: "2026-02-15T12:00:00Z"
+coverImage: "/posts/2026-02-15-johor-data-center-protest-hidden-costs-ai/blogpost-cover-image.png"
 brief: "Malaysia witnessed its first AI data center protest in Johor. As residents fight back against pollution and water concerns, this marks a global trend of communities demanding accountability for tech infrastructure's environmental impact."
 tags: ["AI", "data centers", "environment", "Malaysia", "tech awareness"]
 topic:
