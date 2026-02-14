@@ -5,30 +5,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import { HiX, HiMail } from "react-icons/hi";
 import { FaLinkedin, FaBrain, FaGamepad } from "react-icons/fa";
 import QRModal from "./QRModal";
+import type { TeamMember } from "./TeamMemberCard";
 
 interface BusinessCardProps {
-  isOpen: boolean;
+  member: TeamMember;
   onClose: () => void;
-  name: string;
-  role: string;
-  email: string;
-  linkedInUrl: string;
-  image: string;
-  color: string;
-  roleColor: string;
 }
 
 export default function BusinessCard({
-  isOpen,
+  member,
   onClose,
-  name,
-  role,
-  email,
-  linkedInUrl,
-  image,
-  color,
-  roleColor,
 }: BusinessCardProps) {
+  const { name, role, email, linkedInUrl, image, color, roleColor } = member;
   const [qrModal, setQrModal] = useState<{
     isOpen: boolean;
     value: string;
@@ -52,7 +40,7 @@ export default function BusinessCard({
   return (
     <>
       <AnimatePresence>
-        {isOpen && (
+        {member && (
           <>
             {/* Backdrop */}
             <motion.div
@@ -148,17 +136,19 @@ export default function BusinessCard({
                     </h3>
                     <div className="grid grid-cols-3 gap-3">
                       {/* LinkedIn */}
-                      <button
-                        onClick={() =>
-                          openQRModal(linkedInUrl, "Connect on LinkedIn", "#0077B5")
-                        }
-                        className="flex flex-col items-center gap-2 p-4 rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 hover:from-blue-500/30 hover:to-blue-500/10 border-2 border-blue-500/20 hover:border-blue-500/40 transition-all hover:scale-105"
-                      >
-                        <FaLinkedin className="w-8 h-8 text-blue-600 dark:text-blue-400" />
-                        <span className="text-xs font-semibold text-neutral-700 dark:text-neutral-300">
-                          LinkedIn
-                        </span>
-                      </button>
+                      {linkedInUrl && (
+                        <button
+                          onClick={() =>
+                            openQRModal(linkedInUrl, "Connect on LinkedIn", "#0077B5")
+                          }
+                          className="flex flex-col items-center gap-2 p-4 rounded-2xl bg-gradient-to-br from-blue-500/20 to-blue-500/5 hover:from-blue-500/30 hover:to-blue-500/10 border-2 border-blue-500/20 hover:border-blue-500/40 transition-all hover:scale-105"
+                        >
+                          <FaLinkedin className="w-8 h-8 text-blue-600 dark:text-blue-400" />
+                          <span className="text-xs font-semibold text-neutral-700 dark:text-neutral-300">
+                            LinkedIn
+                          </span>
+                        </button>
+                      )}
 
                       {/* FutureNet Quiz */}
                       <button

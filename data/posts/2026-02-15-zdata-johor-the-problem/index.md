@@ -2,9 +2,8 @@
 title: "Why This Data Center Protest Matters More Than You Think"
 slug: "zdata-johor-data-center-problem"
 author:
-  name: "ragTech Team"
-  email: "hello@ragtechdev.com"
-  profilePicture: "/assets/profilePics/natasha.png"
+  name: "Natasha"
+  profilePicture: "/assets/team/natasha.png"
 publishedAt: "2026-02-15T12:00:00Z"
 coverImage: "/posts/2026-02-15-zdata-johor-the-problem/blogpost-cover-image.png"
 brief: "Zdata's response to the Johor protest contradicts their own loan documents. As a software engineer, I'm excited about tech—but not at the cost of communities. Here's why this particular data center is more problematic than others."

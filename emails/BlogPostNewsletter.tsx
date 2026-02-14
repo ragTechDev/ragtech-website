@@ -18,6 +18,7 @@ interface BlogPostNewsletterProps {
   author: string;
   publishedAt: string;
   tags: string[];
+  readTimeInMinutes?: number;
   instagramEmbeds?: { [postId: string]: string };
   tiktokEmbeds?: { [videoId: string]: string };
 }
@@ -31,6 +32,7 @@ export default function BlogPostNewsletter({
   author,
   publishedAt,
   tags,
+  readTimeInMinutes,
   instagramEmbeds,
   tiktokEmbeds,
 }: BlogPostNewsletterProps) {
@@ -62,7 +64,7 @@ export default function BlogPostNewsletter({
 
       {/* Meta */}
       <Text style={meta}>
-        By {author} • {publishedAt}
+        By {author} • {publishedAt}{readTimeInMinutes ? ` • ${readTimeInMinutes} min read` : ''}
       </Text>
 
       {/* Tags */}

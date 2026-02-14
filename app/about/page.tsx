@@ -5,8 +5,9 @@ import { motion } from 'framer-motion';
 import { FaRocket, FaUsers, FaLightbulb, FaHeart } from 'react-icons/fa';
 import Hero from '../components/Hero';
 import BusinessCard from '../components/BusinessCard';
+import TeamMemberCard, { TeamMember } from '../components/TeamMemberCard';
 
-const team = [
+export const team: TeamMember[] = [
   {
     name: 'Saloni',
     role: 'Software Developer',
@@ -39,6 +40,16 @@ const team = [
     image: '/assets/team/natasha.png',
     email: 'natasha@ragtechdev.com',
     linkedInUrl: 'https://www.linkedin.com/in/natashaannn/',
+  },
+  {
+    name: 'ragTech Team',
+    role: 'Collective',
+    description:
+      'The collaborative voice of ragTech, bringing together diverse perspectives to make technology accessible for everyone.',
+    color: 'from-neutral-300/20 to-neutral-100/5',
+    roleColor: '#6b7280',
+    image: '/assets/logo/ragtech-logo.png',
+    email: 'hello@ragtechdev.com',
   },
 ];
 
@@ -223,39 +234,15 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-wrap gap-8 justify-center">
             {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white dark:bg-neutral-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-neutral-200 dark:border-neutral-700 cursor-pointer group"
-                onClick={() => setSelectedMember(member)}
-              >
-                <div className={`h-48 bg-gradient-to-br ${member.color} flex items-center justify-center group-hover:scale-105 transition-transform duration-300`}>
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-40 h-40 rounded-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-2 text-neutral-900 dark:text-white">
-                    {member.name}
-                  </h3>
-                  <p className="mb-4" style={{ color: member.roleColor, fontWeight: 800 }}>
-                    {member.role}
-                  </p>
-                  <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                    {member.description}
-                  </p>
-                  <p className="mt-4 text-sm text-brownDark dark:text-brown font-semibold group-hover:underline">
-                    Tap to view business card →
-                  </p>
-                </div>
-              </motion.div>
+              <div key={member.name} className="w-full md:w-[calc(33.333%-1.5rem)]">
+                <TeamMemberCard
+                  member={member}
+                  index={index}
+                  onClick={setSelectedMember}
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -334,15 +321,8 @@ export default function AboutPage() {
       {/* Business Card Modal */}
       {selectedMember && (
         <BusinessCard
-          isOpen={!!selectedMember}
+          member={selectedMember}
           onClose={() => setSelectedMember(null)}
-          name={selectedMember.name}
-          role={selectedMember.role}
-          email={selectedMember.email}
-          linkedInUrl={selectedMember.linkedInUrl}
-          image={selectedMember.image}
-          color={selectedMember.color.includes('primary') ? '#fda2a9' : selectedMember.color.includes('secondary') ? '#a2d4d1' : '#fff3c1'}
-          roleColor={selectedMember.roleColor}
         />
       )}
     </main>

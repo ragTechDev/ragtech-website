@@ -3,8 +3,7 @@ title: "Why Finding a CTO is Harder Than You Think"
 slug: "why-finding-a-cto-is-harder-than-you-think"
 author:
   name: "ragTech Team"
-  email: "hello@ragtechdev.com"
-  profilePicture: "/assets/team/ragtech-team.png"
+  profilePicture: "/assets/logo/ragtech-logo.png"
 publishedAt: "2026-02-08T12:00:00Z"
 coverImage: "/posts/2026-02-08-why-finding-a-cto-is-harder-than-you-think/1-cover-image.webp"
 brief: "Exploring the challenges non-technical founders face in finding the right CTO, from skill gaps to market saturation, and why this role is more than just coding."
@@ -36,8 +35,6 @@ Many of the founders we spoke with had early prototypes, sometimes with a few us
 ## Skills/Traits of a Good CTO
 
 Inspired from that night, we recorded our episode "Why Finding a CTO is Harder Than You Think". The whole point of this episode is not to make non-technical founders feel discouraged, but rather share our perspectives on what makes a good CTO and the skills that non-technical founders should look out for when hiring one.
-
-<!-- > Click [here](https://www.youtube.com/watch?v=n8IVhPQnje8) to watch the episode! -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/n8IVhPQnje8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

@@ -15,22 +15,14 @@ import type { BeehiivPost } from '@/lib/beehiiv-types';
 import NewsletterCTA from '../NewsletterCTA';
 import RecommendedArticles from '../RecommendedArticles';
 import TikTokEmbed from '../TikTokEmbed';
+import AuthorSection from './AuthorSection';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-async function getPost(slug: string): Promise<UnifiedPost | null> {
-  try {
-    return await loadPostBySlug(slug);
-  } catch (error) {
-    console.error('Error fetching post:', error);
-    return null;
-  }
-}
-
 async function getRecommendedArticles(post: UnifiedPost): Promise<UnifiedPost[]> {
+  const allPosts = await loadAllPosts();
   try {
-    const allPosts = await loadAllPosts();
     const MIN_ARTICLES = 3;
     
     // Check if post has recommended articles in frontmatter
@@ -130,7 +122,7 @@ function getPostTags(post: UnifiedPost): Array<{ name: string; slug: string }> {
 }
 
 export default async function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = await getPost(params.slug);
+  const post = await loadPostBySlug(params.slug);
 
   if (!post) {
     notFound();
@@ -178,10 +170,18 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
             {getUnifiedPostTitle(post)}
           </h1>
 
-          {/* Meta Info */}
-          <div className="flex flex-wrap items-center gap-4 text-neutral-600 dark:text-neutral-400">
-            <span>{formatDate(post)}</span>
-          </div>
+          {/* Author & Meta Info */}
+          {isMarkdownPost(post) && post.author ? (
+            <AuthorSection
+              author={post.author}
+              publishedDate={formatDate(post)}
+              readTimeInMinutes={post.readTimeInMinutes}
+            />
+          ) : (
+            <div className="flex flex-wrap items-center gap-4 text-neutral-600 dark:text-neutral-400 mb-4">
+              <span>{formatDate(post)}</span>
+            </div>
+          )}
 
           {/* Tags */}
           {tags && tags.length > 0 && (
