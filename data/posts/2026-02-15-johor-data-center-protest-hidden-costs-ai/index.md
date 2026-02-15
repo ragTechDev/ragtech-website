@@ -29,6 +29,8 @@ instagramEmbeds:
 
 On February 7, 2026, something unprecedented happened in Malaysia. Over 50 residents gathered outside a data center construction site in Gelang Patah, Johor, demanding answers about dust pollution, air quality, and water security. This wasn't a protest led by environmental activists or tech policy experts—it was everyday people whose lives were being directly impacted by the infrastructure powering our digital world.
 
+According to the [South China Morning Post](https://www.scmp.com/news/asia/southeast-asia/article/3342822/malaysias-data-centre-boom-faces-backlash-residents-protest-over-dust-water-woes), those gathered represent nearly 1,000 residents across four housing estates in the Gelang Patah district. Residents reported they "cannot dry laundry on their balconies any more, while air purifiers signal dangerously poor levels of air quality."
+
 This was [Malaysia's first AI data center protest](https://www.lowyat.net/2026/381039/malaysia-witnesses-first-ai-data-centre-protest-in-johor/), and it's a wake-up call we all need to hear.
 
 When we shared our coverage of this protest on [ragTech's Instagram](https://www.instagram.com/ragtechdev/) and TikTok, the response was overwhelming. Our video went viral, reaching millions of people who had no idea about the hidden environmental costs of the AI infrastructure they use every day. The comments flooded in—people were shocked, concerned, and most importantly, they wanted to know more.
@@ -216,6 +218,7 @@ Technical literacy isn't just about coding or building apps. It's about understa
 ---
 
 **References:**
+- [Malaysia's data centre boom faces backlash as residents protest over dust, water woes - South China Morning Post](https://www.scmp.com/news/asia/southeast-asia/article/3342822/malaysias-data-centre-boom-faces-backlash-residents-protest-over-dust-water-woes)
 - [Malaysia Witnesses First AI Data Centre Protest In Johor - Lowyat.NET](https://www.lowyat.net/2026/381039/malaysia-witnesses-first-ai-data-centre-protest-in-johor/)
 - [Johor's data center protest, a first in Malaysia - w.media](https://w.media/johors-data-center-protest-a-first-in-malaysia/)
 - [Malaysia draws first data centre protest over pollution, water - The Business Times](https://www.businesstimes.com.sg/international/asean/malaysia-draws-first-data-centre-protest-over-pollution-water)
