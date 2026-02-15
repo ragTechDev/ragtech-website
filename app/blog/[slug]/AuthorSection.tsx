@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import BusinessCard from '@/app/components/BusinessCard';
-import { team } from '@/app/about/page';
+import { team } from '@/app/data/team';
 import type { TeamMember } from '@/app/components/TeamMemberCard';
 
 interface AuthorSectionProps {
