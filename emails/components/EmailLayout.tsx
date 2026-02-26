@@ -27,7 +27,7 @@ export default function EmailLayout({ children, previewText, subscriptionSource 
           {/* Header */}
           <Section style={header}>
             <Img
-              src="https://ragtechdev.com/assets/logo.png"
+              src="https://ragtechdev.com/assets/logo/ragtech-logo.png"
               width="120"
               alt="ragTech"
               style={logo}

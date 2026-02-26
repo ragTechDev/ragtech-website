@@ -35,6 +35,13 @@ export interface MarkdownPostFrontmatter {
     metaDescription?: string;
     keywords?: string[];
   };
+  recommendedArticles?: string[];  // Array of slugs
+  instagramEmbeds?: {
+    [postId: string]: string;  // Map of Instagram post ID to fallback image URL for newsletters
+  };
+  tiktokEmbeds?: {
+    [videoId: string]: string;  // Map of TikTok video ID to fallback cover image URL for newsletters
+  };
 }
 
 export interface MarkdownPost {
@@ -60,6 +67,13 @@ export interface MarkdownPost {
     topic: Array<'ragTech' | 'FutureNet' | 'Techie Taboo'>;  // Compulsory: one or more topics
     sentAt?: string;
     recipientCount?: number;
+  };
+  recommendedArticles?: string[];  // Array of slugs
+  instagramEmbeds?: {
+    [postId: string]: string;  // Map of Instagram post ID to fallback image URL for newsletters
+  };
+  tiktokEmbeds?: {
+    [videoId: string]: string;  // Map of TikTok video ID to fallback cover image URL for newsletters
   };
   _markdown: {
     source: 'markdown';

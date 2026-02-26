@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import { loadPostBySlug } from '@/lib/posts';
+import { loadPostBySlug, loadAllPosts } from '@/lib/posts';
 import {
   UnifiedPost,
   getUnifiedPostDate,
@@ -12,16 +12,49 @@ import {
   isArchivedPost,
 } from '@/lib/posts-client';
 import type { BeehiivPost } from '@/lib/beehiiv-types';
+import NewsletterCTA from '../NewsletterCTA';
+import RecommendedArticles from '../RecommendedArticles';
+import TikTokEmbed from '../TikTokEmbed';
+import AuthorSection from './AuthorSection';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-async function getPost(slug: string): Promise<UnifiedPost | null> {
+async function getRecommendedArticles(post: UnifiedPost): Promise<UnifiedPost[]> {
+  const allPosts = await loadAllPosts();
   try {
-    return await loadPostBySlug(slug);
+    const MIN_ARTICLES = 3;
+    
+    // Check if post has recommended articles in frontmatter
+    if (isMarkdownPost(post) && post.recommendedArticles && post.recommendedArticles.length > 0) {
+      const recommended = allPosts.filter(p => 
+        post.recommendedArticles?.includes(p.slug) && p.slug !== post.slug
+      );
+      // Get articles in the order specified in frontmatter
+      const orderedRecommended = post.recommendedArticles
+        .map(slug => recommended.find(p => p.slug === slug))
+        .filter((p): p is UnifiedPost => p !== undefined);
+      
+      // If we have less than MIN_ARTICLES, fill with latest articles
+      if (orderedRecommended.length < MIN_ARTICLES) {
+        const recommendedSlugs = new Set(orderedRecommended.map(p => p.slug));
+        const latestArticles = allPosts
+          .filter(p => p.slug !== post.slug && !recommendedSlugs.has(p.slug))
+          .slice(0, MIN_ARTICLES - orderedRecommended.length);
+        
+        return [...orderedRecommended, ...latestArticles];
+      }
+      
+      return orderedRecommended;
+    }
+    
+    // Default: return latest 3 articles excluding current post
+    return allPosts
+      .filter(p => p.slug !== post.slug)
+      .slice(0, MIN_ARTICLES);
   } catch (error) {
-    console.error('Error fetching post:', error);
-    return null;
+    console.error('Error loading recommended articles:', error);
+    return [];
   }
 }
 
@@ -89,7 +122,7 @@ function getPostTags(post: UnifiedPost): Array<{ name: string; slug: string }> {
 }
 
 export default async function BlogPostPage({ params }: { params: { slug: string } }) {
-  const post = await getPost(params.slug);
+  const post = await loadPostBySlug(params.slug);
 
   if (!post) {
     notFound();
@@ -99,6 +132,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
   const tags = getPostTags(post);
   const content = getPostContent(post);
   const source = getPostSource(post);
+  const recommendedArticles = await getRecommendedArticles(post);
 
   const sourceBadge = {
     markdown: { label: 'New Post', color: 'bg-green-500' },
@@ -108,6 +142,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
 
   return (
     <main className="min-h-screen pt-24 pb-20 px-4 sm:px-6 overflow-x-hidden">
+      <TikTokEmbed />
       <article className="container mx-auto max-w-4xl w-full">
         {/* Back Button */}
         <div className="mb-8">
@@ -135,10 +170,18 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
             {getUnifiedPostTitle(post)}
           </h1>
 
-          {/* Meta Info */}
-          <div className="flex flex-wrap items-center gap-4 text-neutral-600 dark:text-neutral-400">
-            <span>{formatDate(post)}</span>
-          </div>
+          {/* Author & Meta Info */}
+          {isMarkdownPost(post) && post.author ? (
+            <AuthorSection
+              author={post.author}
+              publishedDate={formatDate(post)}
+              readTimeInMinutes={post.readTimeInMinutes}
+            />
+          ) : (
+            <div className="flex flex-wrap items-center gap-4 text-neutral-600 dark:text-neutral-400 mb-4">
+              <span>{formatDate(post)}</span>
+            </div>
+          )}
 
           {/* Tags */}
           {tags && tags.length > 0 && (
@@ -177,6 +220,16 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
 
         {/* Footer */}
         <div className="mt-16 pt-8 border-t-2 border-neutral-200 dark:border-neutral-700">
+          {/* Recommended Articles */}
+          {recommendedArticles.length > 0 && (
+            <RecommendedArticles articles={recommendedArticles} />
+          )}
+
+          {/* Newsletter CTA */}
+          <div className="mb-12">
+            <NewsletterCTA />
+          </div>
+
           <Link
             href="/blog"
             className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-primary text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"

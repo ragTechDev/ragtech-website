@@ -49,7 +49,11 @@ export default function BlogPosts({ allPosts }: BlogPostsProps) {
 
   const getPostBadge = (post: UnifiedPost) => {
     const source = getPostSource(post);
-    if (source === 'markdown') {
+    const postDate = getUnifiedPostDate(post);
+    const oneWeekAgo = new Date();
+    oneWeekAgo.setDate(oneWeekAgo.getDate() - 7);
+    
+    if (postDate > oneWeekAgo) {
       return { label: 'New', color: 'bg-green-500' };
     }
     if (source === 'archived') {

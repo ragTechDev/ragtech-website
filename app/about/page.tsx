@@ -5,42 +5,8 @@ import { motion } from 'framer-motion';
 import { FaRocket, FaUsers, FaLightbulb, FaHeart } from 'react-icons/fa';
 import Hero from '../components/Hero';
 import BusinessCard from '../components/BusinessCard';
-
-const team = [
-  {
-    name: 'Saloni',
-    role: 'Software Developer',
-    description:
-      'Software developer who loves breaking down complex concepts into bite-sized, understandable pieces.',
-    color: 'from-primary/20 to-primary/5',
-    roleColor: '#fda2a9',
-    image: '/assets/team/saloni.png',
-    email: 'saloni@ragtechdev.com',
-    linkedInUrl: 'https://www.linkedin.com/in/saloni-kaur/',
-  },
-  {
-    name: 'Victoria',
-    role: 'Solutions Engineer',
-    description:
-      'Combines technical expertise with storytelling to make tech topics engaging and relatable.',
-    color: 'from-secondary/20 to-secondary/5',
-    roleColor: '#a2d4d1',
-    image: '/assets/team/victoria.png',
-    email: 'victoria@ragtechdev.com',
-    linkedInUrl: 'https://www.linkedin.com/in/victoria2666/',
-  },
-  {
-    name: 'Natasha',
-    role: 'Software Engineer',
-    description:
-      'Passionate about making technology inclusive and accessible for everyone, regardless of their background.',
-    color: 'from-accent/20 to-accent/5',
-    roleColor: '#eec08c',
-    image: '/assets/team/natasha.png',
-    email: 'natasha@ragtechdev.com',
-    linkedInUrl: 'https://www.linkedin.com/in/natashaannn/',
-  },
-];
+import TeamMemberCard, { TeamMember } from '../components/TeamMemberCard';
+import { team } from '../data/team';
 
 const values = [
   {
@@ -223,39 +189,15 @@ export default function AboutPage() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="flex flex-wrap gap-8 justify-center">
             {team.map((member, index) => (
-              <motion.div
-                key={member.name}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="bg-white dark:bg-neutral-800 rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-neutral-200 dark:border-neutral-700 cursor-pointer group"
-                onClick={() => setSelectedMember(member)}
-              >
-                <div className={`h-48 bg-gradient-to-br ${member.color} flex items-center justify-center group-hover:scale-105 transition-transform duration-300`}>
-                  <img
-                    src={member.image}
-                    alt={member.name}
-                    className="w-40 h-40 rounded-full object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-2 text-neutral-900 dark:text-white">
-                    {member.name}
-                  </h3>
-                  <p className="mb-4" style={{ color: member.roleColor, fontWeight: 800 }}>
-                    {member.role}
-                  </p>
-                  <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                    {member.description}
-                  </p>
-                  <p className="mt-4 text-sm text-brownDark dark:text-brown font-semibold group-hover:underline">
-                    Tap to view business card →
-                  </p>
-                </div>
-              </motion.div>
+              <div key={member.name} className="w-full md:w-[calc(33.333%-1.5rem)]">
+                <TeamMemberCard
+                  member={member}
+                  index={index}
+                  onClick={setSelectedMember}
+                />
+              </div>
             ))}
           </div>
         </div>
@@ -334,15 +276,8 @@ export default function AboutPage() {
       {/* Business Card Modal */}
       {selectedMember && (
         <BusinessCard
-          isOpen={!!selectedMember}
+          member={selectedMember}
           onClose={() => setSelectedMember(null)}
-          name={selectedMember.name}
-          role={selectedMember.role}
-          email={selectedMember.email}
-          linkedInUrl={selectedMember.linkedInUrl}
-          image={selectedMember.image}
-          color={selectedMember.color.includes('primary') ? '#fda2a9' : selectedMember.color.includes('secondary') ? '#a2d4d1' : '#fff3c1'}
-          roleColor={selectedMember.roleColor}
         />
       )}
     </main>
