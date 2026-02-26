@@ -11,7 +11,7 @@ tags: ["AI", "data centers", "environment", "Malaysia", "tech awareness"]
 topic:
   - "ragTech"
 readTimeInMinutes: 8
-status: "published"
+status: "draft" # TO AWAIT ZDATA'S RESPONSE
 newsletter:
   send: true
   sent: false

@@ -11,7 +11,7 @@ tags: ["AI", "data centers", "Zdata", "Malaysia", "responsible tech", "software 
 topic:
   - "ragTech"
 readTimeInMinutes: 10
-status: "published"
+status: "draft" # TO AWAIT ZDATA'S RESPONSE
 newsletter:
   send: true
   sent: false
