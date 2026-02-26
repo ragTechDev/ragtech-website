@@ -4,9 +4,9 @@ slug: "do-we-need-100-solution-architects"
 author:
   name: "Natasha"
   email: "natasha@ragtechdev.com"
-  profilePicture: "/assets/profilePics/natasha.png"
-publishedAt: "2026-02-09"
-coverImage: "/posts/2026-02-09-do-we-need-100-solution-architects/cover-image.svg"
+  profilePicture: "/assets/team/natasha.PNG"
+publishedAt: "2026-02-26"
+coverImage: "/posts/2026-02-26-do-we-need-100-solution-architects/cover-image.svg"
 brief: "If AI means we don't need 100 coders anymore, do we need 100 solution architects? My answer: not if they're all at one bloated company. But yes, if they're building 100 focused companies. Here's why the future of tech isn't about big tech getting bigger—it's about breaking it down into thousands of small, ethical, product-focused companies."
 tags: 
   - "AI"
@@ -23,7 +23,7 @@ readTimeInMinutes: 18
 status: "published"
 newsletter:
   send: true
-  sent: true
+  sent: false
   topic:
     - "ragTech"
 seo:
@@ -61,6 +61,8 @@ So here's my (admittedly avant-garde) take on this question!
 ## The Truth of the Undesirable State of the Current Tech Industry
 I'm a software engineer in the tech industry who has thrived from the increase in demand for coders through the years. I remember when I started programming on my own in 2016, how it wasn't a well-known skill and how family and friends around me had thought my little hobby to be a time-waster. 
 
+![Photo Taken By My Dad When I Graduated From UCLA](/posts/2026-02-26-do-we-need-100-solution-architects/natasha-ucla-grad.JPG)
+
 Then I went to college in the United States in 2017. Being in UCLA, where the internet was born and being in the same state where Silicon Valley was in, it exposed me to the marvels of tech and the tech industry. I knew of peers who had started startups, heard of friends whose classmate was the nephew of Elon Musk (who I heard, went on to work at SpaceX), inadvertently was chaffeured in a Tesla when it hadn't yet made public news. Tech was all around me, and it was only there where my programming skills flourished through leading a coding club and applying programming to everything from research to being a layout editor for a student arts publication (I made a digital magazine that I shamelessly put my own digital art on).
 
 Truly, being a software engineer and seeing the tech industry grow and thrive was a marvellous thing.
@@ -69,9 +71,12 @@ But it was also being at the heart of it all that I realized how much power the 
 
 In 2019, I had a short working stint at the Chamber of Digital Commerce (now known as [the Digital Chamber](https://digitalchamber.org/)), which was then the world's largest blockchain trade association based in Washington DC. 
 
-__Oh yea, I know what you're thinking: I guess I was considered a cryptobro? Haha__
+> Oh yea, I know what you're thinking: I guess I was considered a cryptobro? Haha 😂
 
 In that stint, I was exposed to the power of the tech industry. I had the privilege to sit into a congressional hearing on Libra, then a cryptocurrency that Facebook, now known as Meta, had planned to launch together with 28 founding partners, which included Mastercard, Visa, eBay, and a number of other companies. 
+
+![Mark Zuckerberg confronts U.S. Congress on cryptocurrency Libra, says it will be a ‘stablecoin’](https://www.theglobeandmail.com/resizer/v2/LDL54I5W65FIRG5DCSKDL6LKBE.JPG?auth=3d61f0989e4b5eb9ceddcf4183ebdda749d1f5770a5b616583fc899a44c6447d&width=1200&quality=80)
+__Image from https://www.theglobeandmail.com/business/article-mark-zuckerberg-confronts-us-congress-on-cryptocurrency-libra-says/__
 
 It was a huge deal for the US government as to policymakers, it threatened to overthrow the power of the US dollar and the power of the Federal Reserve. Facebook had also wanted to locate its headquarters in Switzerland, justifying that it was a finance hub, which to US policymakers, meant it would not be creating American jobs. More than that, it was the fear of the amount of power that this would give already poewrful tech players like Facebook - now that it could control the flow of money. Complemented with its almost absolute control ofthe flow of information through social media, that was ALOT of power vested in just a few players.
 
@@ -89,6 +94,9 @@ As of 2024, just five companies - Apple, Microsoft, Google (Alphabet), Amazon, a
 
 This concentration of power hasn't gone unnoticed by regulators. Enter Lina Khan, who became chair of the Federal Trade Commission (FTC) in 2021 at just 32 years old. Khan made her name with her groundbreaking 2017 Yale Law Journal article "Amazon's Antitrust Paradox," which challenged traditional antitrust thinking that focused solely on consumer prices.
 
+![What Lina Khan’s antitrust case could mean for Amazon](https://images.ft.com/v3/image/raw/ftcms%3A7739ca2f-0b9c-4bc5-ac6b-ed3ea469bf90?source=next-article&fit=scale-down&quality=highest&width=1920&dpr=1)
+__Image from https://www.ft.com/content/70985afa-65e0-45fa-9c7c-ab898eeac55e__
+
 Under Khan's leadership, the FTC has taken an aggressive stance against big tech monopolies. The agency has sued Meta to unwind its acquisitions of Instagram and WhatsApp, blocked Microsoft's $69 billion acquisition of Activision Blizzard (though it eventually went through), and filed antitrust lawsuits against Amazon for allegedly maintaining monopoly power through anti-competitive practices.
 
 Khan's approach recognizes that monopolies harm more than just consumer prices - they stifle innovation, reduce worker bargaining power, and concentrate economic and political power in ways that threaten democratic institutions. And she's right.
@@ -97,7 +105,10 @@ Khan's approach recognizes that monopolies harm more than just consumer prices -
 
 The economic case against monopolies is well-established, yet somehow we've allowed tech giants to consolidate power in ways that would have been unthinkable in previous eras.
 
-Research from the National Bureau of Economic Research shows that increased market concentration has led to a decline in business dynamism - fewer startups are being created, and those that are created grow more slowly. A 2019 study published in the American Economic Review found that rising market power has contributed to declining labor share of income, meaning workers are getting a smaller piece of the economic pie.
+[Research from the National Bureau of Economic Research](https://www.nber.org/papers/w25756) shows that increased market concentration has led to a decline in business dynamism - fewer startups are being created, and those that are created grow more slowly. [A 2019 study published in the American Economic Review](https://janeeckhout.com/wp-content/uploads/RMP.pdf) found that rising market power has contributed to declining labor share of income, meaning workers are getting a smaller piece of the economic pie.
+
+![Declining labor share of income](https://www.federalreserve.gov/econres/notes/feds-notes/fig1-20200213.png)
+__The figures show the decline in firm and establishment enry rates in the United States along with an increase in the average markup of large publicly traded firms since 1980s, suggesting a rise in the market power of large firms as business dynamism declines. Image from https://www.federalreserve.gov/econres/notes/feds-notes/what-happened-to-us-business-dynamism-20200214.html__
 
 When a few companies dominate a market, they have less incentive to innovate. Why invest in risky R&D when you can simply acquire any potential competitor before they become a threat? Facebook's acquisition of Instagram for $1 billion in 2012 and WhatsApp for $19 billion in 2014 are textbook examples of this "kill zone" strategy - buying up potential competitors before they can challenge your dominance.
 
@@ -108,6 +119,9 @@ Perhaps most concerning is the impact on entrepreneurship. When would-be founder
 ## The Attention Economy and How We're Being Manipulated
 
 In the attention economy, you're not the customer - you're the product. And when monopolies control the platforms where we spend our time, the consequences go far beyond economics.
+
+![How The Attention Economy Works](https://www.techdetoxbox.com/wp-content/uploads/2021/12/Attention-economy-economics-1-768x432.png.webp)
+__Image from https://www.techdetoxbox.com/weapons-of-digital-manipulation/how-attention-economy-works/__
 
 Meta, Google, and TikTok don't charge users money because they've found something far more valuable: our attention. These platforms have become extraordinarily sophisticated at capturing and monetizing every second we spend scrolling, watching, and clicking. The average person spends over 2.5 hours per day on social media, and that's not by accident - it's by design.
 
@@ -149,9 +163,12 @@ Big tech companies don't just dominate markets - they dominate talent pools. And
 
 The numbers tell the truth (which you already know): Google, Meta, Amazon, Apple, and Microsoft collectively employ over 1.5 million people globally. But it's not just the quantity - it's the quality. These companies can offer compensation packages that smaller companies and startups simply cannot match. Total compensation for senior engineers at these companies can easily exceed $500,000 per year when you include base salary, bonuses, and stock options.
 
-Research from the Brookings Institution shows that big tech companies have been hoovering up talent from universities and smaller companies at an unprecedented rate. A 2020 study found that the top tech companies hire approximately 60% of computer science graduates from top-tier universities. This brain drain leaves startups and smaller companies struggling to compete.
+[Brookings analysis](https://www.brookings.edu/articles/tech-is-still-concentrating/) shows U.S. tech growth remains heavily concentrated in a small number of dominant hubs, reinforcing winner-take-most talent dynamics. And [CSET's "The Race for U.S. Technical Talent"](https://cset.georgetown.edu/publication/the-race-for-us-technical-talent/) reports that more than 60% of technical workers in Big Tech firms held degrees from "ranked" universities (compared with roughly 20% in the DoD sample they studied). This concentration dynamic leaves startups and smaller companies struggling to compete for top talent.
 
-But here's the kicker: much of this talent isn't being used to create innovative new products or solve hard problems. Instead, they're working on incremental improvements to existing products, building internal tools, or - and this is crucial - simply being kept away from competitors.
+Unfortunately, much of this talent isn't being used to create innovative new products or solve hard problems. Instead, they're working on incremental improvements to existing products, building internal tools, or - and this is crucial - simply being kept away from competitors.
+
+![Big Tech Talent Hoarding](https://i.ytimg.com/vi/h24I2Rrjqmc/maxresdefault.jpg)
+__Thumbnail Image from Youtube Video: https://www.youtube.com/watch?v=h24I2Rrjqmc__
 
 Economists call this "defensive hiring" or "talent hoarding." Companies hire brilliant engineers not because they have meaningful work for them, but to prevent competitors from hiring them. It's a rational strategy for the individual company, but it's economically wasteful for society as a whole.
 
@@ -159,11 +176,14 @@ The impact on the broader economy is significant. When the best and brightest ar
 
 ## Big Tech Doesn't Need to Be... That Big
 
-Here's the thing - most big tech companies are bloated beyond any reasonable operational need. And the recent waves of layoffs have proven it. 
+Most big tech companies are bloated beyond any reasonable operational need. And the recent waves of layoffs have proven it. 
 
 People blame AI for the layoffs, but it's not AI's fault. It's the fault of the companies that hired so many people in the first place (especially during COVID!). What's happening is a **market correction**.
 
 In 2022 and 2023, tech companies laid off over 400,000 workers. Meta cut 21,000 jobs. Amazon laid off 27,000. Google cut 12,000. Microsoft eliminated 10,000 positions. And you know what happened to these companies after the layoffs? Their stock prices went up. Their products continued to function. In many cases, employees reported that things actually got better - fewer meetings, less bureaucracy, faster decision-making.
+
+![Big Tech Layoffs](https://cdn.statcdn.com/Infographic/images/normal/29175.jpeg)
+__Image from https://www.statista.com/chart/29175/largest-tech-layoffs-since-2020/__
 
 So why were all these people hired in the first place?
 
@@ -185,6 +205,9 @@ When was the last time you could describe what a big tech company does in a sing
 
 Take Grab, the Southeast Asian super-app and Singapore's precious gem (which ironically, was built by Malaysians who chanced upon Uber and decided to build a Southeast Asian version... btw no hate to Malaysians I'm basically part-Malaysian too! Just pointing another funny fact). It started as a ride-hailing service - a clear, focused problem. But now? It's ride-hailing, food delivery, grocery delivery, package delivery, digital payments, financial services, insurance, hotel bookings, and more. Open the app and you're confronted with a dizzying array of options that have nothing to do with getting from point A to point B.
 
+![Grab](https://nowboarding.changiairport.com/content/dam/canowboarding/article-assets/live-local/12-must-have-mobile-apps-in-singapore-for-travellers/grab-ride-singapore-1080x550.jpg)
+__Image from https://nowboarding.changiairport.com/explore-singapore/12-must-have-mobile-apps-in-singapore-for-travellers.html__
+
 Or look at Meta. Facebook started as a way to connect with college classmates. Now it's social networking, messaging, photo sharing, video streaming, virtual reality, augmented reality, artificial intelligence research, cryptocurrency (remember I mentioned Libra?), e-commerce, and whatever the metaverse is supposed to be. Mark Zuckerberg has spent over $36 billion on VR and metaverse initiatives that have yet to find product-market fit, all while the core social media products stagnate.
 
 Google is a search engine, an email provider, a cloud computing platform, a smartphone manufacturer, a self-driving car company, an AI research lab, a video streaming platform, a productivity suite, a smart home device maker, and a health tech company. Amazon sells books - oh wait, no, it sells everything, and also runs half the internet's infrastructure, makes movies and TV shows, owns a grocery chain, manufactures smart speakers, and is getting into healthcare.
@@ -202,6 +225,9 @@ The result is less innovation, less competition, and worse products for consumer
 So here's where we circle back to my friend's question: if we don't need 100 coders anymore, do we need 100 solution architects?
 
 My answer is: not if they're all working for the same bloated company. But yes, absolutely, if they're working for 100 different focused companies.
+
+![Breaking UP Big Tech](https://cdn.vox-cdn.com/thumbor/dUUZHISH3jp9Xf9dp9VF9zNONkM=/0x0:1920x1257/1200x0/filters:focal(0x0:1920x1257):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19211157/obJoP_breaking_up_big_tech_future_competition_2_.png)
+__Image from https://cdn.vox-cdn.com/thumbor/dUUZHISH3jp9Xf9dp9VF9zNONkM=/0x0:1920x1257/1200x0/filters:focal(0x0:1920x1257):no_upscale()/cdn.vox-cdn.com/uploads/chorus_asset/file/19211157/obJoP_breaking_up_big_tech_future_competition_2_.png__
 
 AI is fundamentally changing the economics of software development. With tools like GitHub Copilot, ChatGPT, and Claude, a single skilled engineer can now do the work that previously required a team. The bottleneck is no longer writing code - it's knowing what to build and how to architect it.
 
@@ -245,6 +271,10 @@ In the new model, you can build your own product in your spare time, launch it, 
 
 This doesn't mean everyone should quit their job and become a solo founder. But it does mean that the risk-reward calculation has fundamentally changed. The risk of starting something is lower (you can build an MVP in weeks, not months). The potential reward is higher (you own it all). And the opportunity cost is lower (you can do it on the side while keeping your job).
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4NUFGBw52ck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+> We talk about our perspectives on non-technical founders and what techies can learn from them here!
+
 The engineers who thrive in this new era won't be the ones who are best at writing code - AI is getting better at that every day. They'll be the ones who can:
 - Identify real problems worth solving
 - Design elegant solutions
@@ -259,6 +289,9 @@ In other words, they'll be product engineers. Solution architects. Technical fou
 This shift isn't just good for engineers - it's great for consumers too.
 
 Instead of being forced to use bloated super-apps that try to do everything, we'll have options. Real options. Niche products that do one thing exceptionally well.
+
+![Monopolistic Competition](https://www.investopedia.com/thmb/XgucsNHIVzdQa1SmbCbSSVWzKxQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/monopolistic-market-4192732-2-1a0a84322d2041c4b72d5ea41b836147.jpg)
+__Image from https://animalia-life.club/qa/pictures/monopolistic-competition-vs-monopoly__
 
 Want a messaging app? You'll have dozens to choose from, each with different features, privacy models, and design philosophies. Not just WhatsApp, Messenger, and iMessage - all of which are controlled by trillion-dollar companies with their own agendas.
 
@@ -285,6 +318,10 @@ This isn't just theoretical speculation - I'm seeing this shift happen in real-t
 
 Many of my software engineer friends are starting their own companies. Not venture-backed startups with grand ambitions to become the next unicorn, but sustainable, profitable businesses that solve real problems. They're building SaaS products, development tools, niche marketplaces, and specialized services. They're staying small, staying lean, and staying focused.
 
+![Pitch Night Audience](/posts/2026-02-08-why-finding-a-cto-is-harder-than-you-think/3-pitch-night-audience.jpg)
+
+We saw this firsthand at a local startup pitch night where many teams were actively building, iterating, and searching for stronger technical leadership. I wrote more about those observations in [Why Finding a CTO is Harder Than You Think](/blog/why-finding-a-cto-is-harder-than-you-think).
+
 What's particularly interesting is what's happening with engineers who've been laid off. In previous downturns, laid-off engineers would immediately start applying to other big tech companies. But this time, many are choosing a different path. They're taking their severance packages and using them as runway to build their own products.
 
  Sure, they might take a pay cut, but they also eliminated the stress of corporate politics, the frustration of working on projects that get cancelled, and the feeling of being a replaceable cog in a massive machine.
@@ -292,6 +329,10 @@ What's particularly interesting is what's happening with engineers who've been l
 I'm also seeing a shift in what new graduates want. The prestige of working at FAANG companies is fading. More and more talented engineers are choosing to join small startups or start their own projects rather than grinding through LeetCode problems to get a job at Google.
 
 The tools are enabling this shift. GitHub Copilot, ChatGPT, Claude, Cursor, and other AI coding assistants are making it possible for individual developers to be incredibly productive. No-code and low-code tools are making it easier to build MVPs quickly. Distribution platforms like Product Hunt, Twitter, and Reddit make it possible to reach customers without a marketing team.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/su9tuHI-4hY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+> Watch our episode on our honest take on vibe coding!
 
 The economics are enabling it too. Cloud infrastructure is cheap. You can build and deploy a product for $20/month. You don't need office space. You don't need to hire a team. You can start small, validate the idea, and scale only if it works.
 
@@ -307,6 +348,9 @@ Governments around the world are pouring billions into "AI initiatives" and "dig
 
 What we actually need is infrastructure to enable people to found companies. More startup grants, yes, but more importantly: lower barriers to entry. Simplify business registration. Reduce regulatory overhead for small businesses. Make it easier to hire and fire (controversial, I know, but crucial for small companies). Provide tax incentives for solo founders and micro-businesses, not just for companies that can afford armies of accountants to navigate complex tax codes.
 
+![Startup Grants in Singapore](https://www.singaporecompanyincorporation.sg/wp-content/uploads/2022/04/13-startup-schemes-and-grants-in-singapore-680x320.jpg)
+__Image from https://www.singaporecompanyincorporation.sg/blog/13-startup-schemes-and-grants-in-singapore/__
+
 Instead, we're making it harder. Want to start a company in most countries? Prepare for months of paperwork, minimum capital requirements, complex tax filings, and regulations designed for enterprises with legal departments. It's absurd that it's easier to build a product that serves millions of users than it is to legally register the business that sells it.
 
 Education institutions are equally guilty of missing the trend. Universities and bootcamps are rushing to introduce AI tools into their curriculums - "Look, we teach with ChatGPT now!" - without fundamentally rethinking what students need to learn.
@@ -316,6 +360,9 @@ We don't need to teach students how to write code anymore - AI can do that. We n
 In other words, we need to teach entrepreneurship as a core skill, not as an elective that only business students take. Every computer science student should graduate knowing not just how to code, but how to take an idea from concept to paying customers.
 
 And please, for the love of all that is good, we need to teach **ethics**.
+
+![Tech and Ethics](https://healthcarereimagined.net/wp-content/uploads/2021/05/img_9678.jpg)
+__Image from https://healthcarereimagined.net/2021/05/16/big-techs-guide-to-talking-about-ai-ethics/__
 
 The Meta researchers who designed features to exploit teenage girls' insecurities? They were trained at top universities. The engineers who built addictive algorithms that prioritize engagement over wellbeing? They learned their craft in our education system. The executives who chose monopolistic practices over fair competition? They're products of our business schools.
 
