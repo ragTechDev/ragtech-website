@@ -84,6 +84,66 @@ Constraints:
 - Add relevant TikTok embeds where useful.
 - Keep embeds strategically placed (not clustered).
 
+#### TikTok and Instagram embed format (repo standard)
+
+Reference implementation:
+- [data/posts/2026-02-15-zdata-johor-the-problem/index.md](./data/posts/2026-02-15-zdata-johor-the-problem/index.md)
+
+Use **both**:
+1. Frontmatter fallback maps (for newsletter rendering)
+2. Inline embed HTML in markdown body (for blog rendering)
+
+Frontmatter pattern:
+
+```yaml
+instagramEmbeds:
+  <instagramPostId>: "<instagram-image-url>"
+tiktokEmbeds:
+  "<tiktokVideoId>": "<tiktok-cover-image-url>"
+```
+
+Example:
+
+```yaml
+instagramEmbeds:
+  DUsLBiiAK0B: "https://...jpg"
+tiktokEmbeds:
+  "7541624942006390034": "https://...jpg"
+```
+
+Instagram embed in content:
+
+```html
+<div style="max-width: 50%; margin: 2rem auto; width: 100%;">
+  <iframe
+    src="https://www.instagram.com/p/<instagramPostId>/embed"
+    width="100%"
+    height="700"
+    frameborder="0"
+    scrolling="no"
+    allowtransparency="true">
+  </iframe>
+</div>
+```
+
+TikTok embed in content:
+
+```html
+<blockquote class="tiktok-embed"
+  cite="https://www.tiktok.com/@<handle>/video/<tiktokVideoId>"
+  data-video-id="<tiktokVideoId>"
+  style="max-width: 605px;min-width: 325px;">
+  <section>...</section>
+</blockquote>
+<script async src="https://www.tiktok.com/embed.js"></script>
+```
+
+Embed QA checklist:
+- Use valid public post/video IDs.
+- Add fallback image URLs in frontmatter for every Instagram/TikTok embed.
+- Keep only one TikTok embed script include per post.
+- Verify embeds in local dev and in newsletter draft output.
+
 ### 5. Local QA
 
 - Run:
