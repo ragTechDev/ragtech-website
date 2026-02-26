@@ -97,6 +97,13 @@ npm run dev
 
 4. **Open [http://localhost:3000](http://localhost:3000)** in your browser
 
+## Documentation Guides
+
+- [Content Creation Workstream](./CONTENT_CREATION_WORKSTREAM.md)
+- [Markdown Blog Setup](./MARKDOWN_BLOG_SETUP.md)
+- [Newsletter Usage Guide](./NEWSLETTER_USAGE_GUIDE.md)
+- [Newsletter Topics Guide](./NEWSLETTER_TOPICS_GUIDE.md)
+- [Newsletter Resend Plan](./NEWSLETTER_RESEND_PLAN.md)
 ## 🚀 Build & Deploy
 
 ### Build for Production
@@ -149,3 +156,5 @@ For workshops, collaborations, or general inquiries: hello@ragtechdev.com
 ---
 
 Built with ❤️ by ragTech | © 2025 ragTech | Where bytes meet banter ✨
+
+
