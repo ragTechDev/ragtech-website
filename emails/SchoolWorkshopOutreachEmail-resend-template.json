@@ -1,0 +1,92 @@
+{
+  "message": "Template created successfully",
+  "templateId": "12aa7027-e497-4f9b-bd14-17b325b4138c",
+  "templateName": "School Workshop Outreach",
+  "variables": [
+    {
+      "name": "schoolName",
+      "type": "string",
+      "description": "Name of the target school",
+      "default_value": "[School Name]"
+    },
+    {
+      "name": "contactName",
+      "type": "string",
+      "description": "Name of the contact person at the school",
+      "default_value": "[Contact Person Name]"
+    },
+    {
+      "name": "senderName",
+      "type": "string",
+      "description": "Name of the sender from ragTech",
+      "default_value": "[Your Name]"
+    },
+    {
+      "name": "senderTitle",
+      "type": "string",
+      "description": "Title/role of the sender",
+      "default_value": "[Your Title]"
+    },
+    {
+      "name": "senderEmail",
+      "type": "string",
+      "description": "Email address of the sender",
+      "default_value": "[Your Email]"
+    },
+    {
+      "name": "senderPhone",
+      "type": "string",
+      "description": "Phone number of the sender",
+      "default_value": "[Your Phone Number]"
+    }
+  ],
+  "templateData": {
+    "templateName": "School Workshop Outreach",
+    "subject": "Outreach",
+    "description": "School workshop outreach",
+    "senderName": "Saloni",
+    "senderTitle": "Cohost and Software Developer",
+    "senderEmail": "saloni@ragtechdev.com",
+    "senderPhone": "",
+    "variables": [
+      {
+        "name": "schoolName",
+        "type": "string",
+        "description": "Name of the target school",
+        "default_value": "[School Name]"
+      },
+      {
+        "name": "contactName",
+        "type": "string",
+        "description": "Name of the contact person at the school",
+        "default_value": "[Contact Person Name]"
+      },
+      {
+        "name": "senderName",
+        "type": "string",
+        "description": "Name of the sender from ragTech",
+        "default_value": "[Your Name]"
+      },
+      {
+        "name": "senderTitle",
+        "type": "string",
+        "description": "Title/role of the sender",
+        "default_value": "[Your Title]"
+      },
+      {
+        "name": "senderEmail",
+        "type": "string",
+        "description": "Email address of the sender",
+        "default_value": "[Your Email]"
+      },
+      {
+        "name": "senderPhone",
+        "type": "string",
+        "description": "Phone number of the sender",
+        "default_value": "[Your Phone Number]"
+      }
+    ]
+  },
+  "local_backup": true,
+  "created_at": "2026-02-27T13:34:19.166Z"
+}

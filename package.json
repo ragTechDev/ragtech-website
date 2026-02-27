@@ -13,7 +13,8 @@
     "newsletter:draft": "node scripts/create-newsletter-draft.js",
     "newsletter:send": "node scripts/send-newsletter.js",
     "newsletter:send-broadcast": "node scripts/send-broadcast.js",
-    "newsletter:send-pending": "node scripts/send-pending-newsletters.js"
+    "newsletter:send-pending": "node scripts/send-pending-newsletters.js",
+    "email:create-template": "node scripts/create-resend-template.js"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
