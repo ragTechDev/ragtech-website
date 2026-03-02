@@ -22,25 +22,25 @@ seo:
   keywords: ["AI jobs", "is AI taking jobs", "AI career", "Fonzi AI", "Match Day", "AI engineers", "tech hiring", "AI talent marketplace"]
 ---
 
-Here's a question we keep hearing: is AI taking our jobs?
+Governments say AI is creating jobs. Reports say AI is creating jobs. Tech companies say AI is creating jobs.
 
-Ask around and you get two camps. Some people say yes, absolutely. Others say we're asking the wrong question entirely.
+So why does it feel like the job market is getting harder, not easier?
 
-The honest answer is that both sides have a point. AI is replacing some roles, creating others, and making the job market harder to navigate than it's ever been. Engineers, especially those working in or around AI, are caught right in the middle of this.
+Layoffs are happening. Engineers with solid experience are spending months job hunting. People are applying to dozens of roles and hearing nothing back. The on-the-ground reality for a lot of people in tech does not match the headline.
 
-We wanted to dig into this properly. That research led us to [Fonzi.ai](https://fonzi.ai/), a platform built to help engineers find their footing in this new landscape.
+We wanted to understand that gap. Why, if AI is supposedly creating all these opportunities, is finding a job in tech in 2026 so frustrating? That question led us to dig into what's actually happening in the market, and eventually to [Fonzi.ai](https://fonzi.ai/), a platform trying to address one specific part of this problem.
 
-## The Case That AI Is Taking Jobs
+## AI Is Creating Jobs. But It's Also Cutting Them.
 
-There are roles that AI has already made redundant, or will soon. Junior copywriting, basic data labelling, routine code review, entry-level customer support: AI tools are doing these tasks faster and cheaper than humans, and companies have noticed.
+The honest picture is messier than either side of the debate admits.
 
-For engineers, the story isn't entirely rosy either. Tools like Cursor, GitHub Copilot, and Claude mean one engineer today can do the work that previously required three. Teams are shipping faster with smaller headcounts. Some engineering roles, especially at smaller startups, are being deferred or cut entirely because a non-technical founder with the right AI tools can now get far enough on their own.
+Yes, AI is eliminating certain roles. Junior copywriting, basic data labelling, routine code review, entry-level customer support: these tasks are being done faster and cheaper by AI tools, and companies have noticed. For engineers, one person with Cursor or GitHub Copilot today can do the work that previously required three. Teams are shipping faster with smaller headcounts, and some roles, especially at smaller startups, are being cut entirely.
 
-We've seen this at startup pitch nights in Singapore, where more and more founders are building MVPs solo with no CTO in sight. We actually wrote about this in our [CTO piece](/blog/why-finding-a-cto-is-harder-than-you-think). The pressure on traditional engineering roles is real.
+We've seen this at startup pitch nights in Singapore, where more and more founders are building MVPs solo with no CTO in sight. We wrote about this in our [CTO piece](/blog/why-finding-a-cto-is-harder-than-you-think).
 
-What makes this particularly uncomfortable is a finding from Harvard Business Review: [companies are laying off workers because of AI's potential, not its performance](https://hbr.org/2026/01/companies-are-laying-off-workers-because-of-ais-potential-not-its-performance). The fear of what AI might do is moving faster than what it can actually do today. Workers are paying the price for a prediction, not a reality.
+What makes this particularly uncomfortable is a finding from Harvard Business Review: [companies are laying off workers because of AI's potential, not its performance](https://hbr.org/2026/01/companies-are-laying-off-workers-because-of-ais-potential-not-its-performance). Workers are paying the price for a prediction, not a reality that's fully arrived yet.
 
-## The Case That AI Is Creating Jobs
+## So Where Are All These New Jobs?
 
 At the same time, the demand for engineers is going up, not down. Every AI product needs someone to train it, fine-tune it, deploy it, and keep it running. Every company adding AI to their workflow needs ML Engineers, Data Scientists, AI Platform Engineers, and Fullstack Engineers to build the interfaces that bring these systems to users. The AI boom isn't just creating AI companies. It's adding AI functions to every kind of company, in every industry.
 
