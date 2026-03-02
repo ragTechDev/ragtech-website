@@ -61,15 +61,14 @@ And it is kind of terrifying.
 **[0:48 - 1:10 | FONZI + MATCH DAY]**
 So I came across this platform called Fonzi.
 [show fonzi.ai on screen]
-And what they do completely flips the dynamic.
+And basically, instead of you chasing companies, the companies come to you.
 
 They vet the engineers. They vet the companies.
-And then they run something called Match Day.
+And once a month they run something called Match Day.
 
-Instead of you applying to 50 companies and hearing nothing back,
-companies come to YOU with salary-backed offers.
+Companies review your profile and send you salary-backed offers.
 You see who's interested. You pick who you want to talk to.
-No 10-round interview loops. No ghosting.
+No applying into a void. No 10-round interview loops. No ghosting.
 
 One engineer before Fonzi: seven months, 119 interviews.
 With Fonzi: a signed offer in 2 to 3 weeks.
