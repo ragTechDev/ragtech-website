@@ -25,6 +25,10 @@ We publish content across:
 - Honest and balanced, willing to present multiple sides of an argument
 - Warm but not fluffy
 
+## Tone Reference
+
+To match the authentic ragTech spoken tone for scripts, captions, or conversational content, refer to the transcripts in `data/episodes/transcripts/`. These are auto-transcribed podcast episodes and capture how Natasha, Saloni, and Victoria actually speak: casual, direct, with natural fillers ("like", "uh", "right?"), short punchy sentences, and genuine back-and-forth.
+
 ## Content Rules
 
 - **No em dashes** in any generated content. Use commas, colons, or restructure sentences instead.
