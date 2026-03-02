@@ -28,8 +28,8 @@ That part is real. I've seen it happen.
 And here's the scary part: companies are laying people off not because AI has already replaced them,
 but because they THINK it will. The fear is moving faster than the reality.
 
-But at the same time?
-Demand for AI engineers has actually gone up 25%.
+At the same time though,
+demand for AI engineers has actually gone up 25%.
 Companies that are actually building AI products, not just using them,
 need ML Engineers, AI Engineers, Data Scientists to build and maintain these systems.
 Those roles are in demand. And there are more of them than people realise.
