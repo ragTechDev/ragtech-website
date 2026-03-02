@@ -38,11 +38,17 @@ For engineers, the story isn't entirely rosy either. Tools like Cursor, GitHub C
 
 We've seen this at startup pitch nights in Singapore, where more and more founders are building MVPs solo with no CTO in sight. We actually wrote about this in our [CTO piece](/blog/why-finding-a-cto-is-harder-than-you-think). The pressure on traditional engineering roles is real.
 
+What makes this particularly uncomfortable is a finding from Harvard Business Review: [companies are laying off workers because of AI's potential, not its performance](https://hbr.org/2026/01/companies-are-laying-off-workers-because-of-ais-potential-not-its-performance). The fear of what AI might do is moving faster than what it can actually do today. Workers are paying the price for a prediction, not a reality.
+
 ## The Case That AI Is Creating Jobs
 
 At the same time, the demand for engineers is going up, not down. Every AI product needs someone to train it, fine-tune it, deploy it, and keep it running. Every company adding AI to their workflow needs ML Engineers, Data Scientists, AI Platform Engineers, and Fullstack Engineers to build the interfaces that bring these systems to users. The AI boom isn't just creating AI companies. It's adding AI functions to every kind of company, in every industry.
 
 According to Fonzi's data, there's been a **25% surge in AI talent demand**, and that number keeps climbing. The supply of qualified engineers hasn't kept pace. Senior ML Engineers and AI Research Scientists are rare. Companies also need people who understand both what AI can do and what it can't, which is a harder profile to find than a standard engineering hire.
+
+Closer to home, Singapore's IMDA has announced plans to [build an AI-fluent workforce](https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2025/sg-to-build-ai-fluent-workforce-to-accelerate-national-ai-ambition) to accelerate the country's national AI ambitions. Google has been [hiring 150 AI-focused roles in Singapore](https://vulcanpost.com/909182/google-150-jobs-singapore-ai/). These aren't small signals.
+
+And as [CACM points out](https://cacm.acm.org/news/the-hidden-ai-jobs-no-ones-hiring-for-yet/), many of the jobs AI is creating are hidden ones: roles that don't have clear job titles yet, that sit at the intersection of domain expertise and AI capability, and that aren't showing up loudly on traditional job boards.
 
 So yes, AI is creating jobs. Lots of them. The problem is that finding those jobs, and being found for them, is harder than it should be.
 
@@ -68,7 +74,7 @@ If you're an engineer actively looking, or just keeping your options open, here'
 
 **Look for processes that give you feedback.** Most hiring pipelines ghost candidates completely or send a single-line rejection. A process that tells you why you didn't progress is genuinely valuable, both for improving your approach and for not wasting time wondering. If a recruiter or platform offers structured feedback, that's a good sign they take the process seriously.
 
-**Consider curated hiring events.** The traditional approach of applying one job at a time is slow. Some platforms now run structured hiring windows where multiple companies review your profile at once and reach out to you if there's a fit. It flips the dynamic: instead of you chasing companies, companies are expressing interest in you. This format tends to compress weeks of back-and-forth into a much shorter window.
+**Consider curated hiring events.** The traditional approach of applying one job at a time is slow and demoralising. Some platforms now run structured hiring windows where multiple companies review your profile at once and reach out if there's a fit. It completely flips the power dynamic: instead of you chasing companies, companies are expressing interest in you, with salary ranges attached upfront. This format tends to compress months of back-and-forth into 2 to 3 weeks.
 
 ## Our Take
 
