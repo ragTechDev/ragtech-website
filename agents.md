@@ -32,5 +32,6 @@ To match the authentic ragTech spoken tone for scripts, captions, or conversatio
 ## Content Rules
 
 - **No em dashes** in any generated content. Use commas, colons, or restructure sentences instead.
+- **No rhetorical AI-sounding phrases** like "And honestly?", "Here's the thing:", "Let's be real:", "At the end of the day,", "It's worth noting that". These sound unnatural and generated. Write directly instead.
 - Blog posts follow a narrative structure: open with a story or hook, then structured sections with `##` headers, images, and a ragTech CTA at the end.
 - Always end blog posts with the standard ragTech sign-off: Spotify, YouTube, Instagram, and linktree links.
