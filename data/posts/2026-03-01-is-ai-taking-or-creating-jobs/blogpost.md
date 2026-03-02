@@ -44,7 +44,7 @@ What makes this particularly uncomfortable is a finding from Harvard Business Re
 
 At the same time, the demand for engineers is going up, not down. Every AI product needs someone to train it, fine-tune it, deploy it, and keep it running. Every company adding AI to their workflow needs ML Engineers, Data Scientists, AI Platform Engineers, and Fullstack Engineers to build the interfaces that bring these systems to users. The AI boom isn't just creating AI companies. It's adding AI functions to every kind of company, in every industry.
 
-According to Fonzi's data, there's been a **25% surge in AI talent demand**, and that number keeps climbing. The supply of qualified engineers hasn't kept pace. Senior ML Engineers and AI Research Scientists are rare. Companies also need people who understand both what AI can do and what it can't, which is a harder profile to find than a standard engineering hire.
+According to [LinkedIn data reported by the World Economic Forum](https://www.weforum.org/stories/2026/01/ai-has-already-added-1-3-million-new-jobs-according-to-linkedin-data/), AI has already created over 1.3 million new jobs, with AI Engineer among the fastest growing roles globally. The supply of qualified engineers hasn't kept pace. Senior ML Engineers and AI Research Scientists are rare, and companies need people who understand both what AI can do and what it can't: a harder profile to find than a standard engineering hire.
 
 Closer to home, Singapore's IMDA has announced plans to [build an AI-fluent workforce](https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/press-releases/2025/sg-to-build-ai-fluent-workforce-to-accelerate-national-ai-ambition) to accelerate the country's national AI ambitions. Google has been [hiring 150 AI-focused roles in Singapore](https://vulcanpost.com/909182/google-150-jobs-singapore-ai/). These aren't small signals.
 
@@ -56,7 +56,7 @@ So yes, AI is creating jobs. Lots of them. The problem is that finding those job
 
 Even if the jobs are there, finding them is getting harder.
 
-Research suggests roughly **30% of job postings in 2026 are "ghost jobs"**: roles that companies post but aren't actively filling. They might be building a talent pipeline for later, fulfilling internal headcount processes, or testing market salaries. Whatever the reason, engineers end up spending real time on applications that lead nowhere.
+A [January 2025 Clarify Capital study](https://www.davron.net/ghost-jobs-misleading-job-ads-are-still-rising-what-job-seekers-and-employers-need-to-know/) found nearly **1 in 3 employers admit to posting job listings with no intention of hiring**. Greenhouse, a major hiring platform, separately reported that 18-22% of online job ads in 2024 were unfilled roles. Whatever the reason, engineers end up spending real time on applications that lead nowhere.
 
 There's also a signal problem. Most job boards sort you by keywords and filter you through automated systems that can't tell the difference between a strong candidate and someone who just knows how to optimise their resume. If you're genuinely good, that's frustrating. You're competing not just on merit but on how well you've gamed the system.
 
