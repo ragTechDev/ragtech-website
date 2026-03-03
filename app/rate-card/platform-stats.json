@@ -1,0 +1,253 @@
+{
+  "instagram": {
+    "followers": 3853,
+    "follower_geography": {
+        "malaysia_percent": 47.5,
+      "singapore_percent": 27.6,
+      "usa_percent": 3.5,
+      "india_percent": 2.9,
+      "australia_percent": 2.3
+    },
+    "follower_age_range": {
+        "13-17_percent": 0.4,
+        "18-24_percent": 8.7,
+        "25-34_percent": 38.1,
+        "35-44_percent": 29.8,
+        "45-54_percent": 14.9,
+        "55-64_percent": 5.8,
+        "65_plus_percent": 2.2
+    },
+    "follower_gender": {
+        "female_percent": 42.4,
+        "male_percent": 57.6
+    },
+    "last_30_days": {
+        "followers_gained": 3858,
+        "views": 646601,
+        "views_breakdown_by_viewer_type": {
+            "followers_percent": 4.4,
+            "non_followers_percent": 95.6
+        },
+        "views_breakdown_by_content_type": {
+            "reels_percent": 99.5,
+            "stories_percent": 0.4,
+            "posts_percent": 0.0
+        },
+        "accounts_reached": 179365,
+        "top_content_based_on_views": {
+            "id": 3832034841341342549,
+            "content_type": "reel",
+            "views": 323959,
+            "accounts_reached": 174851,
+            "likes": 11865,
+            "comments": 90,
+            "saves": 3130,
+            "shares": 2416
+        },
+        "interactions": 55968,
+        "interactions_by_content_type": {
+            "reels_percent": 98.8,
+            "stories_percent": 1.2,
+            "posts_percent": 0.0
+        },
+        "content_insights": {
+            "total_content_published": 36,
+            "reels": {
+                "total_reels_published": 8,
+                "total_views": 634670,
+                "total_likes": 29569,
+                "avg_comments": 26192,
+                "avg_saves": 6343,
+                "avg_shares": 20388
+            },
+            "stories": {
+                "total_stories_published": 15,
+                "total_views": 119911,
+                "total_exits": 365
+            },
+            "posts": {
+                "total_posts_published": 13,
+                "total_impressions": 27188,
+                "total_reach": 14864,
+                "total_likes": 358,
+                "total_comments": 22,
+                "total_saves": 56,
+                "avg_shares": 77
+            }
+        }
+    }
+    },
+  "youtube": {
+    "subscribers": 680,
+    "subscriber_geography": {
+        "usa_percent": 16.0,
+        "india_percent": 12.3,
+        "singapore_percent": 5.0,
+        "uk_percent": 3.3,
+        "germany_percent": 3.0
+    },
+    "subscriber_age_range": {
+        "13-17_percent": 2.5,
+        "18-24_percent": 25.4,
+        "25-34_percent": 45.0,
+        "35-44_percent": 20.0,
+        "45-54_percent": 5.9,
+        "55-64_percent": 1.0,
+        "65_plus_percent": 0.3
+    },
+    "subscriber_gender": {
+        "female_percent": 33.6,
+        "male_percent": 66.3,
+        "otjhers_percent": 0.1
+    },
+    "last_28_days": {
+        "views": 6706,
+        "watch_time_hours": 122.1,
+        "subscriber_growth": 81
+    },
+    "videos_published": {
+      "total": 268,
+      "regular": 47,
+      "shorts": 221
+    },
+    "regular_videos": {
+      "avg_views_all_time": "17249/47",
+      "avg_views_last_30_days": "2016/2",
+      "avg_watch_time_minutes_last_30_days": 76.3,
+      "avg_view_duration_percent": 10.3,
+      "avg_likes_last_30_days": "56/2",
+      "avg_comments_last_30_days": "6/2",
+      "views_range_lifetime": { "min": 55, "max": 1364 }
+    },
+    "shorts": {
+      "avg_views_last_30_days": "17,249/221",
+      "avg_likes": "1,753/221",
+      "avg_comments": "52/221",
+      "avg_view_duration_percent": 40.3,
+      "views_range_lifetime": { "min": 8, "max": 5765 }
+    },
+    "ctas_click_through_rate_last_30_days": 0,
+    "subscriber_growth_last_30_days": 81,
+    "retention_rate_last_30_days": null,
+    "engagement_percent": 10
+  },
+  "tiktok": {
+    "followers": 365,
+    "videos_published_last_12_months": 93,
+    "avg_views_per_video_last_30_days": "22000/17",
+    "avg_likes_per_video_last_30_days": "412/17",
+    "avg_comments_per_video_last_30_days": "20/17",
+    "avg_shares_per_video_last_30_days": "26/17",
+    "avg_completion_rate_percent_last_30_days": null,
+    "follower_growth_last_30_days_percent": 93,
+    "total_likes_last_30_days": 412,
+    "avg_click_through_rate_percent": null
+  },
+  "linkedin": {
+    "followers": 375,
+    "posts_last_12_months": null,
+    "avg_engagement_per_post_last_12_months": {
+      "likes": 903,
+      "comments": 97,
+      "shares": 52
+    },
+    "avg_impressions_per_post_last_12_months": null,
+    "avg_click_rate_per_post_percent": null,
+    "follower_growth_last_30_days": 21,
+    "most_engaged_post_impressions": 857,
+    "engagement_rate_formula": "(Likes + Comments + Shares + Clicks) / Total Impressions × 100"
+  },
+  "spotify": {
+    "followers": 150,
+    "total_streams_all_time": 1072,
+    "total_streams_last_30_days": 49,
+    "unique_listeners_last_30_days": null,
+    "avg_streams_per_episode": 11,
+    "avg_listeners_per_episode_last_30_days": null,
+    "downloads_per_episode_avg_last_30_days": null,
+    "listener_retention_percent_last_30_days": null,
+    "follower_growth_last_30_days": 28,
+    "episode_with_highest_streams": 53
+  },
+  "newsletter": {
+    "subscribers": 74,
+    "avg_open_rate_percent_last_12_months": null,
+    "avg_click_rate_percent_last_12_months": null,
+    "subscriber_growth_last_30_days_percent": null,
+    "recent_campaign_performance": null,
+    "unsubscribe_rate_percent": null
+  },
+  "natasha": {
+    "instagram": {
+        "followers": 18081,
+        "views_30d": 576975,
+        "views_breakdown_30d": {
+        "reel_percent": 89.6,
+        "stories_percent": 10.1,
+        "posts_percent": 0.2
+        },
+        "accounts_reached_last_30_days": 291531
+    },
+    "tiktok": {
+      "followers": 9746,
+      "video_views_last_12_months": 3000000,
+      "profile_views_last_12_months": 111000,
+      "likes_last_12_months": 113000,
+      "comments_last_12_months": 6100,
+      "shares_last_12_months": 15000,
+      "video_views_last_30_days": 376000,
+      "profile_views_last_30_days": 12000,
+      "likes_last_30_days": 15000,
+      "comments_last_30_days": 550,
+      "shares_last_30_days": 2800
+    },
+    "linkedin": {
+      "followers": 2935,
+      "posts_last_12_months": null,
+      "avg_engagement_per_post": null,
+      "industry_audience_quality": null
+    },
+    "youtube": {
+      "subscribers": null,
+      "videos": null,
+      "avg_views_per_video": null,
+      "avg_engagement_per_video": null
+    }
+  },
+  "professional_credibility": {
+    "natasha": {
+      "role_title": "software engineer",
+      "company": "public service",
+      "years_at_current_company": 10,
+      "key_specialties_languages": "javascript, typescript, python",
+      "years_in_tech_overall": 5
+    },
+    "saloni": {
+      "role_title": "software developer",
+      "company": "fintech MNC",
+      "years_at_current_company": 5,
+      "key_specialties_languages": "java",
+      "years_in_tech_overall": 10
+    },
+    "victoria": {
+      "role_title": "solutions engineer",
+      "company": "startup",
+      "years_at_current_company": 2,
+      "key_specialties_languages": "javascript, typescript",
+      "years_in_tech_overall": 5
+    },
+    "combined_years_in_tech": null,
+    "notable_achievements": null,
+    "women_in_software_engineering_note": "All three are working practitioners"
+  },
+  "audience_quality": {
+    "technology_proficiency": null,
+    "purchasing_power": null,
+    "geographic_breakdown": null,
+    "age_range": null,
+    "job_titles_roles": null,
+    "industry_verticals": null,
+    "content_consumption_frequency": null,
+    "social_media_overlap_percent": null
+  }
+}
