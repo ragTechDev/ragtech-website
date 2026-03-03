@@ -10,7 +10,7 @@ ragTech is a tech podcast and media brand based in Singapore, run by three co-ho
 Our mission is to simplify technology and make it accessible, fun, and engaging for everyone. We cover AI, software, startups, and real life in tech through honest, relatable conversations.
 
 We publish content across:
-- Podcast (Spotify)
+- Podcast (Spotify, Apple Podcasts, Amazon Music)
 - YouTube
 - Instagram
 - TikTok
