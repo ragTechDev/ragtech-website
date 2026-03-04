@@ -96,15 +96,18 @@ export default function AboutPage() {
                 technology and everyday understanding.
               </p>
               <p>
-                From our <strong className="text-primary">podcast</strong> that demystifies tech, to the upcoming 
-                <strong className="text-secondary"> Techie Taboo game</strong> that challenges how we communicate about technology, 
-                and <strong className="text-brown">FutureNet</strong>—our research initiative exploring the digital landscape for 
+                From our <strong className="text-primary">podcast</strong> that demystifies tech, to the 
+                <a href="https://ragtechdev.com/techie-taboo" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Techie Taboo game</a> that challenges how we communicate about technology, 
+                and <a href="https://ragtechdev.com/futurenet" target="_blank" rel="noopener noreferrer" className="text-brown hover:underline font-semibold">FutureNet</a>—our research initiative exploring the digital landscape for 
                 children and families—we create experiences that educate, entertain, and foster meaningful conversations.
               </p>
               <p>
                 Through <strong className="text-brown">FutureNet</strong>, we&apos;re taking a deeper look at how technology impacts 
                 the next generation, giving our children a chance to grow up like we did—with thoughtful guidance from technologists 
                 who understand both the opportunities and challenges of the digital world.
+              </p>
+              <p>
+                <strong>Brand partnerships and collaborations?</strong> Check out our <a href="https://ragtechdev.com/rate-card" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">media kit and rate card</a> to see how we can work together.
               </p>
               <p>
                 We stand for innovation that challenges the norm, conversations that matter, and projects that 
@@ -268,6 +271,235 @@ export default function AboutPage() {
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300" />
               </motion.a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Content Examples Section */}
+      <section className="py-20 px-6">
+        <div className="container mx-auto max-w-6xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-neutral-900 dark:text-white">
+              Content Examples
+            </h2>
+            <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+              See our top-performing content across platforms.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {/* Techybara Comic Carousel */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="bg-white dark:bg-neutral-800 rounded-2xl overflow-hidden shadow-lg border border-neutral-200 dark:border-neutral-700"
+            >
+              <div className="p-4 bg-gradient-to-r from-pink-50 to-purple-50 dark:from-neutral-800 dark:to-neutral-800 border-b border-neutral-200 dark:border-neutral-700">
+                <h3 className="font-bold text-neutral-900 dark:text-white mb-1">Techybara Comic Carousel</h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">Every Monday on Instagram, LinkedIn & TikTok</p>
+              </div>
+              <div className="aspect-square overflow-hidden">
+                <iframe
+                  src="https://www.instagram.com/p/DVXHXwFCdJy/embed"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency
+                  className="w-full h-full"
+                />
+              </div>
+            </motion.div>
+
+            {/* Valentine's Day Reel */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.1 }}
+              className="bg-white dark:bg-neutral-800 rounded-2xl overflow-hidden shadow-lg border border-neutral-200 dark:border-neutral-700"
+            >
+              <div className="p-4 bg-gradient-to-r from-red-50 to-pink-50 dark:from-neutral-800 dark:to-neutral-800 border-b border-neutral-200 dark:border-neutral-700">
+                <h3 className="font-bold text-neutral-900 dark:text-white mb-1">Valentine&apos;s Day Reel</h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">327K views • 17.9K interactions</p>
+              </div>
+              <div className="aspect-square overflow-hidden">
+                <iframe
+                  src="https://www.instagram.com/p/DUuH2KdEjNV/embed"
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  scrolling="no"
+                  allowTransparency
+                  className="w-full h-full"
+                />
+              </div>
+            </motion.div>
+
+            {/* Latest Vodcast Episode */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="bg-white dark:bg-neutral-800 rounded-2xl overflow-hidden shadow-lg border border-neutral-200 dark:border-neutral-700"
+            >
+              <div className="p-4 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-neutral-800 dark:to-neutral-800 border-b border-neutral-200 dark:border-neutral-700">
+                <h3 className="font-bold text-neutral-900 dark:text-white mb-1">Latest Vodcast Episode</h3>
+                <p className="text-sm text-neutral-600 dark:text-neutral-400">AI Wrappers • 1.3K views</p>
+              </div>
+              <div className="aspect-video overflow-hidden">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/qw3dKhXV6Vw"
+                  title="AI Wrappers Vodcast"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Business Cards Section */}
+      <section className="py-20 px-6 bg-neutral-50 dark:bg-neutral-900">
+        <div className="container mx-auto max-w-6xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-neutral-900 dark:text-white">
+              Get In Touch
+            </h2>
+            <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+              Reach out to the team directly via email or their professional profiles.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {team.slice(0, 3).map((member, index) => (
+              <motion.div
+                key={member.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="bg-white dark:bg-neutral-800 rounded-2xl overflow-hidden shadow-lg border border-neutral-200 dark:border-neutral-700 hover:shadow-2xl transition-all duration-300"
+              >
+                {/* Card Header */}
+                <div
+                  className="relative pt-12 pb-8 px-8"
+                  style={{
+                    background: `linear-gradient(135deg, ${
+                      member.color.includes('primary')
+                        ? '#fda2a9'
+                        : member.color.includes('secondary')
+                          ? '#a2d4d1'
+                          : '#eec08c'
+                    }40 0%, ${
+                      member.color.includes('primary')
+                        ? '#fda2a9'
+                        : member.color.includes('secondary')
+                          ? '#a2d4d1'
+                          : '#eec08c'
+                    }20 50%, ${
+                      member.color.includes('primary')
+                        ? '#fda2a9'
+                        : member.color.includes('secondary')
+                          ? '#a2d4d1'
+                          : '#eec08c'
+                    }10 100%)`,
+                  }}
+                >
+                  <div className="flex flex-col items-center">
+                    <div
+                      className="w-24 h-24 rounded-full overflow-hidden border-4 border-white dark:border-neutral-800 shadow-xl mb-4"
+                      style={{
+                        background: `linear-gradient(135deg, ${
+                          member.color.includes('primary')
+                            ? '#fda2a9'
+                            : member.color.includes('secondary')
+                              ? '#a2d4d1'
+                              : '#eec08c'
+                        } 0%, ${
+                          member.color.includes('primary')
+                            ? '#fda2a9'
+                            : member.color.includes('secondary')
+                              ? '#a2d4d1'
+                              : '#eec08c'
+                        }80 100%)`,
+                      }}
+                    >
+                      <img
+                        src={member.image}
+                        alt={member.name}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <h3 className="text-2xl font-bold text-brownDark dark:text-brown mb-1 text-center">
+                      {member.name}
+                    </h3>
+                    <p
+                      className="text-base font-semibold mb-1 text-center"
+                      style={{ color: member.roleColor }}
+                    >
+                      {member.role}
+                    </p>
+                    <p className="text-sm text-neutral-600 dark:text-neutral-400 font-medium">
+                      ragTech
+                    </p>
+                  </div>
+                </div>
+
+                {/* Contact Info */}
+                <div className="px-8 py-6">
+                  <a
+                    href={`mailto:${member.email}`}
+                    className="flex items-center gap-3 p-3 bg-neutral-50 dark:bg-neutral-700 rounded-xl hover:bg-neutral-100 dark:hover:bg-neutral-600 transition-colors mb-4"
+                  >
+                    <span className="text-lg">✉️</span>
+                    <div className="flex-1 min-w-0">
+                      <p className="text-xs text-neutral-500 dark:text-neutral-400">Email</p>
+                      <p className="text-sm font-medium text-brownDark dark:text-brown truncate hover:text-primary">
+                        {member.email}
+                      </p>
+                    </div>
+                  </a>
+
+                  {member.linkedInUrl && (
+                    <a
+                      href={member.linkedInUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-3 p-3 bg-blue-50 dark:bg-blue-900/20 rounded-xl hover:bg-blue-100 dark:hover:bg-blue-900/40 transition-colors"
+                    >
+                      <span className="text-lg">in</span>
+                      <div className="flex-1 min-w-0">
+                        <p className="text-xs text-blue-600 dark:text-blue-400">LinkedIn</p>
+                        <p className="text-sm font-medium text-blue-700 dark:text-blue-300 truncate">
+                          Connect
+                        </p>
+                      </div>
+                    </a>
+                  )}
+                </div>
+              </motion.div>
             ))}
           </div>
         </div>
