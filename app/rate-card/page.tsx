@@ -1,7 +1,10 @@
-import { readdir } from 'fs/promises';
+'use client';
+// import { readdir } from 'fs/promises';
 import path from 'path';
 import type { Metadata } from 'next';
 import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 import {
   FaInstagram, FaSpotify, FaYoutube, FaTiktok,
   FaLinkedin, FaEnvelope, FaUsers, FaMicrophoneAlt,
@@ -10,20 +13,20 @@ import {
 import RateCardPricing from './RateCardPricing';
 import statsData from './platform-stats.json';
 
-export const metadata: Metadata = {
-  title: 'Rate Card March 2026 | ragTech',
-  description: 'ragTech media kit and partnership rates for brand collaborations.',
-};
+// export const metadata: Metadata = {
+//   title: 'Rate Card March 2026 | ragTech',
+//   description: 'ragTech media kit and partnership rates for brand collaborations.',
+// };
 
-async function getEpisodeCount(): Promise<string> {
-  try {
-    const dir = path.join(process.cwd(), 'data/episodes/transcripts');
-    const files = await readdir(dir);
-    return String(files.filter(f => f.endsWith('.txt')).length);
-  } catch {
-    return '48+';
-  }
-}
+// async function getEpisodeCount(): Promise<string> {
+//   try {
+//     const dir = path.join(process.cwd(), 'data/episodes/transcripts');
+//     const files = await readdir(dir);
+//     return String(files.filter(f => f.endsWith('.txt')).length);
+//   } catch {
+//     return '48+';
+//   }
+// }
 
 const notes = [
   'Prices listed in SGD. USD prices shown at approximate exchange rates and may vary slightly.',
@@ -45,8 +48,7 @@ const platformIcons = [
   { icon: FaLinkedin,  label: 'LinkedIn',  href: 'https://sg.linkedin.com/company/ragtechdev' },
 ];
 
-export default async function RateCardPage() {
-  const videoCount = await getEpisodeCount();
+export default function RateCardPage() {
 
   const fmt = (n: number) => {
     if (n >= 1_000_000) return (n / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
@@ -71,7 +73,12 @@ export default async function RateCardPage() {
         content_insights,
       } = {},
     } = {},
-    youtube:   { subscribers: ytSubs,        engagement_percent: ytEngagement } = {},
+    youtube:   { 
+      subscribers: ytSubs,        
+      engagement_percent: ytEngagement, 
+      videos_published: { 
+        regular: videoCount, 
+      } = {} } = {},
     spotify:   { avg_streams_per_episode }                                       = {},
     newsletter:{ subscribers: newsletterSubs }                                   = {},
     tiktok:    { followers: ttFollowers, avg_views_per_video_last_30_days: ttRaw } = {},
@@ -235,6 +242,168 @@ export default async function RateCardPage() {
           </div>
         </div>
       </header>
+
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center pt-20 pb-16 px-6 overflow-hidden bg-gradient-to-br from-accent/40 via-pink-50 to-secondary/30">
+        {/* Geometric Background */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brown/10 rounded-full blur-3xl" />
+
+        <div className="relative z-10 container mx-auto max-w-6xl text-center">
+          {/* Subtitle */}
+          <motion.h2
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-8 text-brown"
+          >
+            Making technology accessible
+          </motion.h2>
+
+          {/* Co-founders Images */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="flex flex-col md:flex-row justify-center items-center md:items-end gap-8 md:gap-4 mb-12 max-w-4xl mx-auto"
+          >
+            {/* Natasha */}
+            <div className="relative group">
+              <div className="relative">
+                <Image
+                  src="/assets/team/natasha.PNG"
+                  alt="Natasha"
+                  width={200}
+                  height={200}
+                  className="w-41 md:w-51 h-auto"
+                />
+                {/* Capybara Mascot */}
+                <div className="absolute -bottom-2 -right-2 w-12 h-16 md:w-14 md:h-20">
+                  <Image
+                    src="/assets/techybara/techybara-holding-mic.png"
+                    alt="Mic Capybara"
+                    width={280}
+                    height={400}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                {/* Name Label */}
+                <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-primary text-white px-4 py-2 rounded-full shadow-lg border-2 border-white transform -rotate-2">
+                  <p className="font-bold text-sm whitespace-nowrap">Natasha 🚀</p>
+                </div>
+                {/* Vocation Label */}
+                <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white dark:bg-neutral-800 px-4 py-2 rounded-full shadow-lg border-2 border-primary transform rotate-1">
+                  <p className="text-xs font-semibold text-brownDark dark:text-brown whitespace-nowrap">Software Engineer</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Saloni */}
+            <div className="relative group">
+              <div className="relative">
+                <Image
+                  src="/assets/team/saloni.PNG"
+                  alt="Saloni"
+                  width={250}
+                  height={250}
+                  className="w-48 md:w-56 h-auto"
+                />
+                {/* Capybara Mascot */}
+                <div className="absolute -bottom-2 -right-2 w-12 h-16 md:w-14 md:h-20">
+                  <Image
+                    src="/assets/techybara/techybara-holding-laptop.png"
+                    alt="Laptop Capybara"
+                    width={280}
+                    height={400}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                {/* Name Label */}
+                <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-secondary text-white px-4 py-2 rounded-full shadow-lg border-2 border-white transform rotate-2">
+                  <p className="font-bold text-sm whitespace-nowrap">Saloni 💻</p>
+                </div>
+                {/* Vocation Label */}
+                <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white dark:bg-neutral-800 px-4 py-2 rounded-full shadow-lg border-2 border-secondary transform -rotate-1">
+                  <p className="text-xs font-semibold text-brownDark dark:text-brown whitespace-nowrap">Software Developer</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Victoria */}
+            <div className="relative group">
+              <div className="relative">
+                <Image
+                  src="/assets/team/victoria.PNG"
+                  alt="Victoria"
+                  width={250}
+                  height={250}
+                  className="w-48 md:w-56 h-auto"
+                />
+                {/* Capybara Mascot */}
+                <div className="absolute -bottom-2 -right-2 w-12 h-12 md:w-14 md:h-14">
+                  <Image
+                    src="/assets/techybara/techybara-with-two-children.png"
+                    alt="Futurenet Capybara"
+                    width={56}
+                    height={56}
+                    className="w-full h-full"
+                  />
+                </div>
+                {/* Name Label */}
+                <div className="absolute -top-6 left-1/2 -translate-x-1/2 bg-accent text-brown px-4 py-2 rounded-full shadow-lg border-2 border-white transform -rotate-1">
+                  <p className="font-bold text-sm whitespace-nowrap">Victoria ✨</p>
+                </div>
+                {/* Vocation Label */}
+                <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 bg-white dark:bg-neutral-800 px-4 py-2 rounded-full shadow-lg border-2 border-accent transform rotate-2">
+                  <p className="text-xs font-semibold text-brownDark dark:text-brown whitespace-nowrap">Solutions Engineer</p>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Description */}
+          <motion.p
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4 }}
+            className="text-lg md:text-xl text-brown mb-10 max-w-3xl mx-auto"
+          >
+            We&apos;re three Singapore-based technologists who seek to <span className="font-bold text-brownDark dark:text-primary">demystify technology in human terms</span>, so people can engage with it <span className="font-semibold text-primary dark:text-secondary">thoughtfully</span> rather than passively. Through <span className="font-semibold text-primary dark:text-accent">storytelling, playful learning, and applied research</span>, we help people understand <span className="font-bold text-brownDark dark:text-primary">how tech works</span>, how it affects society, and how to engage with it responsibly.
+          </motion.p>
+
+          {/* CTAs */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+          >
+            <Link
+              href="https://ragtechdev.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-white dark:bg-neutral-800 text-primary border-2 border-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300 shadow-lg"
+            >
+              Check out Our Website👩‍💻
+            </Link>
+            <Link
+              href="/techie-taboo"
+              className="px-8 py-4 bg-gradient-primary text-white rounded-full font-semibold hover:opacity-90 transition-all duration-300 shadow-lg hover:shadow-xl"
+            >
+              🃏Play Techie Taboo!
+            </Link>
+            <Link
+              href="https://www.youtube.com/@ragTechDev"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-4 bg-white dark:bg-neutral-800 text-primary border-2 border-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300 shadow-lg"
+            >
+              Watch on YouTube🎙️
+            </Link>
+          </motion.div>
+        </div>
+      </section>
 
       {/* Stats Grid — 5 columns on lg, 3 on md, 2 on mobile */}
       <section className="px-6 pb-12">
