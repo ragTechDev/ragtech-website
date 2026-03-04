@@ -1,7 +1,4 @@
 'use client';
-// import { readdir } from 'fs/promises';
-import path from 'path';
-import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -12,21 +9,6 @@ import {
 } from 'react-icons/fa';
 import RateCardPricing from './RateCardPricing';
 import statsData from './platform-stats.json';
-
-// export const metadata: Metadata = {
-//   title: 'Rate Card March 2026 | ragTech',
-//   description: 'ragTech media kit and partnership rates for brand collaborations.',
-// };
-
-// async function getEpisodeCount(): Promise<string> {
-//   try {
-//     const dir = path.join(process.cwd(), 'data/episodes/transcripts');
-//     const files = await readdir(dir);
-//     return String(files.filter(f => f.endsWith('.txt')).length);
-//   } catch {
-//     return '48+';
-//   }
-// }
 
 const notes = [
   'Prices listed in SGD. USD prices shown at approximate exchange rates and may vary slightly.',
