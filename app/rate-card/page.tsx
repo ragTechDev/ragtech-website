@@ -418,6 +418,61 @@ export default function RateCardPage() {
         </p>
       </section>
 
+      {/* Content Samples */}
+      <section className="px-6 pb-16 max-w-6xl mx-auto">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-brownDark dark:text-brown mb-2">
+            Showcase Gallery
+          </h2>
+          <p className="text-sm text-neutral-500 dark:text-neutral-400">
+            Carousels, reels, and vodcast episodes — this is what brands are buying into
+          </p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">✏️ Techybara Carousel</p>
+            <iframe
+              src="https://www.instagram.com/p/DTrKfy_ElFI/embed/"
+              className="w-full rounded-2xl"
+              style={{ minHeight: '560px', border: 'none' }}
+              loading="lazy"
+              title="Techybara Carousel"
+            />
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">📱 Instagram Reel</p>
+            <iframe
+              src="https://www.instagram.com/reel/DUuH2KdEjNV/embed/"
+              className="w-full rounded-2xl"
+              style={{ minHeight: '560px', border: 'none' }}
+              loading="lazy"
+              title="Instagram Reel"
+            />
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">🎙️ Vodcast Episode</p>
+            <iframe
+              src="https://www.youtube.com/embed/qw3dKhXV6Vw"
+              className="w-full rounded-2xl aspect-video"
+              style={{ border: 'none' }}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              loading="lazy"
+              title="Vodcast Episode"
+            />
+            <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400 mt-2">🎧 Spotify Episode</p>
+            <iframe
+              src="https://open.spotify.com/embed/episode/3NxOo4Tmeo4avUkJVCjlw1"
+              className="w-full rounded-2xl"
+              style={{ height: '152px', border: 'none' }}
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+              title="Spotify Episode"
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Why Partner With Us */}
       <section className="px-6 pb-16">
         <div className="max-w-5xl mx-auto">
