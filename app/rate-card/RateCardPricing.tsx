@@ -523,6 +523,7 @@ function PriceCard({
 export default function RateCardPricing() {
   const [currency, setCurrency] = useState<Currency>('SGD');
   const isSGD = currency === 'SGD';
+  const [ttOpen, setTtOpen] = useState(false);
 
   const CurrencyToggle = () => (
     <div className="flex justify-center mb-10">
@@ -546,6 +547,17 @@ export default function RateCardPricing() {
 
   return (
     <div>
+      {/* Rates Title */}
+      <section className="px-6 pt-4 pb-2 text-center">
+        <div className="flex items-center justify-center gap-2 mb-2">
+          <HiStar className="text-primary text-2xl" />
+          <SectionTitle>Rates</SectionTitle>
+        </div>
+        <p className="text-sm text-neutral-500 dark:text-neutral-400">
+          All prices in SGD unless toggled. Packages are mix-and-match.
+        </p>
+      </section>
+
       {/* What We Deliver Banner */}
       <section className="px-6 pb-12 pt-8">
         <div className="max-w-4xl mx-auto bg-gradient-to-r from-secondary/20 via-accent/20 to-primary/20 rounded-2xl p-6 border border-secondary/30">
@@ -563,7 +575,7 @@ export default function RateCardPricing() {
 
       <CurrencyToggle />
 
-      {/* ── Instagram ──────────────────────────────────────────────────────── */}
+      {/* ── Instagram + Short-Form ──────────────────────────────────────────── */}
       <section className="px-6 pb-16">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-2">
@@ -576,31 +588,33 @@ export default function RateCardPricing() {
           <p className="text-center text-xs text-neutral-400 dark:text-neutral-500 mb-8">
             Formats: Reels · Static Posts · Standard Carousels · Techybara Comic Carousels · Stories
           </p>
+          <div className="mb-6 bg-neutral-50 dark:bg-neutral-800/50 rounded-2xl border border-neutral-200 dark:border-neutral-700 max-w-2xl mx-auto overflow-hidden">
+            <button
+              onClick={() => setTtOpen(o => !o)}
+              className="w-full flex items-center justify-center gap-2 px-5 py-3 text-sm font-semibold text-brownDark dark:text-brown hover:bg-neutral-100 dark:hover:bg-neutral-800 transition-colors"
+            >
+              <FaTiktok className="text-brownDark dark:text-neutral-300" />
+              <FaYoutube className="text-red-500" />
+              Includes TikTok &amp; YouTube Shorts
+              <span className="ml-1 text-neutral-400 text-xs">{ttOpen ? '▲' : '▼'}</span>
+            </button>
+            {ttOpen && (
+              <div className="px-5 pb-4 text-center border-t border-neutral-200 dark:border-neutral-700 pt-3">
+                <p className="text-xs text-neutral-500 dark:text-neutral-400 mb-1">
+                  TikTok: 365 followers · 93% MoM growth · ~1,294 avg views/video
+                </p>
+                <p className="text-xs text-neutral-500 dark:text-neutral-400 mb-3">
+                  YouTube Shorts: 680 subs · 221 Shorts published · Google Search indexed
+                </p>
+                <p className="text-xs text-neutral-400 dark:text-neutral-500">
+                  Instagram packages include cross-posting to TikTok and YouTube Shorts. Pricing will be listed separately as those channels grow.
+                </p>
+              </div>
+            )}
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {instagramPackages.map((pkg) => (
-              <PriceCard key={pkg.name} name={pkg.name} price={isSGD ? pkg.sgd : pkg.usd}
-                description={pkg.description} includes={pkg.includes} badge={pkg.badge} rationale={pkg.rationale} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ── TikTok & YouTube Shorts ────────────────────────────────────────── */}
-      <section className="px-6 pb-16 bg-gradient-to-br from-neutral-50/80 to-accent/10 dark:from-neutral-900/50 dark:to-neutral-950 py-16 rounded-3xl mx-4">
-        <div className="max-w-5xl mx-auto">
-          <div className="flex items-center justify-center gap-3 mb-2">
-            <FaTiktok className="text-brownDark dark:text-neutral-300 text-2xl" />
-            <FaYoutube className="text-red-500 text-2xl" />
-            <SectionTitle>TikTok & YouTube Shorts</SectionTitle>
-          </div>
-          <p className="text-center text-sm text-neutral-500 dark:text-neutral-400 mb-1">
-            TikTok: 365 followers · 93% MoM growth · ~1,294 avg views/video
-          </p>
-          <p className="text-center text-sm text-neutral-500 dark:text-neutral-400 mb-8">
-            YouTube Shorts: 680 subs · 221 Shorts published · Google Search indexed
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {shortFormPackages.map((pkg) => (
               <PriceCard key={pkg.name} name={pkg.name} price={isSGD ? pkg.sgd : pkg.usd}
                 description={pkg.description} includes={pkg.includes} badge={pkg.badge} rationale={pkg.rationale} />
             ))}
@@ -612,7 +626,7 @@ export default function RateCardPricing() {
       <section className="px-6 pb-16 pt-16">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center justify-center gap-2 mb-2">
-            <FaYoutube className="text-secondary text-2xl" />
+            <FaYoutube className="text-red-500 text-2xl" />
             <FaSpotify className="text-green-500 text-2xl" />
             <SectionTitle>Vodcast: Bytes &amp; Banter</SectionTitle>
           </div>
@@ -740,7 +754,7 @@ export default function RateCardPricing() {
           </p>
 
           {/* Natasha */}
-          <div className="mb-10">
+          <div id="natasha-amplification" className="mb-10">
             <div className="flex items-center gap-2 mb-1">
               <FaUsers className="text-primary text-lg" />
               <h3 className="text-xl font-bold text-brownDark dark:text-brown">Natasha Amplification</h3>
@@ -755,6 +769,15 @@ export default function RateCardPricing() {
                 <PriceCard key={addon.name} name={addon.name} price={isSGD ? addon.sgd : addon.usd}
                   description={addon.description} includes={addon.includes} />
               ))}
+            </div>
+            <div className="mt-5 bg-primary/10 border border-primary/30 rounded-2xl p-5 max-w-3xl mx-auto text-center">
+              <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
+                <span className="font-semibold text-brownDark dark:text-brown">Note:</span>{' '}
+                Natasha does not post brand partnerships on her personal accounts. These add-ons activate her
+                reach through ragTech content — as a collaborator tag, story boost, TikTok co-creator, or
+                episode co-host. This preserves the organic integrity of her personal profile while giving
+                brands genuine access to her audience and credibility.
+              </p>
             </div>
           </div>
 
@@ -772,17 +795,9 @@ export default function RateCardPricing() {
             </div>
           </div>
 
-          <div className="mt-8 bg-primary/10 border border-primary/30 rounded-2xl p-6 max-w-4xl mx-auto">
-            <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
-              <span className="font-semibold text-brownDark dark:text-brown">Note on Natasha add-ons:</span>{' '}
-              Natasha does not post brand partnerships on her personal accounts. These add-ons activate her
-              reach through ragTech content — as a collaborator tag, story boost, TikTok co-creator, or
-              episode co-host. This preserves the organic integrity of her personal profile while giving
-              brands genuine access to her audience and credibility.
-            </p>
-          </div>
         </div>
       </section>
+
     </div>
   );
 }

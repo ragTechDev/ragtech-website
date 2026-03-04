@@ -406,7 +406,7 @@ export default function RateCardPage() {
       </section>
 
       {/* Stats Grid — 5 columns on lg, 3 on md, 2 on mobile */}
-      <section className="px-6 pb-12">
+      <section className="px-6 pt-12 pb-12">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
           {stats.map((stat) => (
             <div key={stat.label}
@@ -431,7 +431,7 @@ export default function RateCardPage() {
         <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed text-base">
           ragTech runs a vodcast (video podcast) covering AI, careers, startups, and life in tech.
           Episodes drop on YouTube, Spotify, Apple Music, and Amazon Music—reaching curious, tech-adjacent
-          listeners and viewers across Singapore and beyond. Our audience is young professionals who care
+          listeners and viewers across Singapore and beyond. Our audience are young professionals who care
           about staying informed without the jargon.
         </p>
       </section>
@@ -512,20 +512,31 @@ export default function RateCardPage() {
 
           {/* Techybara */}
           <div className="bg-gradient-to-r from-accent/50 to-primary/10 rounded-2xl p-6 mb-6 border border-accent/50">
-            <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 dark:text-neutral-400 mb-3">
+            <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 dark:text-neutral-400 mb-4">
               ✏️ Meet Techybara — our original mascot
             </p>
-            <p className="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed mb-3">
-              A few months ago we launched a hand-drawn comic carousel series starring Techybara, our capybara
-              mascot who navigates the world of tech. The format has quickly become one of our most shareable
-              content types.
-            </p>
-            <p className="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed">
-              Brand integrations in the Techybara universe are story-led and highly native — Techybara
-              encounters your product as part of a relatable tech scenario, making the placement feel organic
-              rather than promotional. We also offer standard carousel formats (listicles, guides, tip cards)
-              for brands that prefer a more informational approach.
-            </p>
+            <div className="flex flex-col sm:flex-row gap-6 items-center">
+              <Image
+                src="/assets/techybara/techybara-holding-laptop.png"
+                alt="Techybara mascot"
+                width={120}
+                height={120}
+                className="w-28 h-auto shrink-0"
+              />
+              <div>
+                <p className="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed mb-3">
+                  A few months ago we launched a hand-drawn comic carousel series starring Techybara, our capybara
+                  mascot who navigates the world of tech. The format has quickly become one of our most shareable
+                  content types.
+                </p>
+                <p className="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed">
+                  Brand integrations in the Techybara universe are story-led and highly native — Techybara
+                  encounters your product as part of a relatable tech scenario, making the placement feel organic
+                  rather than promotional. We also offer standard carousel formats (listicles, guides, tip cards)
+                  for brands that prefer a more informational approach.
+                </p>
+              </div>
+            </div>
             <div className="flex flex-wrap gap-2 mt-4">
               {[
                 'Techybara comic carousel', 'Educational carousel',
@@ -619,8 +630,14 @@ export default function RateCardPage() {
             <p className="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed">
               Add-on options: add Natasha as a collaborator on ragTech Instagram posts (exposing the
               collaboration to her follower base), feature her as a creator in the content, or co-host a
-              dedicated podcast or vodcast episode. See the pricing section for add-on rates.
+              dedicated podcast or vodcast episode.
             </p>
+            <a
+              href="#natasha-amplification"
+              className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-primary hover:underline"
+            >
+              See Natasha add-on pricing ↓
+            </a>
           </div>
         </div>
       </section>
