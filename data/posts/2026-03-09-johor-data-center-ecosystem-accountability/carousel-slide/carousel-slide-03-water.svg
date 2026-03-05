@@ -17,77 +17,69 @@
       .body-text { font-family: 'Indie Flower', cursive; }
     </style>
 
-    <linearGradient id="bgGradient5" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#fff3c1;stop-opacity:0.2" />
-      <stop offset="100%" style="stop-color:#fda2a9;stop-opacity:0.1" />
+    <linearGradient id="bgGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#a2d4d1;stop-opacity:0.2" />
+      <stop offset="100%" style="stop-color:#a2d4d1;stop-opacity:0.05" />
     </linearGradient>
   </defs>
   
   <!-- Background -->
   <rect width="1000" height="1000" fill="#ffffff"/>
-  <rect width="1000" height="1000" fill="url(#bgGradient5)"/>
+  <rect width="1000" height="1000" fill="url(#bgGradient3)"/>
   
   <!-- Top accent bar -->
-  <rect x="0" y="0" width="1000" height="12" fill="#ffefae"/>
+  <rect x="0" y="0" width="1000" height="12" fill="#a2d4d1"/>
   
   <!-- Title -->
-  <text x="500" y="100" text-anchor="middle" font-size="48" font-weight="500" class="header" fill="#8b5a49">
-    THE LOCATION PROBLEM
+  <text x="500" y="100" text-anchor="middle" font-size="60" font-weight="500" class="header" fill="#8b5a49">
+    THE WATER QUESTION
   </text>
   
   <!-- Main stat -->
-  <circle cx="500" cy="250" r="120" fill="#fc8b94" opacity="0.2"/>
-  <text x="500" y="250" text-anchor="middle" font-size="80" font-weight="500" class="header" fill="#fc8b94">
-    &lt;1
+  <text x="500" y="200" text-anchor="middle" font-size="90" font-weight="500" class="body-text" fill="#5da9a4">
+    50M
   </text>
-  <text x="500" y="300" text-anchor="middle" font-size="35" font-weight="500" class="body-text" fill="#404040">
-    kilometer from homes
+  <text x="500" y="250" text-anchor="middle" font-size="36" font-weight="500" class="body-text" fill="#404040">
+    liters per day
+  </text>
+  <text x="500" y="295" text-anchor="middle" font-size="30" font-weight="500" class="body-text" fill="#737373">
+    (Tier 1 & 2 data centers)
   </text>
   
-  <!-- Visual representation -->
-  <g transform="translate(150, 380)">
-    <!-- Data center -->
-    <rect x="0" y="0" width="200" height="150" rx="10" fill="#404040"/>
-    <text x="100" y="90" text-anchor="middle" font-size="60">🏭</text>
-    <text x="100" y="190" text-anchor="middle" font-size="28" font-weight="500" class="header" fill="#404040">
-      Data Center
-    </text>
-    
-    <!-- Arrow -->
-    <line x1="220" y1="75" x2="450" y2="75" stroke="#fc8b94" stroke-width="6"/>
-    <polygon points="450,75 430,65 430,85" fill="#fc8b94"/>
-    <text x="335" y="60" text-anchor="middle" font-size="28" font-weight="500" class="header" fill="#fc8b94">
-      &lt;1km
-    </text>
-    
-    <!-- Homes -->
-    <text x="550" y="60" font-size="50">🏘️</text>
-    <text x="630" y="60" font-size="50">🏘️</text>
-    <text x="550" y="130" font-size="50">🏘️</text>
-    <text x="630" y="130" font-size="50">🏘️</text>
-    <text x="590" y="190" text-anchor="middle" font-size="28" font-weight="500" class="header" fill="#404040">
-      Residential
-    </text>
-  </g>
+  <!-- Visual comparison -->
+  <text x="500" y="360" text-anchor="middle" font-size="32" font-weight="500" class="body-text" fill="#737373">
+    = 20 Olympic pools daily
+  </text>
+  
+  <!-- Emoji visual -->
+  <text x="200" y="480" font-size="80">🏊</text>
+  <text x="350" y="480" font-size="80">🏊</text>
+  <text x="500" y="480" font-size="80">🏊</text>
+  <text x="650" y="480" font-size="80">🏊</text>
+  <text x="800" y="480" font-size="80">🏊</text>
   
   <!-- Info box -->
-  <rect x="80" y="600" width="840" height="260" rx="20" fill="#fff3c1" opacity="0.3"/>
-  <rect x="80" y="600" width="10" height="260" rx="5" fill="#ffefae"/>
+  <rect x="80" y="550" width="840" height="280" rx="20" fill="#a2d4d1" opacity="0.15"/>
+  <rect x="80" y="550" width="10" height="280" rx="5" fill="#5da9a4"/>
   
-  <text x="120" y="660" font-size="32" font-weight="500" class="header" fill="#8b5a49">
-    This is UNUSUAL
+  <text x="120" y="600" font-size="36" font-weight="500" class="header" fill="#5da9a4">
+    ✓ Good news: Reclaimed water
   </text>
-  <text x="120" y="710" font-size="35" class="body-text" fill="#404040">
-    Most data centers are built in:
+  <text x="120" y="645" font-size="30" class="body-text" fill="#404040">
+    ZDATA uses 8 MLD of treated wastewater
   </text>
-  <text x="140" y="755" font-size="35" class="body-text" fill="#404040">
-    • Dedicated industrial parks
+  <text x="120" y="685" font-size="30" class="body-text" fill="#404040">
+    Part of broader Johor shift (IWK-JSW partnership)
   </text>
-  <text x="140" y="795" font-size="35" class="body-text" fill="#404040">
-    • Former plantation lands
+  
+  <text x="120" y="745" font-size="32" font-weight="500" class="header" fill="#404040">
+    ❓ Open questions:
   </text>
-  <text x="140" y="835" font-size="35" class="body-text" fill="#404040">
-    • Areas FAR from residential dwellings
+  <text x="120" y="785" font-size="28" class="body-text" fill="#737373">
+    • What tier is the facility?
+  </text>
+  <text x="120" y="820" font-size="28" class="body-text" fill="#737373">
+    • Total water draw at full buildout?
   </text>
   
   <!-- ragTech branding -->

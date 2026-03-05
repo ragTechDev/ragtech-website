@@ -31,80 +31,56 @@
   <rect x="0" y="0" width="1000" height="12" fill="#fc8b94"/>
   
   <!-- Title -->
-  <text x="500" y="100" text-anchor="middle" font-size="48" font-weight="500" class="header" fill="#8b5a49">
-    ZDATA'S CONTRADICTION
+  <text x="500" y="90" text-anchor="middle" font-size="48" font-weight="500" class="header" fill="#8b5a49">
+    DUST &amp; ACCOUNTABILITY
   </text>
   
-  <!-- Two columns comparison -->
-  <!-- Left: What they said publicly -->
-  <rect x="50" y="150" width="420" height="380" rx="20" fill="#a2d4d1" opacity="0.15"/>
-  <text x="260" y="210" text-anchor="middle" font-size="28" font-weight="500" class="header" fill="#5da9a4">
-    PUBLIC STATEMENT
+  <!-- Clarification box -->
+  <rect x="80" y="140" width="840" height="180" rx="20" fill="#a2d4d1" opacity="0.15"/>
+  <rect x="80" y="140" width="10" height="180" rx="5" fill="#5da9a4"/>
+  
+  <text x="120" y="190" font-size="36" font-weight="500" class="header" fill="#5da9a4">
+    ✓ Clarification:
   </text>
-  <text x="260" y="260" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    "Reports are
+  <text x="120" y="235" font-size="30" class="body-text" fill="#404040">
+    Dust was from Tropicana Firstwide's earthworks
   </text>
-  <text x="260" y="295" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    inaccurate"
-  </text>
-  <text x="260" y="350" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    "Minimal construction
-  </text>
-  <text x="260" y="385" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    activities"
-  </text>
-  <text x="260" y="440" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    "Using alternative
-  </text>
-  <text x="260" y="475" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    water sources"
+  <text x="120" y="275" font-size="30" class="body-text" fill="#404040">
+    (master developer), not ZDATA's construction
   </text>
   
-  <!-- VS -->
-  <circle cx="500" cy="340" r="50" fill="#fc8b94"/>
-  <text x="500" y="360" text-anchor="middle" font-size="36" font-weight="500" class="header" fill="#ffffff">
-    VS
+  <!-- Ecosystem point -->
+  <rect x="80" y="360" width="840" height="280" rx="20" fill="#fc8b94" opacity="0.15"/>
+  <rect x="80" y="360" width="10" height="280" rx="5" fill="#fc8b94"/>
+  
+  <text x="120" y="410" font-size="36" font-weight="500" class="header" fill="#fc8b94">
+    The Bigger Picture:
+  </text>
+  <text x="120" y="465" font-size="32" class="body-text" fill="#404040">
+    Responsibility runs through the whole ecosystem:
+  </text>
+  <text x="120" y="520" font-size="30" class="body-text" fill="#404040">
+    • Master developers who set conditions
+  </text>
+  <text x="120" y="560" font-size="30" class="body-text" fill="#404040">
+    • Contractors who execute them
+  </text>
+  <text x="120" y="600" font-size="30" class="body-text" fill="#404040">
+    • Governments who zone and approve
+  </text>
+  <text x="120" y="640" font-size="30" class="body-text" fill="#404040">
+    • Operators who move in
   </text>
   
-  <!-- Right: What their loan docs say -->
-  <rect x="530" y="150" width="420" height="380" rx="20" fill="#fc8b94" opacity="0.15"/>
-  <text x="740" y="210" text-anchor="middle" font-size="28" font-weight="500" class="header" fill="#fc8b94">
-    AIIB LOAN DOCS
+  <!-- Bottom message -->
+  <text x="500" y="740" text-anchor="middle" font-size="36" font-weight="500" class="header" fill="#8b5a49">
+    ❓ Where's the grievance mechanism?
   </text>
-  <text x="740" y="260" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    "Heavy requirements
+  <text x="500" y="790" text-anchor="middle" font-size="30" class="body-text" fill="#737373">
+    AIIB loan required formal process for residents
   </text>
-  <text x="740" y="295" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    of water"
-  </text>
-  <text x="740" y="350" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    "Generation of dusts/
-  </text>
-  <text x="740" y="385" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    particulates"
-  </text>
-  <text x="740" y="440" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    "Surface water &amp; soil
-  </text>
-  <text x="740" y="475" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    contamination"
-  </text>
-  
-  <!-- Bottom callout -->
-  <rect x="80" y="580" width="840" height="280" rx="20" fill="#fda2a9" opacity="0.15"/>
-  <rect x="80" y="580" width="10" height="280" rx="5" fill="#fc8b94"/>
-  
-  <text x="500" y="650" text-anchor="middle" font-size="36" font-weight="500" class="header" fill="#8b5a49">
-    🚨 CREDIBILITY PROBLEM
-  </text>
-  <text x="500" y="720" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    They acknowledged these exact issues
-  </text>
-  <text x="500" y="760" text-anchor="middle" font-size="35" class="body-text" fill="#404040">
-    in their $40M loan application...
-  </text>
-  <text x="500" y="820" text-anchor="middle" font-size="32" font-weight="500" class="header" fill="#fc8b94">
-    but denied them when residents protested
+  <text x="500" y="830" text-anchor="middle" font-size="30" class="body-text" fill="#737373">
+    to raise concerns. That question remains unanswered.
   </text>
   
 
