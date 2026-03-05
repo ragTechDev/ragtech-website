@@ -329,7 +329,7 @@ export default function AboutPage() {
               className="bg-white dark:bg-neutral-800 rounded-2xl overflow-hidden shadow-lg border border-neutral-200 dark:border-neutral-700"
             >
               <div className="p-4 bg-gradient-to-r from-red-50 to-pink-50 dark:from-neutral-800 dark:to-neutral-800 border-b border-neutral-200 dark:border-neutral-700">
-                <h3 className="font-bold text-neutral-900 dark:text-white mb-1">Valentine&aposs Day Reel</h3>
+                <h3 className="font-bold text-neutral-900 dark:text-white mb-1">Valentine&apos;s Day Reel</h3>
                 <p className="text-sm text-neutral-600 dark:text-neutral-400">327K views • 17.9K interactions</p>
               </div>
               <div className="aspect-square overflow-hidden">
