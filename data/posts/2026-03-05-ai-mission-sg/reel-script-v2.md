@@ -7,7 +7,7 @@
 
 Okay so. Singapore's Budget 2026 got released some time back. And lowkey, I had a bit of an anxiety spiral.
 
-And I know what you're thinking. You're a software developer using AI every day. Why are you anxious?
+Thing is, I'm a software developer using AI every day. So I'm sure some people may ask, why are you anxious?
 
 *(small pause)*
 
@@ -15,7 +15,7 @@ I'm Saloni, I co-host ragTech, I've been in software for 10 years. I use these A
 
 The anxiety wasn't really for me.
 
-I'm someone who cares a lot about the people in my circle. Like, genuinely. My friends, my community, the women devs I'm part of here in Singapore. Their worries become my worries.
+I'm someone who genuinely cares a lot about the people in my circle. My friends, my community, the women devs I'm part of here in Singapore. Their worries become my worries.
 
 And over time, I started hearing it from the people around me. Friends. People from my women devs community. Questions like: will we still have jobs? Are we going to be displaced? Should we be worried right now?
 
@@ -25,7 +25,7 @@ And that's where it got to me. Because if the weight of it was reaching me, as s
 
 So I went and actually read more about it. Because that's what I do when I'm ovewhelmed.
 
-And a few things helped. One: Singapore is not the only country doing this. UAE, India, UK, France, the US, all of them have national AI strategies running right now. Singapore just sounds intense because we're small and we move fast.
+And a few things helped. One: Knowing that Singapore is not the only country doing this. UAE, India, UK, France, the US, all of them have national AI strategies running right now. Singapore just sounds intense because we're small and we move fast.
 
 Two: the government actually has a plan to make sure people aren't left behind. Subsidised courses. SkillsFuture credits. Free AI tool access if you complete training. They're not just announcing a mission and leaving us to figure it out alone.
 
@@ -49,7 +49,7 @@ AI handles the output. You bring the judgment. Use it for the repetitive stuff, 
 
 This transition is bigger than cloud. It's bigger than Google Search. It's going to take time. But you're not alone in figuring it out.
 
-Follow ragTech. We're going to keep talking about this honestly.
+If you would like, you can follow my tech podcast, ragTech - where we have honest conversations about how tech is affecting our lives.
 
 ---
 *[END — approx. 90 seconds]*
