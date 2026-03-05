@@ -1,29 +1,9 @@
 {
   "instagram": {
     "followers": 3853,
-    "follower_geography": {
-        "malaysia_percent": 47.5,
-      "singapore_percent": 27.6,
-      "usa_percent": 3.5,
-      "india_percent": 2.9,
-      "australia_percent": 2.3
-    },
-    "follower_age_range": {
-        "13-17_percent": 0.4,
-        "18-24_percent": 8.7,
-        "25-34_percent": 38.1,
-        "35-44_percent": 29.8,
-        "45-54_percent": 14.9,
-        "55-64_percent": 5.8,
-        "65_plus_percent": 2.2
-    },
-    "follower_gender": {
-        "female_percent": 42.4,
-        "male_percent": 57.6
-    },
     "last_30_days": {
         "followers_gained": 3858,
-        "views": 646601,
+        "views": 671787,
         "views_breakdown_by_viewer_type": {
             "followers_percent": 4.4,
             "non_followers_percent": 95.6
@@ -33,7 +13,7 @@
             "stories_percent": 0.4,
             "posts_percent": 0.0
         },
-        "accounts_reached": 179365,
+        "accounts_reached": 188139,
         "top_content_based_on_views": {
             "id": 3832034841341342549,
             "content_type": "reel",
@@ -43,6 +23,25 @@
             "comments": 90,
             "saves": 3130,
             "shares": 2416
+        },
+        "profile_activity": 4337,
+        "profile_visits": 4245,
+        "external_link_taps": 92,
+        "audience_top_countries": {
+            "india_percent": 18.0,
+            "united_states_percent": 11.3,
+            "singapore_percent": 8.3,
+            "germany_percent": 5.6
+        },
+        "audience_age_range": {
+            "18-24_percent": 51.1,
+            "25-34_percent": 35.0,
+            "35-44_percent": 6.6,
+            "13-17_percent": 3.3
+        },
+        "audience_gender": {
+            "male_percent": 78.5,
+            "female_percent": 21.5
         },
         "interactions": 55968,
         "interactions_by_content_type": {
@@ -103,7 +102,27 @@
     "last_28_days": {
         "views": 6706,
         "watch_time_hours": 122.1,
-        "subscriber_growth": 81
+        "subscriber_growth": 81,
+        "audience_gender": {
+            "male_percent": 95.6,
+            "female_percent": 4.4
+        },
+        "audience_age_range": {
+            "13-17_percent": 0,
+            "18-24_percent": 13.6,
+            "25-34_percent": 46.0,
+            "35-44_percent": 28.8,
+            "45-54_percent": 10.2,
+            "55-64_percent": 1.4,
+            "65_plus_percent": 0
+        },
+        "audience_top_geographies": {
+            "united_states_percent": 10.7,
+            "india_percent": 10.0,
+            "singapore_percent": 7.2,
+            "malaysia_percent": 4.7,
+            "germany_percent": 3.8
+        }
     },
     "videos_published": {
       "total": 268,
@@ -186,7 +205,15 @@
         "stories_percent": 10.1,
         "posts_percent": 0.2
         },
-        "accounts_reached_last_30_days": 291531
+        "accounts_reached_last_30_days": 291531,
+        "non_follower_reach_percent": null,
+        "avg_reel_views": null,
+        "avg_reel_likes": null,
+        "avg_reel_saves": null,
+        "avg_reel_shares": null,
+        "follower_age_range": null,
+        "follower_gender": null,
+        "follower_geography": null
     },
     "tiktok": {
       "followers": 9746,
@@ -199,19 +226,29 @@
       "profile_views_last_30_days": 12000,
       "likes_last_30_days": 15000,
       "comments_last_30_days": 550,
-      "shares_last_30_days": 2800
+      "shares_last_30_days": 2800,
+      "non_follower_reach_percent": null,
+      "follower_age_range": null,
+      "follower_gender": null,
+      "follower_geography": null
     },
     "linkedin": {
       "followers": 2935,
       "posts_last_12_months": null,
       "avg_engagement_per_post": null,
-      "industry_audience_quality": null
+      "industry_audience_quality": null,
+      "follower_age_range": null,
+      "follower_gender": null,
+      "follower_geography": null
     },
     "youtube": {
       "subscribers": null,
       "videos": null,
       "avg_views_per_video": null,
-      "avg_engagement_per_video": null
+      "avg_engagement_per_video": null,
+      "subscriber_age_range": null,
+      "subscriber_gender": null,
+      "subscriber_geography": null
     }
   },
   "professional_credibility": {
