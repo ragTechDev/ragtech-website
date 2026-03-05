@@ -1,4 +1,5 @@
 'use client';
+import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -41,41 +42,78 @@ export default function RateCardPage() {
     return String(n);
   };
   const pct = (n: number) => `${n.toFixed(1).replace(/\.0$/, '')}%`;
+  const toNum = (v: unknown) => v as unknown as number | null;
+  const fmtOrDash = (v: unknown): string => {
+    const n = toNum(v);
+    return n != null && n > 0 ? fmt(n) : '—';
+  };
+  const pctOrDash = (v: unknown): string => {
+    const n = toNum(v);
+    return n != null ? pct(n) : '—';
+  };
 
   // ── destructure JSON ──────────────────────────────────────────────────────
   const {
     instagram: {
       followers,
-      follower_geography,
       last_30_days: {
         views: ig30dViews,
-        followers_gained: ig30dFollows,
         accounts_reached: ig30dReached,
         interactions: ig30dInteractions,
+        views_breakdown_by_viewer_type: igViewerBreakdown,
+        audience_age_range: igAudienceAge,
+        audience_gender: igAudienceGender,
+        audience_top_countries: igAudienceCountries,
         content_insights,
       } = {},
     } = {},
     youtube:   { 
       subscribers: ytSubs,        
-      engagement_percent: ytEngagement, 
+      engagement_percent: ytEngagement,
+      subscriber_age_range: ytAgeRange,
+      subscriber_gender: ytGender,
+      subscriber_geography: ytGeo,
+      last_28_days: {
+        views: yt28dViews,
+        audience_age_range: ytAudienceAge,
+        audience_gender: ytAudienceGender,
+        audience_top_geographies: ytAudienceGeo,
+      } = {},
       videos_published: { 
         regular: videoCount, 
       } = {} } = {},
     spotify:   { avg_streams_per_episode }                                       = {},
     newsletter:{ subscribers: newsletterSubs }                                   = {},
-    tiktok:    { followers: ttFollowers, avg_views_per_video_last_30_days: ttRaw } = {},
+    tiktok:    {
+      followers: ttFollowers,
+      avg_views_per_video_last_30_days: ttRaw,
+      avg_likes_per_video_last_30_days: ttLikesRaw,
+      avg_comments_per_video_last_30_days: ttCommentsRaw,
+      avg_shares_per_video_last_30_days: ttSharesRaw,
+    } = {},
     natasha: {
       instagram: {
         followers: natashaIgF,
-        views_30d: natasha30dViews,        // ← correct: reads from natasha.instagram.views_30d = 576975
+        views_30d: natasha30dViews,
         accounts_reached_last_30_days: natashaReached,
+        non_follower_reach_percent: natashaIgNonFollower,
+        avg_reel_views: natashaIgAvgReelViews,
+        avg_reel_likes: natashaIgAvgReelLikes,
+        avg_reel_saves: natashaIgAvgReelSaves,
+        avg_reel_shares: natashaIgAvgReelShares,
       } = {},
       tiktok: {
         followers: natashaTtF,
         video_views_last_30_days: natashaTt30d,
+        likes_last_30_days: natashaTtLikes,
+        comments_last_30_days: natashaTtComments,
+        shares_last_30_days: natashaTtShares,
       } = {},
       linkedin: {
         followers: natashaLiF,
+      } = {},
+      youtube: {
+        subscribers: natashaYtSubs,
       } = {},
     } = {},
   } = statsData;
@@ -104,51 +142,28 @@ export default function RateCardPage() {
   // overall IG engagement = interactions / views × 100
   const igEngRate = ig30dViews ? ((ig30dInteractions ?? 0) / ig30dViews) * 100 : 0;
 
-  // TikTok avg views from "22000/17" stored format
-  const ttAvgViews = ttRaw
-    ? (() => {
-        const [num, denom] = String(ttRaw).split('/').map(Number);
-        return denom ? Math.round(num / denom) : num;
-      })()
-    : 0;
+  // TikTok avg metrics from "total/count" stored format
+  const parseTtRatio = (raw: unknown) => {
+    if (!raw) return 0;
+    const [n, d] = String(raw).split('/').map(Number);
+    return d ? Math.round(n / d) : n;
+  };
+  const ttAvgViews    = parseTtRatio(ttRaw);
+  const ttAvgLikes    = parseTtRatio(ttLikesRaw);
+  const ttAvgComments = parseTtRatio(ttCommentsRaw);
+  const ttAvgShares   = parseTtRatio(ttSharesRaw);
 
   // Natasha aggregates
-  const natashaTotal       = (natashaIgF ?? 0) + (natashaTtF ?? 0) + (natashaLiF ?? 0);
-  const combinedReached    = (ig30dReached ?? 0) + (natashaReached ?? 0);
-  const combined30dViews   = (ig30dViews ?? 0)   + (natasha30dViews ?? 0) + (natashaTt30d ?? 0);
-
-  // Top IG geography
-  const topGeoEntry = follower_geography
-    ? Object.entries(follower_geography).sort(([, a], [, b]) => (b as number) - (a as number))[0]
-    : null;
-  const topGeoLabel = topGeoEntry
-    ? `${(topGeoEntry[0] as string).replace('_percent', '')} ${pct(topGeoEntry[1] as number)}`
-    : '';
+  const natashaTotal     = (natashaIgF ?? 0) + (natashaTtF ?? 0) + (natashaLiF ?? 0);
+  const combinedReached  = (ig30dReached ?? 0) + (natashaReached ?? 0);
+  const combined30dViews = (ig30dViews ?? 0) + (natasha30dViews ?? 0) + (natashaTt30d ?? 0);
 
   // ── stat cards ────────────────────────────────────────────────────────────
   const stats = [
     {
       label: 'Instagram',
       value: fmt(followers ?? 0),
-      sub: `followers${topGeoLabel ? ` • top: ${topGeoLabel}` : ''}`,
-      icons: [{ icon: FaInstagram, color: 'text-pink-500' }],
-    },
-    {
-      label: '30‑day IG views',
-      value: fmt(ig30dViews ?? 0),
-      sub: `${pct(igEngRate)} eng • ${fmt(ig30dReached ?? 0)} reached`,
-      icons: [{ icon: FaInstagram, color: 'text-pink-500' }],
-    },
-    {
-      label: '30‑day IG gains',
-      value: fmt(ig30dFollows ?? 0),
-      sub: 'new followers in 30 days',
-      icons: [{ icon: FaInstagram, color: 'text-pink-500' }],
-    },
-    {
-      label: 'Reels avg views',
-      value: fmt(avgReelViews),
-      sub: `${pct(reelEngRate)} reel eng rate`,
+      sub: `followers • ${fmt(ig30dReached ?? 0)} reached (30d)`,
       icons: [{ icon: FaInstagram, color: 'text-pink-500' }],
     },
     {
@@ -408,6 +423,359 @@ export default function RateCardPage() {
         </div>
       </section>
 
+      {/* Analytics */}
+      <section id="analytics" className="px-6 pb-16 max-w-6xl mx-auto">
+        <div className="text-center mb-10">
+          <h2 className="text-3xl md:text-4xl font-bold text-brownDark dark:text-brown mb-2">ragTech Channel Analytics</h2>
+          <p className="text-sm text-neutral-500 dark:text-neutral-400">Last updated March 2026</p>
+        </div>
+
+        {/* Instagram + YouTube: big cards with demographics */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+
+          {/* Instagram */}
+          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-6 border border-neutral-200 dark:border-neutral-700 shadow-sm">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2">
+                <FaInstagram className="text-pink-500 text-xl" />
+                <span className="font-bold text-brownDark dark:text-brown text-base">Instagram</span>
+              </div>
+              <div className="text-right">
+                <p className="text-xl font-bold text-primary">{fmt(followers ?? 0)}</p>
+                <p className="text-xs text-neutral-400">followers</p>
+              </div>
+            </div>
+            <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4 mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Reach (Last 30 Days)</p>
+              <div className="grid grid-cols-3 gap-3">
+                {[
+                  { label: 'Accounts Reached',   value: fmt(ig30dReached ?? 0) },
+                  { label: 'Non-follower Views',  value: pct(igViewerBreakdown?.non_followers_percent ?? 0) },
+                  { label: 'Total Views',         value: fmt(ig30dViews ?? 0) },
+                ].map(({ label, value }) => (
+                  <div key={label}>
+                    <p className="font-bold text-primary text-sm">{value}</p>
+                    <p className="text-xs text-neutral-400 leading-tight">{label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4 mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Avg per Reel (Last 30 Days) · {pct(reelEngRate)} engagement</p>
+              <div className="grid grid-cols-4 gap-2">
+                {[
+                  { label: 'Views',  value: fmt(avgReelViews) },
+                  { label: 'Likes',  value: fmt(reels ? Math.round(reels.total_likes / reels.total_reels_published) : 0) },
+                  { label: 'Saves',  value: fmt(reels ? Math.round((reels.avg_saves as number) / reels.total_reels_published) : 0) },
+                  { label: 'Shares', value: fmt(reels ? Math.round((reels.avg_shares as number) / reels.total_reels_published) : 0) },
+                ].map(({ label, value }) => (
+                  <div key={label}>
+                    <p className="font-bold text-primary text-sm">{value}</p>
+                    <p className="text-xs text-neutral-400">{label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-1">Audience (Last 30 Days)</p>
+              <p className="text-xs text-neutral-400 mb-3">Based on content reach</p>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <p className="text-xs text-neutral-400 mb-2">Age</p>
+                  <div className="space-y-1.5">
+                    {Object.entries(igAudienceAge ?? {}).sort(([, a], [, b]) => (b as number) - (a as number)).map(([key, val]) => (
+                      <div key={key} className="flex items-center gap-2">
+                        <span className="text-xs text-neutral-400 w-10 shrink-0">{key.replace('_percent', '').replace('_plus', '+')}</span>
+                        <div className="flex-1 bg-neutral-100 dark:bg-neutral-700 rounded-full h-1.5">
+                          <div className="bg-primary h-1.5 rounded-full" style={{ width: `${val}%` }} />
+                        </div>
+                        <span className="text-xs font-semibold w-8 text-right">{pct(val as number)}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <p className="text-xs text-neutral-400 mb-1.5">Gender</p>
+                  <p className="text-sm mb-3">
+                    M <span className="font-bold text-primary">{pct(igAudienceGender?.male_percent ?? 0)}</span>
+                    <span className="text-neutral-300 dark:text-neutral-600 mx-1.5">/</span>
+                    F <span className="font-bold text-primary">{pct(igAudienceGender?.female_percent ?? 0)}</span>
+                  </p>
+                  <div className="flex items-center gap-1.5 mb-1.5">
+                    <p className="text-xs text-neutral-400">Top Countries</p>
+                    <span className="text-xs text-primary font-semibold">We have global reach</span>
+                  </div>
+                  <div className="space-y-1">
+                    {Object.entries(igAudienceCountries ?? {}).sort(([, a], [, b]) => (b as number) - (a as number)).slice(0, 4).map(([key, val]) => (
+                      <div key={key} className="flex justify-between text-xs">
+                        <span className="text-neutral-500 capitalize">{key.replace('_percent', '').replace(/_/g, ' ')}</span>
+                        <span className="font-semibold text-brownDark dark:text-brown">{pct(val as number)}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* YouTube */}
+          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-6 border border-neutral-200 dark:border-neutral-700 shadow-sm">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2">
+                <FaYoutube className="text-red-500 text-xl" />
+                <span className="font-bold text-brownDark dark:text-brown text-base">YouTube</span>
+              </div>
+              <div className="text-right">
+                <p className="text-xl font-bold text-primary">{fmt(ytSubs ?? 0)}</p>
+                <p className="text-xs text-neutral-400">subscribers</p>
+              </div>
+            </div>
+            <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4 mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Engagement (Last 28 Days)</p>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { label: 'Total Views',     value: fmt(yt28dViews ?? 0) },
+                  { label: 'Engagement Rate', value: `~${ytEngagement ?? 10}%` },
+                ].map(({ label, value }) => (
+                  <div key={label}>
+                    <p className="font-bold text-primary text-sm">{value}</p>
+                    <p className="text-xs text-neutral-400">{label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-1">Audience (Last 28 Days)</p>
+              <p className="text-xs text-neutral-400 mb-3">Based on content views</p>
+              <div className="grid grid-cols-2 gap-4">
+                <div>
+                  <p className="text-xs text-neutral-400 mb-2">Age</p>
+                  <div className="space-y-1.5">
+                    {Object.entries(ytAudienceAge ?? {}).filter(([, val]) => (val as number) > 0).sort(([, a], [, b]) => (b as number) - (a as number)).map(([key, val]) => (
+                      <div key={key} className="flex items-center gap-2">
+                        <span className="text-xs text-neutral-400 w-10 shrink-0">{key.replace('_percent', '').replace('_plus', '+')}</span>
+                        <div className="flex-1 bg-neutral-100 dark:bg-neutral-700 rounded-full h-1.5">
+                          <div className="bg-primary h-1.5 rounded-full" style={{ width: `${val}%` }} />
+                        </div>
+                        <span className="text-xs font-semibold w-8 text-right">{pct(val as number)}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div>
+                  <p className="text-xs text-neutral-400 mb-1.5">Gender</p>
+                  <p className="text-sm mb-3">
+                    M <span className="font-bold text-primary">{pct(ytAudienceGender?.male_percent ?? 0)}</span>
+                    <span className="text-neutral-300 dark:text-neutral-600 mx-1.5">/</span>
+                    F <span className="font-bold text-primary">{pct(ytAudienceGender?.female_percent ?? 0)}</span>
+                  </p>
+                  <p className="text-xs text-neutral-400 mb-1.5">Top Countries</p>
+                  <div className="space-y-1">
+                    {Object.entries(ytAudienceGeo ?? {}).sort(([, a], [, b]) => (b as number) - (a as number)).slice(0, 5).map(([key, val]) => (
+                      <div key={key} className="flex justify-between text-xs">
+                        <span className="text-neutral-500 capitalize">{key.replace('_percent', '').replace(/_/g, ' ')}</span>
+                        <span className="font-semibold text-brownDark dark:text-brown">{pct(val as number)}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        {/* Smaller platform cards */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+
+          {/* TikTok */}
+          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-5 border border-neutral-200 dark:border-neutral-700 shadow-sm">
+            <div className="flex items-center gap-2 mb-3">
+              <FaTiktok className="text-neutral-700 dark:text-neutral-300 text-lg" />
+              <span className="font-bold text-brownDark dark:text-brown text-sm">TikTok</span>
+            </div>
+            <p className="text-2xl font-bold text-primary">{fmt(ttFollowers ?? 0)}</p>
+            <p className="text-xs text-neutral-400 mb-3">followers</p>
+            <div className="border-t border-neutral-100 dark:border-neutral-700 pt-3">
+              <p className="text-xs text-neutral-400 mb-2">Avg per video</p>
+              <div className="space-y-1.5">
+                {[
+                  { label: 'Views',    value: fmt(ttAvgViews) },
+                  { label: 'Likes',    value: fmt(ttAvgLikes) },
+                  { label: 'Comments', value: fmt(ttAvgComments) },
+                  { label: 'Shares',   value: fmt(ttAvgShares) },
+                ].map(({ label, value }) => (
+                  <div key={label} className="flex justify-between text-xs">
+                    <span className="text-neutral-500">{label}</span>
+                    <span className="font-semibold text-primary">{value}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-xs text-neutral-400 mt-2 pt-2 border-t border-neutral-100 dark:border-neutral-700">93% MoM follower growth</p>
+            </div>
+          </div>
+
+          {/* LinkedIn */}
+          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-5 border border-neutral-200 dark:border-neutral-700 shadow-sm">
+            <div className="flex items-center gap-2 mb-3">
+              <FaLinkedin className="text-blue-600 text-lg" />
+              <span className="font-bold text-brownDark dark:text-brown text-sm">LinkedIn</span>
+            </div>
+            <p className="text-2xl font-bold text-primary">375</p>
+            <p className="text-xs text-neutral-400">followers</p>
+          </div>
+
+          {/* Spotify */}
+          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-5 border border-neutral-200 dark:border-neutral-700 shadow-sm">
+            <div className="flex items-center gap-2 mb-3">
+              <FaSpotify className="text-green-500 text-lg" />
+              <span className="font-bold text-brownDark dark:text-brown text-sm">Podcast</span>
+            </div>
+            <p className="text-2xl font-bold text-primary">150</p>
+            <p className="text-xs text-neutral-400 mb-3">listeners</p>
+            <div className="border-t border-neutral-100 dark:border-neutral-700 pt-3 space-y-1.5">
+              <div className="flex justify-between text-xs">
+                <span className="text-neutral-500">Episodes</span>
+                <span className="font-semibold text-primary">47</span>
+              </div>
+              <div className="flex justify-between text-xs">
+                <span className="text-neutral-500">Avg streams</span>
+                <span className="font-semibold text-primary">{avg_streams_per_episode ?? 11}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* Newsletter */}
+          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-5 border border-neutral-200 dark:border-neutral-700 shadow-sm">
+            <div className="flex items-center gap-2 mb-3">
+              <FaEnvelope className="text-brownDark dark:text-brown text-lg" />
+              <span className="font-bold text-brownDark dark:text-brown text-sm">Newsletter</span>
+            </div>
+            <p className="text-2xl font-bold text-primary">{fmt(newsletterSubs ?? 0)}</p>
+            <p className="text-xs text-neutral-400">subscribers</p>
+            <p className="text-xs text-neutral-400 mt-3 pt-3 border-t border-neutral-100 dark:border-neutral-700">Newly launched · early-bird rates</p>
+          </div>
+
+        </div>
+      </section>
+
+      {/* Natasha Analytics */}
+      <section id="natasha-analytics" className="px-6 pb-16 max-w-6xl mx-auto">
+        <div className="text-center mb-10">
+          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-xs font-semibold px-3 py-1.5 rounded-full mb-4">
+            <FaUsers className="text-xs" /> Add-on: Natasha&apos;s Personal Channels
+          </div>
+          <h2 className="text-3xl md:text-4xl font-bold text-brownDark dark:text-brown mb-2">Natasha&apos;s Channel Analytics</h2>
+          <p className="text-sm text-neutral-500 dark:text-neutral-400">Last updated March 2026 · Available as an add-on to any ragTech partnership</p>
+        </div>
+
+        {/* Instagram + TikTok: main cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+
+          {/* Instagram */}
+          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-6 border border-neutral-200 dark:border-neutral-700 shadow-sm">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2">
+                <FaInstagram className="text-pink-500 text-xl" />
+                <span className="font-bold text-brownDark dark:text-brown text-base">Instagram</span>
+              </div>
+              <div className="text-right">
+                <p className="text-xl font-bold text-primary">{fmt(natashaIgF ?? 0)}</p>
+                <p className="text-xs text-neutral-400">followers</p>
+              </div>
+            </div>
+            <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4 mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Reach (Last 30 Days)</p>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { label: 'Accounts Reached',  value: fmt(natashaReached ?? 0) },
+                  { label: 'Non-follower Views', value: pctOrDash(natashaIgNonFollower) },
+                ].map(({ label, value }) => (
+                  <div key={label}>
+                    <p className={`font-bold text-sm ${value === '\u2014' ? 'text-neutral-400' : 'text-primary'}`}>{value}</p>
+                    <p className="text-xs text-neutral-400 leading-tight">{label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4 mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Engagement (Last 30 Days)</p>
+              <div className="grid grid-cols-3 gap-3">
+                {[
+                  { label: 'Total Views',    value: fmt(natasha30dViews ?? 0) },
+                  { label: 'Avg Reel Views', value: fmtOrDash(natashaIgAvgReelViews) },
+                  { label: 'Avg Reel Likes', value: fmtOrDash(natashaIgAvgReelLikes) },
+                ].map(({ label, value }) => (
+                  <div key={label}>
+                    <p className={`font-bold text-sm ${value === '\u2014' ? 'text-neutral-400' : 'text-primary'}`}>{value}</p>
+                    <p className="text-xs text-neutral-400 leading-tight">{label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* TODO: fill in natasha.instagram audience demographics in platform-stats.json: follower_age_range, follower_gender, follower_geography */}
+          </div>
+
+          {/* TikTok */}
+          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-6 border border-neutral-200 dark:border-neutral-700 shadow-sm">
+            <div className="flex items-center justify-between mb-4">
+              <div className="flex items-center gap-2">
+                <FaTiktok className="text-neutral-700 dark:text-neutral-300 text-xl" />
+                <span className="font-bold text-brownDark dark:text-brown text-base">TikTok</span>
+              </div>
+              <div className="text-right">
+                <p className="text-xl font-bold text-primary">{fmt(natashaTtF ?? 0)}</p>
+                <p className="text-xs text-neutral-400">followers</p>
+              </div>
+            </div>
+            <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4 mb-4">
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Engagement (Last 30 Days)</p>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { label: 'Views',    value: fmt(natashaTt30d ?? 0) },
+                  { label: 'Likes',    value: fmt(natashaTtLikes ?? 0) },
+                  { label: 'Comments', value: fmt(natashaTtComments ?? 0) },
+                  { label: 'Shares',   value: fmt(natashaTtShares ?? 0) },
+                ].map(({ label, value }) => (
+                  <div key={label}>
+                    <p className="font-bold text-primary text-sm">{value}</p>
+                    <p className="text-xs text-neutral-400">{label}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* TODO: fill in natasha.tiktok audience demographics in platform-stats.json: follower_age_range, follower_gender, follower_geography */}
+          </div>
+
+        </div>
+
+        {/* LinkedIn + YouTube: smaller cards */}
+        <div className="grid grid-cols-2 gap-4">
+
+          {/* LinkedIn */}
+          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-5 border border-neutral-200 dark:border-neutral-700 shadow-sm">
+            <div className="flex items-center gap-2 mb-3">
+              <FaLinkedin className="text-blue-600 text-lg" />
+              <span className="font-bold text-brownDark dark:text-brown text-sm">LinkedIn</span>
+            </div>
+            <p className="text-2xl font-bold text-primary">{fmt(natashaLiF ?? 0)}</p>
+            <p className="text-xs text-neutral-400">followers</p>
+          </div>
+
+          {/* YouTube */}
+          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-5 border border-neutral-200 dark:border-neutral-700 shadow-sm">
+            <div className="flex items-center gap-2 mb-3">
+              <FaYoutube className="text-red-500 text-lg" />
+              <span className="font-bold text-brownDark dark:text-brown text-sm">YouTube</span>
+            </div>
+            <p className={`text-2xl font-bold ${fmtOrDash(natashaYtSubs) === '\u2014' ? 'text-neutral-400' : 'text-primary'}`}>{fmtOrDash(natashaYtSubs)}</p>
+            <p className="text-xs text-neutral-400">subscribers</p>
+            {/* TODO: fill in natasha.youtube.subscribers in platform-stats.json */}
+          </div>
+
+        </div>
+      </section>
+
       {/* About */}
       <section className="px-6 pb-16 max-w-3xl mx-auto text-center">
         <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed text-base">
@@ -656,9 +1024,9 @@ export default function RateCardPage() {
               Natasha amplification add-on
             </p>
             <p className="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed mb-3">
-              Natasha has significant personal reach —{' '}
+              Natasha has significant personal reach,{' '}
               <strong>{fmt(natashaTotal)} total followers</strong> across Instagram ({fmt(natashaIgF ?? 0)}),
-              TikTok ({fmt(natashaTtF ?? 0)}), and LinkedIn ({fmt(natashaLiF ?? 0)}) — generating over{' '}
+              TikTok ({fmt(natashaTtF ?? 0)}), and LinkedIn ({fmt(natashaLiF ?? 0)}), generating over{' '}
               <strong>{fmt(natasha30dViews ?? 0)} views in 30 days</strong> on Instagram alone, with{' '}
               <strong>{fmt(natashaReached ?? 0)} accounts reached</strong>. She receives frequent direct
               partnership requests but keeps her personal profiles organic, preferring to channel brand
@@ -668,7 +1036,7 @@ export default function RateCardPage() {
               Activating the Natasha add-on gives your campaign a combined reach of{' '}
               <strong>{fmt(combinedReached)} accounts</strong> in 30 days and{' '}
               <strong>{fmt(combined30dViews)} combined 30-day views</strong> across ragTech and Natasha&apos;s
-              channels — a meaningful amplifier beyond ragTech&apos;s own audience.
+              channels, a meaningful amplifier beyond ragTech&apos;s own audience.
             </p>
             <p className="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed">
               Add-on options: add Natasha as a collaborator on ragTech Instagram posts (exposing the
