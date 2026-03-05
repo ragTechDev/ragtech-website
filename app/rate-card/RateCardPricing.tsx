@@ -549,7 +549,7 @@ export default function RateCardPricing() {
     <div>
       {/* Rates Title */}
       <section className="px-6 pt-4 pb-2 text-center">
-        <div className="flex items-center justify-center gap-2 mb-2">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
           <HiStar className="text-primary text-2xl" />
           <SectionTitle>Rates</SectionTitle>
         </div>
@@ -578,7 +578,7 @@ export default function RateCardPricing() {
       {/* ── Instagram + Short-Form ──────────────────────────────────────────── */}
       <section className="px-6 pb-16">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-center gap-2 mb-2">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
             <FaInstagram className="text-primary text-2xl" />
             <SectionTitle>Instagram</SectionTitle>
           </div>
@@ -625,9 +625,11 @@ export default function RateCardPricing() {
       {/* ── Vodcast ────────────────────────────────────────────────────────── */}
       <section className="px-6 pb-16 pt-16">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-center gap-2 mb-2">
-            <FaYoutube className="text-red-500 text-2xl" />
-            <FaSpotify className="text-green-500 text-2xl" />
+          <div className="flex flex-col items-center justify-center gap-2 mb-2">
+            <div className="flex items-center gap-2">
+              <FaYoutube className="text-red-500 text-2xl" />
+              <FaSpotify className="text-green-500 text-2xl" />
+            </div>
             <SectionTitle>Vodcast: Bytes &amp; Banter</SectionTitle>
           </div>
           <p className="text-center text-sm text-neutral-500 dark:text-neutral-400 mb-1">
@@ -652,7 +654,7 @@ export default function RateCardPricing() {
       {/* ── LinkedIn ───────────────────────────────────────────────────────── */}
       <section className="px-6 pb-16 bg-gradient-to-br from-primary/5 to-accent/10 py-16 rounded-3xl mx-4">
         <div className="max-w-5xl mx-auto">
-          <div className="flex items-center justify-center gap-2 mb-2">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
             <FaLinkedin className="text-blue-600 text-2xl" />
             <SectionTitle>LinkedIn</SectionTitle>
           </div>
@@ -674,7 +676,7 @@ export default function RateCardPricing() {
       {/* ── Blog & Newsletter ──────────────────────────────────────────────── */}
       <section className="px-6 pb-16 pt-16">
         <div className="max-w-5xl mx-auto">
-          <div className="flex items-center justify-center gap-2 mb-2">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
             <HiNewspaper className="text-brownDark dark:text-brown text-2xl" />
             <FaEnvelope className="text-brownDark dark:text-brown text-xl" />
             <SectionTitle>Blog &amp; Newsletter</SectionTitle>
@@ -697,7 +699,7 @@ export default function RateCardPricing() {
       {/* ── Bundles ────────────────────────────────────────────────────────── */}
       <section className="px-6 pb-16 bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 py-16 mx-4 rounded-3xl">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-center gap-2 mb-2">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
             <HiStar className="text-primary text-2xl" />
             <SectionTitle>Bundle Packages</SectionTitle>
           </div>
@@ -745,7 +747,7 @@ export default function RateCardPricing() {
       {/* ── Add-Ons ────────────────────────────────────────────────────────── */}
       <section className="px-6 pb-16 pt-16">
         <div className="max-w-6xl mx-auto">
-          <div className="flex items-center justify-center gap-2 mb-2">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
             <HiLightningBolt className="text-secondary text-2xl" />
             <SectionTitle>Add-Ons</SectionTitle>
           </div>
