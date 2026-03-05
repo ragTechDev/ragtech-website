@@ -502,7 +502,7 @@ function PriceCard({
         <p className="text-3xl font-bold text-brownDark dark:text-brown">{price}</p>
         <p className="text-sm text-neutral-500 dark:text-neutral-400 mt-1 leading-snug">{description}</p>
       </div>
-      <ul className="space-y-2 mt-auto pt-4 border-t border-neutral-100 dark:border-neutral-700">
+      <ul className="space-y-2 pt-4 border-t border-neutral-100 dark:border-neutral-700">
         {includes.map((item) => (
           <li key={item} className="flex items-start gap-2 text-sm text-neutral-600 dark:text-neutral-300">
             <FaCheckCircle className="text-secondary mt-0.5 shrink-0" />
@@ -730,7 +730,7 @@ export default function RateCardPricing() {
                   </span>
                   <p className="text-xs text-neutral-500 dark:text-neutral-400 mt-2">Ideal for: {bundle.ideal}</p>
                 </div>
-                <ul className="space-y-2 mt-auto pt-4 border-t border-neutral-200 dark:border-neutral-700">
+                <ul className="space-y-2 pt-4 border-t border-neutral-200 dark:border-neutral-700">
                   {bundle.items.map((item) => (
                     <li key={item} className="flex items-start gap-2 text-sm text-neutral-600 dark:text-neutral-300">
                       <FaCheckCircle className="text-primary mt-0.5 shrink-0" />
