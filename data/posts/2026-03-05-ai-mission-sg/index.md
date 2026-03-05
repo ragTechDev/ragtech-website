@@ -1,160 +1,145 @@
-# 🎬 REEL SCRIPT — "I Panicked About Budget 2026. Here's What I Know Now."
-**Host:** Saloni | **Length:** ~90 seconds | **Tone:** Funny, relatable, warm
-**Platform:** Instagram / TikTok Reel
+---
+title: "I Panicked When I Heard Budget 2026. Here's What I Know Now."
+slug: "singapore-budget-2026-ai-saloni"
+author:
+  name: "Saloni Kaur"
+  profilePicture: "/assets/logo/ragtech-logo.png"
+publishedAt: "2026-03-05T12:00:00Z"
+coverImage: "/posts/2026-03-05-ai-mission-sg/blogpost-cover-image.png"
+brief: "When Budget 2026 dropped and AI was everywhere, I didn't feel inspired. I felt overwhelmed. This is what I found out after reading more, and why I actually feel okay now."
+tags: ["AI", "Singapore", "Budget 2026", "SkillsFuture", "careers", "AI literacy"]
+topic:
+  - "ragTech"
+readTimeInMinutes: 7
+status: "draft"
+newsletter:
+  send: true
+  sent: false
+  topic:
+    - "ragTech"
+seo:
+  metaDescription: "Budget 2026 pushed AI hard and honestly? I panicked. Here's the journey from overwhelmed to actually feeling okay, and what AI literacy really means for all of us."
+  keywords: ["Singapore AI Budget 2026", "AI literacy Singapore", "SkillsFuture AI courses", "AI anxiety Singapore", "Budget 2026 workers"]
+---
+
+Okay, I have a confession.
+
+When Budget 2026 dropped and PM Lawrence Wong announced a National AI Council, four National AI Missions, free AI tool access, tax deductions for AI spending, basically AI everything, my first reaction was not "wow, exciting."
+
+It was closer to: *why are you doing this to me.*
+
+I'm not someone who hates technology. I literally co-host a tech podcast. But there's something about being told that your government has made artificial intelligence a **national mission**, chaired by the Prime Minister himself, that feels like a lot. Like, a lot a lot. Like change being shoved at you from the top, whether you asked for it or not.
+
+And I hadn't asked for it.
+
+So I did what any reasonable person does when they're overwhelmed. I complained about it to my co-hosts. I vented in the group chat. I said things like "why can't things just stay the same for five minutes."
+
+And then, because this is literally what we do at ragTech, I went and actually read more about it.
+
+What I found made me feel a lot better. And I think it'll help you too.
 
 ---
 
-## 🎣 HOOK
-*(dead serious face to camera, pause for effect)*
+## My problem wasn't really with AI. It was with change.
 
-"The Singapore government just made AI a national mission.
+Let me be honest about something. My panic wasn't really about AI the technology. It was about the feeling that the rules of the game were changing, again, and I hadn't been consulted.
 
-And my first reaction?"
+That feeling is real and it's valid. Change is exhausting, especially when it keeps coming. The pandemic. Remote work. The return to office. Now this. Every few years something new arrives and demands that you adapt, upskill, re-learn, re-brand yourself. It gets tiring.
 
-*(beat, then completely flat)*
+But here's the thing I had to admit to myself: that frustration, while completely understandable, was making me read the situation wrong.
 
-"Why are you doing this to me."
+I wasn't actually scared of AI. I was just... done with being pushed. And I was projecting that exhaustion onto the budget announcement.
 
----
-
-## 👋 INTRO
-*(laugh, relax into it)*
-
-"Hi, I'm Saloni from ragTech —
-where we talk about real life in tech.
-
-And I have a confession.
-When Budget 2026 dropped?
-
-I was NOT inspired.
-I was overwhelmed.
-I literally went to my groupchat and said —
-*'why can't things just stay the same for five minutes.'*"
-
-*(shrug)*
-
-"Classic me."
+Once I separated those two things, I could actually look at what was going on more clearly.
 
 ---
 
-## 💭 THE REAL TALK
-*(leans in, honest)*
+## Singapore is not doing this alone. Or out of nowhere.
 
-"And look — my problem wasn't actually AI.
+The first thing that genuinely surprised me when I dug deeper: Singapore is not uniquely obsessed with AI. It just sounds like it because we live here and we consume Singapore media.
 
-It was the feeling that the rules were changing.
-Again.
-Without asking me.
+Zoom out and the picture looks very different.
 
-After the pandemic. After remote work.
-After 'return to office.' Now THIS.
+The UAE appointed the **world's first AI minister** back in 2017. Not a tech minister. An AI minister. Specifically. India launched its national AI mission in 2024 with a $1.2 billion USD budget. The UK announced an AI Opportunities Action Plan in January 2025 alongside £14 billion in private sector commitments. France committed €2.5 billion to AI development. The US has had AI executive orders from two different presidential administrations.
 
-I was just... done with being pushed."
+China has been executing a national AI strategy since 2017.
 
-*(pause)*
+Every major economy in the world is doing some version of what Singapore just announced. The difference is that Singapore is small and fast and coordinated, so when it moves, the signal is loud and clear. Other countries are doing the same thing across twelve different ministries and five years of policy documents, so it doesn't feel as overwhelming to their citizens.
 
-"But then I did what we always do at ragTech.
+We feel it more because Singapore executes tightly. Not because Singapore is uniquely demanding something unfair of us.
 
-I went and actually read about it."
+And honestly? Once I understood that, the announcement stopped feeling like an attack and started feeling like... context.
 
 ---
 
-## 💡 WHAT I FOUND OUT
-*(genuine surprise energy)*
+## Why the government is pushing this, and why it actually makes sense
 
-"Okay so — turns out?
+Here's the thing I had to sit with: Singapore's AI push isn't arbitrary. There are real, structural reasons why this matters for us specifically.
 
-Singapore is NOT the only country doing this.
+Singapore has no oil. No vast land. No huge domestic market. It has always had to compete through people: through how skilled, how productive, how adaptable its workforce is. PM Wong actually said it directly in his Budget speech: AI "can help us overcome our structural constraints: our limited natural resources, rapidly ageing population, and tight labour market."
 
-The UAE has had an AI minister since 2017.
-India dropped 1.2 billion USD on a national AI mission.
-The UK, France, the US — all of them
-are running some version of exactly this.
+By 2030, one in four Singaporeans will be 65 or older. The labour market is already tight. If Singapore can't find ways to do more with fewer people, the economic math gets uncomfortable fast. AI isn't a vanity project or a trend the government is chasing. It's a genuine response to a genuine problem.
 
-Singapore just *sounds* more intense
-because we're small and we execute fast.
+And here's the bigger picture I had to accept: AI is not waiting for any of us to feel ready. It is already reshaping industries, job descriptions, and hiring expectations globally. The question was never really whether this was coming. It was always whether we'd be prepared when it arrived.
 
-Once I understood that?
-It stopped feeling like an attack.
-And started feeling like... context."
+Singapore deciding to be prepared, and giving us tools and subsidies to get there, is actually the government doing its job well. Even if the announcement landed with the subtlety of an alarm clock at 6am.
 
 ---
 
-## 🧠 WHY IT MAKES SENSE
-*(calm, grounded)*
+## What AI literacy actually means (it's not what you think)
 
-"And here's the part that actually made me feel better.
+Once I got past the panic, I had to actually figure out what "being AI literate" even means in practice. Because the phrase sounds huge and vague and slightly threatening.
 
-Singapore has no oil. No huge land.
-It has always competed through people.
+Turns out, it's neither huge nor vague. At least not for most of us.
 
-We're ageing fast. Our labour market is tight.
-AI isn't the government being trendy.
+For the average person, whether you work in finance, HR, marketing, operations, or anything else that doesn't involve writing code, AI literacy is basically three things:
 
-It's them trying to make sure
-we don't get left behind
-while the rest of the world moves."
+Understanding what AI tools can and can't do, so you're not either terrified of them or blindly trusting them. (They're genuinely useful. They also make things up sometimes. Knowing both is the whole game.)
 
-*(small nod)*
+Learning to direct them well, which mostly just means learning to ask specific, clear questions. You already know how to do this. You just haven't practised doing it with AI yet.
 
-"When I framed it that way —
-it made sense. Like, genuinely."
+Using them for the low-stakes, repetitive parts of your work (drafting, summarising, formatting, researching) so you can save your energy for the parts that actually require your judgment, your relationships, your context. The things AI doesn't have and can't replicate.
+
+That's it. Nobody is asking you to learn Python. Nobody is asking you to understand transformer architecture. They're asking you to not ignore a tool that can genuinely make your working life easier, and to develop enough critical thinking to use it well.
+
+For engineers and developers, it goes a bit deeper. But even there, the message isn't "AI is replacing you." The engineers winning right now are the ones who know their craft deeply enough to catch what AI gets wrong. That's still you. That skill is still valuable.
 
 ---
 
-## ✅ WHAT IT MEANS FOR YOU
-*(warm, reassuring)*
+## The courses are actually accessible. That part is good news.
 
-"And AI literacy?
-It's not 'learn to code.'
-It's not 'become an AI engineer.'
+Here's where I went from "okay, I get it" to "okay, I actually feel better."
 
-It's three things:
-Know what AI can do.
-Know when it's wrong — because it is, sometimes.
-And use it for the boring stuff,
-so you have more energy for the work that needs *you.*"
+Singapore has over 1,600 AI courses on the SkillsFuture catalogue. I know, that number sounds more overwhelming than helpful. But the government is also launching a self-diagnostic AI readiness tool on the MySkillsFuture portal by mid-2026, which will help you figure out where you actually are and which courses match your role and level. So you're not just scrolling through 1,600 options with no compass.
 
-*(smile)*
+And the financial support is genuinely significant. SkillsFuture credits, SSG subsidies, UTAP, and PSEA can bring course fees down dramatically, often to near zero. Budget 2026 adds six months of free access to premium AI tools for Singaporeans who complete qualifying training, so you can actually practise with real tools after learning, not just watch videos.
 
-"That's it. That's the whole ask."
+Courses like Heicoders Academy's generative AI programme and offerings from SMU Academy and Aventis Training are practical, accessible, and don't require any technical background. For those who want to go deeper, there are more rigorous options through SUTD, SIT, and AI Singapore's apprenticeship programme.
+
+None of this fixes the feeling that change is exhausting. But it does mean the change is being made more accessible than it might have been. And that's something.
 
 ---
 
-## 🎯 THE CLOSER
-*(upbeat, warm)*
+## Where I landed
 
-"Oh — and the courses?
-Subsidised. Like, heavily.
+I'm not going to pretend I've done a complete 180 and now love being pushed into things. I still find constant change tiring. I think a lot of us do.
 
-SkillsFuture credits, SSG subsidies,
-six months of free premium AI tools
-if you complete qualifying training.
+But here's where I've genuinely landed after doing the reading:
 
-The government is literally
-trying to make this easy for us."
+The government isn't pushing AI because it's trendy. It's pushing AI because the rest of the world already is, and Singapore can't afford to be left behind. That's a real and legitimate reason.
 
-*(pause, smiling)*
+AI literacy isn't asking us to become experts. It's asking us to be aware and capable: to not be the person in the room who refuses to engage with something that's already reshaping the world around them.
 
-"So yeah. Deep breath.
+And the support is actually there. Subsidised courses. Free tools. A diagnostic to help you figure out where to start. Singapore is genuinely trying to bring people along, not just declare a mission and leave everyone to figure it out alone.
 
-We're okay.
-This is manageable.
-And you don't have to figure it out alone."
+So, deep breath. We're okay. This is manageable. And if you've been feeling the same low-grade panic I was feeling, I hope this helped.
 
-*(point to screen)*
+Start small. Be curious. Use the subsidies.
 
-"Full breakdown in the blog — link in bio.
-I'm Saloni, this is ragTech,
-and I'll see you in the next one."
+We'll figure out the rest together.
 
 ---
 
-## 📋 PRODUCTION NOTES
-- **Hook:** film super close, deadpan. The pause before "why are you doing this to me" is everything — don't rush it
-- **Groupchat moment:** consider showing your actual phone screen for half a second for authenticity
-- **Pacing:** slow down at "we're ageing fast / labour market is tight" — let it land
-- **Captions on:** bold the key phrases: "why are you doing this to me", "context not an attack", "that's the whole ask"
-- **B-roll ideas:** Budget 2026 headlines screenshotted, SkillsFuture website, you looking stressed then looking relieved
-- **Music:** something lo-fi and chill underneath, low volume — the story carries this one, not the beat
-- **Estimated runtime:** 85–95 seconds at Saloni's natural pace
+*Saloni is one of the co-hosts of ragTech, a podcast by Natasha Ann Lum, Saloni Kaur, and Victoria Lo where real people talk about real life in tech. Our mission is to simplify technology and make it accessible to everyone.*
+
+✨ [Spotify](https://open.spotify.com/show/1KfM9JTWsDQ5QoMYEh489d) · [YouTube](https://www.youtube.com/@ragTechDev) · [Instagram](https://instagram.com/ragtechdev) · [All Links](https://linktr.ee/ragtechdev)

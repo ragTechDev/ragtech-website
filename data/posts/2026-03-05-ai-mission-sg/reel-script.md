@@ -1,45 +1,160 @@
-# Reel Script: Singapore's National AI Mission
-**Talent: Saloni | Format: Monologue | Target: ~75 seconds**
+# 🎬 REEL SCRIPT: "I Panicked About Budget 2026. Here's What I Know Now."
+**Host:** Saloni | **Length:** ~90 seconds | **Tone:** Funny, relatable, warm
+**Platform:** Instagram / TikTok Reel
 
 ---
 
-**[HOOK — direct to camera, first 3 seconds]**
+## 🎣 HOOK
+*(dead serious face to camera, pause for effect)*
 
-If the words "National AI Mission" made your stomach drop a little — you're not alone.
+"The Singapore government just made AI a national mission.
 
-**[INTRO]**
+And my first reaction?"
 
-I'm Saloni. I've been a software developer for 10 years, and I'm a co-host at ragTech, where we break down tech for real people.
+*(beat, then completely flat)*
 
-And even I had to take a breath when Budget 2026 dropped. Four national AI missions. A new AI Council chaired by the PM himself. Six months of free AI tools if you complete training.
-
-It felt like a lot.
-
-**[REFRAME]**
-
-But here's what I want you to know: the bar is probably a lot lower than you think.
-
-If you work in finance, HR, marketing, teaching — you don't need to learn to code. You don't need to understand how a neural network works.
-
-What you need is to know what AI is good at, know where it gets things wrong, and learn to give it a clear, specific instruction. That's it. That's AI fluency for most people.
-
-**[ANALOGY]**
-
-Nobody had a national crisis about Google Search. We just... learned to use it. And then we couldn't imagine working without it.
-
-AI is the same category of shift. Bigger, yes. But the same category.
-
-**[CLOSE + CTA]**
-
-The people thriving with AI right now aren't using it the most. They're using it for the right things.
-
-AI writes the first draft. You decide if it's right for the person reading it. AI pulls the data together. You decide what it actually means for your team. AI generates the code. You decide if it'll break in three months.
-
-That gap — between the output and the decision — that's where you live. And no model has your three years of knowing this client, or your instinct that this product requirement doesn't make sense, or your read of why the team is really pushing back.
-
-That's what can't be automated. Not because it's magical. Because it's yours.
-
-Follow ragTech for more of these conversations.
+"Why are you doing this to me."
 
 ---
-*[END — approx. 75 seconds]*
+
+## 👋 INTRO
+*(laugh, relax into it)*
+
+"Hi, I'm Saloni from ragTech,
+where we talk about real life in tech.
+
+And I have a confession.
+When Budget 2026 dropped?
+
+I was NOT inspired.
+I was overwhelmed.
+I literally went to my groupchat and said:
+*'why can't things just stay the same for five minutes.'*"
+
+*(shrug)*
+
+"Classic me. I don't like changes."
+
+---
+
+## 💭 THE REAL TALK
+*(leans in, honest)*
+
+"And look, my problem wasn't actually AI.
+
+It was the feeling that the rules were changing.
+Again.
+Without asking me.
+
+After the pandemic. After remote work.
+After 'return to office.' Now THIS.
+
+I was just... done with being pushed."
+
+*(pause)*
+
+"But then I did what we always do at ragTech.
+
+I went and actually read about it."
+
+---
+
+## 💡 WHAT I FOUND OUT
+*(genuine surprise energy)*
+
+"Okay so, turns out?
+
+Singapore is NOT the only country doing this.
+
+The UAE has had an AI minister since 2017.
+India dropped 1.2 billion USD on a national AI mission.
+The UK, France, the US, all of them
+are running some version of exactly this.
+
+Singapore just *sounds* more intense
+because we're small and we execute fast.
+
+Once I understood that?
+It stopped feeling like an attack.
+And started feeling like... context."
+
+---
+
+## 🧠 WHY IT MAKES SENSE
+*(calm, grounded)*
+
+"And here's the part that actually made me feel better.
+
+Singapore has no oil. No huge land.
+It has always competed through people.
+
+We're ageing fast. Our labour market is tight.
+AI isn't the government being trendy.
+
+It's them trying to make sure
+we don't get left behind
+while the rest of the world moves."
+
+*(small nod)*
+
+"When I framed it that way,
+it made sense. Like, genuinely."
+
+---
+
+## ✅ WHAT IT MEANS FOR YOU
+*(warm, reassuring)*
+
+"And AI literacy?
+It's not 'learn to code.'
+It's not 'become an AI engineer.'
+
+It's three things:
+Know what AI can do.
+Know when it's wrong. Because it is, sometimes.
+And use it for the boring stuff,
+so you have more energy for the work that needs *you.*"
+
+*(smile)*
+
+"That's it. That's the whole ask."
+
+---
+
+## 🎯 THE CLOSER
+*(upbeat, warm)*
+
+"Oh, and the courses?
+Subsidised. Like, heavily.
+
+SkillsFuture credits, SSG subsidies,
+six months of free premium AI tools
+if you complete qualifying training.
+
+The government is literally
+trying to make this easy for us."
+
+*(pause, smiling)*
+
+"So yeah. Deep breath.
+
+We're okay.
+This is manageable.
+And you don't have to figure it out alone."
+
+*(point to screen)*
+
+"Full breakdown in the blog, link in bio.
+I'm Saloni, this is ragTech,
+and I'll see you in the next one."
+
+---
+
+## 📋 PRODUCTION NOTES
+- **Hook:** film super close, deadpan. The pause before "why are you doing this to me" is everything, don't rush it
+- **Groupchat moment:** consider showing your actual phone screen for half a second for authenticity
+- **Pacing:** slow down at "we're ageing fast / labour market is tight", let it land
+- **Captions on:** bold the key phrases: "why are you doing this to me", "context not an attack", "that's the whole ask"
+- **B-roll ideas:** Budget 2026 headlines screenshotted, SkillsFuture website, you looking stressed then looking relieved
+- **Music:** something lo-fi and chill underneath, low volume. The story carries this one, not the beat
+- **Estimated runtime:** 85–95 seconds at Saloni's natural pace
