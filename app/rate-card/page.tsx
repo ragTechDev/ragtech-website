@@ -428,43 +428,49 @@ export default function RateCardPage() {
             Carousels, reels, and vodcast episodes — this is what brands are buying into
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           <div className="flex flex-col items-center gap-2">
             <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">✏️ Techybara Carousel</p>
+            <p className="text-xs text-neutral-500 dark:text-neutral-400">3.2K views · 36 likes · 5 reposts</p>
             <iframe
               src="https://www.instagram.com/p/DTrKfy_ElFI/embed/"
-              className="w-full rounded-2xl"
-              style={{ minHeight: '560px', border: 'none' }}
+              className="rounded-2xl"
+              style={{ width: '320px', maxWidth: '100%', minHeight: '560px', border: 'none' }}
               loading="lazy"
               title="Techybara Carousel"
             />
           </div>
           <div className="flex flex-col items-center gap-2">
             <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">📱 Instagram Reel</p>
+            <p className="text-xs text-neutral-500 dark:text-neutral-400">328K views · 12K likes · 189 reposts</p>
             <iframe
               src="https://www.instagram.com/reel/DUuH2KdEjNV/embed/"
-              className="w-full rounded-2xl"
-              style={{ minHeight: '560px', border: 'none' }}
+              className="rounded-2xl"
+              style={{ width: '320px', maxWidth: '100%', minHeight: '560px', border: 'none' }}
               loading="lazy"
               title="Instagram Reel"
             />
           </div>
           <div className="flex flex-col items-center gap-2">
             <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">🎙️ Vodcast Episode</p>
+            <p className="text-xs text-neutral-500 dark:text-neutral-400">1.3K views · 22 likes · 10 comments</p>
             <iframe
               src="https://www.youtube.com/embed/qw3dKhXV6Vw"
-              className="w-full rounded-2xl aspect-video"
-              style={{ border: 'none' }}
+              className="w-full rounded-2xl"
+              style={{ height: '232px', border: 'none' }}
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
               loading="lazy"
               title="Vodcast Episode"
             />
-            <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400 mt-2">🎧 Spotify Episode</p>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">🎧 Spotify Episode</p>
+            <p className="text-xs text-neutral-500 dark:text-neutral-400">38 streams · 47 plays</p>
             <iframe
-              src="https://open.spotify.com/embed/episode/3NxOo4Tmeo4avUkJVCjlw1"
+              src="https://open.spotify.com/embed/episode/3yxekAGUq2o64KXdrs5CRN"
               className="w-full rounded-2xl"
-              style={{ height: '152px', border: 'none' }}
+              style={{ height: '232px', border: 'none' }}
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
               title="Spotify Episode"
