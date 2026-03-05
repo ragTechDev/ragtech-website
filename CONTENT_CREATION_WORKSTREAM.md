@@ -84,6 +84,24 @@ Constraints:
 - Add relevant TikTok embeds where useful.
 - Keep embeds strategically placed (not clustered).
 
+### YouTube Embed iframe
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/<videoId>" 
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; 
+  autoplay; 
+  clipboard-write; 
+  encrypted-media; 
+  gyroscope; 
+  picture-in-picture; 
+  web-share" 
+  allowfullscreen
+>
+</iframe>
+
 #### TikTok and Instagram embed format (repo standard)
 
 Reference implementation:
@@ -97,9 +115,9 @@ Frontmatter pattern:
 
 ```yaml
 instagramEmbeds:
-  <instagramPostId>: "<instagram-image-url>"
+  <instagramPostId>: "<instagram-image-url>" // Inspect thumbnail image of post on feed to get
 tiktokEmbeds:
-  "<tiktokVideoId>": "<tiktok-cover-image-url>"
+  "<tiktokVideoId>": "<tiktok-cover-image-url>" // Inspect thumbnail image of post on feed to get
 ```
 
 Example:

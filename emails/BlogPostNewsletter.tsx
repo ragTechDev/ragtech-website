@@ -164,24 +164,31 @@ function sanitizeEmailContent(html: string | undefined | null, instagramEmbeds?:
     }
   );
   
-  // Replace Instagram iframes with linked thumbnails
-  clean = clean.replace(
-    /<iframe[^>]*src="https:\/\/www\.instagram\.com\/p\/([a-zA-Z0-9_-]+)\/embed"[^>]*>.*?<\/iframe>/gi,
-    (match, postId) => {
-      const postUrl = `https://www.instagram.com/p/${postId}/`;
-      
-      // Use fallback image from frontmatter if available
-      if (instagramEmbeds && instagramEmbeds[postId]) {
-        const fallbackImage = instagramEmbeds[postId];
-        return `<a href="${postUrl}" style="display: block; margin: 20px auto; text-align: center;"><img src="${fallbackImage}" alt="View on Instagram" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 0 auto;" /><p style="color: #333; font-weight: 600; margin-top: 12px; font-size: 14px;">📸 View this post on Instagram</p></a>`;
+  // Replace Instagram iframe embeds with image fallbacks
+  if (instagramEmbeds) {
+    clean = clean.replace(
+      /<iframe[^>]*src="https:\/\/www\.instagram\.com\/p\/([^\/]+)\/embed"[^>]*>[\s\S]*?<\/iframe>/gi,
+      (match, postId) => {
+        const postUrl = `https://www.instagram.com/p/${postId}/`;
+        
+        // Use fallback image from frontmatter
+        if (instagramEmbeds[postId]) {
+          const imageUrl = instagramEmbeds[postId];
+          return `<a href="${postUrl}" style="display: block; margin: 20px auto; text-align: center;">
+            <img 
+              src="${imageUrl}" 
+              alt="Instagram post" 
+              style="width: 80%; max-width: 400px; height: auto; border-radius: 8px; margin: 0 auto;" 
+            />
+            <p style="color: #333; font-weight: 600; margin-top: 12px; font-size: 14px;">📸 View on Instagram</p>
+          </a>`;
+        }
+        
+        // Default fallback if no image URL is available
+        return `<a href="${postUrl}" style="display: block; margin: 20px auto; text-align: center; padding: 20px; background-color: #f8f8f8; border-radius: 8px; max-width: 400px;"><img src="https://www.instagram.com/favicon.ico" alt="Instagram" style="width: 32px; height: 32px; margin: 0 auto 12px;" /><p style="color: #333; font-weight: 600; margin: 0;">📸 View on Instagram</p></a>`;
       }
-      
-      // Default placeholder if no fallback image
-      const thumbnailUrl = `https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png`;
-      return `<a href="${postUrl}" style="display: block; margin: 20px auto; text-align: center; padding: 20px; background-color: #f8f9fa; border-radius: 8px; max-width: 400px;"><img src="${thumbnailUrl}" alt="View on Instagram" style="width: 64px; height: 64px; margin: 0 auto 12px;" /><p style="color: #333; font-weight: 600; margin: 0;">View this post on Instagram</p></a>`;
-    }
-  );
-  
+    );
+  }
   
   // Remove any remaining iframes (fallback)
   clean = clean.replace(/<iframe\b[^<]*(?:(?!<\/iframe>)<[^<]*)*<\/iframe>/gi, '');
