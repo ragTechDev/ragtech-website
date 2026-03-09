@@ -4,8 +4,8 @@ slug: "data-science-what-if-childcare-was-paid-like-ns"
 author:
   name: "ragTech Team"
   profilePicture: "/assets/logo/ragtech-logo.png"
-publishedAt: "2026-03-05T12:00:00Z"
-coverImage: "/posts/2026-03-06-data-science-what-if-childcare-was-like-national-service/blogpost-cover-image.png"
+publishedAt: "2026-03-09T12:00:00Z"
+coverImage: "/posts/2026-03-09-data-science-what-if-childcare-was-like-national-service/blogpost-cover-image.png"
 brief: "Singapore's fertility rate just hit 0.87. What if we treated parenthood like National Service, complete with 400 days of paid leave and an NSF-style allowance for stay-at-home parents?"
 tags: ["Singapore", "parenthood", "national service", "fertility rate", "childcare", "data simulation"]
 topic:
@@ -26,6 +26,9 @@ instagramEmbeds:
 
 [Singapore's fertility rate for 2025 was announced recently](https://www.straitstimes.com/singapore/politics/spores-total-fertility-rate-sinks-to-new-low-of-0-87), at a shocking 0.87. For every 2 people in Singapore, there's less than 1 child to replace them in the next generation. Concerns about the citizen population shrinking even further are growing, especially against a backdrop of increased tension around immigration policies.
 
+![Singapore's Fertility Rate](https://cassette.sphdigital.com.sg/image/straitstimes/156f9b7b5c911953b20f710dc47a5d9b2553f83784cbcf55545522401cdc78f6?w=900)
+__Image from [Singapore's fertility rate for 2025 was announced recently](https://www.straitstimes.com/singapore/politics/spores-total-fertility-rate-sinks-to-new-low-of-0-87)__
+
 In response, there was parliamentary debate around how to raise the fertility rate. Some strategies raised ire from Singaporeans, such as a proposal to increase pre-school operating hours to accommodate longer working hours from parents. Proposals like these seem out of touch with the actual struggles of working parents on the ground. The people slated to lead the taskforce on improving the fertility rate are single or childless politicians who, despite their best efforts, will objectively never be able to fully empathize with the struggles that come with pregnancy, postpartum and childcare.
 
 So it seems that previous efforts to update Singapore's approach to parenthood have been unsuccessful. In fact, [MP Leong Mun Wai sought to replace the phrase “continued review and updating of policies” with “reimagination”](https://www.channelnewsasia.com/singapore/childcare-leave-work-life-balance-supporting-families-parliament-motion-4918851), but this was rejected by the government.
@@ -45,12 +48,18 @@ Alright, alright, before you come at me - let me explain.
 
 National service is one of those things unique to Singapore, where every male citizen and permanent resident must serve for 2 years in the military. It's a mandatory civic duty that shapes young men into disciplined, patriotic citizens. More than that, it is an economic imperative our founding father, Lee Kuan Yew, believed was necessary to build a strong, self-reliant nation that did not have the luxury of a large standing army. Conscription was the only feasible way to maintain a strong defense without relying on foreign mercenaries.
 
+![Singapore's National Service](https://static1.straitstimes.com.sg/s3fs-public/articles/2022/03/20/hzns190322_0.jpg?VersionId=Rhl7B8rrtPiCHU.2V2z42o__nfWmE51U&w=900)
+__Image from [What is the future of Singapore's national service as it turns 55?](https://www.straitstimes.com/singapore/a-look-at-the-future-of-national-service-as-it-turns-55)__
+
 NS wasn't just about military readiness. It was about building a cohesive society where every citizen had a stake in the nation's success. Strong defence was crucial to political stability, which in turn was necessary for economic growth.
 
 So we made a trade-off: the sacrifice of 2 years of young men's lives for the collective good of national security and social cohesion. These young men, who would otherwise be building their careers and starting families, instead spend those years in military training. There's real opportunity cost in those 2 years (and beyond, when you add reservist obligations), but we've collectively determined that the benefits outweigh the costs.
 
 ## Parenthood Parallels
 Now apply the same logic to parenthood. Parenthood is a sacrifice, not just financially, but emotionally and socially. Parents give up time, energy, and personal freedom to raise children. They miss career opportunities, social events, and personal pursuits. They face sleepless nights, financial stress, and the constant worry of their child's wellbeing.
+
+![ParentHood Burnout](https://dam.mediacorp.sg/image/upload/s--TNo0JYLV--/c_crop,h_1414,w_1885,x_140,y_0/c_fill,g_auto,h_622,w_830/f_auto,q_auto/v1/mediacorp/cna/image/2024/01/23/parental_burnout-istock.jpg?itok=BN2PtmjG)
+__Image from [‘I gave up on parenting’: This mother suffered from parental burnout – here’s how she beat it](https://cnalifestyle.channelnewsasia.com/women/parental-burnout-quiet-quitting-motherhood-383701)__
 
 The early 2 years of parenthood are arguably the most demanding, and can be drawn in close comparison to the first 2 years of full-time NS: a complete lifestyle overhaul with sleepless nights, constant feeding, and the physical and emotional toll of caring for a newborn. Many parents make this sacrifice without adequate support.
 
@@ -77,6 +86,9 @@ Men lose two years of their career when they serve NS. Women lose two years of t
 To offset the opportunity cost of NS, we provide two years of paid service. So why not do the same for parenthood?
 
 Currently, women are given 4 months of maternity leave. This is barely enough. You spend 9 full months in pregnancy: the first 3 months in agony from nausea and fatigue, the last 3 months practically immobile. Your body changes every day for 9 months, your organs literally SHIFT, your skin STRETCHES, your hormones fluctuate wildly. But somehow, in less than half of that same time, you're expected to recover, with a huge wound either in your belly or in your nether regions.
+
+![The ROI of Parental Leave](https://cdn2.psychologytoday.com/assets/styles/article_inline_half_caption/public/field_blog_entry_images/2024-11/Blog%20Images%20Nested%20Paid%20Leave.png.jpg?itok=qQMQhzX6)
+__Image from [The ROI of Parental Leave](https://www.psychologytoday.com/sg/blog/scientific-mommy/202411/the-roi-of-parental-leave)__
 
 Then add the challenges of caring for a newborn for the next 6 months. You get an average of 2-3 hours of sleep per night. If you're not breastfeeding every 2 hours, you're cleaning bottles and making formula. You don't have time to cook, clean, shower, or do anything else. If you were a non-parent living like this, people would say you're living a depraved life.
 
@@ -360,6 +372,40 @@ That's data science in a nutshell. Your first pass might not tell the whole stor
 The numbers are clear: we spend ~$2.39 billion a year paying men to serve NS. A parental leave scheme at NSF rates would cost a third of that. Per person, it's less than a quarter of what we spend on each male over his NS career. The money isn't the barrier. The question is whether we have the political will to treat parenthood with the same seriousness we treat national defence.
 
 Singapore has solved harder problems before. We built a world-class military from scratch with a population smaller than most cities. Surely we can figure out how to pay people to raise the next generation.
+
+## Hear From Engineers Who've Been There
+
+We also sat down with engineers who are navigating parenthood themselves. Here's what they had to say:
+
+<iframe
+  width="100%"
+  height="315"
+  src="https://www.youtube.com/embed/16KXPIinH7o"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+>
+</iframe>
+
+<iframe
+  width="100%"
+  height="315"
+  src="https://www.youtube.com/embed/1Ibo2e_uJwM"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+>
+</iframe>
+
+<iframe
+  width="100%"
+  height="315"
+  src="https://www.youtube.com/embed/6hrx6QpWGEo"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+>
+</iframe>
 
 ---
 

@@ -138,9 +138,16 @@ function sanitizeEmailContent(html: string | undefined | null, instagramEmbeds?:
   
   // Remove style tags
   clean = clean.replace(/<style\b[^<]*(?:(?!<\/style>)<[^<]*)*<\/style>/gi, '');
-  
+
+  // Remove <pre> blocks entirely — they contain long code/data that breaks email layout
+  clean = clean.replace(/<pre\b[^>]*>[\s\S]*?<\/pre>/gi, '');
+
   // Remove inline styles (we'll add our own for images)
   clean = clean.replace(/\s*style="[^"]*"/gi, '');
+
+  // Add word-wrap to any remaining inline <code> tags so they don't overflow
+  // (must come after inline style removal so these styles are preserved)
+  clean = clean.replace(/<code\b([^>]*)>/gi, '<code$1 style="word-break: break-all; overflow-wrap: break-word; white-space: pre-wrap; font-size: 13px;">');
   
   // Convert relative image paths to absolute URLs
   clean = clean.replace(
@@ -156,7 +163,7 @@ function sanitizeEmailContent(html: string | undefined | null, instagramEmbeds?:
   
   // Replace YouTube iframes with linked thumbnails
   clean = clean.replace(
-    /<iframe[^>]*src="https:\/\/www\.youtube\.com\/embed\/([a-zA-Z0-9_-]+)"[^>]*>.*?<\/iframe>/gi,
+    /<iframe[^>]*src="https:\/\/www\.youtube\.com\/embed\/([a-zA-Z0-9_-]+)"[^>]*>[\s\S]*?<\/iframe>/gi,
     (match, videoId) => {
       const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
       const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
