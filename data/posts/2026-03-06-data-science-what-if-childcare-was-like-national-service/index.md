@@ -1,11 +1,11 @@
 ---
-title: "Data Simulation: What If Childcare Was Paid Like NS?"
-slug: "what-if-childcare-was-paid-like-ns"
+title: "Data Science Experiment: What If Childcare Was Paid Like NS?"
+slug: "data-science-what-if-childcare-was-paid-like-ns"
 author:
   name: "ragTech Team"
   profilePicture: "/assets/logo/ragtech-logo.png"
 publishedAt: "2026-03-05T12:00:00Z"
-coverImage: "/posts/2026-03-06-what-of-childcare-was-like-national-service/blogpost-cover-image.png"
+coverImage: "/posts/2026-03-06-data-science-what-if-childcare-was-like-national-service/blogpost-cover-image.png"
 brief: "Singapore's fertility rate just hit 0.87. What if we treated parenthood like National Service, complete with 400 days of paid leave and an NSF-style allowance for stay-at-home parents?"
 tags: ["Singapore", "parenthood", "national service", "fertility rate", "childcare", "data simulation"]
 topic:
