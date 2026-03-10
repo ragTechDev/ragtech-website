@@ -21,7 +21,7 @@ seo:
   metaDescription: "What if Singapore treated parenthood like National Service? A data-backed thought experiment on 400 days of paid parental leave."
   keywords: ["Singapore fertility rate", "parenthood national service", "paid parental leave Singapore", "childcare policy", "NS allowance", "data simulation"]
 instagramEmbeds:
-  DVdZUi7kuq8: "https://instagram.fsin12-1.fna.fbcdn.net/v/t51.71878-15/641784052_2810891589250798_8609730194806696238_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=103&ig_cache_key=Mzg0NTM0MTAxOTkwMzI5MDA0NA%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM4LnNkci5DMyJ9&_nc_ohc=3CQYqA2nDtkQ7kNvwE0CPKZ&_nc_oc=Adnw0tDscYDXo6qDWXgYdIrhtuHF38yrWSiC398s99SUs9hWwPLB9pIKWQ0wl-yoEQeJqIosKgYkEl8KbHuY-p-e&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fsin12-1.fna&_nc_gid=mhng99q6uWGMXqoWZR3wdA&_nc_ss=8&oh=00_AfyOmMNWWm0oXeil_yoCTqaCLRYTZ6sb7XV5ZkqUsnzkqA&oe=69AEC8EC"
+  DVr4pd9koPQ: "https://instagram.fsin12-1.fna.fbcdn.net/v/t51.71878-15/649215666_3095479257303519_3110878192129570159_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=105&ig_cache_key=Mzg0OTQxOTQ0Njc5MjkxMzg3Mg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&_nc_ohc=PXoVRyNTqswQ7kNvwF1loro&_nc_oc=Adnc4EOmA9FFtBak8gKEldvWWhhbiPZxtKb-bdVE4BAl6b8iL0813Wk4oRj4RTZNvTi5AnLQ0ByruZtbUMb5clAZ&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fsin12-1.fna&_nc_gid=qfV6uImd7vJmATgsYK1Zsg&_nc_ss=8&oh=00_AfyVOsaHTg2ktaoR9Pb7opPjgtc53_SbAGOe9pyOxBZWLA&oe=69B5537C"
 ---
 
 [Singapore's fertility rate for 2025 was announced recently](https://www.straitstimes.com/singapore/politics/spores-total-fertility-rate-sinks-to-new-low-of-0-87), at a shocking 0.87. For every 2 people in Singapore, there's less than 1 child to replace them in the next generation. Concerns about the citizen population shrinking even further are growing, especially against a backdrop of increased tension around immigration policies.
@@ -115,6 +115,9 @@ So I'm not asking for anything out of the norm.
 Paid leave is one thing, but there's a bigger elephant in the room: many mothers face career penalties just for taking that leave. They get passed over for promotions, sidelined from projects, or quietly managed out. Some don't even take their full entitlement because they're afraid of the consequences. This is why paid leave alone isn't enough. You need legal teeth behind it.
 
 The NS framework already gives us a model for this. Under the Enlistment Act, an employer who wrongly dismisses you on the grounds of your NS obligations can be fined up to $2,000 and/or imprisoned for up to 6 months on conviction. Apply the same penalties for dismissing or discriminating against parents on grounds of parental leave.
+
+![Phases of National Service](https://isomer-user-content.by.gov.sg/136/4fa35151-17be-45fd-af8e-90b3c59565e4/phases-of-national-service.png)
+__Image from [CMPB](https://www.cmpb.gov.sg/parents-guide/your-sons-ns-commitments/)__
 
 And consider this: Singapore's workplaces have already adapted to men disappearing for reservist. NSmen get called up for up to 40 days a year, for 10 years. Employers absorb that. They plan around it. They backfill, they redistribute work, they make it happen, because the law says they must and the culture has normalized it. If workplaces can accept men leaving periodically for reservist over a decade, they can accept women leaving for a continuous block of parental care leave. It's the same principle, just compressed instead of spread out.
 
@@ -406,6 +409,11 @@ We also sat down with engineers who are navigating parenthood themselves. Here's
   allowfullscreen
 >
 </iframe>
+
+## Watch the Short Video Breakdown!
+<div style="max-width: 50%; margin: 0 auto; width: 100%;">
+  <iframe src="https://www.instagram.com/p/DVr4pd9koPQ/embed" width="100%" height="700" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+</div>
 
 ---
 
