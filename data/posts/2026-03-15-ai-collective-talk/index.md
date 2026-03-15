@@ -4,7 +4,7 @@ slug: "women-in-ai-the-dilemma-nobody-talks-about"
 author:
   name: "Natasha"
   profilePicture: "/assets/team/natasha.PNG"
-publishedAt: "2026-03-14T12:00:00Z"
+publishedAt: "2026-03-15T12:00:00Z"
 coverImage: "/episodes/ep_leadership.webp"
 brief: "I spoke at AI Collective Singapore for International Women's Day on the tension between championing AI as a tool for women, and confronting what AI actually costs. Here's what I shared."
 tags: ["AI", "Women in Tech", "Ethics", "International Women's Day", "Singapore"]
@@ -22,7 +22,7 @@ seo:
   keywords: ["women in AI", "ethical AI", "intentional AI", "International Women's Day", "Singapore", "AI ethics", "women in tech"]
 ---
 
-Yesterday I spoke at [AI Collective Singapore](https://www.aicollective.com/) for International Women's Day, on the topic of "Women in AI". And the thing I kept coming back to while prepping for it wasn't a celebration, but it was a _constant_ tension.
+Last Friday, I spoke at [AI Collective Singapore](https://www.aicollective.com/) for International Women's Day, on the topic of "Women in AI". And the thing I kept coming back to while prepping for it wasn't a celebration, but it was a _constant_ tension.
 
 As a woman in tech who builds with AI every single day, I feel pulled in two directions. I want to champion AI as a tool that empowers women to do more with less. At the same time, I can't ignore what AI costs: the artists whose work was scraped without consent, the biases baked into systems that affect women disproportionately, the jobs being quietly displaced. How do you promote a tool you also have serious concerns about?
 
@@ -51,7 +51,7 @@ Here's what that looks like in practice.
 ![AI-Generated Art Example](https://undetectable.ai/blog/wp-content/uploads/2025/03/AI-generated-art-using-Stable-Diffusion-1024x788.avif)
 __Image from [Undetectable.ai](https://undetectable.ai/blog/how-does-ai-image-generation-work/)__
 
-Except for the early days when I didn't realize the AI filters on Tiktok were, well, AI - I have never used image or video generation since. Even as someone who posts visual content every single day across social media, a podcast, and a tech brand. Instead I find lightweight alternatives: SVG and HTML code to generate graphics, code-generated illustrations. Our children's digital literacy initiative, [futurenet.ragtechdev.com](https://futurenet.ragtechdev.com/), uses entirely code-generated, doodle-like illustrations. This sidesteps the ethical problem of image generation drawing on artists' work without royalty, and it's more resource-efficient too.
+Except for the early days when I didn't realize the AI filters on Tiktok were, well, AI - I have never used image or video generation since. Even as someone who posts visual content every single day across social media, a podcast, and a tech brand. Instead I find lightweight alternatives: SVG and HTML code to generate graphics, code-generated illustrations. Our children's digital literacy initiative, [FutureNet](https://futurenet.ragtechdev.com/), uses entirely code-generated, doodle-like illustrations. This sidesteps the ethical problem of image generation drawing on artists' work without royalty, and it's more resource-efficient too.
 
 To put numbers on that: here is the SVG code for a simple cartoon frog, the kind of graphic I'd generate instead of prompting an image model.
 
@@ -112,7 +112,7 @@ __"Don't Repeat Yourself (DRY)" is a Programming Principle. Image from [Symflowe
 
 If I find myself asking AI to do the same task repeatedly, I take that as a signal to build a system for it instead. I co-wrote a script with AI that automatically converts our blog posts into newsletter format. Now I run it once per post and never think about it again. Repeated AI tasks are engineering problems waiting to be solved.
 
-### I don't use agents. 
+### I don't use agents beyond coding agents. 
 ![Meta Security Researcher's AI Agent Accidentally Deleted Her Emails](https://i.pcmag.com/imagery/articles/00pMNQfjPbV1VvU2b2mrS58-1.fit_lim.size_1600x900.v1771943108.jpg)
 __Meta Security Researcher's AI Agent Accidentally Deleted Her Emails. Image from [PCMag](https://www.pcmag.com/news/meta-security-researchers-openclaw-ai-agent-accidentally-deleted-her-emails)__
 
@@ -132,18 +132,18 @@ __Fei-Fei Li. Image from [Stanford University](https://profiles.stanford.edu/fei
 
 **[Fei-Fei Li](https://www.artiba.org/blog/how-women-ai-leaders-turn-risk-awareness-into-technical-excellence)** founded AI4ALL to make AI education inclusive and accessible for underrepresented groups. She has said: "I believe in human-centered AI to benefit people in positive and benevolent ways. It is deeply against my principles to work on any project that I believe weaponizes AI."
 
-![](https://static.wixstatic.com/media/614b8d_3514177d2c954a6198cdff77ba774192~mv2.png/v1/fill/w_740,h_387,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/614b8d_3514177d2c954a6198cdff77ba774192~mv2.png)
-__Joy Buolamwini. Image from [Sedna Consulting Group](https://www.sednacg.com/post/influential-women-in-ai-what-is-joy-buolamwini-known-for)__
+![Joy Buolamwini](https://miro.medium.com/v2/resize:fit:434/format:webp/1*-Uyd3sHZQYSnRuvV3dWCdQ.jpeg)
+__Joy Buolamwini. Image from [Angel agyapong's Medium article](https://medium.com/@angelagy13/artificial-intelligence-has-taken-america-over-by-a-storm-from-this-technology-residing-in-your-fec7779d5dd9)__
 
 **[Joy Buolamwini](https://www.artiba.org/blog/how-women-ai-leaders-turn-risk-awareness-into-technical-excellence)** founded the Algorithmic Justice League after her 2017 Gender Shades project at MIT revealed intersectional biases in facial recognition systems, biases that hit women of color hardest.
 
-![Timnit Gebru](https://www.dair-institute.org/_next/image/?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fwc2kmxvk%2Frebrand%2F3fbdf191dc85485c6ceb76bc234976a1186a023c-4771x4480.jpg&w=3840&q=75)
-__Timnit Gebru. Image from [DAIR Institute](https://www.dair-institute.org/team/timnit-gebru/)__
+![Timnit Gebru](https://www.newtral.es/wp-content/uploads/2023/12/Timnit-Gebru.png)
+__Timnit Gebru. Image from [Newtral](https://www.newtral.es/lideres-ia-generativa-quien-es-quien/20231223/)__
 
-**[Timnit Gebru](https://www.dair-institute.org/team/timnit-gebru/)** co-led Google's Ethical AI team until she was fired for co-authoring a paper on the risks of large language models. She co-founded Black in AI and continues her research through the DAIR Institute.
+**[Timnit Gebru](https://ai.stanford.edu/~tgebru/)** co-led Google's Ethical AI team until she was fired for co-authoring a paper on the risks of large language models. She co-founded Black in AI and continues her research through the DAIR Institute.
 
-![Frances Haugen](https://images.squarespace-cdn.com/content/v1/61592b117fafdc4f5466935b/1633291268876-X10FD721UAHWS34IIQZ0/frances_headshot.jpg?format=1000w)
-__Frances Haugen. Image from [Frances Haugen's website](https://www.franceshaugen.com/)__
+![Frances Haugen](https://www.caa.com/caaspeakers/partyHeadshot/frances-haugen.png)
+__Frances Haugen. Image from [CAA Speakers](https://www.caa.com/caaspeakers/frances-haugen/)__
 
 **[Frances Haugen](https://www.franceshaugen.com/)** left Facebook and, at great personal risk, became the whistleblower behind "The Facebook Files", exposing how Meta consistently prioritized profit over public safety.
 
@@ -193,10 +193,10 @@ If you were at the talk yesterday, thank you. If you weren't, I hope this gives 
 > Watch our podcast episode on Women Leadership in Tech!
 
 ## On Natasha
-![Natasha Ann Lum](https://media.licdn.com/dms/image/v2/D5603AQFoBpQziucl4Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1718228224952?e=1775088000&v=beta&t=0ZZgNRSVOcU6p4MZ4z_J65egarw32tBwY7dM7jQszvA)
-__Natasha Ann Lum. Image from [LinkedIn](https://www.linkedin.com/in/natashaannlum/)__
+![Natasha Ann Lum](https://media.licdn.com/dms/image/v2/D5622AQGhlpCW6JsTIQ/feedshare-shrink_2048_1536/B56ZzqLOw1GgAg-/0/1773455338787?e=1775088000&v=beta&t=agzVTDOkvH1g-H0gsgG6B5vQyzYFdFw3IDnPIvxm1jA)
+__Image of Natasha Speaking at the AI Collective from [AI Collective's LinkedIn](https://www.linkedin.com/showcase/the-ai-collective-asia-pacific/posts?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BggjTxLdbS5iTWRuU8bQqvg%3D%3D)__
 
-Natasha Ann Lum is a software engineer and co-host of ragTech, a Singapore-based tech podcast and media brand on a mission to simplify technology and make it accessible, fun, and engaging for everyone. Through podcast, YouTube, Instagram, and TikTok, Natasha and her co-hosts Saloni Kaur and Victoria Lo cover AI, software, startups, and real life in tech with honesty and without the jargon. ragTech also runs [FutureNet](https://futurenet.ragtechdev.com/), a research initiative exploring the digital landscape for children and adolescents, with a focus on building safe and meaningful digital spaces for the next generation.
+[Natasha Ann](https://natashaannn.com), is a software engineer and one of three co-hosts at ragTech, a Singapore-based tech podcast and media brand on a mission to simplify technology and make it accessible, fun, and engaging for everyone. Through podcast, YouTube, Instagram, and TikTok, Natasha and her co-hosts Saloni Kaur and Victoria Lo cover AI, software, startups, and real life in tech with honesty and without the jargon. ragTech also runs [FutureNet](https://futurenet.ragtechdev.com/), a research initiative exploring the digital landscape for children and adolescents, with a focus on building safe and meaningful digital spaces for the next generation.
 
 Beyond the podcast, Natasha serves as Partnerships Lead at [Women Devs SG](https://womendevssg.netlify.app/), a community supporting women in software development in Singapore. She is an active speaker on the local and regional tech conference circuit, with past talks spanning AI, ethics, and sustainable tech. She spoke at Green IO Singapore, the country's first tech sustainability conference, and will be returning as emcee for the April 2026 edition. Across her social media platforms, she creates content that makes technology approachable and engaging for both technical and non-technical audiences.
 
