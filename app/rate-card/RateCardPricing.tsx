@@ -394,60 +394,6 @@ const bundles = [
 ];
 
 // ─── Add-Ons ──────────────────────────────────────────────────────────────────
-const natashaAddOns = [
-  {
-    name: 'Natasha Appearance Guarantee',
-    sgd: 'S$150', usd: 'US$110',
-    platforms: 'Instagram · TikTok · YouTube Shorts',
-    description:
-      'Guarantee Natasha appears in the video (vs. Saloni and/or Victoria only). Applies to any short-form or social content. Note: Natasha is always present in vodcast episodes at no extra charge.',
-    includes: [
-      'Natasha on-screen in the branded video',
-      'Applicable to IG Reels, TikTok, or YT Shorts',
-      'Vodcast episodes: Natasha always included — no charge',
-    ],
-  },
-  {
-    name: 'Collaborator Tag (Instagram)',
-    sgd: 'S$200', usd: 'US$148',
-    platforms: 'Instagram',
-    description:
-      'ragTech posts the content, and Natasha also appears in the video, but Natasha is also tagged as a collaborator — the post then appears on her Instagram profile feed and is shown to her 18K followers.',
-    includes: [
-      'Natasha on-screen in the branded video',
-      'Collab tag on the ragTech post',
-      'Post visible on Natasha\'s IG profile grid',
-      'Her 18K followers see it on their feed'
-    ],
-  },
-  {
-    name: 'Repost by Natasha',
-    sgd: 'S$120', usd: 'US$89',
-    platforms: 'Instagram · TikTok',
-    description:
-      'Natasha reposts the ragTech video to her own profile — IG repost or TikTok repost. Extends the content\'s reach and lifespan through her audience.',
-    includes: [
-      'Natasha reposts the ragTech video to her profile',
-      'Available on Instagram and/or TikTok',
-      'Reaches her followers as a native repost',
-      'Caption credit to brand included',
-    ],
-  },
-  {
-    name: 'Story Share by Natasha',
-    sgd: 'S$100', usd: 'US$74',
-    platforms: 'Instagram · TikTok',
-    description:
-      'Natasha shares the ragTech post or reel to her Instagram Story or TikTok (where story-equivalent is available), with a link sticker or CTA to the original.',
-    includes: [
-      'Story share from Natasha\'s personal account',
-      'Link sticker / CTA back to ragTech post',
-      '24-hour visibility to her audience',
-      'Available on Instagram Stories and/or TikTok',
-    ],
-  },
-];
-
 const extraAddOns = [
   {
     name: 'Category Exclusivity (per month)',
@@ -549,7 +495,7 @@ export default function RateCardPricing() {
     <div>
       {/* Rates Title */}
       <section className="px-6 pt-4 pb-2 text-center">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
+        <div className="flex flex-col items-center justify-center gap-1 mb-2">
           <HiStar className="text-primary text-2xl" />
           <SectionTitle>Rates</SectionTitle>
         </div>
@@ -566,9 +512,7 @@ export default function RateCardPricing() {
             All rates are based on verified platform data. Our reels average{' '}
             <span className="font-semibold">79K views at 13% engagement</span>. Instagram reached{' '}
             <span className="font-semibold">179K accounts and gained 3,858 followers in 30 days</span>.
-            Vodcast pricing is derived from industry CPM benchmarks (pre-roll $15–18, mid-roll $25–30
-            per InfluencerMarketingHub / Podchaser) with a 2.5× tech-niche premium. All podcast ads are
-            baked-in — permanent, never swapped out.
+            All podcast ads are host-read and baked-in, permanent and never swapped out.
           </p>
         </div>
       </section>
@@ -578,7 +522,7 @@ export default function RateCardPricing() {
       {/* ── Instagram + Short-Form ──────────────────────────────────────────── */}
       <section className="px-6 pb-16">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
+          <div className="flex flex-col items-center justify-center gap-1 mb-2">
             <FaInstagram className="text-primary text-2xl" />
             <SectionTitle>Instagram</SectionTitle>
           </div>
@@ -625,7 +569,7 @@ export default function RateCardPricing() {
       {/* ── Vodcast ────────────────────────────────────────────────────────── */}
       <section className="px-6 pb-16 pt-16">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col items-center justify-center gap-2 mb-2">
+          <div className="flex flex-col items-center justify-center gap-1 mb-2">
             <div className="flex items-center gap-2">
               <FaYoutube className="text-red-500 text-2xl" />
               <FaSpotify className="text-green-500 text-2xl" />
@@ -637,10 +581,6 @@ export default function RateCardPricing() {
           </p>
           <p className="text-center text-xs text-neutral-400 mb-1">
             All ads are host-read and baked-in (permanent — never swapped or removed).
-          </p>
-          <p className="text-center text-xs text-neutral-400 mb-8">
-            Rates derived from: pre-roll $15–18 CPM, mid-roll $25–30 CPM, post-roll $10 CPM
-            (InfluencerMarketingHub / Podchaser) · 2.5× tech-niche multiplier applied
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {vodcastPackages.map((pkg) => (
@@ -654,7 +594,7 @@ export default function RateCardPricing() {
       {/* ── LinkedIn ───────────────────────────────────────────────────────── */}
       <section className="px-6 pb-16 bg-gradient-to-br from-primary/5 to-accent/10 py-16 rounded-3xl mx-4">
         <div className="max-w-5xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
+          <div className="flex flex-col items-center justify-center gap-1 mb-2">
             <FaLinkedin className="text-blue-600 text-2xl" />
             <SectionTitle>LinkedIn</SectionTitle>
           </div>
@@ -676,9 +616,11 @@ export default function RateCardPricing() {
       {/* ── Blog & Newsletter ──────────────────────────────────────────────── */}
       <section className="px-6 pb-16 pt-16">
         <div className="max-w-5xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
-            <HiNewspaper className="text-brownDark dark:text-brown text-2xl" />
-            <FaEnvelope className="text-brownDark dark:text-brown text-xl" />
+          <div className="flex flex-col items-center justify-center gap-1 mb-2">
+            <div className="flex items-center gap-2">
+              <HiNewspaper className="text-brownDark dark:text-brown text-2xl" />
+              <FaEnvelope className="text-brownDark dark:text-brown text-xl" />
+            </div>
             <SectionTitle>Blog &amp; Newsletter</SectionTitle>
           </div>
           <p className="text-center text-sm text-neutral-500 dark:text-neutral-400 mb-1">
@@ -699,7 +641,7 @@ export default function RateCardPricing() {
       {/* ── Bundles ────────────────────────────────────────────────────────── */}
       <section className="px-6 pb-16 bg-gradient-to-br from-primary/10 via-accent/10 to-secondary/10 py-16 mx-4 rounded-3xl">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
+          <div className="flex flex-col items-center justify-center gap-1 mb-2">
             <HiStar className="text-primary text-2xl" />
             <SectionTitle>Bundle Packages</SectionTitle>
           </div>
@@ -747,41 +689,13 @@ export default function RateCardPricing() {
       {/* ── Add-Ons ────────────────────────────────────────────────────────── */}
       <section className="px-6 pb-16 pt-16">
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-2 mb-2">
+          <div className="flex flex-col items-center justify-center gap-1 mb-2">
             <HiLightningBolt className="text-secondary text-2xl" />
             <SectionTitle>Add-Ons</SectionTitle>
           </div>
           <p className="text-center text-sm text-neutral-500 dark:text-neutral-400 mb-10">
             Bolt onto any package for amplified reach, exclusivity, or faster turnaround
           </p>
-
-          {/* Natasha */}
-          <div id="natasha-amplification" className="mb-10">
-            <div className="flex items-center gap-2 mb-1">
-              <FaUsers className="text-primary text-lg" />
-              <h3 className="text-xl font-bold text-brownDark dark:text-brown">Natasha Amplification</h3>
-              <span className="text-xs bg-primary/15 text-primary px-2 py-0.5 rounded-full font-semibold">30.7K total followers</span>
-            </div>
-            <p className="text-sm text-neutral-500 dark:text-neutral-400 mb-5 max-w-3xl">
-              Natasha keeps her personal profiles organic and doesn&apos;t post brand partnerships directly.
-              These add-ons let you access her credibility and audience through ragTech channels.
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
-              {natashaAddOns.map((addon) => (
-                <PriceCard key={addon.name} name={addon.name} price={isSGD ? addon.sgd : addon.usd}
-                  description={addon.description} includes={addon.includes} />
-              ))}
-            </div>
-            <div className="mt-5 bg-primary/10 border border-primary/30 rounded-2xl p-5 max-w-3xl mx-auto text-center">
-              <p className="text-sm text-neutral-700 dark:text-neutral-300 leading-relaxed">
-                <span className="font-semibold text-brownDark dark:text-brown">Note:</span>{' '}
-                Natasha does not post brand partnerships on her personal accounts. These add-ons activate her
-                reach through ragTech content — as a collaborator tag, story boost, TikTok co-creator, or
-                episode co-host. This preserves the organic integrity of her personal profile while giving
-                brands genuine access to her audience and credibility.
-              </p>
-            </div>
-          </div>
 
           {/* Extras */}
           <div>
