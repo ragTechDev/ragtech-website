@@ -22,121 +22,95 @@ seo:
   keywords: ["Singapore AI Budget 2026", "AI literacy Singapore", "SkillsFuture AI courses", "AI anxiety Singapore", "Budget 2026 workers"]
 ---
 
-Okay, I have a confession.
+When Budget 2026 dropped and AI was everywhere, I lowkey had an anxiety spiral.
 
-When Budget 2026 dropped and PM Lawrence Wong announced a National AI Council, four National AI Missions, free AI tool access, tax deductions for AI spending, basically AI everything, my first reaction was not "wow, exciting."
+Not for myself, but for the people around me.
 
-It was closer to: *why are you doing this to me.*
+I'm a software developer with 10 years of experience. I use AI tools every day. So yes, I get it. But the moment I heard about the National AI Mission, my first thought wasn't about me. It was about my friends, my women devs community here in Singapore, the people in my circle who were already feeling uncertain about their jobs and their futures.
 
-I'm not someone who hates technology. I literally co-host a tech podcast. But there's something about being told that your government has made artificial intelligence a **national mission**, chaired by the Prime Minister himself, that feels like a lot. Like, a lot a lot. Like change being shoved at you from the top, whether you asked for it or not.
+I'm very community-minded. When my people are anxious, I feel it too. And I knew this announcement was going to create more anxiety than it would take away.
 
-And I hadn't asked for it.
-
-So I did what any reasonable person does when they're overwhelmed. I complained about it to my co-hosts. I vented in the group chat. I said things like "why can't things just stay the same for five minutes."
-
-And then, because this is literally what we do at ragTech, I went and actually read more about it.
-
-What I found made me feel a lot better. And I think it'll help you too.
+So I went and actually did some reading. Because if I was feeling this way as someone who works with these tools, I could only imagine how it was landing for everyone else.
 
 ---
 
-## My problem wasn't really with AI. It was with change.
+## The anxiety isn't really about AI
 
-Let me be honest about something. My panic wasn't really about AI the technology. It was about the feeling that the rules of the game were changing, again, and I hadn't been consulted.
+When I dug into my own reaction, I realised the discomfort wasn't really about the technology. It was about the weight of importance the government was putting on people, again, through another big plan and another big initiative.
 
-That feeling is real and it's valid. Change is exhausting, especially when it keeps coming. The pandemic. Remote work. The return to office. Now this. Every few years something new arrives and demands that you adapt, upskill, re-learn, re-brand yourself. It gets tiring.
+There is so much importance put on people through these plans. Upskill. Reskill. Keep up. And when you hear that from the top, over and over, it gets heavy.
 
-But here's the thing I had to admit to myself: that frustration, while completely understandable, was making me read the situation wrong.
+But I do see AI as a tool more than a threat. So my anxiety was more for the people around me than myself. Because if it felt heavy to me as a software dev, it would feel even heavier to people who are less familiar with these tools.
 
-I wasn't actually scared of AI. I was just... done with being pushed. And I was projecting that exhaustion onto the budget announcement.
-
-Once I separated those two things, I could actually look at what was going on more clearly.
+That's what made me want to understand it properly, so I could share what I found.
 
 ---
 
-## Singapore is not doing this alone. Or out of nowhere.
+## Singapore is not doing this alone
 
-The first thing that genuinely surprised me when I dug deeper: Singapore is not uniquely obsessed with AI. It just sounds like it because we live here and we consume Singapore media.
+The first thing that genuinely helped: Singapore is not uniquely obsessed with AI. It just sounds that way because we live here.
 
-Zoom out and the picture looks very different.
+The UAE appointed the world's first AI minister back in 2017. India launched a national AI mission in 2024 with a $1.2 billion USD budget. The UK, France, the US, they are all running some version of exactly this. China has had a national AI strategy since 2017.
 
-The UAE appointed the **world's first AI minister** back in 2017. Not a tech minister. An AI minister. Specifically. India launched its national AI mission in 2024 with a $1.2 billion USD budget. The UK announced an AI Opportunities Action Plan in January 2025 alongside £14 billion in private sector commitments. France committed €2.5 billion to AI development. The US has had AI executive orders from two different presidential administrations.
+Every major economy in the world is doing what Singapore just announced. Singapore just sounds more intense because we are small and we execute fast. Other countries are doing the same thing across twelve different ministries and years of policy documents, so it does not hit their citizens the same way.
 
-China has been executing a national AI strategy since 2017.
+We feel it more because Singapore moves tightly and quickly. Not because what is being asked of us is unfair.
 
-Every major economy in the world is doing some version of what Singapore just announced. The difference is that Singapore is small and fast and coordinated, so when it moves, the signal is loud and clear. Other countries are doing the same thing across twelve different ministries and five years of policy documents, so it doesn't feel as overwhelming to their citizens.
-
-We feel it more because Singapore executes tightly. Not because Singapore is uniquely demanding something unfair of us.
-
-And honestly? Once I understood that, the announcement stopped feeling like an attack and started feeling like... context.
+Once I understood that, it stopped feeling like an attack and started feeling like context.
 
 ---
 
-## Why the government is pushing this, and why it actually makes sense
+## Why the government is pushing this
 
-Here's the thing I had to sit with: Singapore's AI push isn't arbitrary. There are real, structural reasons why this matters for us specifically.
+There are real structural reasons why this matters specifically for Singapore.
 
-Singapore has no oil. No vast land. No huge domestic market. It has always had to compete through people: through how skilled, how productive, how adaptable its workforce is. PM Wong actually said it directly in his Budget speech: AI "can help us overcome our structural constraints: our limited natural resources, rapidly ageing population, and tight labour market."
+Singapore has no oil, no vast land, no huge domestic market. It has always competed through people: through how skilled and adaptable its workforce is. PM Wong said it directly in his Budget speech: AI "can help us overcome our structural constraints, our limited natural resources, rapidly ageing population, and tight labour market."
 
-By 2030, one in four Singaporeans will be 65 or older. The labour market is already tight. If Singapore can't find ways to do more with fewer people, the economic math gets uncomfortable fast. AI isn't a vanity project or a trend the government is chasing. It's a genuine response to a genuine problem.
+By 2030, one in four Singaporeans will be 65 or older. The labour market is already tight. If Singapore cannot find ways to do more with fewer people, the numbers get uncomfortable fast.
 
-And here's the bigger picture I had to accept: AI is not waiting for any of us to feel ready. It is already reshaping industries, job descriptions, and hiring expectations globally. The question was never really whether this was coming. It was always whether we'd be prepared when it arrived.
+And they are doing three things to help: building a plan to ensure Singapore does not face joblessness, subsidising training programmes to help people upskill and reskill, and attracting more AI startups to come here.
 
-Singapore deciding to be prepared, and giving us tools and subsidies to get there, is actually the government doing its job well. Even if the announcement landed with the subtlety of an alarm clock at 6am.
-
----
-
-## What AI literacy actually means (it's not what you think)
-
-Once I got past the panic, I had to actually figure out what "being AI literate" even means in practice. Because the phrase sounds huge and vague and slightly threatening.
-
-Turns out, it's neither huge nor vague. At least not for most of us.
-
-For the average person, whether you work in finance, HR, marketing, operations, or anything else that doesn't involve writing code, AI literacy is basically three things:
-
-Understanding what AI tools can and can't do, so you're not either terrified of them or blindly trusting them. (They're genuinely useful. They also make things up sometimes. Knowing both is the whole game.)
-
-Learning to direct them well, which mostly just means learning to ask specific, clear questions. You already know how to do this. You just haven't practised doing it with AI yet.
-
-Using them for the low-stakes, repetitive parts of your work (drafting, summarising, formatting, researching) so you can save your energy for the parts that actually require your judgment, your relationships, your context. The things AI doesn't have and can't replicate.
-
-That's it. Nobody is asking you to learn Python. Nobody is asking you to understand transformer architecture. They're asking you to not ignore a tool that can genuinely make your working life easier, and to develop enough critical thinking to use it well.
-
-For engineers and developers, it goes a bit deeper. But even there, the message isn't "AI is replacing you." The engineers winning right now are the ones who know their craft deeply enough to catch what AI gets wrong. That's still you. That skill is still valuable.
+When the government makes something a national mission, it signals seriousness. That is part of what triggered my anxiety. But it also means real resources are being put behind it.
 
 ---
 
-## The courses are actually accessible. That part is good news.
+## What AI literacy actually means
 
-Here's where I went from "okay, I get it" to "okay, I actually feel better."
+Here is where I want to be honest with you, as someone who works in this space.
 
-Singapore has over 1,600 AI courses on the SkillsFuture catalogue. I know, that number sounds more overwhelming than helpful. But the government is also launching a self-diagnostic AI readiness tool on the MySkillsFuture portal by mid-2026, which will help you figure out where you actually are and which courses match your role and level. So you're not just scrolling through 1,600 options with no compass.
+A 2 or 3 day course is not going to make you AI literate overnight. It is a start, but it is not a finish. Real fluency comes from hands-on practice, especially at work, over time.
 
-And the financial support is genuinely significant. SkillsFuture credits, SSG subsidies, UTAP, and PSEA can bring course fees down dramatically, often to near zero. Budget 2026 adds six months of free access to premium AI tools for Singaporeans who complete qualifying training, so you can actually practise with real tools after learning, not just watch videos.
+The AI world changes so fast that what you learn today might be outdated in two months. The specific tools and models are shifting constantly. So what matters more than any single course is learning to be adaptable, and investing in having stronger foundations in your own craft.
 
-Courses like Heicoders Academy's generative AI programme and offerings from SMU Academy and Aventis Training are practical, accessible, and don't require any technical background. For those who want to go deeper, there are more rigorous options through SUTD, SIT, and AI Singapore's apprenticeship programme.
+For me, that craft is software engineering. For you, it might be marketing, finance, HR, operations. Whatever it is, that foundation is what lets you use AI well and catch it when it gets things wrong, because it will get things wrong.
 
-None of this fixes the feeling that change is exhausting. But it does mean the change is being made more accessible than it might have been. And that's something.
+AI makes mistakes. Sometimes obvious ones, sometimes subtle ones. You need to be sharp enough in your field to catch them. So the real skill is not just using AI. It is knowing when to trust it and when to question it, knowing where your mind needs to be fully switched on and where you can safely delegate.
+
+It is almost like: use it, but not completely. Keep your original skills sharp and also hand off some of the repetitive work. That balance is what this transition actually looks like. And it is bigger than the cloud transition. It is bigger than when Google Search entered our lives.
+
+---
+
+## The support is actually there
+
+Once I understood the why, the practical stuff started to feel more manageable.
+
+Singapore has over 1,600 AI courses on the SkillsFuture catalogue. I know that sounds overwhelming, but the government is also launching a self-diagnostic AI readiness tool on the MySkillsFuture portal by mid-2026, so you can figure out where you actually are and which courses match your level and role.
+
+The financial support is real. SkillsFuture credits, SSG subsidies, UTAP, and PSEA can bring course fees down dramatically, often close to zero. Budget 2026 also adds six months of free access to premium AI tools if you complete qualifying training, so you can actually practise with real tools, not just watch videos.
+
+They are not just announcing a mission and leaving us to figure it out alone. That part genuinely helped.
 
 ---
 
 ## Where I landed
 
-I'm not going to pretend I've done a complete 180 and now love being pushed into things. I still find constant change tiring. I think a lot of us do.
+I felt this need to help my community ease into this transition without feeling overwhelmed. Because those who do not engage with AI will get left behind. That is the reality. But the solution is not panic. It is starting somewhere, staying curious, and building up from there.
 
-But here's where I've genuinely landed after doing the reading:
+You do not need to become an AI expert. You need to be aware, adaptable, and grounded in what you already know how to do well.
 
-The government isn't pushing AI because it's trendy. It's pushing AI because the rest of the world already is, and Singapore can't afford to be left behind. That's a real and legitimate reason.
+Start small. Use the subsidies. Keep your craft sharp.
 
-AI literacy isn't asking us to become experts. It's asking us to be aware and capable: to not be the person in the room who refuses to engage with something that's already reshaping the world around them.
-
-And the support is actually there. Subsidised courses. Free tools. A diagnostic to help you figure out where to start. Singapore is genuinely trying to bring people along, not just declare a mission and leave everyone to figure it out alone.
-
-So, deep breath. We're okay. This is manageable. And if you've been feeling the same low-grade panic I was feeling, I hope this helped.
-
-Start small. Be curious. Use the subsidies.
-
-We'll figure out the rest together.
+We will figure out the rest together.
 
 ---
 
