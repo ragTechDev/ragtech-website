@@ -3,7 +3,7 @@ title: "I Panicked When I Heard Budget 2026. Here's What I Know Now."
 slug: "singapore-budget-2026-ai-saloni"
 author:
   name: "Saloni Kaur"
-  profilePicture: "/assets/logo/ragtech-logo.png"
+  profilePicture: "/assets/team/saloni.png"
 publishedAt: "2026-03-05T12:00:00Z"
 coverImage: "/posts/2026-03-05-ai-mission-sg/blogpost-cover-image.png"
 brief: "When Budget 2026 dropped and AI was everywhere, I didn't feel inspired. I felt overwhelmed. This is what I found out after reading more, and why I actually feel okay now."
