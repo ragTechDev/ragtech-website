@@ -32,6 +32,17 @@ I'm very community-minded. When my people are anxious, I feel it too. And I knew
 
 So I went and actually did some reading. Because if I was feeling this way as someone who works with these tools, I could only imagine how it was landing for everyone else.
 
+<div style="max-width: 50%; margin: 2rem auto; width: 100%;">
+  <iframe
+    src="https://www.instagram.com/reel/DV0g03iD3pq/embed"
+    width="100%"
+    height="700"
+    frameborder="0"
+    scrolling="no"
+    allowtransparency="true">
+  </iframe>
+</div>
+
 ---
 
 ## The anxiety isn't really about AI
