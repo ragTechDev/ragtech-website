@@ -11,7 +11,7 @@ tags: ["AI", "Singapore", "Budget 2026", "SkillsFuture", "careers", "AI literacy
 topic:
   - "ragTech"
 readTimeInMinutes: 7
-status: "draft"
+status: "published"
 newsletter:
   send: true
   sent: false
@@ -59,7 +59,7 @@ That's what made me want to understand it properly, so I could share what I foun
 
 The first thing that genuinely helped: Singapore is not uniquely obsessed with AI. It just sounds that way because we live here.
 
-The UAE appointed the world's first AI minister back in 2017. India launched a national AI mission in 2024 with a $1.2 billion USD budget. The UK, France, the US, they are all running some version of exactly this. China has had a national AI strategy since 2017.
+The [UAE appointed the world's first AI minister back in 2017](https://ai.gov.ae/about_us/). [India launched a national AI mission in 2024 with a $1.2 billion USD budget](https://www.pib.gov.in/PressReleaseIframePage.aspx?PRID=2012355). The UK, France, the US, they are all running some version of exactly this. [China has had a national AI strategy since 2017](https://digichina.stanford.edu/work/full-translation-chinas-new-generation-artificial-intelligence-development-plan-2017/).
 
 Every major economy in the world is doing what Singapore just announced. Singapore just sounds more intense because we are small and we execute fast. Other countries are doing the same thing across twelve different ministries and years of policy documents, so it does not hit their citizens the same way.
 
@@ -100,6 +100,12 @@ For me, that craft is software engineering. For you, it might be marketing, fina
 AI makes mistakes. Sometimes obvious ones, sometimes subtle ones. You need to be sharp enough in your field to catch them. So the real skill is not just using AI. It is knowing when to trust it and when to question it, knowing where your mind needs to be fully switched on and where you can safely delegate.
 
 It is almost like: use it, but not completely. Keep your original skills sharp and also hand off some of the repetitive work. That balance is what this transition actually looks like. And it is bigger than the cloud transition. It is bigger than when Google Search entered our lives.
+
+We actually talked about this pressure to keep up, and what AI burnout really looks like, in one of our episodes:
+
+<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/sG0N932FJ5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 
 ---
 
