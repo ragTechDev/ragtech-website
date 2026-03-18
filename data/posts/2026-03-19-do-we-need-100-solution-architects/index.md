@@ -1,12 +1,12 @@
 ---
-title: "Do We Need 100 Solution Architects?"
+title: "If AI Means Coders Are Now Architects, Do We Need That Many Architects?"
 slug: "do-we-need-100-solution-architects"
 author:
   name: "Natasha"
   email: "natasha@ragtechdev.com"
   profilePicture: "/assets/team/natasha.PNG"
-publishedAt: "2026-02-26"
-coverImage: "/posts/2026-02-26-do-we-need-100-solution-architects/cover-image.svg"
+publishedAt: "2026-03-19T12:00:00Z"
+coverImage: "/posts/2026-03-19-do-we-need-100-solution-architects/cover-image.svg"
 brief: "If AI means we don't need 100 coders anymore, do we need 100 solution architects? My answer: not if they're all at one bloated company. But yes, if they're building 100 focused companies. Here's why the future of tech isn't about big tech getting bigger—it's about breaking it down into thousands of small, ethical, product-focused companies."
 tags: 
   - "AI"
@@ -61,7 +61,7 @@ So here's my (admittedly avant-garde) take on this question!
 ## The Truth of the Undesirable State of the Current Tech Industry
 I'm a software engineer in the tech industry who has thrived from the increase in demand for coders through the years. I remember when I started programming on my own in 2016, how it wasn't a well-known skill and how family and friends around me had thought my little hobby to be a time-waster. 
 
-![Photo Taken By My Dad When I Graduated From UCLA](/posts/2026-02-26-do-we-need-100-solution-architects/natasha-ucla-grad.JPG)
+![Photo Taken By My Dad When I Graduated From UCLA](/posts/2026-03-19-do-we-need-100-solution-architects/natasha-ucla-grad.JPG)
 
 Then I went to college in the United States in 2017. Being in UCLA, where the internet was born and being in the same state where Silicon Valley was in, it exposed me to the marvels of tech and the tech industry. I knew of peers who had started startups, heard of friends whose classmate was the nephew of Elon Musk (who I heard, went on to work at SpaceX), inadvertently was chaffeured in a Tesla when it hadn't yet made public news. Tech was all around me, and it was only there where my programming skills flourished through leading a coding club and applying programming to everything from research to being a layout editor for a student arts publication (I made a digital magazine that I shamelessly put my own digital art on).
 
@@ -376,3 +376,14 @@ Governments and education institutions have a crucial role to play in this trans
 
 Because the tools are already here. The economics are already shifting. The only question is whether our institutions will catch up in time to guide this transformation in a positive direction, or whether they'll keep fighting yesterday's battles while the world moves on without them.
 
+---
+
+ragTech is a podcast by Natasha Ann Lum, Saloni Kaur, and Victoria Lo where real people talk about real life in tech. Our mission is to simplify technology and make it accessible to everyone. We believe that tech shouldn't be intimidating, it should be fun, engaging, and easy to understand!
+
+✨ragTech Spotify: [https://open.spotify.com/show/1KfM9JTWsDQ5QoMYEh489d](https://open.spotify.com/show/1KfM9JTWsDQ5QoMYEh489d)
+
+✨ragTech YouTube: [https://www.youtube.com/@ragTechDev](https://www.youtube.com/@ragTechDev)
+
+✨Instagram: [https://instagram.com/ragtechdev](https://instagram.com/ragtechdev)
+
+✨Other Links: [https://linktr.ee/ragtechdev](https://linktr.ee/ragtechdev)
