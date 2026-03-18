@@ -24,20 +24,11 @@ seo:
 
 When Budget 2026 dropped and AI was everywhere, I lowkey had an anxiety spiral.
 
-<div style="max-width: 50%; margin: 2rem auto; width: 100%;">
-  <iframe
-    src="https://www.instagram.com/reel/DV0g03iD3pq/embed"
-    width="100%"
-    height="700"
-    frameborder="0"
-    scrolling="no"
-    allowtransparency="true">
-  </iframe>
+<div style="text-align: center;">
+  <img src="/posts/2026-03-05-ai-mission-sg/image.png" alt="A person carrying a large tangled ball of stress and lightning bolts on their back" style="display: inline-block;" />
 </div>
 
----
-
-![A person carrying a large tangled ball of stress and lightning bolts on their back](/posts/2026-03-05-ai-mission-sg/image.png)
+*Image from [Psychology Today](https://www.psychologytoday.com/us/blog/thriving-anxiety/202206/how-keep-anxiety-spiraling-out-control)*
 
 Not for myself, but for the people around me.
 
@@ -45,20 +36,8 @@ I'm a software developer with 10 years of experience. I use AI tools every day. 
 
 I'm very community-minded. When my people are anxious, I feel it too. And I knew this announcement was going to create more anxiety than it would take away.
 
-<div style="max-width: 50%; margin: 2rem auto; width: 100%;">
-  <iframe
-    src="https://www.instagram.com/reel/DV0g03iD3pq/embed"
-    width="100%"
-    height="700"
-    frameborder="0"
-    scrolling="no"
-    allowtransparency="true">
-  </iframe>
-</div>
-
----
-
-![Saloni giving a talk on AI for Software Devs](/posts/2026-03-05-ai-mission-sg/DSC08663-2.jpg)
+![Saloni with her community](/posts/2026-03-05-ai-mission-sg/DSC08626.jpg)
+*Saloni with members of her tech community in Singapore*
 
 So I went and actually did some reading. Because if I was feeling this way as someone who works with these tools, I could only imagine how it was landing for everyone else.
 
@@ -130,6 +109,9 @@ The financial support is real. SkillsFuture credits, SSG subsidies, UTAP, and PS
 
 They are not just announcing a mission and leaving us to figure it out alone. That part genuinely helped.
 
+![Saloni giving a talk on AI for Software Devs](/posts/2026-03-05-ai-mission-sg/DSC08663-2.jpg)
+*Saloni speaking at a community workshop on AI and software development*
+
 ---
 
 ## Where I landed
@@ -141,6 +123,19 @@ You do not need to become an AI expert. You need to be aware, adaptable, and gro
 Start small. Use the subsidies. Keep your craft sharp.
 
 We will figure out the rest together.
+
+<div style="max-width: 50%; margin: 2rem auto; width: 100%;">
+  <iframe
+    src="https://www.instagram.com/reel/DV0g03iD3pq/embed"
+    width="100%"
+    height="700"
+    frameborder="0"
+    scrolling="no"
+    allowtransparency="true">
+  </iframe>
+</div>
+
+> Watch Saloni's reel on her initial reaction to the AI Mission SG announcement!
 
 ---
 
