@@ -75,6 +75,10 @@ There are real structural reasons why this matters specifically for Singapore.
 
 Singapore has no oil, no vast land, no huge domestic market. It has always competed through people: through how skilled and adaptable its workforce is. PM Wong said it directly in his Budget speech: AI "can help us overcome our structural constraints, our limited natural resources, rapidly ageing population, and tight labour market."
 
+<div style="display: flex; justify-content: center; margin: 2rem 0;">
+  <iframe width="315" height="560" src="https://www.youtube.com/embed/FqOANOiuyE4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
 By 2030, one in four Singaporeans will be 65 or older. The labour market is already tight. If Singapore cannot find ways to do more with fewer people, the numbers get uncomfortable fast.
 
 And they are doing three things to help: building a plan to ensure Singapore does not face joblessness, subsidising training programmes to help people upskill and reskill, and attracting more AI startups to come here.
