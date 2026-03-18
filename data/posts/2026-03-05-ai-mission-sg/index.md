@@ -5,7 +5,7 @@ author:
   name: "Saloni Kaur"
   profilePicture: "/assets/team/saloni.png"
 publishedAt: "2026-03-05T12:00:00Z"
-coverImage: "/posts/2026-03-05-ai-mission-sg/blogpost-cover-image.png"
+coverImage: "/posts/2026-03-05-ai-mission-sg/thumbnail.png"
 brief: "When Budget 2026 dropped and AI was everywhere, I didn't feel inspired. I felt overwhelmed. This is what I found out after reading more, and why I actually feel okay now."
 tags: ["AI", "Singapore", "Budget 2026", "SkillsFuture", "careers", "AI literacy"]
 topic:
@@ -24,13 +24,26 @@ seo:
 
 When Budget 2026 dropped and AI was everywhere, I lowkey had an anxiety spiral.
 
+<div style="max-width: 50%; margin: 2rem auto; width: 100%;">
+  <iframe
+    src="https://www.instagram.com/reel/DV0g03iD3pq/embed"
+    width="100%"
+    height="700"
+    frameborder="0"
+    scrolling="no"
+    allowtransparency="true">
+  </iframe>
+</div>
+
+---
+
+![A person carrying a large tangled ball of stress and lightning bolts on their back](/posts/2026-03-05-ai-mission-sg/image.png)
+
 Not for myself, but for the people around me.
 
 I'm a software developer with 10 years of experience. I use AI tools every day. So yes, I get it. But the moment I heard about the National AI Mission, my first thought wasn't about me. It was about my friends, my women devs community here in Singapore, the people in my circle who were already feeling uncertain about their jobs and their futures.
 
 I'm very community-minded. When my people are anxious, I feel it too. And I knew this announcement was going to create more anxiety than it would take away.
-
-So I went and actually did some reading. Because if I was feeling this way as someone who works with these tools, I could only imagine how it was landing for everyone else.
 
 <div style="max-width: 50%; margin: 2rem auto; width: 100%;">
   <iframe
@@ -44,6 +57,12 @@ So I went and actually did some reading. Because if I was feeling this way as so
 </div>
 
 ---
+
+![Saloni giving a talk on AI for Software Devs](/posts/2026-03-05-ai-mission-sg/DSC08663-2.jpg)
+
+So I went and actually did some reading. Because if I was feeling this way as someone who works with these tools, I could only imagine how it was landing for everyone else.
+
+
 
 ## The anxiety isn't really about AI
 
