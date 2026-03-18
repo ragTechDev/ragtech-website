@@ -4,8 +4,8 @@ slug: "johor-data-center-ecosystem-accountability"
 author:
   name: "Natasha"
   profilePicture: "/assets/team/natasha.png"
-publishedAt: "2026-03-09T12:00:00Z"
-coverImage: "/posts/2026-03-09-johor-data-center-ecosystem-accountability/blogpost-cover-image.png"
+publishedAt: "2026-03-18T12:00:00Z"
+coverImage: "/posts/2026-03-18-johor-data-center-ecosystem-accountability/blogpost-cover-image.png"
 brief: "We reported on Malaysia's first data center protest. Since then, we've learned more from ZDATA's representatives. Here's what the story reveals about ecosystem accountability in tech infrastructure development."
 tags: ["AI", "data centers", "Malaysia", "responsible tech", "ecosystem accountability"]
 status: "published"
@@ -23,13 +23,14 @@ seo:
 instagramEmbeds:
   DUprT9qgPx3: "https://instagram.fsin12-1.fna.fbcdn.net/v/t51.82787-15/628258464_18562178200023743_1820144506954748885_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=104&ig_cache_key=MzgzMDc4MzQ0NTkzNjcwMDUzNTE4NTYyMTc4MTk0MDIzNzQz.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=-dZzW03ZqugQ7kNvwF4KZ5K&_nc_oc=AdmswB5t7ttQLTojhSRGsSeNS5cU1RuXwhpEBFpNsiUt23r8nZ7v8oqAXA87jhUbJHSKN_7Fb30FMcaTF50cGQ3P&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fsin12-1.fna&_nc_gid=OutYJZ6qrXhbW5_tB0L5DA&oh=00_Aft84zHREqpEq4gf0orwhZFRxnMdq0kmi-H2dq1jRSRRvg&oe=6995BF94"
   DUsLBiiAK0B: "https://instagram.fsin12-1.fna.fbcdn.net/v/t51.82787-15/629781316_18562348423023743_2811602084962513843_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=107&ig_cache_key=MzgzMTQ4NTg2NzI5NDI0MDAwMTE4NTYyMzQ4NDE3MDIzNzQz.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=Kfp2W73O7McQ7kNvwEEmjyC&_nc_oc=AdlsihJo6ZLiNx6OrMaZgjDkmpqsjoPgzVUK2J98Zrk3ASDpC9kFdDhgwM3BaENqFaIIDkgSql_6355StgfnUwib&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fsin12-1.fna&_nc_gid=OutYJZ6qrXhbW5_tB0L5DA&oh=00_Afu5b6F-bA--GTO_wN9SrRoDgf7S4cBOQBZ6P7HzP_o1Qg&oe=6995D583"
+  DVlMwn8ktBn: "https://instagram.fsin12-1.fna.fbcdn.net/v/t51.71878-15/645560103_1510256207103402_4095872075017714036_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=102&ig_cache_key=Mzg0NzUzNzU3NDY0MzE1OTE0Mw%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjY0MHgxMTM2LnNkci5DMyJ9&_nc_ohc=1YuCFjmgbMQQ7kNvwEy5BxN&_nc_oc=AdmEWgvuMxHOsAWdXZPWowg35SMdLdDbdpyVg8-qfIAY3XAsrU85EUCDe6zoJdXQEFuCYHzHyuNVWMPqXlwQc67w&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fsin12-1.fna&_nc_gid=7Y_USheiOlMQGdraLQx-AA&_nc_ss=8&oh=00_AfwSxPs4TPrdwGaTo6xWFTeYzCn6MEDed8oPCOYBnAfTFA&oe=69BFD6B7"
 tiktokEmbeds:
   "7541624942006390034": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo346t5aLMjmS6Oh0YAEeYG2zqWvHBxiT3NQ&s"
 ---
 
-Earlier this year, we reported on Malaysia's first data center protest in Gelang Patah, Johor. Over 50 residents gathered outside a construction site, unable to dry their laundry because of dust, watching air purifiers signal dangerous pollution levels, and worried about water security.
+Last month, we reported on Malaysia's first data center protest in Gelang Patah, Johor. Over 50 residents gathered outside a construction site, unable to dry their laundry because of dust, watching air purifiers signal dangerous pollution levels, and worried about water security.
 
-Our coverage reached over 220,000 people on Instagram. And since then, we've learned a lot more.
+Our coverage reached over 220,000 people on Instagram/Tiktok. And since then, we've learned a lot more.
 
 <div style="max-width: 50%; margin: 2rem auto; width: 100%;">
   <iframe src="https://www.instagram.com/p/DUprT9qgPx3/embed" width="100%" height="700" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
@@ -48,7 +49,7 @@ Since then, we've also been in contact with a representative from ZDATA. And we 
 
 ## Water: The Good News, and the Open Questions
 
-In our original coverage, we cited the 50 million liter figure in the context of Tier 1 and 2 data centers. To be precise: that figure applies to those tiers generally, not ZDATA specifically. That's a clarification worth making.
+In our original coverage, we cited the 50 million liter figure in the context of Tier 1 and 2 data centers. To be precise: that figure applies to those tiers generally, not ZDATA specifically.
 
 ZDATA told us, and we're quoting them directly:
 
@@ -62,7 +63,7 @@ State officials have also not disclosed the tier publicly.
 
 Now, the reclaimed water initiative is genuinely a good thing. ZDATA is part of a broader shift happening across Johor. Through the [IWK-JSW partnership](https://www.thestar.com.my/news/nation/2025/08/13/iwk-and-jsw-collaborate-to-provide-reclaimed-water-to-meet-growing-data-centre-needs), the national sewerage company is supplying up to 12 million liters per day of treated effluent to data centers including ZDATA's Malaysian subsidiary, Computility. Malaysia's water regulator, [The National Water Services Commission SPAN, has made this mandatory policy—the goal](https://www.straitstimes.com/asia/se-asia/malaysia-water-regulator-to-set-strict-water-rules-for-data-centres-as-number-grows), in their words, is zero reliance on potable water within three years.
 
-That's real progress. Credit where it's due.
+That's real progress!
 
 ![Data center cooling systems](https://engineering.fb.com/wp-content/uploads/2018/06/statepoint3_new.jpg)
 *Illustration from Meta Engineering: Massive cooling infrastructure required for data center operations*
@@ -73,13 +74,11 @@ And two: reclaimed water is still water. It comes from the community. As SPAN it
 
 ## Dust and Accountability: The Ecosystem Point
 
-On dust pollution, we should have been clearer in our original coverage. ZDATA told us, verbatim:
+On dust pollution, ZDATA told us, verbatim:
 
 > The dust pollution is caused by the Master Developer. The Master Developer's remedial efforts is not within our control.
 
 This is confirmed by the official government statement from YB Datuk Pandak Ahmad, following the [February townhall](https://www.businesstoday.com.my/2026/02/14/johor-data-centre-protest-that-went-global-tropicana-pledges-to-clean-up-act/): the dust was from Tropicana Firstwide's earthworks, and ZDATA's own construction was nearly complete.
-
-So that's a fair correction, and we make it.
 
 ![Residential area near data center construction](https://web14.bernama.com/storage/photos/86aaf73136f9b56c2a47f0ecd2e584ef68a6a0e8392cb)
 *Image from [Bernama](https://web14.bernama.com/storage/photos/86aaf73136f9b56c2a47f0ecd2e584ef68a6a0e8392cb): Data centers built too close to residential areas create conflicts*
@@ -172,7 +171,14 @@ Other examples of responsible data center development include:
 ![Airtrunks's sustainable water initiative](https://media.licdn.com/dms/image/v2/D5622AQHflT24AZLAlg/feedshare-shrink_800/B56ZX4g2cTGcAg-/0/1743631119572?e=2147483647&v=beta&t=-KQ54_VrzFXLS26ZOYzvAgE0K7uOCdFjUsP0gBBG2R0)
 *Image from Airtrunk's LinkedIn on their sustainable water initiative*
 
-These aren't impossible standards. They're industry best practices.
+These aren't impossible standards, but industry best practices.
+
+![ZData Facility in Construction](https://www.digitalnewsasia.com/sites/default/files/images/ZDATA%20DC%20at%20Galang%20Patah%20.jpg)
+__Image from [Digital News Asia](https://www.digitalnewsasia.com/sustainability-matters/zdata-groups-us2bil-johor-data-centre-first-platinum-certified-green-data)__
+
+We're also glad to report news that [ZData recently received a provisional GreenRE Platinum certification](https://www.digitalnewsasia.com/sustainability-matters/zdata-groups-us2bil-johor-data-centre-first-platinum-certified-green-data) for water, energy and sustainability design. While the facility is not fully operational yet, this certification commits them to a benchmark for environmentally responsible digital infrastructure in the country. In their plans, they state the commitment to use 100% recycled water, and the use of renewable energy generated by solar farms.
+
+Of course, we want to highlight these are commitments, i.e. promises, not something that has yet to be done since the facility is not yet operational. It will go down to residents, governments and the wider community to hold data centers responsible to their commitments - which is why we are bringing these news to light.
 
 ## A Global Movement: Communities Demanding Accountability
 
@@ -277,6 +283,12 @@ If you're an investor or decision-maker:
 At ragTech, we'll continue covering stories like this. Not because we're against technology, but because we believe technology should serve everyone—not just those who profit from it.
 
 We'll keep doing that. And we're glad you're here for the conversation.
+
+## Watch our Reel on These Clarifications
+
+<div style="max-width: 50%; margin: 2rem auto; width: 100%;">
+  <iframe src="https://www.instagram.com/p/DVlMwn8ktBn/embed" width="100%" height="700" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+</div>
 
 ---
 
