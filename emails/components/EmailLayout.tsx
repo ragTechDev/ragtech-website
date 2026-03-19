@@ -60,6 +60,8 @@ const container = {
   padding: '20px 0 48px',
   marginBottom: '64px',
   maxWidth: '600px',
+  width: '100%',
+  tableLayout: 'fixed' as const,
 };
 
 const header = {
@@ -74,4 +76,8 @@ const logo = {
 
 const content = {
   padding: '0 40px',
+  maxWidth: '520px',
+  width: '100%',
+  overflow: 'hidden',
+  tableLayout: 'fixed' as const,
 };

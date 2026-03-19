@@ -1,0 +1,141 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+
+  <style>
+    :root {
+      /* 🎨 THEME */
+      --bg-color: #a2d4d1;
+      --accent-1: #fda2a9;
+      --accent-2: #a2805d;
+      --text-primary: #8b5a49;
+      --text-secondary: #a2805d;
+    }
+  </style>
+
+  <defs>
+    <!-- Gradient -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="var(--accent-1)" />
+      <stop offset="100%" stop-color="var(--accent-2)" />
+    </linearGradient>
+
+    <!-- Emoji Pattern -->
+    <pattern id="emojiPattern" width="110" height="100" patternUnits="userSpaceOnUse">
+      <text x="20" y="35" font-size="32" opacity="0.08">🥺</text>
+      <text x="65" y="80" font-size="32" opacity="0.08">🏢</text>
+    </pattern>
+
+    <!-- Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- 🟡 Background -->
+  <rect width="1200" height="630" fill="var(--bg-color)" />
+  <rect width="1200" height="630" fill="url(#emojiPattern)" />
+
+  <!-- 🎨 Decorative blobs -->
+  <circle cx="150" cy="120" r="180" fill="var(--accent-1)" opacity="0.08"/>
+  <circle cx="1050" cy="500" r="220" fill="var(--accent-2)" opacity="0.08"/>
+  <circle cx="900" cy="100" r="120" fill="#fff3c1" opacity="0.15"/>
+
+  <!-- 🌈 Accent bar -->
+  <rect x="80" y="180" width="8" height="200"
+        fill="url(#accentGradient)" rx="4"
+        filter="url(#glow)"/>
+
+  <!-- 🧠 Title -->
+  <text x="110" y="230"
+        font-family="Inter, system-ui, sans-serif"
+        font-size="58"
+        font-weight="800"
+        fill="var(--text-primary)">
+    The Truth of the
+  </text>
+
+  <text x="110" y="300"
+        font-family="Inter, system-ui, sans-serif"
+        font-size="58"
+        font-weight="800"
+        fill="var(--text-primary)">
+    Undesirable State of the
+  </text>
+
+  <text x="110" y="370"
+        font-family="Inter, system-ui, sans-serif"
+        font-size="58"
+        font-weight="800"
+        fill="url(#accentGradient)">
+    Current Tech Industry
+  </text>
+
+  <!-- 🖼 Hero Image -->
+  <g transform="translate(700, 100)">
+    <image href="{{HERO_IMAGE_URL}}"
+           width="420"
+           height="420"
+           opacity="1"/>
+  </g>
+
+  <!-- 🏷 Tags (repeatable) -->
+  <g transform="translate(110, 510)">
+    <!-- Tag 1 -->
+    <g>
+      <rect width="110" height="34" rx="17"
+            fill="white"
+            stroke="var(--accent-1)"
+            stroke-width="2"/>
+      <text x="55" y="22"
+            font-size="14"
+            font-weight="700"
+            fill="var(--accent-1)"
+            text-anchor="middle">
+        Big Tech
+      </text>
+    </g>
+
+    <!-- Tag 2 -->
+    <g transform="translate(120, 0)">
+      <rect width="130" height="34" rx="17"
+            fill="white"
+            stroke="var(--accent-2)"
+            stroke-width="2"/>
+      <text x="65" y="22"
+            font-size="14"
+            font-weight="700"
+            fill="var(--accent-2)"
+            text-anchor="middle">
+        Monopolies
+      </text>
+    </g>
+
+    <!-- Tag 3 -->
+    <g transform="translate(260, 0)">
+      <rect width="70" height="34" rx="17"
+            fill="white"
+            stroke="var(--accent-1)"
+            stroke-width="2"/>
+      <text x="35" y="22"
+            font-size="14"
+            font-weight="700"
+            fill="var(--accent-1)"
+            text-anchor="middle">
+        Future
+      </text>
+    </g>
+  </g>
+
+  <!-- ✍️ Author -->
+  <text x="110" y="585"
+        font-family="Inter, system-ui, sans-serif"
+        font-size="16"
+        fill="var(--text-secondary)"
+        font-weight="600">
+    Natasha • ragTech
+  </text>
+
+</svg>

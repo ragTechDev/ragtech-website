@@ -83,11 +83,42 @@ export default function BlogPostNewsletter({
 
       {/* Content Preview (first 500 chars) */}
       <Section style={contentSection}>
-        <div
-          dangerouslySetInnerHTML={{
-            __html: sanitizeEmailContent(content, instagramEmbeds, tiktokEmbeds),
+        <table
+          border={0}
+          cellPadding={0}
+          cellSpacing={0}
+          role="presentation"
+          style={{
+            width: '100%',
+            maxWidth: '520px',
+            tableLayout: 'fixed',
           }}
-        />
+        >
+          <tbody>
+            <tr>
+              <td
+                style={{
+                  width: '100%',
+                  maxWidth: '520px',
+                  overflow: 'hidden',
+                  wordBreak: 'break-word',
+                }}
+              >
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: sanitizeEmailContent(content, instagramEmbeds, tiktokEmbeds),
+                  }}
+                  style={{
+                    width: '100%',
+                    maxWidth: '520px',
+                    overflow: 'hidden',
+                    wordBreak: 'break-word',
+                  }}
+                />
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </Section>
 
       {/* CTA */}
@@ -124,7 +155,7 @@ function sanitizeEmailContent(html: string | undefined | null, instagramEmbeds?:
       // Use fallback cover image from frontmatter if available
       if (tiktokEmbeds && tiktokEmbeds[videoId]) {
         const coverImage = tiktokEmbeds[videoId];
-        return `<a href="${videoUrl}" style="display: block; margin: 20px auto; text-align: center;"><img src="${coverImage}" alt="Watch on TikTok" style="width: 100%; max-width: 500px; height: auto; border-radius: 8px; margin: 0 auto;" /><p style="color: #333; font-weight: 600; margin-top: 12px; font-size: 14px;">🎵 Watch on TikTok</p></a>`;
+        return `<a href="${videoUrl}" style="display: block; margin: 20px auto; text-align: center;"><img src="${coverImage}" alt="Watch on TikTok" style="width: 100%; max-width: 520px; height: auto; border-radius: 8px; margin: 0 auto; display: block;" /><p style="color: #333; font-weight: 600; margin-top: 12px; font-size: 14px;">🎵 Watch on TikTok</p></a>`;
       }
       
       // Default placeholder if no cover image
@@ -155,10 +186,10 @@ function sanitizeEmailContent(html: string | undefined | null, instagramEmbeds?:
     '<img$1src="https://ragtechdev.com/$2"$3>'
   );
   
-  // Add consistent styling to all images (max-width 100%, auto height, centered)
+  // Add consistent styling to all images (ensure they never exceed container width)
   clean = clean.replace(
     /<img([^>]*)>/gi,
-    '<img$1 style="width: 100%; max-width: 520px; height: auto; display: block; margin: 16px auto; border-radius: 8px;">'
+    '<img$1 style="width: 100%; max-width: 520px; height: auto; display: block; margin: 16px auto; border-radius: 8px; box-sizing: border-box;">'
   );
   
   // Replace YouTube iframes with linked thumbnails
@@ -167,7 +198,7 @@ function sanitizeEmailContent(html: string | undefined | null, instagramEmbeds?:
     (match, videoId) => {
       const thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
       const videoUrl = `https://www.youtube.com/watch?v=${videoId}`;
-      return `<a href="${videoUrl}" style="display: block; margin: 20px 0;"><img src="${thumbnailUrl}" alt="Watch on YouTube" style="width: 100%; max-width: 560px; height: auto; border-radius: 8px;" /></a><p style="text-align: center; margin-top: 8px;"><a href="${videoUrl}" style="color: #5da9a4; text-decoration: underline;">▶ Watch on YouTube</a></p>`;
+      return `<a href="${videoUrl}" style="display: block; margin: 20px 0;"><img src="${thumbnailUrl}" alt="Watch on YouTube" style="width: 100%; max-width: 520px; height: auto; display: block; border-radius: 8px;" /></a><p style="text-align: center; margin-top: 8px;"><a href="${videoUrl}" style="color: #5da9a4; text-decoration: underline;">▶ Watch on YouTube</a></p>`;
     }
   );
   
@@ -185,7 +216,7 @@ function sanitizeEmailContent(html: string | undefined | null, instagramEmbeds?:
             <img 
               src="${imageUrl}" 
               alt="Instagram post" 
-              style="width: 80%; max-width: 400px; height: auto; border-radius: 8px; margin: 0 auto;" 
+              style="width: 100%; max-width: 520px; height: auto; border-radius: 8px; margin: 0 auto; display: block;" 
             />
             <p style="color: #333; font-weight: 600; margin-top: 12px; font-size: 14px;">📸 View on Instagram</p>
           </a>`;
@@ -296,6 +327,10 @@ const contentSection = {
   fontSize: '16px',
   lineHeight: '1.6',
   marginBottom: '32px',
+  overflow: 'hidden',
+  maxWidth: '520px',
+  width: '100%',
+  tableLayout: 'fixed' as const,
 };
 
 const ctaSection = {
