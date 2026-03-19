@@ -4,8 +4,8 @@ slug: "singapore-budget-2026-ai-saloni"
 author:
   name: "Saloni Kaur"
   profilePicture: "/assets/team/saloni.png"
-publishedAt: "2026-03-18T12:00:00Z"
-coverImage: "/posts/2026-03-05-ai-mission-sg/thumbnail.png"
+publishedAt: "2026-03-19T12:00:00Z"
+coverImage: "/posts/2026-03-19-ai-mission-sg/thumbnail.png"
 brief: "When Budget 2026 dropped and AI was everywhere, I didn't feel inspired. I felt overwhelmed. This is what I found out after reading more, and why I actually feel okay now."
 tags: ["AI", "Singapore", "Budget 2026", "SkillsFuture", "careers", "AI literacy"]
 topic:
@@ -20,13 +20,13 @@ newsletter:
 seo:
   metaDescription: "Budget 2026 pushed AI hard and honestly? I panicked. Here's the journey from overwhelmed to actually feeling okay, and what AI literacy really means for all of us."
   keywords: ["Singapore AI Budget 2026", "AI literacy Singapore", "SkillsFuture AI courses", "AI anxiety Singapore", "Budget 2026 workers"]
+instagram:
+  DV0g03iD3pq: "https://instagram.fsin12-1.fna.fbcdn.net/v/t51.82787-15/650682410_17954579052096759_2811569158812181491_n.jpg?stp=dst-jpg_e15_tt6&_nc_cat=106&ig_cache_key=Mzg1MTg0Nzk1MTgzNzAwMjM0NjE3OTU0NTc5MDQ5MDk2NzU5.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjU3NngxMDI0LnNkci5DMyJ9&_nc_ohc=7_wI9925qB4Q7kNvwFrHVe5&_nc_oc=AdoUbQzdLlyCQkFRYnzQ6f3eArV8GJHy8Embveid84fVp3vZl3xv0wTvPa90_HCndXihdkLj2jS6b4Jz9kPFkJpc&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=instagram.fsin12-1.fna&_nc_gid=MMeXCNUFiKnMulDipFjL4w&_nc_ss=8&oh=00_AfwSazUbAthgHzLBNWoECK4-SxJuNqrhkm-CcYIbSE8ekg&oe=69C1282E"
 ---
 
 When Budget 2026 dropped and AI was everywhere, I lowkey had an anxiety spiral.
 
-<div style="text-align: center;">
-  <img src="/posts/2026-03-05-ai-mission-sg/image.png" alt="A person carrying a large tangled ball of stress and lightning bolts on their back" style="display: inline-block;" />
-</div>
+![Image of Person Spiralling](https://cdn.psychologytoday.com/sites/default/files/styles/article-inline-half-caption/public/field_blog_entry_images/2022-06/anxiety.jpg?itok=o1CJJ5m-)
 
 *Image from [Psychology Today](https://www.psychologytoday.com/us/blog/thriving-anxiety/202206/how-keep-anxiety-spiraling-out-control)*
 
@@ -36,7 +36,7 @@ I'm a software developer with 10 years of experience. I use AI tools every day. 
 
 I'm very community-minded. When my people are anxious, I feel it too. And I knew this announcement was going to create more anxiety than it would take away.
 
-![Saloni with her community](/posts/2026-03-05-ai-mission-sg/DSC08626.jpg)
+![Saloni with her community](/posts/2026-03-19-ai-mission-sg/DSC08626.jpg)
 *Saloni with members of her tech community in Singapore*
 
 So I went and actually did some reading. Because if I was feeling this way as someone who works with these tools, I could only imagine how it was landing for everyone else.
@@ -119,7 +119,7 @@ The financial support is real. SkillsFuture credits, SSG subsidies, UTAP, and PS
 
 They are not just announcing a mission and leaving us to figure it out alone. That part genuinely helped.
 
-![Saloni giving a talk on AI for Software Devs](/posts/2026-03-05-ai-mission-sg/DSC08663-2.jpg)
+![Saloni giving a talk on AI for Software Devs](/posts/2026-03-19-ai-mission-sg/DSC08663-2.jpg)
 *Saloni speaking at a community workshop on AI and software development*
 
 ---
