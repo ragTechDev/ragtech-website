@@ -32,28 +32,28 @@
   <rect x="0" y="0" width="1000" height="12" fill="#fda2a9"/>
   
   <!-- Main content -->
-  <text x="500" y="180" text-anchor="middle" font-size="72" font-weight="500" class="header" fill="#8b5a49" letter-spacing="2">
-    MALAYSIA'S FIRST
+  <text x="500" y="160" text-anchor="middle" font-size="60" font-weight="500" class="header" fill="#8b5a49" letter-spacing="2">
+    JOHOR DATA CENTER
   </text>
-  <text x="500" y="270" text-anchor="middle" font-size="72" font-weight="500" class="header" fill="#8b5a49" letter-spacing="2">
-    AI DATA CENTER
-  </text>
-  <text x="500" y="360" text-anchor="middle" font-size="90" font-weight="500" class="body-text" fill="#fc8b94" letter-spacing="2">
+  <text x="500" y="240" text-anchor="middle" font-size="72" font-weight="500" class="header" fill="#8b5a49" letter-spacing="2">
     PROTEST
+  </text>
+  <text x="500" y="330" text-anchor="middle" font-size="50" font-weight="500" class="body-text" fill="#fc8b94" letter-spacing="1">
+    What We've Learned Since
   </text>
   
   <!-- Emoji accent -->
-  <text x="500" y="480" text-anchor="middle" font-size="100">⚠️</text>
+  <text x="500" y="450" text-anchor="middle" font-size="100">🏗️</text>
   
   <!-- Subheading -->
-  <text x="500" y="600" text-anchor="middle" font-size="42" font-weight="500" class="body-text" fill="#404040">
-    What happened in Johor
+  <text x="500" y="580" text-anchor="middle" font-size="42" font-weight="500" class="body-text" fill="#404040">
+    It's not about one company.
   </text>
-  <text x="500" y="660" text-anchor="middle" font-size="42" font-weight="500" class="body-text" fill="#404040">
-    is a wake-up call
+  <text x="500" y="640" text-anchor="middle" font-size="42" font-weight="500" class="body-text" fill="#404040">
+    It's about ecosystem
   </text>
-  <text x="500" y="720" text-anchor="middle" font-size="42" font-weight="500" class="body-text" fill="#404040">
-    we all need to hear
+  <text x="500" y="700" text-anchor="middle" font-size="42" font-weight="500" class="body-text" fill="#5da9a4">
+    accountability
   </text>
   
   <!-- Bottom accent -->
