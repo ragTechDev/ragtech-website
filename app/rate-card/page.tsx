@@ -153,17 +153,13 @@ export default function RateCardPage() {
   const ttAvgComments = parseTtRatio(ttCommentsRaw);
   const ttAvgShares   = parseTtRatio(ttSharesRaw);
 
-  // Natasha aggregates
-  const natashaTotal     = (natashaIgF ?? 0) + (natashaTtF ?? 0) + (natashaLiF ?? 0);
-  const combinedReached  = (ig30dReached ?? 0) + (natashaReached ?? 0);
-  const combined30dViews = (ig30dViews ?? 0) + (natasha30dViews ?? 0) + (natashaTt30d ?? 0);
-
   // ── stat cards ────────────────────────────────────────────────────────────
   const stats = [
     {
       label: 'Instagram',
       value: fmt(followers ?? 0),
       sub: `followers • ${fmt(ig30dReached ?? 0)} reached (30d)`,
+      // topGeoLabel removed — follower_geography not in JSON
       icons: [{ icon: FaInstagram, color: 'text-pink-500' }],
     },
     {
@@ -189,21 +185,6 @@ export default function RateCardPage() {
       value: fmt(newsletterSubs ?? 74),
       sub: 'newly launched · early-bird rates',
       icons: [{ icon: FaEnvelope, color: 'text-brownDark' }],
-    },
-    {
-      label: 'Natasha reach',
-      value: fmt(natashaTotal),
-      sub: `total followers • ${fmt(natasha30dViews ?? 0)} 30d views`,
-      icons: [{ icon: FaUsers, color: 'text-primary' }],
-    },
-    {
-      label: 'Combined 30d views',
-      value: fmt(combined30dViews),
-      sub: `ragTech + Natasha • ${fmt(combinedReached)} reached`,
-      icons: [
-        { icon: FaInstagram, color: 'text-pink-500' },
-        { icon: FaTiktok, color: 'text-neutral-700 dark:text-neutral-300' },
-      ],
     },
   ];
 
@@ -241,7 +222,7 @@ export default function RateCardPage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center pt-20 pb-16 px-6 overflow-hidden bg-gradient-to-br from-accent/40 via-pink-50 to-secondary/30">
+      <section className="relative pt-12 pb-16 px-6 overflow-hidden bg-gradient-to-br from-accent/40 via-pink-50 to-secondary/30">
         {/* Geometric Background */}
         <div className="absolute top-20 right-10 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-pulse" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-pulse" />
@@ -659,123 +640,6 @@ export default function RateCardPage() {
         </div>
       </section>
 
-      {/* Natasha Analytics */}
-      <section id="natasha-analytics" className="px-6 pb-16 max-w-6xl mx-auto">
-        <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 bg-primary/10 text-primary text-xs font-semibold px-3 py-1.5 rounded-full mb-4">
-            <FaUsers className="text-xs" /> Add-on: Natasha&apos;s Personal Channels
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-brownDark dark:text-brown mb-2">Natasha&apos;s Channel Analytics</h2>
-          <p className="text-sm text-neutral-500 dark:text-neutral-400">Last updated March 2026 · Available as an add-on to any ragTech partnership</p>
-        </div>
-
-        {/* Instagram + TikTok: main cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-
-          {/* Instagram */}
-          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-6 border border-neutral-200 dark:border-neutral-700 shadow-sm">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-2">
-                <FaInstagram className="text-pink-500 text-xl" />
-                <span className="font-bold text-brownDark dark:text-brown text-base">Instagram</span>
-              </div>
-              <div className="text-right">
-                <p className="text-xl font-bold text-primary">{fmt(natashaIgF ?? 0)}</p>
-                <p className="text-xs text-neutral-400">followers</p>
-              </div>
-            </div>
-            <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4 mb-4">
-              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Reach (Last 30 Days)</p>
-              <div className="grid grid-cols-2 gap-3">
-                {[
-                  { label: 'Accounts Reached',  value: fmt(natashaReached ?? 0) },
-                  { label: 'Non-follower Views', value: pctOrDash(natashaIgNonFollower) },
-                ].map(({ label, value }) => (
-                  <div key={label}>
-                    <p className={`font-bold text-sm ${value === '\u2014' ? 'text-neutral-400' : 'text-primary'}`}>{value}</p>
-                    <p className="text-xs text-neutral-400 leading-tight">{label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4 mb-4">
-              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Engagement (Last 30 Days)</p>
-              <div className="grid grid-cols-3 gap-3">
-                {[
-                  { label: 'Total Views',    value: fmt(natasha30dViews ?? 0) },
-                  { label: 'Avg Reel Views', value: fmtOrDash(natashaIgAvgReelViews) },
-                  { label: 'Avg Reel Likes', value: fmtOrDash(natashaIgAvgReelLikes) },
-                ].map(({ label, value }) => (
-                  <div key={label}>
-                    <p className={`font-bold text-sm ${value === '\u2014' ? 'text-neutral-400' : 'text-primary'}`}>{value}</p>
-                    <p className="text-xs text-neutral-400 leading-tight">{label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            {/* TODO: fill in natasha.instagram audience demographics in platform-stats.json: follower_age_range, follower_gender, follower_geography */}
-          </div>
-
-          {/* TikTok */}
-          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-6 border border-neutral-200 dark:border-neutral-700 shadow-sm">
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-2">
-                <FaTiktok className="text-neutral-700 dark:text-neutral-300 text-xl" />
-                <span className="font-bold text-brownDark dark:text-brown text-base">TikTok</span>
-              </div>
-              <div className="text-right">
-                <p className="text-xl font-bold text-primary">{fmt(natashaTtF ?? 0)}</p>
-                <p className="text-xs text-neutral-400">followers</p>
-              </div>
-            </div>
-            <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4 mb-4">
-              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Engagement (Last 30 Days)</p>
-              <div className="grid grid-cols-2 gap-3">
-                {[
-                  { label: 'Views',    value: fmt(natashaTt30d ?? 0) },
-                  { label: 'Likes',    value: fmt(natashaTtLikes ?? 0) },
-                  { label: 'Comments', value: fmt(natashaTtComments ?? 0) },
-                  { label: 'Shares',   value: fmt(natashaTtShares ?? 0) },
-                ].map(({ label, value }) => (
-                  <div key={label}>
-                    <p className="font-bold text-primary text-sm">{value}</p>
-                    <p className="text-xs text-neutral-400">{label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            {/* TODO: fill in natasha.tiktok audience demographics in platform-stats.json: follower_age_range, follower_gender, follower_geography */}
-          </div>
-
-        </div>
-
-        {/* LinkedIn + YouTube: smaller cards */}
-        <div className="grid grid-cols-2 gap-4">
-
-          {/* LinkedIn */}
-          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-5 border border-neutral-200 dark:border-neutral-700 shadow-sm">
-            <div className="flex items-center gap-2 mb-3">
-              <FaLinkedin className="text-blue-600 text-lg" />
-              <span className="font-bold text-brownDark dark:text-brown text-sm">LinkedIn</span>
-            </div>
-            <p className="text-2xl font-bold text-primary">{fmt(natashaLiF ?? 0)}</p>
-            <p className="text-xs text-neutral-400">followers</p>
-          </div>
-
-          {/* YouTube */}
-          <div className="bg-white dark:bg-neutral-800 rounded-2xl p-5 border border-neutral-200 dark:border-neutral-700 shadow-sm">
-            <div className="flex items-center gap-2 mb-3">
-              <FaYoutube className="text-red-500 text-lg" />
-              <span className="font-bold text-brownDark dark:text-brown text-sm">YouTube</span>
-            </div>
-            <p className={`text-2xl font-bold ${fmtOrDash(natashaYtSubs) === '\u2014' ? 'text-neutral-400' : 'text-primary'}`}>{fmtOrDash(natashaYtSubs)}</p>
-            <p className="text-xs text-neutral-400">subscribers</p>
-            {/* TODO: fill in natasha.youtube.subscribers in platform-stats.json */}
-          </div>
-
-        </div>
-      </section>
-
       {/* About */}
       <section className="px-6 pb-16 max-w-3xl mx-auto text-center">
         <p className="text-neutral-600 dark:text-neutral-400 leading-relaxed text-base">
@@ -792,9 +656,6 @@ export default function RateCardPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-brownDark dark:text-brown mb-2">
             Showcase Gallery
           </h2>
-          <p className="text-sm text-neutral-500 dark:text-neutral-400">
-            Carousels, reels, and vodcast episodes — this is what brands are buying into
-          </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           <div className="flex flex-col items-center gap-2">
@@ -936,15 +797,10 @@ export default function RateCardPage() {
               />
               <div>
                 <p className="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed mb-3">
-                  A few months ago we launched a hand-drawn comic carousel series starring Techybara, our capybara
-                  mascot who navigates the world of tech. The format has quickly become one of our most shareable
-                  content types.
+                  Techybara is our hand-drawn capybara mascot who navigates the world of tech. The comic carousel format has quickly become one of our most shareable content types.
                 </p>
                 <p className="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed">
-                  Brand integrations in the Techybara universe are story-led and highly native — Techybara
-                  encounters your product as part of a relatable tech scenario, making the placement feel organic
-                  rather than promotional. We also offer standard carousel formats (listicles, guides, tip cards)
-                  for brands that prefer a more informational approach.
+                  Brand integrations are story-led: Techybara encounters your product in a relatable tech scenario. We also offer standard carousel formats (listicles, guides, tip cards).
                 </p>
               </div>
             </div>
@@ -1018,38 +874,6 @@ export default function RateCardPage() {
             </p>
           </div>
 
-          {/* Natasha Add-on */}
-          <div className="mt-6 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl p-8 border border-primary/30">
-            <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 dark:text-neutral-400 mb-3">
-              Natasha amplification add-on
-            </p>
-            <p className="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed mb-3">
-              Natasha has significant personal reach,{' '}
-              <strong>{fmt(natashaTotal)} total followers</strong> across Instagram ({fmt(natashaIgF ?? 0)}),
-              TikTok ({fmt(natashaTtF ?? 0)}), and LinkedIn ({fmt(natashaLiF ?? 0)}), generating over{' '}
-              <strong>{fmt(natasha30dViews ?? 0)} views in 30 days</strong> on Instagram alone, with{' '}
-              <strong>{fmt(natashaReached ?? 0)} accounts reached</strong>. She receives frequent direct
-              partnership requests but keeps her personal profiles organic, preferring to channel brand
-              collaborations through ragTech.
-            </p>
-            <p className="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed mb-3">
-              Activating the Natasha add-on gives your campaign a combined reach of{' '}
-              <strong>{fmt(combinedReached)} accounts</strong> in 30 days and{' '}
-              <strong>{fmt(combined30dViews)} combined 30-day views</strong> across ragTech and Natasha&apos;s
-              channels, a meaningful amplifier beyond ragTech&apos;s own audience.
-            </p>
-            <p className="text-neutral-700 dark:text-neutral-300 text-sm leading-relaxed">
-              Add-on options: add Natasha as a collaborator on ragTech Instagram posts (exposing the
-              collaboration to her follower base), feature her as a creator in the content, or co-host a
-              dedicated podcast or vodcast episode.
-            </p>
-            <a
-              href="#natasha-amplification"
-              className="inline-flex items-center gap-1.5 mt-4 text-sm font-semibold text-primary hover:underline"
-            >
-              See Natasha add-on pricing ↓
-            </a>
-          </div>
         </div>
       </section>
 
