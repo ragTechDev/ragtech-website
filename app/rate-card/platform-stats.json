@@ -1,32 +1,17 @@
 {
   "instagram": {
-    "followers": 3853,
+    "followers": 4638,
     "last_30_days": {
-        "followers_gained": 3858,
-        "views": 671787,
+        "followers_gained": 1500,
+        "views": 392147,
         "views_breakdown_by_viewer_type": {
-            "followers_percent": 4.4,
-            "non_followers_percent": 95.6
+            "followers_percent": 9,
+            "non_followers_percent": 91
         },
-        "views_breakdown_by_content_type": {
-            "reels_percent": 99.5,
-            "stories_percent": 0.4,
-            "posts_percent": 0.0
-        },
-        "accounts_reached": 188139,
-        "top_content_based_on_views": {
-            "id": 3832034841341342549,
-            "content_type": "reel",
-            "views": 323959,
-            "accounts_reached": 174851,
-            "likes": 11865,
-            "comments": 90,
-            "saves": 3130,
-            "shares": 2416
-        },
+        "accounts_reached": 117566,
         "profile_activity": 4337,
-        "profile_visits": 4245,
-        "external_link_taps": 92,
+        "profile_visits": 3011,
+        "external_link_taps": 69,
         "audience_top_countries": {
             "india_percent": 18.0,
             "united_states_percent": 11.3,
@@ -44,34 +29,29 @@
             "female_percent": 21.5
         },
         "interactions": 55968,
-        "interactions_by_content_type": {
-            "reels_percent": 98.8,
-            "stories_percent": 1.2,
-            "posts_percent": 0.0
-        },
         "content_insights": {
-            "total_content_published": 36,
+            "total_content_published": 48,
             "reels": {
-                "total_reels_published": 8,
-                "total_views": 634670,
-                "total_likes": 29569,
-                "avg_comments": 26192,
-                "avg_saves": 6343,
-                "avg_shares": 20388
+                "total_reels_published": 13,
+                "total_views": 392147,
+                "total_likes": 18772,
+                "avg_comments": 284,
+                "avg_saves": 3573,
+                "avg_shares": 4366,
+                "engagement_rate_percent": 13
             },
             "stories": {
-                "total_stories_published": 15,
-                "total_views": 119911,
-                "total_exits": 365
+                "total_stories_published": 23,
+                "total_views": 33669
             },
             "posts": {
-                "total_posts_published": 13,
-                "total_impressions": 27188,
-                "total_reach": 14864,
-                "total_likes": 358,
-                "total_comments": 22,
-                "total_saves": 56,
-                "avg_shares": 77
+                "total_posts_published": 8,
+                "total_impressions": 33669,
+                "total_reach": 33669,
+                "total_likes": 1120,
+                "total_comments": 68,
+                "total_saves": 448,
+                "avg_shares": 34
             }
         }
     }
@@ -151,20 +131,16 @@
     "engagement_percent": 10
   },
   "tiktok": {
-    "followers": 365,
+    "followers": 441,
     "videos_published_last_12_months": 93,
-    "avg_views_per_video_last_30_days": "22000/17",
-    "avg_likes_per_video_last_30_days": "412/17",
-    "avg_comments_per_video_last_30_days": "20/17",
-    "avg_shares_per_video_last_30_days": "26/17",
-    "avg_completion_rate_percent_last_30_days": null,
-    "follower_growth_last_30_days_percent": 93,
-    "total_likes_last_30_days": 412,
-    "avg_click_through_rate_percent": null
+    "avg_views_per_video_last_30_days": "19000/17",
+    "avg_likes_per_video_last_30_days": "542/17",
+    "avg_comments_per_video_last_30_days": "51/17",
+    "avg_shares_per_video_last_30_days": "79/17",
+    "total_likes_last_30_days": 542
   },
   "linkedin": {
-    "followers": 375,
-    "posts_last_12_months": null,
+    "followers": 396,
     "avg_engagement_per_post_last_12_months": {
       "likes": 903,
       "comments": 97,
@@ -196,66 +172,11 @@
     "recent_campaign_performance": null,
     "unsubscribe_rate_percent": null
   },
-  "natasha": {
-    "instagram": {
-        "followers": 18081,
-        "views_30d": 576975,
-        "views_breakdown_30d": {
-        "reel_percent": 89.6,
-        "stories_percent": 10.1,
-        "posts_percent": 0.2
-        },
-        "accounts_reached_last_30_days": 291531,
-        "non_follower_reach_percent": null,
-        "avg_reel_views": null,
-        "avg_reel_likes": null,
-        "avg_reel_saves": null,
-        "avg_reel_shares": null,
-        "follower_age_range": null,
-        "follower_gender": null,
-        "follower_geography": null
-    },
-    "tiktok": {
-      "followers": 9746,
-      "video_views_last_12_months": 3000000,
-      "profile_views_last_12_months": 111000,
-      "likes_last_12_months": 113000,
-      "comments_last_12_months": 6100,
-      "shares_last_12_months": 15000,
-      "video_views_last_30_days": 376000,
-      "profile_views_last_30_days": 12000,
-      "likes_last_30_days": 15000,
-      "comments_last_30_days": 550,
-      "shares_last_30_days": 2800,
-      "non_follower_reach_percent": null,
-      "follower_age_range": null,
-      "follower_gender": null,
-      "follower_geography": null
-    },
-    "linkedin": {
-      "followers": 2935,
-      "posts_last_12_months": null,
-      "avg_engagement_per_post": null,
-      "industry_audience_quality": null,
-      "follower_age_range": null,
-      "follower_gender": null,
-      "follower_geography": null
-    },
-    "youtube": {
-      "subscribers": null,
-      "videos": null,
-      "avg_views_per_video": null,
-      "avg_engagement_per_video": null,
-      "subscriber_age_range": null,
-      "subscriber_gender": null,
-      "subscriber_geography": null
-    }
-  },
   "professional_credibility": {
     "natasha": {
       "role_title": "software engineer",
       "company": "public service",
-      "years_at_current_company": 10,
+      "years_at_current_company": 5,
       "key_specialties_languages": "javascript, typescript, python",
       "years_in_tech_overall": 5
     },
@@ -263,7 +184,7 @@
       "role_title": "software developer",
       "company": "fintech MNC",
       "years_at_current_company": 5,
-      "key_specialties_languages": "java",
+      "key_specialties_languages": "java, javascript, typescript",
       "years_in_tech_overall": 10
     },
     "victoria": {
@@ -273,8 +194,8 @@
       "key_specialties_languages": "javascript, typescript",
       "years_in_tech_overall": 5
     },
-    "combined_years_in_tech": null,
-    "notable_achievements": null,
+    "combined_years_in_tech": 10,
+    "notable_achievements": "Best Podcast Award at the Youth Creator Awards 2026 by *SCAPE",
     "women_in_software_engineering_note": "All three are working practitioners"
   },
   "audience_quality": {
