@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
@@ -8,6 +8,7 @@ import {
   FaLinkedin, FaEnvelope, FaUsers, FaMicrophoneAlt,
   FaHeart, FaShareAlt,
 } from 'react-icons/fa';
+import { HiLink } from 'react-icons/hi';
 import RateCardPricing from './RateCardPricing';
 import statsData from './platform-stats.json';
 
@@ -32,6 +33,16 @@ const platformIcons = [
 ];
 
 export default function RateCardPage() {
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [copiedSection, setCopiedSection] = useState<string | null>(null);
+
+  const copyLink = (id: string) => {
+    const url = `${window.location.origin}${window.location.pathname}#${id}`;
+    navigator.clipboard.writeText(url).then(() => {
+      setCopiedSection(id);
+      setTimeout(() => setCopiedSection(null), 2000);
+    });
+  };
 
   const fmt = (n: number) => {
     if (n >= 1_000_000) return (n / 1_000_000).toFixed(1).replace(/\.0$/, '') + 'M';
@@ -115,6 +126,12 @@ export default function RateCardPage() {
       youtube: {
         subscribers: natashaYtSubs,
       } = {},
+    } = {},
+    professional_credibility: {
+      natasha: cred_natasha,
+      saloni:  cred_saloni,
+      victoria: cred_victoria,
+      combined_years_in_tech,
     } = {},
   } = statsData;
 
@@ -383,6 +400,31 @@ export default function RateCardPage() {
         </div>
       </section>
 
+      {/* Award */}
+      <section className="px-6 pt-10 pb-10 max-w-6xl mx-auto">
+        <div className="relative overflow-hidden bg-gradient-to-r from-amber-50 to-yellow-50 dark:from-amber-900/30 dark:to-yellow-900/20 rounded-2xl p-8 border-2 border-amber-300 dark:border-amber-600 shadow-lg flex flex-col sm:flex-row items-center gap-8">
+          <div className="absolute top-0 right-0 w-40 h-40 bg-amber-200/30 dark:bg-amber-600/10 rounded-full -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+          <Image
+            src="/assets/scape-award.jpg"
+            alt="Best Podcast Award at the Youth Creator Awards 2026 by *SCAPE"
+            width={200}
+            height={200}
+            className="w-44 h-auto rounded-2xl shrink-0 shadow-xl ring-4 ring-amber-300 dark:ring-amber-600"
+          />
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400 mb-2">
+              🏆 Award Winner
+            </p>
+            <p className="text-2xl font-bold text-brownDark dark:text-brown leading-snug mb-1">
+              Best Podcast Award
+            </p>
+            <p className="text-base text-neutral-700 dark:text-neutral-300 font-medium">
+              Youth Creator Awards 2026 by *SCAPE
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Stats Grid — 5 columns on lg, 3 on md, 2 on mobile */}
       <section className="px-6 pt-12 pb-12">
         <div className="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
@@ -610,7 +652,7 @@ export default function RateCardPage() {
           <div className="bg-white dark:bg-neutral-800 rounded-2xl p-5 border border-neutral-200 dark:border-neutral-700 shadow-sm">
             <div className="flex items-center gap-2 mb-3">
               <FaSpotify className="text-green-500 text-lg" />
-              <span className="font-bold text-brownDark dark:text-brown text-sm">Podcast</span>
+              <span className="font-bold text-brownDark dark:text-brown text-sm">Spotify</span>
             </div>
             <p className="text-2xl font-bold text-primary">150</p>
             <p className="text-xs text-neutral-400 mb-3">listeners</p>
@@ -651,13 +693,31 @@ export default function RateCardPage() {
       </section>
 
       {/* Content Samples */}
-      <section className="px-6 pb-16 max-w-6xl mx-auto">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-brownDark dark:text-brown mb-2">
-            Showcase Gallery
-          </h2>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+      <section id="showcase" className="px-6 pb-16 max-w-6xl mx-auto">
+        <button
+          onClick={() => setGalleryOpen(o => !o)}
+          className="w-full flex flex-col items-center cursor-pointer mb-6 group"
+        >
+          <div className="flex items-center justify-center gap-2">
+            <h2 className="text-3xl md:text-4xl font-bold text-brownDark dark:text-brown text-center">
+              Showcase Gallery
+              <span className="ml-3 text-lg text-neutral-400 group-hover:text-primary transition-colors">{galleryOpen ? '▲' : '▼'}</span>
+            </h2>
+            <button
+              onClick={(e) => { e.stopPropagation(); copyLink('showcase'); }}
+              aria-label="Copy link to Showcase Gallery"
+              className="text-neutral-300 hover:text-primary dark:text-neutral-600 dark:hover:text-primary transition-colors duration-200 mt-1 shrink-0"
+            >
+              {copiedSection === 'showcase' ? (
+                <span className="text-xs font-semibold text-primary">Copied!</span>
+              ) : (
+                <HiLink className="text-xl" />
+              )}
+            </button>
+          </div>
+          <p className="text-xs text-neutral-400 mt-2">{galleryOpen ? 'Click to collapse' : 'Click to expand'}</p>
+        </button>
+        {galleryOpen && <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
           <div className="flex flex-col items-center gap-2">
             <p className="text-xs font-semibold uppercase tracking-widest text-neutral-400">✏️ Techybara Carousel</p>
             <p className="text-xs text-neutral-500 dark:text-neutral-400">3.2K views · 36 likes · 5 reposts</p>
@@ -705,16 +765,29 @@ export default function RateCardPage() {
               title="Spotify Episode"
             />
           </div>
-        </div>
+        </div>}
       </section>
 
       {/* Why Partner With Us */}
-      <section className="px-6 pb-16">
+      <section id="why-partner" className="px-6 pb-16">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <h2 className="text-3xl md:text-4xl font-bold text-brownDark dark:text-brown mb-3">
-              Why partner with us?
-            </h2>
+            <div className="flex items-center justify-center gap-2 mb-3">
+              <h2 className="text-3xl md:text-4xl font-bold text-brownDark dark:text-brown">
+                Why partner with us?
+              </h2>
+              <button
+                onClick={() => copyLink('why-partner')}
+                aria-label="Copy link to Why Partner With Us"
+                className="text-neutral-300 hover:text-primary dark:text-neutral-600 dark:hover:text-primary transition-colors duration-200 mt-1 shrink-0"
+              >
+                {copiedSection === 'why-partner' ? (
+                  <span className="text-xs font-semibold text-primary">Copied!</span>
+                ) : (
+                  <HiLink className="text-xl" />
+                )}
+              </button>
+            </div>
             <p className="text-neutral-500 dark:text-neutral-400 max-w-xl mx-auto text-sm leading-relaxed">
               We&apos;re not a media company. We&apos;re three working software engineers and solutions
               engineers who started a podcast because no one was talking about tech the way real people in
@@ -780,6 +853,33 @@ export default function RateCardPage() {
                 <p className="text-sm text-neutral-500 dark:text-neutral-400 leading-relaxed">{body}</p>
               </div>
             ))}
+          </div>
+
+          {/* Hosts */}
+          <div className="mb-6">
+            <p className="text-xs font-semibold uppercase tracking-widest text-neutral-500 dark:text-neutral-400 mb-4">
+              Meet the hosts · {combined_years_in_tech ?? 20}+ combined years in tech
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {[
+                { key: 'natasha',  cred: cred_natasha,  photo: '/assets/team/natasha.PNG',  name: 'Natasha Ann Lum' },
+                { key: 'saloni',   cred: cred_saloni,   photo: '/assets/team/saloni.PNG',   name: 'Saloni Kaur' },
+                { key: 'victoria', cred: cred_victoria, photo: '/assets/team/victoria.PNG', name: 'Victoria Lo' },
+              ].map(({ key, cred, photo, name }) => (
+                <div key={key} className="bg-white dark:bg-neutral-800 rounded-2xl p-5 border border-neutral-200 dark:border-neutral-700 shadow-sm flex flex-col items-center text-center gap-3">
+                  <Image src={photo} alt={name} width={80} height={80} className="w-20 h-20 rounded-full object-cover ring-2 ring-secondary" />
+                  <div>
+                    <p className="font-bold text-brownDark dark:text-brown text-sm">{name}</p>
+                    <p className="text-xs text-primary font-medium capitalize mt-0.5">{(cred as { role_title?: string })?.role_title}</p>
+                    <p className="text-xs text-neutral-400 mt-0.5">{(cred as { company?: string })?.company}</p>
+                  </div>
+                  <div className="w-full border-t border-neutral-100 dark:border-neutral-700 pt-3 space-y-1">
+                    <p className="text-xs text-neutral-500"><span className="font-semibold text-brownDark dark:text-brown">{(cred as { years_in_tech_overall?: number })?.years_in_tech_overall} yrs</span> in tech</p>
+                    <p className="text-xs text-neutral-400">{(cred as { key_specialties_languages?: string })?.key_specialties_languages}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Techybara */}

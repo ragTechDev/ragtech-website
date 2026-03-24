@@ -5,13 +5,24 @@ import {
   FaInstagram, FaSpotify, FaCheckCircle, FaYoutube,
   FaTiktok, FaLinkedin, FaEnvelope, FaUsers,
 } from 'react-icons/fa';
-import { HiNewspaper, HiStar, HiLightningBolt } from 'react-icons/hi';
+import { HiNewspaper, HiStar, HiLightningBolt, HiLink } from 'react-icons/hi';
+
+import platformStats from './platform-stats.json';
 
 type Currency = 'SGD' | 'USD';
 
+function formatK(n: number): string {
+  return n >= 1000 ? `${Math.round(n / 1000)}K` : n.toString();
+}
+
+const igReels = platformStats.instagram.last_30_days.content_insights.reels;
+const igAvgReelViews = Math.round(igReels.total_views / igReels.total_reels_published);
+const igReelEngagementRate = igReels.engagement_rate_percent;
+const ig30DayViews = platformStats.instagram.last_30_days.views;
+
 // ─── Instagram ────────────────────────────────────────────────────────────────
 // Reel: 79K avg views × S$0.008 tech-niche CPV = S$635 → S$600
-// Static post: 3,853 followers × S$0.065/follower niche rate = S$250
+// Static post: followers × S$0.065/follower niche rate (followers from platform-stats.json)
 // Standard carousel: static post + 40% editorial premium → S$350
 // Techybara comic: carousel + bespoke illustration premium → S$500
 // Stories 3-pack: 40% of static post rate (24hr ephemeral) → S$150
@@ -21,7 +32,7 @@ const instagramPackages = [
     name: 'Sponsored Reel',
     sgd: 'S$600', usd: 'US$445',
     badge: 'Most Views',
-    description: 'Short-form branded video (30–60s) natively integrated into our content. Our reels average 79K views with a 13% engagement rate.',
+    description: `Short-form branded video (30–60s) natively integrated into our content. Our reels average ${formatK(igAvgReelViews)} views with a ${igReelEngagementRate}% engagement rate.`,
     includes: [
       '30–60 second host-driven reel',
       'Caption, hashtags & brand tag',
@@ -29,7 +40,7 @@ const instagramPackages = [
       'Performance screenshot at 14 days',
       'Permanent on feed',
     ],
-    rationale: 'CPV-based: 79K avg views × S$0.008 tech-niche CPV',
+    rationale: `CPV-based: ${formatK(igAvgReelViews)} avg views × S$0.008 tech-niche CPV`,
   },
   {
     name: 'Static Feed Post',
@@ -43,7 +54,7 @@ const instagramPackages = [
       'Performance screenshot at 7 days',
       'Permanent on feed',
     ],
-    rationale: 'Followers-based: 3,853 × S$0.065/follower niche rate',
+    rationale: `Followers-based: ${platformStats.instagram.followers.toLocaleString()} × S$0.065/follower niche rate`,
   },
   {
     name: 'Standard Carousel',
@@ -470,6 +481,15 @@ export default function RateCardPricing() {
   const [currency, setCurrency] = useState<Currency>('SGD');
   const isSGD = currency === 'SGD';
   const [ttOpen, setTtOpen] = useState(false);
+  const [copied, setCopied] = useState(false);
+
+  const copyRatesLink = () => {
+    const url = `${window.location.origin}${window.location.pathname}#rates`;
+    navigator.clipboard.writeText(url).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    });
+  };
 
   const CurrencyToggle = () => (
     <div className="flex justify-center mb-10">
@@ -494,10 +514,23 @@ export default function RateCardPricing() {
   return (
     <div>
       {/* Rates Title */}
-      <section className="px-6 pt-4 pb-2 text-center">
+      <section id="rates" className="px-6 pt-4 pb-2 text-center">
         <div className="flex flex-col items-center justify-center gap-1 mb-2">
           <HiStar className="text-primary text-2xl" />
-          <SectionTitle>Rates</SectionTitle>
+          <div className="flex items-center gap-2 group">
+            <SectionTitle>Rates</SectionTitle>
+            <button
+              onClick={copyRatesLink}
+              aria-label="Copy link to Rates section"
+              className="text-neutral-300 hover:text-primary dark:text-neutral-600 dark:hover:text-primary transition-colors duration-200 mt-1"
+            >
+              {copied ? (
+                <span className="text-xs font-semibold text-primary">Copied!</span>
+              ) : (
+                <HiLink className="text-xl" />
+              )}
+            </button>
+          </div>
         </div>
         <p className="text-sm text-neutral-500 dark:text-neutral-400">
           All prices in SGD unless toggled. Packages are mix-and-match.
@@ -527,7 +560,7 @@ export default function RateCardPricing() {
             <SectionTitle>Instagram</SectionTitle>
           </div>
           <p className="text-center text-sm text-neutral-500 dark:text-neutral-400 mb-1">
-            3,853 followers · 79K avg reel views · 13% reel engagement · 647K 30-day views
+            {platformStats.instagram.followers.toLocaleString()} followers · {formatK(igAvgReelViews)} avg reel views · {igReelEngagementRate}% reel engagement · {formatK(ig30DayViews)} 30-day views
           </p>
           <p className="text-center text-xs text-neutral-400 dark:text-neutral-500 mb-8">
             Formats: Reels · Static Posts · Standard Carousels · Techybara Comic Carousels · Stories
@@ -625,6 +658,9 @@ export default function RateCardPricing() {
           </div>
           <p className="text-center text-sm text-neutral-500 dark:text-neutral-400 mb-1">
             Blog posts live permanently on ragtechdev.com · Newsletter newly launched
+          </p>
+          <p className="text-center text-xs text-neutral-400 mb-1">
+            <a href="https://ragtechdev.com/blog" target="_blank" rel="noopener noreferrer" className="text-primary underline">ragtechdev.com/blog</a>
           </p>
           <p className="text-center text-xs text-neutral-400 mb-8">
             🌱 Newsletter early-bird rates — will increase at 500 subscribers. Lock in now.
