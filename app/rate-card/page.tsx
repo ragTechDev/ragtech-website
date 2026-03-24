@@ -102,31 +102,6 @@ export default function RateCardPage() {
       avg_comments_per_video_last_30_days: ttCommentsRaw,
       avg_shares_per_video_last_30_days: ttSharesRaw,
     } = {},
-    natasha: {
-      instagram: {
-        followers: natashaIgF,
-        views_30d: natasha30dViews,
-        accounts_reached_last_30_days: natashaReached,
-        non_follower_reach_percent: natashaIgNonFollower,
-        avg_reel_views: natashaIgAvgReelViews,
-        avg_reel_likes: natashaIgAvgReelLikes,
-        avg_reel_saves: natashaIgAvgReelSaves,
-        avg_reel_shares: natashaIgAvgReelShares,
-      } = {},
-      tiktok: {
-        followers: natashaTtF,
-        video_views_last_30_days: natashaTt30d,
-        likes_last_30_days: natashaTtLikes,
-        comments_last_30_days: natashaTtComments,
-        shares_last_30_days: natashaTtShares,
-      } = {},
-      linkedin: {
-        followers: natashaLiF,
-      } = {},
-      youtube: {
-        subscribers: natashaYtSubs,
-      } = {},
-    } = {},
     professional_credibility: {
       natasha: cred_natasha,
       saloni:  cred_saloni,
