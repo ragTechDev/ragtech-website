@@ -84,7 +84,7 @@ There are four specific situations where this will burn you.
 
 ---
 
-**1. Inventory and limited availability**
+### 1. Inventory and limited availability
 
 You're selling 100 concert tickets. The counter hits 1. Three users on three different servers all see "1 remaining" at the same moment. All three click buy. Eventual consistency has no opinion on this. It lets all three go through and reconciles the numbers afterward. Now you've oversold.
 
@@ -92,7 +92,7 @@ If you're building anything with limited quantities, use database transactions o
 
 ---
 
-**2. Payments**
+### 2. Payments
 
 This one is simple: never let money move through an eventually consistent operation. If a charge and a fulfillment update happen on separate servers without a transaction wrapping them, you can end up in a state where a user was charged but their order wasn't confirmed — or worse, fulfilled but not charged.
 
@@ -100,7 +100,7 @@ Use atomic transactions with rollback behavior for any payment logic.
 
 ---
 
-**3. Unique constraints**
+### 3. Unique constraints
 
 Two people try to register the username `@alex` in the same millisecond. Both servers check their local copy of the database. Both see it as available. Both approve the registration. Now you have two `@alex` accounts and a support headache.
 
@@ -108,7 +108,7 @@ Ensure to enforce uniqueness at the database level, not just in your app code.
 
 ---
 
-**4. Moderation and harmful content**
+### 4. Moderation and harmful content
 
 You build an admin panel to remove a post. You click delete. On your screen it's gone. But on three servers in other regions, it's still propagating the removal. For a few seconds — sometimes longer — some users still see it.
 
