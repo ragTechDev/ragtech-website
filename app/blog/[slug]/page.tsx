@@ -128,6 +128,7 @@ export default async function BlogPostPage(props: { params: { slug: string } } |
   if (params instanceof Promise) {
     params = await params;
   }
+  const post = await loadPostBySlug(params.slug);
 
   if (!post) {
     notFound();
