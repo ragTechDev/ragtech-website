@@ -13,6 +13,7 @@ import {
   getUnifiedPostCoverImage,
   getPostSource,
 } from '@/lib/posts-client';
+import { isExternalUrl } from '@/lib/markdown-types';
 import NewsletterCTA from './NewsletterCTA';
 
 interface BlogPostsProps {
@@ -89,6 +90,7 @@ export default function BlogPosts({ allPosts }: BlogPostsProps) {
                 src={coverImage}
                 alt={getUnifiedPostTitle(post)}
                 fill
+                unoptimized={isExternalUrl(coverImage)}
                 className="object-cover group-hover:scale-110 transition-transform duration-300"
               />
             ) : (
