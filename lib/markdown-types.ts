@@ -103,6 +103,23 @@ export function calculateReadingTime(content: string): number {
 }
 
 /**
+ * Check if a URL is an external (absolute) URL
+ */
+export function isExternalUrl(url: string): boolean {
+  return url.startsWith('http://') || url.startsWith('https://');
+}
+
+/**
+ * Normalize a cover image URL:
+ * - External URLs (http/https) are returned as-is
+ * - Internal paths are ensured to start with '/'
+ */
+export function normalizeCoverImageUrl(coverImage: string): string {
+  if (isExternalUrl(coverImage)) return coverImage;
+  return coverImage.startsWith('/') ? coverImage : `/${coverImage}`;
+}
+
+/**
  * Convert tag string to slug
  */
 export function tagToSlug(tag: string): string {

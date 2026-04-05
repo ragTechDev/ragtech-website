@@ -125,6 +125,19 @@
     @apply prose-td:border prose-td:border-neutral-300 dark:prose-td:border-neutral-700 prose-td:p-3;
   }
 
+  .prose .mermaid {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .prose .mermaid svg {
+    max-width: 100%;
+    height: auto;
+  }
+
   /* Force override any inline styles from Beehiiv */
   .blog-content * {
     font-family: inherit !important;

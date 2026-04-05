@@ -11,10 +11,12 @@ import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkGfm from 'remark-gfm';
 import remarkHtml from 'remark-html';
+import { visit } from 'unist-util-visit';
 import {
   MarkdownPost,
   MarkdownPostFrontmatter,
   calculateReadingTime,
+  normalizeCoverImageUrl,
   tagToSlug,
 } from './markdown-types';
 
@@ -31,12 +33,33 @@ const POSTS_DIRECTORY = path.join(process.cwd(), 'data', 'posts');
 // ============================================================================
 
 /**
+ * Remark plugin that converts fenced ```mermaid code blocks into
+ * <div class="mermaid"> HTML nodes so that mermaid.js can render them
+ * client-side. Operating at the AST level avoids HTML-entity encoding issues.
+ */
+function remarkMermaid() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return (tree: any) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    visit(tree, 'code', (node: any, index: number | undefined, parent: any) => {
+      if (node.lang !== 'mermaid' || !parent || index === undefined) return;
+
+      parent.children[index] = {
+        type: 'html',
+        value: `<div class="mermaid">\n${node.value}\n</div>`,
+      };
+    });
+  };
+}
+
+/**
  * Convert markdown content to HTML
  */
 async function markdownToHtml(markdown: string): Promise<string> {
   const result = await unified()
     .use(remarkParse)
     .use(remarkGfm)
+    .use(remarkMermaid)
     .use(remarkHtml, { sanitize: false })
     .process(markdown);
 
@@ -76,7 +99,7 @@ async function parseMarkdownFile(filePath: string): Promise<MarkdownPost | null>
 
     // Resolve relative image paths
     const postDir = path.dirname(filePath);
-    const coverImage = frontmatter.coverImage.startsWith('./')
+    const rawCoverImage = frontmatter.coverImage.startsWith('./')
       ? path.relative(
           path.join(process.cwd(), 'public'),
           path.join(postDir, frontmatter.coverImage)
@@ -87,7 +110,7 @@ async function parseMarkdownFile(filePath: string): Promise<MarkdownPost | null>
       slug: frontmatter.slug,
       title: frontmatter.title,
       brief: frontmatter.brief,
-      coverImage: coverImage.startsWith('http') || coverImage.startsWith('/') ? coverImage : `/${coverImage}`,
+      coverImage: normalizeCoverImageUrl(rawCoverImage),
       publishedAt: frontmatter.publishedAt,
       readTimeInMinutes,
       author: frontmatter.author,
