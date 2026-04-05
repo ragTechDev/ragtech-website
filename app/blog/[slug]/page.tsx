@@ -21,8 +21,8 @@ export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 async function getRecommendedArticles(post: UnifiedPost): Promise<UnifiedPost[]> {
-  const allPosts = await loadAllPosts();
   try {
+    const allPosts = await loadAllPosts();
     const MIN_ARTICLES = 3;
     
     // Check if post has recommended articles in frontmatter
@@ -132,7 +132,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
   const tags = getPostTags(post);
   const content = getPostContent(post);
   const source = getPostSource(post);
-  const recommendedArticles = await getRecommendedArticles(post);
+  const recommendedArticles = await getRecommendedArticles(post).catch(() => []);
 
   const sourceBadge = {
     markdown: { label: 'New Post', color: 'bg-green-500' },
