@@ -92,37 +92,44 @@ export async function loadPostBySlug(
   slug: string,
   config: PostSourceConfig = DEFAULT_CONFIG
 ): Promise<UnifiedPost | null> {
-  try {
-    // Try markdown posts first
-    if (config.markdown) {
+  // Try markdown posts first
+  if (config.markdown) {
+    try {
       const markdownPost = await loadMarkdownPostBySlug(slug);
       if (markdownPost) {
         return markdownPost;
       }
+    } catch (error) {
+      console.error('Error loading markdown post by slug:', error);
     }
+  }
 
-    // Try archived posts
-    if (config.archived) {
+  // Try archived posts
+  if (config.archived) {
+    try {
       const archivedPost = await loadArchivedPostBySlug(slug);
       if (archivedPost) {
         return archivedPost;
       }
+    } catch (error) {
+      console.error('Error loading archived post by slug:', error);
     }
+  }
 
-    // Try Beehiiv posts last (requires fetching all posts)
-    if (config.beehiiv) {
+  // Try Beehiiv posts last (requires fetching all posts)
+  if (config.beehiiv) {
+    try {
       const beehiivResponse = await fetchBeehiivPosts(1, 100);
       const beehiivPost = beehiivResponse.data.find((p) => p.slug === slug);
       if (beehiivPost) {
         return beehiivPost;
       }
+    } catch (error) {
+      console.error('Error loading Beehiiv post by slug:', error);
     }
-
-    return null;
-  } catch (error) {
-    console.error(`Error loading post by slug ${slug}:`, error);
-    return null;
   }
+
+  return null;
 }
 
 /**

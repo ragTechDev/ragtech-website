@@ -57,9 +57,22 @@ export async function fetchBeehiivPosts(
   page: number = 1,
   limit: number = 6
 ): Promise<BeehiivPostsResponse> {
+  const emptyResponse: BeehiivPostsResponse = {
+    data: [],
+    page: 1,
+    limit: limit,
+    total_results: 0,
+    total_pages: 0,
+  };
+
+  // Return silently when beehiiv is not configured — this is expected in local/staging
+  const apiKey = process.env.BEEHIIV_API_KEY;
+  const publicationId = process.env.BEEHIIV_PUBLICATION_ID;
+  if (!apiKey || !publicationId) {
+    return emptyResponse;
+  }
+
   try {
-    const publicationId = getPublicationId();
-    
     const params = new URLSearchParams({
       status: 'confirmed',
       limit: limit.toString(),
@@ -71,8 +84,11 @@ export async function fetchBeehiivPosts(
 
     const response = await fetch(url, {
       method: 'GET',
-      headers: getBeehiivHeaders(),
-      cache: 'no-store', // No caching - always fetch fresh data
+      headers: {
+        'Authorization': `Bearer ${apiKey}`,
+        'Content-Type': 'application/json',
+      },
+      cache: 'no-store',
     });
 
     if (!response.ok) {
@@ -83,28 +99,13 @@ export async function fetchBeehiivPosts(
         url,
         response: errorText,
       });
-      
-      // Return empty response instead of throwing
-      return {
-        data: [],
-        page: 1,
-        limit: limit,
-        total_results: 0,
-        total_pages: 0,
-      };
+      return emptyResponse;
     }
 
     return response.json();
   } catch (error) {
     console.error('Error fetching Beehiiv posts:', error);
-    // Return empty response on any error to prevent blocking the blog page
-    return {
-      data: [],
-      page: 1,
-      limit: limit,
-      total_results: 0,
-      total_pages: 0,
-    };
+    return emptyResponse;
   }
 }
 
