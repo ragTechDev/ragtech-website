@@ -121,7 +121,12 @@ function getPostTags(post: UnifiedPost): Array<{ name: string; slug: string }> {
   }));
 }
 
-export default async function BlogPostPage({ params }: { params: { slug: string } }) {
+
+export default async function BlogPostPage(props: { params: { slug: string } } | { params: Promise<{ slug: string }> }) {
+  let params = props.params;
+  if (params instanceof Promise) {
+    params = await params;
+  }
   const post = await loadPostBySlug(params.slug);
 
   if (!post) {
