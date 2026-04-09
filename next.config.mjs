@@ -5,15 +5,11 @@ const nextConfig = {
       remotePatterns: [
         {
           protocol: 'https',
-          hostname: 'cdn.hashnode.com',
+          hostname: '**',
         },
         {
-          protocol: 'https',
-          hostname: '**.beehiiv.com',
-        },
-        {
-          protocol: 'https',
-          hostname: 'beehiiv-images-production.s3.amazonaws.com',
+          protocol: 'http',
+          hostname: '**',
         },
       ],
     },
