@@ -35,6 +35,7 @@ export default function AuthorSection({ author, publishedDate, readTimeInMinutes
               width={32}
               height={32}
               className="rounded-full"
+              style={{ width: 'auto', height: 'auto' }}
             />
           )}
           <span className="font-semibold text-brownDark dark:text-brown">

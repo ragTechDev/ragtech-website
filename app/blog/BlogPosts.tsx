@@ -90,6 +90,7 @@ export default function BlogPosts({ allPosts }: BlogPostsProps) {
                 src={coverImage}
                 alt={getUnifiedPostTitle(post)}
                 fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 unoptimized={isExternalUrl(coverImage)}
                 className="object-cover group-hover:scale-110 transition-transform duration-300"
               />

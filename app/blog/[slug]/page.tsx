@@ -213,6 +213,7 @@ export default async function BlogPostPage(props: { params: { slug: string } } |
               src={coverImage}
               alt={getUnifiedPostTitle(post)}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 896px"
               className="object-cover"
               priority
             />

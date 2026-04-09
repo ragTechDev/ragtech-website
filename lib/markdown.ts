@@ -44,9 +44,14 @@ function remarkMermaid() {
     visit(tree, 'code', (node: any, index: number | undefined, parent: any) => {
       if (node.lang !== 'mermaid' || !parent || index === undefined) return;
 
+      const escaped = node.value
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;');
+
       parent.children[index] = {
         type: 'html',
-        value: `<div class="mermaid">\n${node.value}\n</div>`,
+        value: `<div class="mermaid">\n${escaped}\n</div>`,
       };
     });
   };
