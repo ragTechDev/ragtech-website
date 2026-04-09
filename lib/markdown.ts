@@ -87,7 +87,7 @@ async function parseMarkdownFile(filePath: string): Promise<MarkdownPost | null>
       slug: frontmatter.slug,
       title: frontmatter.title,
       brief: frontmatter.brief,
-      coverImage: coverImage.startsWith('/') ? coverImage : `/${coverImage}`,
+      coverImage: coverImage.startsWith('http') || coverImage.startsWith('/') ? coverImage : `/${coverImage}`,
       publishedAt: frontmatter.publishedAt,
       readTimeInMinutes,
       author: frontmatter.author,
