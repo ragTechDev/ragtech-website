@@ -37,7 +37,7 @@ When you generate an image with an AI tool, you're not just typing a prompt into
 ![Studio Ghibli AI art trend](https://miro.medium.com/v2/resize:fit:640/format:webp/1*SwyWIlX8jShYhMgo_U3r-g.png)
 __Image from [LumenXo — The Hidden Dangers of AI Image Trends](https://medium.com/@inc.lumenxo/the-hidden-dangers-of-ai-image-trends-why-your-personal-photos-arent-safe-15daa2eafe45)__
 
-A recent and very visible example: remember the [Studio Ghibli AI art trend](https://www.business-standard.com/india-news/studio-ghibli-ai-art-trend-a-privacy-nightmare-in-disguise-experts-warn-125040600343_1.html) that swept the internet in early 2025? Millions of people uploaded their own photos to get them rendered in that iconic animation style. It was adorable. But cybersecurity experts quickly flagged what most participants didn't realise — many of these platforms were collecting **biometric data**: facial structure, skin tone, expression patterns. The terms of service were often vague, with fine print granting platforms perpetual, royalty-free rights to use or modify your photos even after you deleted the app.
+A recent and very visible example: remember the [Studio Ghibli AI art trend](https://www.business-standard.com/india-news/studio-ghibli-ai-art-trend-a-privacy-nightmare-in-disguise-experts-warn-125040600343_1.html) that swept the internet in early 2025? Millions of people uploaded their own photos to get them rendered in that iconic animation style. It was adorable. But cybersecurity experts quickly flagged what most participants didn't realise many of these platforms were collecting **biometric data**: facial structure, skin tone, expression patterns. The terms of service were often vague, with fine print granting platforms perpetual, royalty-free rights to use or modify your photos even after you deleted the app.
 
 Think about what people use AI image generation for: portraits of themselves, images of their families, recreations of real places they've been, visual representations of ideas they haven't shared publicly yet. All of that data is potentially being captured and fed back into a system you have no visibility into. And unlike a text prompt, a photo of your face is biometric data. And it can be used to identify or impersonate you. [Unlike a leaked password, you can't change your face](https://medium.com/@inc.lumenxo/the-hidden-dangers-of-ai-image-trends-why-your-personal-photos-arent-safe-15daa2eafe45).
 
@@ -47,7 +47,7 @@ The concern isn't just personal either. In February 2026, [61 data protection au
 
 And even beyond personal data, there's the question of whose work these models were trained on. Artists who never consented to having their style replicated. Photographers whose images were scraped and used without credit or compensation. The very act of generating an image using these tools is entangled in a web of unresolved ethical questions around data ownership and consent.
 
-For me, that was enough to ask: *Do I really need this?*
+For me, that was enough to ask: *Do I really need this and want to support it?*
 
 ## Reason 2: Energy Consumption
 
