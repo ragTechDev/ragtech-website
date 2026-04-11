@@ -26,7 +26,7 @@ tiktokEmbeds:
 
 It's been well over a year since I last used an AI image generation tool. Not Midjourney, not DALL·E, not chatGPT.
 
-And while that might sound like a dramatic stance to some, I want to walk you through why I made that choice, because it wasn't one decision, but a combination of things that quietly added up. And interestingly, it turns out Anthropic, the company behind Claude (the AI I use most), has arrived at a very similar set of conclusions about why image generation is something they've deliberately kept out of Claude's capabilities.
+And while that might sound like a dramatic stance to some, I want to walk you through why I made that choice, because it wasn't one decision, but a combination of things that added up. And interestingly, it turns out Anthropic, the company behind Claude (the AI I use most), has arrived at a very similar set of conclusions about why image generation is something they've deliberately kept out of Claude's capabilities.
 
 # Why I Stopped Generating Images With AI
 
