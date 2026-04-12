@@ -98,7 +98,7 @@
 @layer components {
   /* Blog Post Content Styles */
   .blog-content {
-    @apply prose prose-lg dark:prose-invert max-w-none overflow-x-hidden;
+    @apply prose prose-lg dark:prose-invert max-w-none;
     @apply prose-headings:font-bold prose-headings:text-brownDark dark:prose-headings:text-brown;
     @apply prose-h1:text-4xl prose-h2:text-3xl prose-h3:text-2xl;
     @apply prose-p:text-neutral-700 dark:prose-p:text-neutral-300 prose-p:leading-relaxed;
@@ -125,8 +125,24 @@
     @apply prose-td:border prose-td:border-neutral-300 dark:prose-td:border-neutral-700 prose-td:p-3;
   }
 
-  /* Force override any inline styles from Beehiiv */
-  .blog-content * {
+  .prose .mermaid {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .prose .mermaid svg {
+    display: block;
+    margin: 0 auto;
+    min-width: 480px;
+    height: auto;
+  }
+
+  /* Force override any inline styles from Beehiiv, but NOT mermaid diagrams
+     (mermaid measures text before attaching to DOM; overriding after causes misaligned nodes) */
+  .blog-content *:not(.mermaid):not(.mermaid *) {
     font-family: inherit !important;
     line-height: inherit !important;
   }

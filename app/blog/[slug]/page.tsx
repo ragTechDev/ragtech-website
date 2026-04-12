@@ -15,6 +15,7 @@ import type { BeehiivPost } from '@/lib/beehiiv-types';
 import NewsletterCTA from '../NewsletterCTA';
 import RecommendedArticles from '../RecommendedArticles';
 import TikTokEmbed from '../TikTokEmbed';
+import MermaidInit from '../MermaidInit';
 import AuthorSection from './AuthorSection';
 
 export const dynamic = 'force-dynamic';
@@ -148,6 +149,7 @@ export default async function BlogPostPage(props: { params: { slug: string } } |
   return (
     <main className="min-h-screen pt-24 pb-20 px-4 sm:px-6 overflow-x-hidden">
       <TikTokEmbed />
+      <MermaidInit />
       <article className="container mx-auto max-w-4xl w-full">
         {/* Back Button */}
         <div className="mb-8">
@@ -211,6 +213,7 @@ export default async function BlogPostPage(props: { params: { slug: string } } |
               src={coverImage}
               alt={getUnifiedPostTitle(post)}
               fill
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 896px"
               className="object-cover"
               priority
             />

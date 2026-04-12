@@ -196,6 +196,7 @@ export default function RateCardPage() {
             width={220}
             height={60}
             className="h-14 w-auto"
+            style={{ width: 'auto', height: 'auto' }}
             priority
           />
           <p className="text-neutral-500 dark:text-neutral-400 text-sm max-w-md">
@@ -247,6 +248,7 @@ export default function RateCardPage() {
                   width={200}
                   height={200}
                   className="w-41 md:w-51 h-auto"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
                 {/* Capybara Mascot */}
                 <div className="absolute -bottom-2 -right-2 w-12 h-16 md:w-14 md:h-20">
@@ -278,6 +280,7 @@ export default function RateCardPage() {
                   width={250}
                   height={250}
                   className="w-48 md:w-56 h-auto"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
                 {/* Capybara Mascot */}
                 <div className="absolute -bottom-2 -right-2 w-12 h-16 md:w-14 md:h-20">
@@ -309,6 +312,7 @@ export default function RateCardPage() {
                   width={250}
                   height={250}
                   className="w-48 md:w-56 h-auto"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
                 {/* Capybara Mascot */}
                 <div className="absolute -bottom-2 -right-2 w-12 h-12 md:w-14 md:h-14">

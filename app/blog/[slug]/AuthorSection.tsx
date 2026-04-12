@@ -34,7 +34,7 @@ export default function AuthorSection({ author, publishedDate, readTimeInMinutes
               alt={author.name}
               width={32}
               height={32}
-              className="rounded-full"
+              className="rounded-full object-cover"
             />
           )}
           <span className="font-semibold text-brownDark dark:text-brown">

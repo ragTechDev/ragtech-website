@@ -103,6 +103,23 @@ export function calculateReadingTime(content: string): number {
 }
 
 /**
+ * Check if a URL is an external (absolute) URL
+ */
+export function isExternalUrl(url: string): boolean {
+  return url.startsWith('http://') || url.startsWith('https://');
+}
+
+/**
+ * Normalize a cover image URL:
+ * - External URLs (http/https) are returned as-is
+ * - Internal paths are ensured to start with '/'
+ */
+export function normalizeCoverImageUrl(coverImage: string): string {
+  if (isExternalUrl(coverImage)) return coverImage;
+  return coverImage.startsWith('/') ? coverImage : `/${coverImage}`;
+}
+
+/**
  * Convert tag string to slug
  */
 export function tagToSlug(tag: string): string {
@@ -110,23 +127,4 @@ export function tagToSlug(tag: string): string {
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
-}
-
-/**
- * Check if a URL is an external URL (http/https)
- */
-export function isExternalUrl(url: string): boolean {
-  return url.startsWith('http://') || url.startsWith('https://');
-}
-
-/**
- * Normalize cover image URL for Next.js Image component
- * Returns the URL as-is for external URLs, ensures leading slash for local paths
- */
-export function normalizeCoverImageUrl(url: string): string {
-  if (isExternalUrl(url)) {
-    return url;
-  }
-  // Ensure local paths start with /
-  return url.startsWith('/') ? url : `/${url}`;
 }

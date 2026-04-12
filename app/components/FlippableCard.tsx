@@ -85,6 +85,7 @@ export default function FlippableCard({
               src={frontImage}
               alt={`${alt} - Front`}
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover rounded-3xl"
               priority
             />
@@ -103,6 +104,7 @@ export default function FlippableCard({
               src={backImage}
               alt={`${alt} - Back`}
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover rounded-3xl"
             />
           </motion.div>

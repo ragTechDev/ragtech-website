@@ -51,6 +51,7 @@ export default function Header() {
                 width={180} 
                 height={48}
                 className="h-12 w-auto hover:scale-105 transition-transform duration-300"
+                style={{ width: 'auto', height: 'auto' }}
                 priority
               />
             </motion.div>

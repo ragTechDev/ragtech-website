@@ -55,6 +55,7 @@ export default function Home() {
                   width={200}
                   height={200}
                   className="w-41 md:w-51 h-auto"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
                 {/* Capybara Mascot */}
                 <div className="absolute -bottom-2 -right-2 w-12 h-16 md:w-14 md:h-20">
@@ -86,6 +87,7 @@ export default function Home() {
                   width={250}
                   height={250}
                   className="w-48 md:w-56 h-auto"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
                 {/* Capybara Mascot */}
                 <div className="absolute -bottom-2 -right-2 w-12 h-16 md:w-14 md:h-20">
@@ -117,6 +119,7 @@ export default function Home() {
                   width={250}
                   height={250}
                   className="w-48 md:w-56 h-auto"
+                  style={{ width: 'auto', height: 'auto' }}
                 />
                 {/* Capybara Mascot */}
                 <div className="absolute -bottom-2 -right-2 w-12 h-12 md:w-14 md:h-14">
