@@ -68,7 +68,7 @@ Since cutting it out, I've become much more deliberate about where I spend compu
 
 # And Then There's Claude
 
-Here's the thing: when I started using Claude more heavily as my primary AI assistant, I noticed something. It doesn't generate images.
+When I started using Claude more heavily as my primary AI assistant, I noticed something. It doesn't generate images.
 
 If you ask Claude to "draw a picture of a sunset over the ocean" or "generate an image of a futuristic city," it will tell you clearly, it can't do that. [As Claude's own support page confirms](https://support.claude.com/en/articles/9002504-can-claude-produce-images), this isn't a technical limitation Anthropic is racing to fix. It's a deliberate policy decision.
 
