@@ -105,7 +105,7 @@ graph TB
     end
 
     subgraph AZURE_TENANT["Government Agency's Azure Tenant"]
-        subgraph CONTAINER["Container — deployed inside agency infrastructure, not OpenAI's"]
+        subgraph CONTAINER["Agency-hosted Container"]
             CGOV["<b>ChatGPT Gov</b><br/>Containerized application"]
         end
         AOAI["<b>Azure OpenAI Service (AOAI)</b><br/>Microsoft-hosted model endpoint"]
@@ -121,10 +121,12 @@ graph TB
     style PU fill:#fff3c1,stroke:#ffefae,color:#404040
     style GA fill:#a2d4d1,stroke:#8cc9c5,color:#262626
     style CGPT fill:#fda2a9,stroke:#fc8b94,color:#262626
-    style CGOV fill:#a2d4d1,stroke:#8cc9c5,color:#262626
+    style CGOV fill:#fda2a9,stroke:#fc8b94,color:#262626
     style OAPI fill:#e8e8e8,stroke:#cccccc,color:#404040
     style AOAI fill:#a2d4d1,stroke:#8cc9c5,color:#262626
     style MODEL fill:#a2805d,stroke:#8b6a46,color:#ffffff
+    style AZURE_TENANT fill:#ffffff,stroke:#8cc9c5,color:#404040
+    style CONTAINER fill:#a2d4d1,stroke:#8cc9c5,color:#262626
 ```
 
 This picture became more complicated in October 2025, when Microsoft and OpenAI [announced a restructuring of their partnership](https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/). One of its provisions is that OpenAI can now provide API access to US government national security customers **regardless of the cloud provider** — meaning OpenAI can serve these customers directly, bypassing Azure entirely. 
@@ -161,7 +163,7 @@ The diagram below illustrates the scenario where the shared model scenario holds
 ---
 title: "Scenario A — Shared Model Weights (Risk Scenario, for Educational Purposes)"
 ---
-graph TB
+graph LR
     PU["Public Users"] -->|prompt| CGPT
     GA["US Government Agencies"] -->|prompt| CGOV
 
@@ -191,6 +193,7 @@ graph TB
     style OAPI fill:#e8e8e8,stroke:#cccccc,color:#404040
     style AOAI fill:#a2d4d1,stroke:#8cc9c5,color:#262626
     style GPT4o fill:#a2805d,stroke:#8b6a46,color:#ffffff
+    style WRAPPERS fill:#ffffff,stroke:#cccccc,color:#404040
 ```
 
 The Azure deployment detail makes the second scenario — a separately maintained, EO-compliant LLM — more credible. OpenAI also offers "Custom models for national security, offered on a limited basis", which signals both the willingness and the technical capacity to fork their model development for government use. Combined with the containerized, tenant-isolated deployment of ChatGPT Gov, a possible architecture for that separation might look like this:
@@ -238,6 +241,8 @@ graph TB
     style BASE fill:#a2805d,stroke:#8b6a46,color:#ffffff
     style GPT4o fill:#fda2a9,stroke:#fc8b94,color:#262626
     style GPT4oGOV fill:#a2d4d1,stroke:#8cc9c5,color:#262626
+    style WRAPPERS fill:#ffffff,stroke:#cccccc,color:#404040
+    style TRAINING fill:#ffffff,stroke:#cccccc,color:#404040
 ```
 
 Even so... These custom models OpenAI refers to might not mean customizations of its LLM range (i.e. the GPT-4o range), but rather new AI models trained from scratch that may not be LLMs in the first place.

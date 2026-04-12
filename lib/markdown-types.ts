@@ -128,22 +128,3 @@ export function tagToSlug(tag: string): string {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-+|-+$/g, '');
 }
-
-/**
- * Check if a URL is an external URL (http/https)
- */
-export function isExternalUrl(url: string): boolean {
-  return url.startsWith('http://') || url.startsWith('https://');
-}
-
-/**
- * Normalize cover image URL for Next.js Image component
- * Returns the URL as-is for external URLs, ensures leading slash for local paths
- */
-export function normalizeCoverImageUrl(url: string): string {
-  if (isExternalUrl(url)) {
-    return url;
-  }
-  // Ensure local paths start with /
-  return url.startsWith('/') ? url : `/${url}`;
-}
