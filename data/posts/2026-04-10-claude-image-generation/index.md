@@ -62,7 +62,7 @@ That might sound trivial in isolation. But [MIT News estimates](https://news.mit
 ![Explained: Generative AI’s environmental impact](https://news.mit.edu/sites/default/files/styles/news_article__image_gallery/public/images/202501/MIT-AI-Climate-01_0.jpg?itok=kXVLyp49)
 __Image from [MIT News](https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117)__
 
-We talk a lot about our personal carbon footprints. We swap out plastic straws, we bring reusable bags. But we rarely stop to think about the energy cost of the digital tools we use every day. AI image generation is, quietly, one of the more energy-hungry habits in the modern tech user's toolkit.
+We talk a lot about our personal carbon footprints. We swap out plastic straws, we bring reusable bags. But we rarely stop to think about the energy cost of the digital tools we use every day. AI image generation is, unbeknownst to most regular users, one of the more energy-hungry habits in the modern tech user's toolkit.
 
 Since cutting it out, I've become much more deliberate about where I spend compute. It's a small change, but it's one I can live without.
 
