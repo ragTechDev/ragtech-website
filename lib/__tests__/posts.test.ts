@@ -9,15 +9,14 @@ vi.mock('../markdown', () => ({
   loadMarkdownPostBySlug: vi.fn(),
 }));
 
-vi.mock('../beehiiv', () => ({
-  fetchBeehiivPosts: vi.fn(),
+vi.mock('../archived-posts', () => ({
   loadArchivedPosts: vi.fn(),
   loadArchivedPostBySlug: vi.fn(),
 }));
 
 import { loadPostBySlug, loadAllPosts } from '../posts';
 import { loadMarkdownPosts, loadMarkdownPostBySlug } from '../markdown';
-import { fetchBeehiivPosts, loadArchivedPosts, loadArchivedPostBySlug } from '../beehiiv';
+import { loadArchivedPosts, loadArchivedPostBySlug } from '../archived-posts';
 
 const mockMarkdownPost: MarkdownPost = {
   slug: 'test-markdown-post',
@@ -37,18 +36,15 @@ const mockMarkdownPost: MarkdownPost = {
   },
 };
 
-describe('post loading resilience when beehiiv API key is invalid', () => {
+describe('post loading basic functionality', () => {
   beforeEach(() => {
     vi.clearAllMocks();
   });
 
   describe('loadPostBySlug', () => {
-    it('returns a markdown post even when beehiiv throws an invalid API key error', async () => {
+    it('returns a markdown post when found', async () => {
       vi.mocked(loadMarkdownPostBySlug).mockResolvedValue(mockMarkdownPost);
       vi.mocked(loadArchivedPostBySlug).mockResolvedValue(null);
-      vi.mocked(fetchBeehiivPosts).mockRejectedValue(
-        new Error('Invalid Beehiiv API key')
-      );
 
       const post = await loadPostBySlug('test-markdown-post');
 
@@ -56,26 +52,38 @@ describe('post loading resilience when beehiiv API key is invalid', () => {
       expect(post?.slug).toBe('test-markdown-post');
     });
 
-    it('does not call beehiiv at all when the markdown post is found', async () => {
-      vi.mocked(loadMarkdownPostBySlug).mockResolvedValue(mockMarkdownPost);
-      vi.mocked(loadArchivedPostBySlug).mockResolvedValue(null);
-      vi.mocked(fetchBeehiivPosts).mockRejectedValue(
-        new Error('Invalid Beehiiv API key')
-      );
+    it('returns an archived post when markdown post is not found', async () => {
+      vi.mocked(loadMarkdownPostBySlug).mockResolvedValue(null);
+      const mockArchivedPost = {
+        id: 'archived-post-id',
+        slug: 'test-archived-post',
+        title: 'Test Archived Post',
+        brief: 'A test archived post',
+        coverImage: { url: '/images/test.jpg' },
+        publishedAt: '2024-01-01T00:00:00Z',
+        readTimeInMinutes: 5,
+        author: { name: 'Test Author', profilePicture: '/images/author.jpg' },
+        tags: [{ name: 'ai', slug: 'ai' }],
+        content: { html: '<p>Test content</p>', markdown: 'Test content' },
+        _archived: {
+          source: 'hashnode' as const,
+          archived_date: '2024-01-01T00:00:00Z',
+          original_url: 'https://example.com/test',
+        },
+      };
+      vi.mocked(loadArchivedPostBySlug).mockResolvedValue(mockArchivedPost);
 
-      await loadPostBySlug('test-markdown-post');
+      const post = await loadPostBySlug('test-archived-post');
 
-      expect(fetchBeehiivPosts).not.toHaveBeenCalled();
+      expect(post).not.toBeNull();
+      expect(post?.slug).toBe('test-archived-post');
     });
   });
 
   describe('loadAllPosts', () => {
-    it('returns markdown posts even when beehiiv throws an invalid API key error', async () => {
+    it('returns posts from all enabled sources', async () => {
       vi.mocked(loadMarkdownPosts).mockResolvedValue([mockMarkdownPost]);
       vi.mocked(loadArchivedPosts).mockResolvedValue([]);
-      vi.mocked(fetchBeehiivPosts).mockRejectedValue(
-        new Error('Invalid Beehiiv API key')
-      );
 
       const posts = await loadAllPosts();
 

@@ -3,7 +3,6 @@
  * Handles techie-taboo waitlist form submissions with automated workflows:
  * 1. Submit to Netlify Forms
  * 2. Subscribe to Resend audience (with waitlist segment)
- * 3. Subscribe to Beehiiv and add "techie taboo waitlisters" tag
  */
 
 import { NextRequest, NextResponse } from 'next/server';
@@ -92,62 +91,6 @@ export async function POST(request: NextRequest) {
       }
     } catch (error) {
       console.error('Resend workflow error:', error);
-    }
-
-    // Workflow 3: Subscribe to Beehiiv and add tag (non-blocking)
-    try {
-      const beehiivApiKey = process.env.BEEHIIV_API_KEY;
-      const publicationId = process.env.BEEHIIV_PUBLICATION_ID;
-
-      // Step 1: Create subscription
-      const subscriptionResponse = await fetch(
-        `https://api.beehiiv.com/v2/publications/${publicationId}/subscriptions`,
-        {
-          method: 'POST',
-          headers: {
-            'Authorization': `Bearer ${beehiivApiKey}`,
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            email,
-            reactivate_existing: false,
-            send_welcome_email: false,
-            utm_source: 'techie-taboo-waitlist',
-            utm_medium: 'website',
-            referring_site: referrer,
-          }),
-        }
-      );
-
-      if (subscriptionResponse.ok) {
-        const subscriptionData = await subscriptionResponse.json();
-        const subscriptionId = subscriptionData.data.id;
-        
-        // Step 2: Add tag to subscription
-        const tagResponse = await fetch(
-          `https://api.beehiiv.com/v2/publications/${publicationId}/subscriptions/${subscriptionId}/tags`,
-          {
-            method: 'POST',
-            headers: {
-              'Authorization': `Bearer ${beehiivApiKey}`,
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              tags: ['techie taboo waitlisters'],
-            }),
-          }
-        );
-
-        if (tagResponse.ok) {
-          console.log('Added to Beehiiv with tag:', { email, subscriptionId });
-        } else {
-          console.error('Failed to add tag:', await tagResponse.text());
-        }
-      } else {
-        console.error('Beehiiv subscription failed:', await subscriptionResponse.text());
-      }
-    } catch (error) {
-      console.error('Beehiiv workflow error:', error);
     }
 
     return NextResponse.json({

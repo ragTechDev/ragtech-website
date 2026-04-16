@@ -709,7 +709,7 @@ export default function NewsletterDashboard() {
 
 ### 8.2 Subscriber Management
 
-- Import existing Beehiiv subscribers to Resend
+- Build subscriber list through content and website
 - Sync subscribers between platforms
 - Subscriber preferences (frequency, topics)
 - Re-engagement campaigns

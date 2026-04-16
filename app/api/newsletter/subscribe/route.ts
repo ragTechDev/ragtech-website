@@ -1,17 +1,15 @@
 /**
  * API Route: POST /api/newsletter/subscribe
- * Subscribe email to newsletter services (Resend and/or Beehiiv)
- * Properly decoupled to allow easy removal of either service
+ * Subscribe email to newsletter services (Resend only)
+ * Previously supported Beehiiv but has been removed
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { subscribeToBeehiiv } from '@/lib/beehiiv';
 import { subscribeToResend, sendWelcomeEmail } from '@/lib/newsletter';
 
 // Configuration: Enable/disable newsletter services
 const NEWSLETTER_CONFIG = {
   resend: true,   // Set to false to disable Resend
-  beehiiv: true,  // Set to false to disable Beehiiv
 };
 
 export async function POST(request: NextRequest) {
@@ -46,7 +44,6 @@ export async function POST(request: NextRequest) {
 
     const results: {
       resend?: { success: boolean; error?: string };
-      beehiiv?: { success: boolean; error?: string };
     } = {};
 
     // Subscribe to Resend (if enabled)
@@ -88,31 +85,14 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    // Subscribe to Beehiiv (if enabled)
-    if (NEWSLETTER_CONFIG.beehiiv) {
-      try {
-        const beehiivResponse = await subscribeToBeehiiv(email);
-        results.beehiiv = {
-          success: true,
-        };
-      } catch (error) {
-        console.error('Beehiiv subscription error:', error);
-        results.beehiiv = {
-          success: false,
-          error: error instanceof Error ? error.message : 'Beehiiv subscription failed',
-        };
-      }
-    }
 
     // Determine overall success
     const enabledServices = [
       NEWSLETTER_CONFIG.resend && 'resend',
-      NEWSLETTER_CONFIG.beehiiv && 'beehiiv',
     ].filter(Boolean);
 
     const successfulSubscriptions = [
       results.resend?.success && 'Resend',
-      results.beehiiv?.success && 'Beehiiv',
     ].filter(Boolean);
 
     // If at least one service succeeded, consider it a success

@@ -5,7 +5,7 @@
 
 import 'server-only';
 import { loadMarkdownPosts, loadMarkdownPostBySlug } from './markdown';
-import { fetchBeehiivPosts, loadArchivedPosts, loadArchivedPostBySlug } from './beehiiv';
+import { loadArchivedPosts, loadArchivedPostBySlug } from './archived-posts';
 import type { UnifiedPost } from './posts-client';
 import { getUnifiedPostDate, getUnifiedPostSlug } from './posts-client';
 
@@ -18,13 +18,11 @@ export * from './posts-client';
 
 export interface PostSourceConfig {
   markdown: boolean;
-  beehiiv: boolean;
   archived: boolean;
 }
 
 const DEFAULT_CONFIG: PostSourceConfig = {
   markdown: true,
-  beehiiv: true,
   archived: true,
 };
 
@@ -51,15 +49,6 @@ export async function loadAllPosts(
       }
     }
 
-    // Load Beehiiv posts
-    if (config.beehiiv) {
-      try {
-        const beehiivResponse = await fetchBeehiivPosts(1, 100);
-        posts.push(...beehiivResponse.data);
-      } catch (error) {
-        console.error('Error loading Beehiiv posts:', error);
-      }
-    }
 
     // Load archived posts
     if (config.archived) {
@@ -116,18 +105,6 @@ export async function loadPostBySlug(
     }
   }
 
-  // Try Beehiiv posts last (requires fetching all posts)
-  if (config.beehiiv) {
-    try {
-      const beehiivResponse = await fetchBeehiivPosts(1, 100);
-      const beehiivPost = beehiivResponse.data.find((p) => p.slug === slug);
-      if (beehiivPost) {
-        return beehiivPost;
-      }
-    } catch (error) {
-      console.error('Error loading Beehiiv post by slug:', error);
-    }
-  }
 
   return null;
 }

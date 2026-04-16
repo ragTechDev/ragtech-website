@@ -231,7 +231,7 @@ Five pillars, each with a clear audience job-to-be-done:
 | Platform | Role | Why |
 |----------|------|-----|
 | **YouTube** | Primary content hub | Already established, 48 episodes, algorithm can compound. Highest-effort, highest return. |
-| **Newsletter (Beehiiv)** | Owned audience, monetization engine | The only platform you fully own. Every platform-first viewer should eventually land here. |
+| **Newsletter (Resend)** | Owned audience, monetization engine | The only platform you fully own. Every platform-first viewer should eventually land here. |
 
 ### Tier 2: Distribute and Recruit
 | Platform | Role | Why |
@@ -257,7 +257,7 @@ Five pillars, each with a clear audience job-to-be-done:
 | **Monday** | New blog post OR essay | Website + LinkedIn | High |
 | **Wednesday** | Podcast episode (YouTube + audio) | YouTube + Spotify/Apple | High |
 | **Thursday** | Episode clip (60–90 seconds, best moment) | Instagram Reels / TikTok | Low (repurposed) |
-| **Friday** | Newsletter — curated take on the week | Beehiiv | Medium |
+| **Friday** | Newsletter — curated take on the week | Resend | Medium |
 
 ### Monthly
 - 1 longer-form opinion post (Natasha's essay format — Women in AI, Johor data center, these are brand builders)
@@ -394,14 +394,14 @@ The repurpose tracker identifies 10 high-priority episodes that have never been 
 
 ### Current Revenue Streams (Visible in Data)
 1. **Techie Taboo card game** — Physical product, has a waitlist. Blog post Feb 2026 suggests manufacturing is ongoing.
-2. **Newsletter** — Beehiiv setup exists. Currently likely used for distribution. Monetization potential untapped.
+2. **Newsletter** — Resend setup exists. Currently used for distribution. Monetization potential untapped.
 3. **Speaking** — Natasha spoke at AI Collective Singapore. This is a revenue stream and brand signal.
 
 ### Recommended Revenue Stack (Sequenced)
 
 #### Stage 1: Deepen What Exists (Now — Q3 2026)
 - **Techie Taboo**: Launch properly with content support. Every episode about tech culture is a soft ad for a card game about tech culture. Build a dedicated content arc around the product: behind-the-scenes manufacturing, "how to play" video, community game nights.
-- **Newsletter sponsorships**: Once newsletter list is 1,000+ subscribers, approach sponsors in the tools/education/career space. Beehiiv has a built-in ad network. Target: dev tools, career platforms (LinkedIn Learning, Scrimba), Singapore-specific tech sponsors.
+- **Newsletter sponsorships**: Once newsletter list is 1,000+ subscribers, approach sponsors in the tools/education/career space. Target: dev tools, career platforms (LinkedIn Learning, Scrimba), Singapore-specific tech sponsors.
 - **Speaking fees**: Formalise the speaking offering. Create a "book us" page. Natasha's IWD talk + policy writing make her a credible keynote for women in tech, AI ethics, and Singapore tech ecosystem events.
 
 #### Stage 2: Build the Middle (Q3–Q4 2026)

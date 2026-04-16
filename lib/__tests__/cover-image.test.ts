@@ -44,7 +44,7 @@ describe('normalizeCoverImageUrl', () => {
   });
 
   it('does not mangle external URLs by prepending /', () => {
-    const url = 'https://beehiiv-images-production.s3.amazonaws.com/abc.jpg';
+    const url = 'https://example-cdn.com/images/abc.jpg';
     expect(normalizeCoverImageUrl(url)).not.toMatch(/^\/https/);
     expect(normalizeCoverImageUrl(url)).toBe(url);
   });

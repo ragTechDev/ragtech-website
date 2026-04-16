@@ -3,14 +3,14 @@
  * These can be imported in both client and server components
  */
 
-import { BeehiivPost, ArchivedPost, isArchivedPost } from './beehiiv-types';
+import { ArchivedPost, isArchivedPost } from './archived-posts-types';
 import { MarkdownPost, isMarkdownPost } from './markdown-types';
 
 // ============================================================================
 // Unified Post Type
 // ============================================================================
 
-export type UnifiedPost = MarkdownPost | BeehiivPost | ArchivedPost;
+export type UnifiedPost = MarkdownPost | ArchivedPost;
 
 // ============================================================================
 // Re-export type guards
@@ -32,8 +32,8 @@ export function getUnifiedPostDate(post: UnifiedPost): Date {
   if (isArchivedPost(post)) {
     return new Date(post.publishedAt);
   }
-  // BeehiivPost
-  return new Date(post.displayed_date * 1000);
+  // Should never reach here due to type constraints
+  throw new Error('Unknown post type');
 }
 
 /**
@@ -60,8 +60,8 @@ export function getUnifiedPostBrief(post: UnifiedPost): string {
   if (isArchivedPost(post)) {
     return post.brief;
   }
-  // BeehiivPost
-  return post.subtitle || post.preview_text || '';
+  // Should never reach here due to type constraints
+  throw new Error('Unknown post type');
 }
 
 /**
@@ -74,8 +74,8 @@ export function getUnifiedPostCoverImage(post: UnifiedPost): string | null {
   if (isArchivedPost(post)) {
     return post.coverImage?.url || null;
   }
-  // BeehiivPost
-  return post.thumbnail_url || null;
+  // Should never reach here due to type constraints
+  throw new Error('Unknown post type');
 }
 
 /**
@@ -85,8 +85,8 @@ export function getUnifiedPostAuthor(post: UnifiedPost): string {
   if (isMarkdownPost(post) || isArchivedPost(post)) {
     return post.author.name;
   }
-  // BeehiivPost
-  return post.authors?.[0] || 'ragTech Team';
+  // Should never reach here due to type constraints
+  throw new Error('Unknown post type');
 }
 
 /**
@@ -96,27 +96,26 @@ export function getUnifiedPostReadTime(post: UnifiedPost): number {
   if (isMarkdownPost(post) || isArchivedPost(post)) {
     return post.readTimeInMinutes;
   }
-  // BeehiivPost - estimate based on content length
-  const content = post.content?.free?.web || '';
-  const wordCount = content.split(/\s+/).length;
-  return Math.ceil(wordCount / 200);
+  // Should never reach here due to type constraints
+  throw new Error('Unknown post type');
 }
 
 /**
  * Get the post source type
  */
-export function getPostSource(post: UnifiedPost): 'markdown' | 'beehiiv' | 'archived' {
+export function getPostSource(post: UnifiedPost): 'markdown' | 'archived' {
   if (isMarkdownPost(post)) {
     return 'markdown';
   }
   if (isArchivedPost(post)) {
     return 'archived';
   }
-  return 'beehiiv';
+  // Should never reach here due to type constraints
+  throw new Error('Unknown post type');
 }
 
 // ============================================================================
 // Re-export types for convenience
 // ============================================================================
 
-export type { MarkdownPost, ArchivedPost, BeehiivPost };
+export type { MarkdownPost, ArchivedPost };

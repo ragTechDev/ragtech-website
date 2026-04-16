@@ -140,7 +140,7 @@
     height: auto;
   }
 
-  /* Force override any inline styles from Beehiiv, but NOT mermaid diagrams
+  /* Force override any inline styles from external sources, but NOT mermaid diagrams
      (mermaid measures text before attaching to DOM; overriding after causes misaligned nodes) */
   .blog-content *:not(.mermaid):not(.mermaid *) {
     font-family: inherit !important;
