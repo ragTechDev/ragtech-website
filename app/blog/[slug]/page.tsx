@@ -11,7 +11,6 @@ import {
   isMarkdownPost,
   isArchivedPost,
 } from '@/lib/posts-client';
-import type { BeehiivPost } from '@/lib/beehiiv-types';
 import NewsletterCTA from '../NewsletterCTA';
 import RecommendedArticles from '../RecommendedArticles';
 import TikTokEmbed from '../TikTokEmbed';
@@ -77,36 +76,8 @@ function getPostContent(post: UnifiedPost): string {
     return post.content.html;
   }
   
-  // For Beehiiv: Use web content, fallback to email if web is empty/minimal
-  const beehiivPost = post as BeehiivPost;
-  let beehiivContent = beehiivPost.content.free.web || '';
-  
-  // If web content is too short (just tags) or empty, use email content instead
-  const strippedWeb = beehiivContent.replace(/<[^>]*>/g, '').trim();
-  if (!strippedWeb || strippedWeb.length < 50) {
-    beehiivContent = beehiivPost.content.free.email || beehiivContent;
-  }
-  
-  // Remove any full HTML/body tags if present and just get the content
-  let cleanContent = beehiivContent
-    .replace(/<html[^>]*>/gi, '')
-    .replace(/<\/html>/gi, '')
-    .replace(/<body[^>]*>/gi, '')
-    .replace(/<\/body>/gi, '')
-    .replace(/<head[^>]*>[\s\S]*?<\/head>/gi, '')
-    .trim();
-  
-  // Remove inline styles and Beehiiv-specific attributes that might override our CSS
-  cleanContent = cleanContent
-    .replace(/\s*style="[^"]*"/gi, '')
-    .replace(/\s*class="[^"]*"/gi, '')
-    .replace(/\s*width="[^"]*"/gi, '')
-    .replace(/\s*height="[^"]*"/gi, '')
-    .replace(/\s*align="[^"]*"/gi, '')
-    .replace(/\s*bgcolor="[^"]*"/gi, '')
-    .replace(/\s*color="[^"]*"/gi, '');
-  
-  return cleanContent;
+  // Should never reach here due to type constraints
+  throw new Error('Unknown post type');
 }
 
 function getPostTags(post: UnifiedPost): Array<{ name: string; slug: string }> {
@@ -114,12 +85,8 @@ function getPostTags(post: UnifiedPost): Array<{ name: string; slug: string }> {
     return post.tags;
   }
   
-  // Convert Beehiiv content_tags to tag format
-  const beehiivPost = post as BeehiivPost;
-  return beehiivPost.content_tags.map((tag) => ({
-    name: tag,
-    slug: tag.toLowerCase().replace(/\s+/g, '-'),
-  }));
+  // Should never reach here due to type constraints
+  throw new Error('Unknown post type');
 }
 
 
@@ -143,7 +110,6 @@ export default async function BlogPostPage(props: { params: { slug: string } } |
   const sourceBadge = {
     markdown: { label: 'New Post', color: 'bg-green-500' },
     archived: { label: 'From the Archives', color: 'bg-neutral-500' },
-    beehiiv: null,
   }[source];
 
   return (

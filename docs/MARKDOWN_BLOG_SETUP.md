@@ -1,15 +1,16 @@
 # Markdown Blog System Setup Guide
 
-This guide explains the new markdown-based blog post system that integrates with your existing Beehiiv and archived Hashnode posts.
+This guide explains the markdown-based blog post system that integrates with your archived Hashnode posts.
 
 ## Overview
 
-The blog now supports **three content sources**:
+The blog now supports **two content sources**:
 1. **Markdown posts** - New posts written in markdown, stored in the codebase
-2. **Beehiiv posts** - Fetched from Beehiiv API (can be disabled)
-3. **Archived posts** - Legacy Hashnode posts in JSON format (can be disabled)
+2. **Archived posts** - Legacy Hashnode posts in JSON format (can be disabled)
 
-All three sources are unified into a single blog feed with proper decoupling for easy management.
+Both sources are unified into a single blog feed with proper decoupling for easy management.
+
+**Note:** Beehiiv integration has been completely removed from the codebase.
 
 ## Installation
 
@@ -160,18 +161,11 @@ Edit `lib/posts.ts` to configure which sources are active:
 ```typescript
 const DEFAULT_CONFIG: PostSourceConfig = {
   markdown: true,   // Enable/disable markdown posts
-  beehiiv: true,    // Enable/disable Beehiiv API
   archived: true,   // Enable/disable archived posts
 };
 ```
 
-### Remove Beehiiv Integration
-
-To completely remove Beehiiv:
-
-1. Set `beehiiv: false` in `lib/posts.ts`
-2. Remove Beehiiv API calls (optional cleanup)
-3. Remove `BEEHIIV_API_KEY` and `BEEHIIV_PUBLICATION_ID` from `.env.local`
+**Note:** Beehiiv integration has been completely removed from the codebase. The post system now only supports markdown and archived posts.
 
 ### Remove Archived Posts
 
@@ -187,8 +181,8 @@ lib/
   markdown-types.ts          # TypeScript interfaces for markdown posts
   markdown.ts                # Markdown parsing and loading utilities
   posts.ts                   # Unified post interface (all sources)
-  beehiiv-types.ts          # Beehiiv type definitions
-  beehiiv.ts                # Beehiiv API utilities
+  archived-posts-types.ts   # Archived posts type definitions
+  archived-posts.ts         # Archived posts utilities
 
 app/
   blog/
@@ -208,7 +202,6 @@ data/
 
 The `loadAllPosts()` function in `lib/posts.ts`:
 - Loads markdown posts from `data/posts/`
-- Fetches Beehiiv posts from API
 - Loads archived posts from JSON files
 - Merges all sources into a unified array
 - Sorts by publication date (newest first)
@@ -221,7 +214,7 @@ All post types are normalized through utility functions:
 - `getUnifiedPostSlug()` - Get URL slug
 - `getUnifiedPostBrief()` - Get description
 - `getUnifiedPostCoverImage()` - Get cover image URL
-- `getPostSource()` - Get source type (markdown/beehiiv/archived)
+- `getPostSource()` - Get source type (markdown/archived)
 
 ### 3. Type Guards
 
@@ -233,8 +226,6 @@ if (isMarkdownPost(post)) {
   // Handle markdown post
 } else if (isArchivedPost(post)) {
   // Handle archived post
-} else {
-  // Handle Beehiiv post
 }
 ```
 
@@ -305,7 +296,7 @@ If you see TypeScript errors about missing modules:
 ✅ **Better Editing** - Use VS Code or any markdown editor  
 ✅ **Portability** - Not locked into any platform  
 ✅ **AI-Friendly** - Easy for AI assistants to create/edit posts  
-✅ **Flexible** - Mix markdown, Beehiiv, and archived posts  
+✅ **Flexible** - Mix markdown and archived posts  
 ✅ **Decoupled** - Easy to remove any source independently  
 
 ## Questions?

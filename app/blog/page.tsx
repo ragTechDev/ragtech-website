@@ -7,7 +7,7 @@ export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
 export default async function BlogPage() {
-  // Load all posts from all sources (markdown, beehiiv, archived)
+  // Load all posts from all sources (markdown, archived)
   // Sources can be individually disabled by modifying the config in lib/posts.ts
   let allPosts: UnifiedPost[] = [];
   

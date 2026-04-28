@@ -123,34 +123,19 @@ This creates the broadcast and sends it immediately (or schedules it). You'll be
 
 ## Subscriber Management
 
-### Dual Subscription (Resend + Beehiiv)
+### Resend-Only Subscription
 
-The subscribe API is configured to add subscribers to **both** Resend and Beehiiv simultaneously.
+The subscribe API is configured to add subscribers to **Resend only**.
 
 **Configuration:** `app/api/newsletter/subscribe/route.ts`
 
 ```typescript
 const NEWSLETTER_CONFIG = {
   resend: true,   // Set to false to disable Resend
-  beehiiv: true,  // Set to false to disable Beehiiv
 };
 ```
 
-### Disable Beehiiv (Keep Only Resend)
-
-To remove Beehiiv and use only Resend:
-
-1. Edit `app/api/newsletter/subscribe/route.ts`:
-   ```typescript
-   const NEWSLETTER_CONFIG = {
-     resend: true,
-     beehiiv: false,  // Disabled
-   };
-   ```
-
-2. Remove Beehiiv from other parts of the codebase (optional cleanup):
-   - `lib/posts.ts` - Set `beehiiv: false` in DEFAULT_CONFIG
-   - Remove `BEEHIIV_API_KEY` from `.env.local`
+**Note:** Beehiiv integration has been completely removed from the codebase. All newsletter functionality now uses Resend exclusively.
 
 ### Subscribe Form
 
@@ -285,10 +270,9 @@ Subscribe a user to newsletter services.
 ```json
 {
   "success": true,
-  "message": "Successfully subscribed to Resend and Beehiiv",
+  "message": "Successfully subscribed to Resend",
   "results": {
-    "resend": { "success": true },
-    "beehiiv": { "success": true }
+    "resend": { "success": true }
   }
 }
 ```
@@ -619,45 +603,26 @@ Don't overwhelm subscribers:
 
 ## Decoupling Guide
 
-### Remove Beehiiv Completely
+### Beehiiv Removal (Completed)
 
-1. **Disable in subscribe API:**
-   ```typescript
-   // app/api/newsletter/subscribe/route.ts
-   const NEWSLETTER_CONFIG = {
-     resend: true,
-     beehiiv: false,
-   };
-   ```
+**Beehiiv integration has been completely removed from the codebase.**
 
-2. **Disable in posts loader:**
-   ```typescript
-   // lib/posts.ts
-   const DEFAULT_CONFIG = {
-     markdown: true,
-     beehiiv: false,
-     archived: true,
-   };
-   ```
+The following changes were made:
+- Removed all Beehiiv API calls and types
+- Updated post system to use only markdown and archived posts
+- Removed Beehiiv environment variables
+- Updated all imports and dependencies
 
-3. **Remove environment variables:**
-   ```bash
-   # Remove from .env.local
-   # BEEHIIV_API_KEY
-   # BEEHIIV_PUBLICATION_ID
-   ```
+The newsletter system now uses Resend exclusively for all subscriber management.
 
-4. **Optional cleanup:**
-   - Remove `subscribeToBeehiiv` import from subscribe route
-   - Remove Beehiiv-related code from `lib/beehiiv.ts`
+### Disable Resend (Not Recommended)
 
-### Remove Resend (Keep Beehiiv)
+**Note:** Disabling Resend would disable all newsletter functionality since Beehiiv is no longer available.
 
-1. **Disable in subscribe API:**
+If you need to disable newsletter functionality:
    ```typescript
    const NEWSLETTER_CONFIG = {
      resend: false,
-     beehiiv: true,
    };
    ```
 
