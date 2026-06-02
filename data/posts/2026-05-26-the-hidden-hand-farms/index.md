@@ -21,6 +21,7 @@ seo:
   metaDescription: "Indian factory workers are wearing head-mounted cameras to train AI robots — without consent, without fair pay, and without a share in the upside. Here's the full story."
   keywords: ["egocentric data", "physical AI", "India factory workers AI", "robot training data", "humanoid robots data", "AI ethics India", "egocentric data collection", "Build AI", "ManuData", "Humyn AI"]
 instagramEmbeds:
+  - DYuk827xIrY
 tiktokEmbeds:
 ---
 
@@ -30,11 +31,13 @@ tiktokEmbeds:
 
 ## Why should you care about factory workers wearing cameras?
 
-Honestly, we want robots to do dangerous, repetitive, and physically exhausting work. Nobody should spend 12 hours a day in a garment factory for Rs 20,000 a month. If robots can fold towels, assemble electronics, or clean hospital rooms, that's progress.
+To be honest, we want robots to do dangerous, repetitive, and physically exhausting work. Nobody should spend 12 hours a day in a garment factory for Rs 20,000 a month. If robots can fold towels, assemble electronics, or clean hospital rooms, that's progress.
 
 But the problem is in the *how*.
 
-The workers training these robots often don't know they're doing it. According to [Times Now (May 20, 2026)](https://www.timesnownews.com/technology-science/big-tech-may-be-using-indian-factory-workers-to-train-ai-article-154359535), workers at Pearl Global Industries in Gurugram were told to wear camera-linked devices during their shifts — no explanations, no consent forms. When asked if they knew the footage was for training AI, they said no.
+<iframe width="100%" height="400" src="https://www.youtube.com/embed/jXufV_xJkXA" title="Are Indian Factory Workers Training AI Models? Viral Video Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+The workers training these robots often don't know they're doing it. According to [Times Now (May 20, 2026)](https://www.timesnownews.com/technology-science/big-tech-may-be-using-indian-factory-workers-to-train-ai-article-154359535), workers at Pearl Global Industries in Gurugram were told to wear camera-linked devices during their shifts, without explanations, or consent forms. When asked if they knew the footage was for training AI, they said no.
 
 The cameras captured everything: hand movements, facial expressions of coworkers, conversations, even bathroom breaks. "We had to take it out before going to the toilet," one worker said. "Moreover, we couldn't speak to our spouse while wearing it. It could listen to our conversation."
 
@@ -43,26 +46,17 @@ The cameras captured everything: hand movements, facial expressions of coworkers
 
 The people creating the most valuable training data for trillion-dollar AI companies are paid less in a day than those companies spend on a single GPU hour. They don't share in the upside. And once the robots are trained, their jobs disappear.
 
-We are not anti-technology (we are software developers!). It's about whether the humans training the machines get a say in how, when, and at what cost. Because if this model becomes standard, and right now it is, the future of work looks very different depending on which side of the camera you're on.
+Trust us, we are not anti-technology (afterall we are software developers at ragTech!). It's about whether the humans training the machines get a say in how, when, and at what cost. Because if this model becomes standard, and right now it is, the future of work looks very different depending on which side of the camera you're on.
 
 ---
 
 ## The Camera on the Forehead
 
-In April 2026, a video went viral. Factory workers in Gurugram, India, were sewing garments while wearing white headbands fitted with small cameras. The footage sparked a simple, unsettling question: are these workers training the robots that will eventually take their jobs?
-
-The answer, it turns out, is yes.
-
-<iframe width="100%" height="400" src="https://www.youtube.com/embed/jXufV_xJkXA" title="Are Indian Factory Workers Training AI Models? Viral Video Explained" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-> The viral video that sparked global debate about Indian factory workers wearing head-mounted cameras, unknowingly training the robots that could replace them.
-
-Across factory floors, warehouses, kitchens, and retail spaces in India, workers are wearing head-mounted cameras that record hundreds of thousands of hours of "egocentric" data — first-person point-of-view footage capturing every hand movement, every object interaction, every instinctive adjustment. This data is being packaged, annotated, and sold to robotics labs in Silicon Valley to train the next generation of humanoid robots.
+Across factory floors, warehouses, kitchens, and retail spaces in India, workers are wearing head-mounted cameras that record hundreds of thousands of hours of "egocentric" data, meaning first-person point-of-view footage capturing every hand movement, every object interaction, every instinctive adjustment. This data is being packaged, annotated, and sold to robotics labs in Silicon Valley to train the next generation of humanoid robots.
 
 India has now become the global hub for this emerging industry. And the scale is staggering.
 
-![India's hand farms — workers recording motion data to fuel the AI robot revolution](https://cdn.quasa.io/images/news/bD4yEXLUrn07RFaTl6l1Y1uva7oLeUoauLuhZIDi.jpg)
-*Inside India's "hand farms" where human motion becomes robot training data. Source: [Quasa.io](https://quasa.io/media/the-hidden-hand-farms-of-india-fueling-the-ai-robot-revolution-with-human-motion)*
+<iframe src="https://www.instagram.com/reel/DYuk827xIrY/embed" width="100%" height="700" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
 ---
 
@@ -77,9 +71,9 @@ According to a [report by Stellaris Venture Partners](https://www.stellarisvp.co
 ![The Physical AI data pyramid — showing the massive gap between available data and what robotics models need](https://cdn.prod.website-files.com/66fd19dde900b64091e5798f/69e710917f901ecee584d9c0_f1e500f3.png)
 *The data pyramid for Physical AI: internet text trained LLMs, but robots need first-person video that doesn't yet exist at scale. Source: [Stellaris Venture Partners](https://www.stellarisvp.com/blog/physical-ai-has-a-massive-data-problem)*
 
-The central insight driving this demand is that there is no "internet for robots." While large language models were trained on trillions of tokens of text already sitting on the web, physical AI has no such luxury. The models that will power humanoids need to learn from first-person video of hands interacting with real objects — with depth, force feedback, and the texture of actual materials.
+The central insight driving this demand is that there is no "internet for robots." While large language models were trained on trillions of tokens of text already sitting on the web, physical AI has no such luxury. The models that will power humanoids need to learn from first-person video of hands interacting with real objects with depth, force feedback, and the texture of actual materials.
 
-As one researcher at a leading robotics lab told Stellaris: the field currently sits at roughly 0.1% to 1% of the data volume that LLMs required to reach frontier capability. The gap is 100x to 1,000x. And that gap is the central bottleneck in Physical AI today.
+As [shared by Stellaris](https://www.stellarisvp.com/blog/physical-ai-has-a-massive-data-problem): the field currently sits at roughly 0.1% to 1% of the data volume that LLMs required to reach frontier capability. The gap is 100x to 1,000x. And that gap is the central bottleneck in Physical AI today.
 
 ---
 
@@ -91,15 +85,15 @@ India's emergence as the epicenter of egocentric data collection is no accident.
 
 **Humyn AI** operates a verified network of data collectors across 18 countries, with significant operations in India. Co-founder Ishank Gupta explains that training a robot for even a single context, say, picking up a glass and placing it on a shelf, requires between 100,000 to 1 million hours of data. For general-purpose robotics, the consensus estimate runs into the billions of hours. "These billions of hours of data cannot be scraped and have to be created," Gupta told [The Economic Times](https://economictimes.indiatimes.com/tech/startups/egocentric-data-collection-fuels-ai-robotics-growth-in-india/articleshow/130477296.cms), "because there is no repository in the world which has such data."
 
-**Objectways**, a data collection firm with offices in Karur and Coimbatore, Tamil Nadu, has pivoted from LLM data to physical AI data collection. President Ravi Shankar told The Economic Times that his company is currently processing 1,000 hours of data per day, against demand for 200,000 to 300,000 hours. Objectways started with GoPro cameras and Meta glasses, then designed its own mobile app when consumer hardware proved insufficient for long recording sessions.
+**Objectways**, a data collection firm with offices in Karur and Coimbatore, Tamil Nadu, has pivoted from LLM data to physical AI data collection. President Ravi Shankar told [The Economic Times](https://economictimes.indiatimes.com/tech/startups/egocentric-data-collection-fuels-ai-robotics-growth-in-india/articleshow/130477296.cms) that his company is currently processing 1,000 hours of data per day, against demand for 200,000 to 300,000 hours. Objectways started with GoPro cameras and Meta glasses, then designed its own mobile app when consumer hardware proved insufficient for long recording sessions.
 
-**FPV Labs** has collected over 10,000 hours of real-world data in the past eight months, but co-founder Abhishek Anand says the company isn't selling raw data. Instead, it's investing in infrastructure to "capture, validate and evaluate high-quality data that transfers human state and action representations to robots."
+**FPV Labs** has collected over 10,000 hours of real-world data in the past eight months, but co-founder Abhishek Anand [says](https://economictimes.indiatimes.com/tech/startups/egocentric-data-collection-fuels-ai-robotics-growth-in-india/articleshow/130477296.cms) the company isn't selling raw data. Instead, it's investing in infrastructure to "capture, validate and evaluate high-quality data that transfers human state and action representations to robots."
 
-**Neo Cambrian** is deploying proprietary hardware across manufacturing units in India to collect what co-founder Abhinav Kukreja calls "accurate and detailed data closer to the real world environment."
+**Neo Cambrian** is deploying proprietary hardware across manufacturing units in India to collect what co-founder Abhinav Kukreja [calls](https://economictimes.indiatimes.com/tech/startups/egocentric-data-collection-fuels-ai-robotics-growth-in-india/articleshow/130477296.cms) "accurate and detailed data closer to the real world environment."
 
 **[ManuData](https://manudata.ai/)** takes a different approach, tapping into India's 63.4 million registered MSMEs — of which 11.7 million are in manufacturing. The company deploys multi-camera hardware depth rigs (Intel RealSense + ZED 2i) across factory stations, capturing not just video but 3D body pose, hand kinematics, and 6DoF object tracking. Their pitch: "The tasks that are still manual here are precisely the tasks robots struggle with most."
 
-**Build AI**, led by 18-year-old Columbia dropout Eddy Xu, has moved fastest. After acquiring Egolab.AI — a startup founded in January 2026 by two teenagers in Maharashtra — Build AI released Egocentric-100K, a dataset of 100,405 hours of first-person factory footage from 14,228 workers, totaling 10.8 billion frames and 24.79 TB of data. The company has raised $15 million from investors including Balaji Srinivasan, Guillermo Rauch (Vercel), and Thomas Wolf (Hugging Face).
+**[Build AI](https://www.humanoidsdaily.com/news/build-ai-scales-to-100-000-hours-as-data-scaling-becomes-robotics-new-frontier)**, led by 18-year-old Columbia dropout Eddy Xu, has moved fastest. After acquiring Egolab.AI — a startup founded in January 2026 by two teenagers in Maharashtra — Build AI released Egocentric-100K, a dataset of 100,405 hours of first-person factory footage from 14,228 workers, totaling 10.8 billion frames and 24.79 TB of data. The company has raised $15 million from investors including Balaji Srinivasan, Guillermo Rauch (Vercel), and Thomas Wolf (Hugging Face).
 
 ![Build AI's Egocentric-100K — an interactive visualization where every pixel represents one of the 10.8 billion frames captured](https://7jopx6ax2qhwmgqx.public.blob.vercel-storage.com/images/build-ai-egocentrik-100K.webp)
 *Build AI's Egocentric-100K: every pixel represents one of the 10.8 billion frames captured by 14,228 factory workers. Source: [Humanoids Daily](https://www.humanoidsdaily.com/news/build-ai-scales-to-100-000-hours-as-data-scaling-becomes-robotics-new-frontier)*
@@ -112,19 +106,13 @@ Other players include Sentientx (teleoperation and motion capture with a claimed
 
 For the workers powering this pipeline, the rewards are modest. Data collectors in India earn roughly Rs 250–400 per hour ~ approximately $3 to $5 per hour. Full-time annotators and motion capture workers report monthly salaries in the range of Rs 19,000–21,000 ($230–250), with part-timers earning as little as Rs 10,000–20,000.
 
-The work itself is grueling. Workers report eye strain from head-mounted cameras, wrist fatigue from repetitive manipulation tasks, and the mental toll of performing scripted actions — fold a towel three times, place it in the left corner, restart if you exceed 60 seconds — for hours on end.
+The work itself is grueling. Workers report eye strain from head-mounted cameras, wrist fatigue from repetitive manipulation tasks, and the mental toll of performing scripted actions eg. fold a towel three times, place it in the left corner, restart if you exceed 60 seconds, for hours on end.
 
 ![Workers in a data capture lab performing repetitive hand motions with cameras recording every movement](https://cdn.quasa.io/photos/00/2025-11-06-17-50-40-1.jpg)
 *Inside a motion capture lab: workers repeat the same actions hundreds of times while cameras record every micro-movement. Source: [Quasa.io](https://quasa.io/media/the-hidden-hand-farms-of-india-fueling-the-ai-robot-revolution-with-human-motion)*
 
 The irony is sharp: human workers are being paid poverty wages to record the precise movements that will train machines to perform those same tasks without human workers at all.
 
-<div style="max-width: 55%; margin: 1.5rem auto;">
-
-![Wage vs data value — the economic disparity between worker pay and the value of the data they generate](https://cdn.quasa.io/photos/00/image-2025-11-06t180301850.jpg)
-*The economic gap: workers earn $3–5/hour to generate data that will power a multi-billion dollar robotics industry. Source: [Quasa.io](https://quasa.io/media/the-hidden-hand-farms-of-india-fueling-the-ai-robot-revolution-with-human-motion)*
-
-</div>
 
 ---
 
@@ -136,17 +124,17 @@ The current frontier in robotics is a new type of AI model that combines three t
 
 Here's the breakthrough: when these models are trained on enough footage of human hands performing tasks, they spontaneously learn to copy those movements onto robot hands. No engineer sits down and programs each finger joint. The AI figures it out by watching.
 
-A leading robotics lab called Physical Intelligence demonstrated this in early 2026. They trained their model on hours of human demonstration data — people folding towels, picking up objects, assembling parts. The model learned to translate those human hand movements to a robot gripper with completely different mechanics. Without explicit programming for each joint.
+A leading robotics lab called [Physical Intelligence](https://physicalintelligence.company) demonstrated this in early 2026. They trained their model on hours of human demonstration data — people folding towels, picking up objects, assembling parts. The model learned to translate those human hand movements to a robot gripper with completely different mechanics. Without explicit programming for each joint.
 
 ![Egocentric-100K dataset comparison — Build AI's dataset dwarfs established robotics datasets like Ego4D and Assembly101](https://7jopx6ax2qhwmgqx.public.blob.vercel-storage.com/images/egocentric-100K-diagram.webp)
 *Data scaling in action: Build AI's Egocentric-100K is an order of magnitude larger than predecessor datasets and dwarfs established benchmarks like Ego4D and Assembly101. Source: [Humanoids Daily](https://www.humanoidsdaily.com/news/build-ai-scales-to-100-000-hours-as-data-scaling-becomes-robotics-new-frontier)*
 
 This is why the data collection boom in India matters so much. The bottleneck for general-purpose robotics is no longer just better robot hardware. It's the sheer volume of high-quality human demonstration data. And India, with its massive manufacturing workforce and low costs, has become the world's primary source.
 
-Build AI's Eddy Xu has hinted at the next evolution: wrist-mounted cameras that capture close-up, high-fidelity manipulation data. "Wrist cam changes everything," he posted, suggesting that the industry is moving beyond head-mounted POV to even more granular capture of finger-level detail.
+Build AI's Eddy Xu has hinted at the next evolution: wrist-mounted cameras that capture close-up, high-fidelity manipulation data. ["Wrist cam changes everything,"](https://www.humanoidsdaily.com/news/build-ai-scales-to-100-000-hours-as-data-scaling-becomes-robotics-new-frontier) he posted, suggesting that the industry is moving beyond head-mounted POV to even more granular capture of finger-level detail.
 
-![Raw video being processed into structured AI training data — annotation, segmentation, and neural network analysis](https://cdn.quasa.io/photos/00/image-2025-11-06t180041261.jpg)
-*Raw footage is transformed into structured training data through annotation, 3D scene reconstruction, and segmentation — the pipeline that turns human motion into robot intelligence. Source: [Quasa.io](https://quasa.io/media/the-hidden-hand-farms-of-india-fueling-the-ai-robot-revolution-with-human-motion)*
+![Figure 03 humanoid robot in a warehouse sorting packages — a real demonstration of physical AI in action](https://7jopx6ax2qhwmgqx.public.blob.vercel-storage.com/images/figure-livestream.webp)
+*Figure's F.03 humanoid robot handling packages in a real warehouse environment during a live demonstration. This is what egocentric training data from Indian factories is ultimately building toward. Source: [Humanoids Daily](https://www.humanoidsdaily.com/news/build-ai-scales-to-100-000-hours-as-data-scaling-becomes-robotics-new-frontier)*
 
 ---
 
@@ -158,10 +146,8 @@ The Digital Personal Data Protection Act, 2023 provides some guardrails, but enf
 
 From an economic perspective, however, the momentum is unstoppable. The AI training data market is projected to hit $8 billion by 2030. India offers a 5x cost advantage over US-based collection.
 
-Capgemini's April 2026 research found that 67% of executives view physical AI as "game-changing," and two-thirds of organizations rank it as a high priority for the next 3–5 years. Yet only 4% currently operate physical AI at scale. The other 96% are in pilot phases — and they all need data.
+[Capgemini's April 2026 research](https://manudata.ai/) found that 67% of executives view physical AI as "game-changing," and two-thirds of organizations rank it as a high priority for the next 3–5 years. Yet only 4% currently operate physical AI at scale. The other 96% are in pilot phases — and they all need data.
 
-![The ethical questions at the heart of India's egocentric data boom — privacy, consent, and labour rights](https://cdn.quasa.io/photos/00/image-2025-11-06t180518586.jpg)
-*Who owns the data? Who benefits? The ethical fault lines running through India's egocentric data industry remain largely unresolved. Source: [Quasa.io](https://quasa.io/media/the-hidden-hand-farms-of-india-fueling-the-ai-robot-revolution-with-human-motion)*
 
 ---
 
@@ -169,14 +155,14 @@ Capgemini's April 2026 research found that 67% of executives view physical AI as
 
 The egocentric data industry in India is evolving rapidly. Early players relied on off-the-shelf GoPros and Meta glasses. The next generation is building proprietary hardware: multi-camera depth rigs, wrist-mounted sensors, haptic gloves that capture force feedback.
 
-The annotation layer is deepening too. Raw video is no longer enough. Companies now offer frame-by-frame action labeling, 3D scene reconstruction, segmentation masks, and torque analysis — turning footage into structured training data that models can directly consume.
+The annotation layer is deepening too. Raw video is no longer enough. Companies now offer frame-by-frame action labeling, 3D scene reconstruction, segmentation masks, and torque analysis, turning footage into structured training data that models can directly consume.
 
-And the applications are expanding beyond factories. Humyn AI collects residential task data (washing dishes, folding laundry) in Brazil. Figure AI partners with Brookfield to film movements in 100,000 real homes. The goal is robots that don't just assemble electronics but navigate cluttered kitchens, make beds, and care for the elderly.
+And the applications are expanding beyond factories. Humyn AI collects residential task data (washing dishes, folding laundry) in Brazil. [Figure AI partners with Brookfield](https://www.figure.ai/news/figure-announces-strategic-partnership-with-brookfield) to film movements across 100,000 residential units. The goal is robots that don't just assemble electronics but navigate cluttered kitchens, make beds, and care for the elderly.
 
-![Data transmission from India's hand farms to Silicon Valley AI labs — the pipeline powering the next generation of humanoid robots](https://cdn.quasa.io/photos/00/image-2025-11-06t180302698.jpg)
-*The pipeline: motion data captured in Indian factories flows to robotics labs in Silicon Valley, powering the next generation of humanoid robots. Source: [Quasa.io](https://quasa.io/media/the-hidden-hand-farms-of-india-fueling-the-ai-robot-revolution-with-human-motion)*
+![Two Figure AI humanoid robots making a bed together in a real home environment](https://images.ctfassets.net/qx5k8y1u9drj/616ISizQAP1pT471E4Snqh/ee16f939c9d4ca1d820501b3c6b4c336/BEDROOM_TIDY_OPEN_GRAPH_IMAGE__1_.jpg)
+*Figure AI's humanoid robots making a bed — the end goal of the data pipeline running through Indian factories today. Source: [Figure AI](https://www.figure.ai)*
 
-The question is whether the humans recording this data will share in the value they create — or remain, as one critic put it, "the hidden hands behind the handless machines."
+The next time a robot folds a towel, sorts a package, or makes a bed, someone in India recorded that motion first. Probably without knowing what it was for. Probably for less than the model costs to run for an hour.
 
 ---
 
