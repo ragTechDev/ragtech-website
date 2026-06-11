@@ -4,17 +4,10 @@ slug: "1984-in-the-age-of-ai"
 author:
   name: "Natasha Ann"
   profilePicture: "/assets/team/natasha.png"
-publishedAt: "2026-08-06"
+publishedAt: "2026-06-08"
 coverImage: "https://substackcdn.com/image/fetch/$s_!7TCn!,w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F92b68c1c-865f-4c79-acc6-bdf6f1f3a89d_639x333.png"
 brief: "George Orwell's 1984 is no longer a warning. It is a mirror. In this first of a series, I explore how perpetual warfare is the mechanism through which the promise of AI is deliberately kept from us."
-tags:
-  - "AI"
-  - "1984"
-  - "George Orwell"
-  - "Surveillance"
-  - "Warfare"
-  - "Big Tech"
-  - "Technology Critique"
+tags: ["AI", "Warfare", "Politics"]
 status: "published"
 topic:
   - "ragTech"
