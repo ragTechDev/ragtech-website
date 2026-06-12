@@ -5,7 +5,7 @@ author:
   name: "Natasha"
   profilePicture: "/assets/team/natasha.png"
 publishedAt: "2026-06-11"
-coverImage: "https://www.developer-tech.com/wp-content/uploads/2025/12/how-agentic-ai-coding-tools-change-software-development-coding-agents-testing-programming-artificial-intelligence-1024x768.jpg"
+coverImage: "/posts/2026-06-13-is-coding-still-relevant/cover.png"
 brief: "Three software engineers from ragTech share their honest take on whether coding is still worth learning in 2026 — as AI coding agents reshape the software engineering landscape."
 tags: ["AI", "coding", "software engineering", "career", "agentic AI"]
 status: "published"
@@ -81,7 +81,7 @@ Natasha and Victoria hence feel that those using AI coding agents to create apps
 # Conclusion
 In sum, coding is definitely still relevant - and actually, more relevant than ever before in the age of AI. It has hecome a fundamental skill that everyone should learn given that now, everybody has the ability to generate code and create apps through the use of AI. Nevertheless, we cannot deny that the landscape of software engineering is changing. We may see some fluctuations in demand for cetain software engineering jobs, and possibly and increase in demand in those that are affiliated with data center operations and app deployment. A good idea for current software engineers might be to niche down to these roles that are increasing in demand. More so than ever, software engineers would benefit from learning how to use AI in their software engineering workflows. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dYkOR6lnCh0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 > Watch the full episode on YouTube!
 
