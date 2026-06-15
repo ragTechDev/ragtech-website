@@ -1,0 +1,1201 @@
+[12]  Hello, everyone. Welcome to Rag Tech, the place for bytes and banter.
+    > CAM wide  at="banter"
+    > ChapterMarker  at="Hello"  duration=5  chapterTitle="Introductions"
+    > RagtechOverlay  at="Rag Tech"  duration=5
+[13]  We are real people talking about real life in tech.
+[14]  We are a podcast that creates spaces for honest conversations for both techies and non
+[15]  -techies. For tech professionals, we talk about the human side of career building in tech,
+[16]  and for nontechies we actually break down tech into simpler topics I'm Saloni Kaur a
+    > NameTitle  at="Saloni"  duration=6  name="Saloni Kaur"  title="Software Developer"
+[17]  software developer.
+
+=== Victoria ===
+
+[18]  And I'm Victoria solutions engineer
+    > NameTitle  at="Victoria"  duration=6  name="Victoria Lo"  title="Solutions Engineer"
+
+=== Natasha ===
+
+[19]  And I'm Natasha also a software engineer
+    > NameTitle  at="Natasha"  duration=4  name="Natasha Lum"  title="Software Engineer"
+[20]  And today we have a very special guest. He is a fellow technologist and a
+    > CAM Sudhir  at="guest"  angle="angle1"
+[21]  dear friend and mentor of mine, and he is none other than Sudhir
+    > CAM Sudhir  at="Sudhir"  angle="angle3"
+    > NameTitle  at="Sudhir"  duration=6  name="Sudhir Tiku"  title="Author, AI in the Global South"
+[22]  Sudhir is a Singaporebased automation and AI professional with deep interest in
+    > CAM Sudhir  at="in"  angle="angle1"
+[23]  computer vision, with over two decades of experience in global companies across the continents.
+    > CAM Sudhir  at="continents"  angle="angle3"
+[24]  His roles have been at the forefront of applied automation and AI applications.
+[25]  On a personal level, he is a passionate global self advocate and he does
+[26]  persistent work in advancing AI ethics in Asia. He is a founding member of the Alliance
+    > ImageWindow  at="Alliance"  duration=4  src="https://miro.medium.com/1*7Ccawqk33ekxeJa4dqZhWg.jpeg"  title="Alliance for AI and Humanity"
+[27]  for AI and Humanity in Singapore, and a member of the International Association for Safe
+    > ImageWindow  at="International"  duration=4  src="https://www.iaseai.org/og-image.webp"  title="International Association for Safe and Ethical AI"
+[28]  and Ethical AI in the USA. Sudhir is also the founder of
+[29]  a charity called MyFund, which has the ambition of providing free education to 10
+    > ImageWindow  at="MyFund"  duration=6  src="https://mifundcharity.org/wp-content/uploads/2025/06/Add-a-subheading-3.png"  title="Mifund Charity"  caption="Providing free education to 10,000 girls in three years"
+[30]  ,000 girls in three years. With a multidisciplinary educational foundation in tech, finance, ethics, and
+[31]  philosophy, he brings an intersectional perspective to the topic of artificial intelligence and its
+[32]  blind spots.
+[33]  He is an advocate for equitable and sustainable outcomes in AI, particularly across the global
+[34]  self.
+[35]  This is precisely the theme of his popular essays, which have now taken the shape
+[36]  of a book, which is called AI
+    > ImageWindow  at="AI"  duration=6  src="assets/episodes/sudhir/book_cover.jpeg"  title="AI in the Global South"
+[37]  in Global Self, Power, Progress, and Policy. Victoria, can you tell us more about
+[38]  the book?
+
+=== Victoria ===
+
+-[39]  Sure Natasha
+
+=== Sudhir ===
+
+-[40]  So this, oh, oh wow.
+
+=== Victoria ===
+
+-[41]  A powerful book laughing The book listened
+
+=== Saloni ===
+
+-[42]  A powerful book laughing The book listened
+
+=== Sudhir ===
+
+-[43]  but you will manage this right Oh don't fall
+
+=== Natasha ===
+
+-[44]  It's okay it was just nice at the segue so we could
+-[45]  just cut, cut. Yeah, yeah.
+
+=== Sudhir ===
+
+-[46]  - Do we need to redo everything or no?
+
+=== Natasha ===
+
+-[47]  No I think we can just continue from Victoria
+
+=== Saloni ===
+
+-[48]  On that thing yes yes
+
+=== Natasha ===
+
+-[49]  . - We can just continue from Victoria.
+
+=== Saloni ===
+
+-[50]  I think the book might fall again 'cause it's unbalanced Can we just put it down maybe
+-[51]  just, yeah.
+
+=== Sudhir ===
+
+-[52]  Or you can keep the mobile behind Yeah that's also fine
+
+=== Natasha ===
+
+-[53]  Okay yeah this one had one down it's good
+-[54]  Yeah, then we just continue from Victoria.
+
+=== Saloni ===
+
+-[55]  - Okay.
+
+=== Victoria ===
+
+-[56]  Okay.
+
+=== Saloni ===
+
+-[57]  Okay.
+
+=== Victoria ===
+
+[58]  All right, so about this book. This book is published by World Scientific,
+    > ImageWindow  at="World"  duration=6  src="https://isomer-user-content.by.gov.sg/55/579af554-aa93-467b-b766-183197ed9dd3/World%20Scientific.jpeg"  title="World Scientific"
+[59]  a globally respected academic and scientific publisher known for advancing high quality research and taught leadership
+[60]  across science, technology, and policy. World Scientific Publishing is headquartered in Singapore
+    > ConceptExplainer  at="World Scientific"  duration=10  keyPhrase="World Scientific Publishing"  description="A premier academic publisher known for high-quality research in science, technology, and policy."
+[61]  and has offices in New Jersey, London
+[62]  Munich Genova Tokyo
+[63]  Hong Kong, Taipei, Beijing,
+[64]  Shanghai, Tianjin, and Chennai. World Scientific releases approximately 600 new titles per
+[65]  annum and publishes more than 180 journals
+[66]  across multiple fields With a publication history over 12000
+[67]  titles, a significant portion of books are prescribed as reading material by prestigious institutions
+[68]  like Harvard University, California Institute of Technology, Stanford University, and Princeton University.
+[69]  World Scientific is also a key partner of the Nobel Foundation, Field's Medal,
+    > ConceptExplainer  at="World Scientific"  duration=13  keyPhrase="World Scientific Partners: Top global science and math institutions"  description="The Nobel Foundation (Nobel Prizes), the Fields Medal (math's highest honor), the Wolf Foundation (prizes across sciences), the US National Academies of Science, Engineering & Medicine (elite honorary bodies for top researchers), and the Shaw Prize (Asia's equivalent of the Nobel)."
+[70]  Wolf Foundation U S National Academies of Science Engineering and Medicine and the Shaw Prize
+[71]  Now, without further ado, let me ask Sudhir the first question. What inspired you to write AI in the
+    > ChapterMarkerEnd  at="What inspired you to write"  duration=1
+    > ChapterMarker  at="What inspired you to write"  duration=5  chapterTitle="The Inspiration"
+[72]  global south, power, progress, and policy?
+
+=== Sudhir ===
+
+[73]  Firstly I have to thank all three of you for giving me the
+    > NameTitle  at="I have to thank all three of you for giving me"  duration=8  name="Sudhir Tiku"  title="Author, AI in the Global South"
+[74]  opportunity to engage with you on this topic of AI in global south.
+[75]  Actually, I've been writing essays for some time now, and the purpose of
+[76]  writing these essays was to engage with contradictions, blind spots, and assumptions of AI
+[77]  , especially when AI flows through territories of the global world order.
+[78]  And it started with one essay, and then one essay became a few essays
+[79]  and then few essays became many essays And then I was up against my own
+[80]  essays, and I did not know that
+[81]  these essays took over me for almost two years, and my weekends were invested in
+[82]  writing these essays.
+[83]  And in this process of writing these essays
+[84]  I read about this philosophical sentiment {which gets attached to Neil Boer, | 311.00, 313.08}
+[85]  {and he says} that every human has this sense of having lost something infinite.
+    > QuoteCard  at="that"  duration=8  quote="What man of us has never felt, walking through the twilight or writing down a date from his past, that he has lost something infinite?"  attribution="Jorge Luis Borges, Dreamtigers (1960)"
+[86]  And when I was doing secondary research for
+[87]  global south, and also visited some of the places in global south, I also
+[88]  felt that sense of loss. And this sense of loss was because AI
+[89]  we know that gets deployed at scale in global south but it
+[90]  is not the place or the region where it is primarily designed or governed.
+[91]  So there is an erosion in terms of value capture. But what kept on motivating me was the
+[92]  opportunity that global south provides.
+    > CAM wide  at="provides"  angle="angle2"
+[93]  Global south contributes to the digital expansion of
+[94]  global economy. 75% of the world population lives in
+[95]  global south. Most of the young people, like you
+[96]  live in global south So there is a great chance to rewrite future a bright future with the
+[97]  collaboration of all the stakeholders in global south. And ultimately, I think the icing on
+[98]  the cake was when these essays got consolidated and I found World Scientific, and then
+[99]  the output I find is more coherent than I had thought.
+[100]  So it was a journey of around two years, and it has been extremely learning
+[101]  experiment for me. And I'd like to continue this journey with more books in future.
+[102]  - Amazing.
+
+=== Saloni ===
+
+[103]  Wow Yeah I mean we spoke to you and your passion for writing as
+[104]  well as the global south and its effects on AI was really, I mean,
+[105]  it's really coming true.
+[106]  And that actually leads me to, pardon
+[107]  my ignorance, I actually did not know what global south meant. And if you could just explain what is
+    > HOOK "what is" 425.239-425.380
+[108]  global south, especially in the context of AI.
+    > HOOK
+    > TermTypewriter  at="global"  duration=3  term="Global South"  label="concept"  emoji="🌎"
+
+=== Sudhir ===
+
+[109]  Okay so let me do it in two buckets
+    > ChapterMarkerEnd  at="in two buckets"  duration=1
+    > ChapterMarker  at="in two buckets"  duration=5  chapterTitle="What is Global South?"
+[110]  Firstly, global south is a geographical reality, right? It's geography, and it's predominantly
+    > HOOK
+    > GlobalSouthMap  at="geographical reality"  duration=12  src="assets/episodes/sudhir/Global South.png"
+[111]  large parts of Asia, large parts of
+    > HOOK
+[112]  Middle East, it's Latin America, it's Africa. And as I said, over 75%
+    > HOOK "Middle East, it's Latin America, it's Africa." 441.280-445.160
+[113]  of the world population lives here.
+[114]  Unfortunately, global south also carries the weight of very difficult colonial history, where
+[115]  it became a land where resources were extracted, and how value flows was kind of
+[116]  reconfigured.
+[117]  So it carries that very difficult past with it.
+[118]  Visavis AI global
+    > HOOK
+[119]  south no more becomes a geographical entity, but it becomes a position in the global
+    > HOOK
+    > FullscreenMedia  at="position"  duration=3  src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExcG84eWM3ODd5bWJ0dTZ2d2VlODVhNzZmMTFzMHJzemR3d2hiaXFuZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohs7Sjl26eSQjem3K/giphy.gif"  mediaType="gif"
+[120]  technological system. And here, I think it kind of becomes interesting, because global south is
+    > HOOK "technological system." 478.590-480.339
+[121]  the region which provides the fuel to AI
+    > HOOK
+    > FullscreenMedia  at="provides"  duration=3  src="assets/episodes/sudhir/data-workers.mp4"  mediaType="video"
+[122]  system, the data that is used to train AI, be it from our mobile
+    > HOOK "system" 489.453-489.800
+[123]  transactions, be it from our financial transactions
+    > FullscreenMedia  at="transactions"  duration=7  src="assets/episodes/sudhir/data-labeling.mp4"  mediaType="video"
+[124]  the languages that we use health records agriculture all of this gets
+[125]  accumulated and is used in training AI.
+[126]  The labor that's also used to train these AI models come from global south,
+    > CAM wide  at="south"  angle="angle2"
+    > FullscreenMedia  at="labor"  duration=5  src="assets/episodes/sudhir/data-workers-women.mp4"  mediaType="video"
+[127]  so they have a unique position. But unfortunately, as we move up
+[128]  the value chain and go to, say, foundational model training, go to infrastructure
+    > ConceptExplainer  at="foundational"  duration=12  keyPhrase="Foundation Models & AI Infrastructure"  description="Foundation models (e.g. GPT, Claude) are massive AI systems trained on billions of examples — costing hundreds of millions of dollars. Infrastructure is the layer beneath: specialized chips (GPUs/TPUs), data centers, and cloud platforms needed to build and run them. Both are dominated by a handful of well-resourced companies in the Global North."
+[129]  and go to most importantly platform control and platform distribution I think
+[130]  global north takes a predominant position. And that's a very dominant position for
+[131]  historical reason and for how resources have been allocated in the last 500 years in global
+[132]  history.
+[133]  There then, global south gets into a disadvantageous position and my ambition in
+[134]  the book is to present a manifesto that how can global south, given the immense
+[135]  human potential and resource that it has, redraw the configuration of AI, which
+[136]  currently is lopsided. And hence, global south is becoming prominent. We already see now configurations, for example
+[137]  Mercosur in South America we have the African Union we have ASEAN and we have
+    > ImageWindow  at="Mercosur"  duration=2  src="https://thecorner.eu/wp-content/uploads/2021/03/mercosur.jpg"  title="Mercosur"
+    > ImageWindow  at="African"  duration=2  src="https://assets.weforum.org/editor/5fYyrpFJWaDpC4EygF0V_vrWNkjJ3iohw_p6nihTrmI.jpg"  title="African Union"
+    > ImageWindow  at="ASEAN"  duration=3  src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Map_and_flag_of_ASEAN_countries_2025.png"  title="ASEAN"
+[138]  say Indian subcontinent And these are all very important parts of
+    > ImageWindow  at="Indian"  duration=3  src="https://preview.redd.it/the-indian-subcontinent-use-timeline-v0-mjxrlynuw9k41.png?auto=webp&s=6b6d39c8a5b6b505d376091fa0468eb51d16145b"  title="Indian Subcontinent"
+[139]  global south who are trying to drive new
+[140]  narratives, say, around compute, around data sovereignty, around creating use cases and
+[141]  applications in AI, which really solve the real problems of humans. I think that the opportunity for global
+[142]  south is to create an AI bicycle and not an AI rocket, because AI rocket
+    > ConceptExplainer  at="AI bicycle"  duration=10  keyPhrase="AI Bicycle vs AI Rocket"  description="Global North pursues AI 'rockets' (fast, expensive, headline-grabbing). Global South needs AI 'bicycles' (practical, accessible, solving day-to-day problems for common people)."
+[143]  is hype and AI bicycle is real is human is dayto
+[144]  day, and which solves the problems of
+[145]  common people who, in global south, are still underprivileged and poor.
+
+=== Natasha ===
+
+[146]  Yeah I think it's funny that when we were reading a book and
+[147]  then we see the word global south, at first we don't relate to it
+
+=== Sudhir ===
+
+[148]  .
+
+=== Natasha ===
+
+[149]  And then I realized, when I see you list ASEAN being one
+[150]  of them like wait we 're in Singapore Our families come from different parts of Southeast
+[151]  Asia, too, as well as other parts of Asia, like Indonesia, India
+[152]  myself Malaysia And you realize wait we're kind of part of global south just
+[153]  that Singapore does kinda make the narrative a little bit more confusing, but still,
+[154]  this is part of us. It's 75% of its population,
+[155]  and it's funny that we're only talking about it in this specific narrative when
+[156]  it comes to popularized media. And you talk a lot in your
+[157]  book about changing this narrative of the global south, right? You talk about the opportunity and potential instead
+[158]  of like, oh, yeah, global
+[159]  south, people are being exploited, people are taken advantage of. No, you keep trying to challenge that
+[160]  narrative.
+[161]  Which brings me to this question. What do you think are the biggest misconceptions
+    > ChapterMarkerEnd  at="misconception"  duration=1
+    > ChapterMarker  at="misconception"  duration=5  chapterTitle="Biggest Misconceptions"
+[162]  about AI development when it comes to the global south?
+
+=== Sudhir ===
+
+[163]  Okay I think firstly the technical misconception of global north is global south
+[164]  I think this narrative that people in global
+[165]  south can just be passive users of AI and technology, per se, is misplaced
+    > Callout  at="passive users of AI"  duration=8  text="People in Global South cannot just be passive users of AI. This narrative is misplaced."
+[166]  . This is number one.
+[167]  And this conception that if we develop an AI model in global north on a very
+[168]  limited data set and a dominant English language, and then you can sell that model
+[169]  in global south, it will create
+[170]  performances, also misplaced. Because we have to remember that global south is multilingual.
+[171]  This is a region with, say,
+[172]  low bandwidth resources.
+[173]  Here, we don't have the opportunity
+[174]  or abundance of compute.
+[175]  And hence, in global south, we need to look at opportunities which kind of
+    > HOOK
+[176]  promote, say, frugal innovation. Is that, can we develop AI models with limited bandwidth?
+    > HOOK
+    > TermTypewriter  at="frugal"  duration=3  term="Frugal Innovation"  label="concept"  emoji="💡"
+    > ConceptExplainer  at="frugal innovation"  duration=10  keyPhrase="Frugal Innovation"  description="Developing AI models with limited bandwidth, edge computing, and low-weight models for regions without abundant compute. Innovation through constraint rather than abundance, building practical solutions that work in low-resource environments."
+[177]  Can we look at edge computing Can we make say low weight models wherein the local languages like
+[178]  for example there is a movement called Masha Kane in Africa
+    > ImageWindow  at="Masha"  duration=4  src="https://cdn.sanity.io/images/k0he26py/production/74e32275800415ea74ae6050ef81629ba6ccab89-1264x676.png?w=1024&auto=format"  title="Masakhane"
+[179]  where they're trying to create data sets around 2000 African languages and not
+    > ConceptExplainer  at="they're"  duration=6  keyPhrase="Masakhane"  description="A major grassroots organization driven by the mission to strengthen natural language processing (NLP) research in African languages."
+[180]  get dependent on few languages which the global north speaks. Because language is not only just a
+    > HOOK "Because language is not only just a" 767.438-768.730
+    > FullscreenMedia  at="language"  duration=4  src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2FxOGpvM2Z6dWhqbjBkcHlvbHVvOHN3ZDlrMHpoaHE1am8yN2NmeCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YedmoNc3rsqI0/giphy.gif"  mediaType="gif"
+[181]  marker of how you communicate, it's also a marker of your identity, your
+    > HOOK "marker of how you communicate, it's also a marker of your identity" 769.193-772.318
+    > FullscreenMedia  at="how you communicate"  duration=4  src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2g3emoxNXQwMGEybTZwZmcyOTF0OWkxeDFvcjdoMG55NHYxa29zMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LRncOtkTDSjqeJEWmQ/giphy.gif"  mediaType="gif"
+    > FullscreenMedia  at="marker of your"  duration=5  src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExajYwbDQ2eGdudWFiMDRkbHoxMnpsM25tNmJsNnN2OWxqdGRldG5uNCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MnltbukKScs2zl6r2F/giphy.gif"  mediaType="gif"
+[182]  belonging. And the future generations will understand their culture
+[183]  using AI. And if, in AI, the local languages of global south are not used,
+    > CAM wide  at="south"  angle="angle2"
+[184]  we can kind of lose them. And when you lose your language, then
+    > HOOK "And when you lose your language, then" 789.122-790.197
+[185]  the next thing that you lose is that you lose your culture, your culture.
+    > HOOK
+    > FullscreenMedia  at="you lose"  duration=4  src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdGhvMXVsbmlod2ZudW5rbmo3OXA5ZTdkaXdjc3Y4bGJiMnM3MHA0MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xT9DPL1mlHnI4b0zEk/giphy.gif"  mediaType="gif"
+[186]  I think the third thing, which
+[187]  is extremely important, is around this concept called data sovereignty, is that the data
+    > ConceptExplainer  at="data sovereignty"  duration=10  keyPhrase="Data Sovereignty"  description="Total control over data by local actors and stakeholders in Global South. When you control the data pathway, you can govern it, create policy around it, and participate beyond just data generation (in infrastructure, model training, and platform distribution)."
+[188]  that belongs to global south, and the actors in global south, the stakeholders in
+[189]  global south, should have total control on it. Because when you have a total control on
+[190]  a data pathway, there's a big
+[191]  chance that you can govern it, that you can create a policy around it.
+[192]  And if you have total control, then you can look at the AI stack
+[193]  in a different manner, and you can say that we don't just want to
+[194]  participate in data generation and data labeling,
+[195]  we also want to participate in a different manner, say around infrastructure, say in
+[196]  model training, and also taking some control on the platform distribution, because the maximum
+    > CAM wide  at="maximum"  angle="angle2"
+[197]  value is when you distribute the platform and play there. So I think policy, governance,
+[198]  frugal innovation, is something which
+[199]  can position global south differently, and this narrative that you need massive compute, which
+[200]  global south cannot afford, I think is a bogey, and there are already
+[201]  no use cases that you can still be
+[202]  efficient and sustainable in AI by a
+[203]  different route, which is not just scale
+[204]  and abundance of resources Well that is I have
+
+=== Victoria ===
+
+[205]  to tell you, I resonated a
+[206]  lot from that, because I myself come from a developing country, Indonesia, and
+    > HOOK "I myself come from a developing country, Indonesia" 889.307-893.269
+    > FullscreenMedia  at="Indonesia"  duration=2  src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNjh3NXV5bHNiNHYwdmM1Zzg1eHF4ZDM4bDloa25pc2dibG1wOHIwMCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xUNd9LWToGAAUJtlEk/giphy.gif"  mediaType="gif"
+[207]  as I was reading your book, especially
+[208]  the things that you just said about language, culture especially, I was reading your
+[209]  book and the part about the manifesto, the right to imagine, that part really
+    > QuoteCard  at="imagine"  duration=15  quote="The most radical act today is not coding an algorithm but claiming the Right to Imagine outside the defaults — not asking 'How can we adapt to this new technology?' but instead, 'How should intelligence itself be defined, and to what ends should it serve?'"  attribution="Sudhir Tiku, AI in the Global South"
+[210]  resonates, because it's about like, you mentioned how these global south, they are replicating the technology instead
+[211]  of making the technology their own. And I think that is true from my
+[212]  observation, because I do go back home from time to time, and I do
+[213]  see that a lot of us were adopting AI in a way that is from the
+[214]  Western media, from the Western culture,
+[215]  and from data that you mentioned is catered to the West and the North.
+[216]  So as someone from this developing country and a background from there, I really
+    > HOOK
+[217]  can see how all this play into a part. And that brings me to the question,
+    > HOOK "can see how all this play into a part." 937.792-939.715
+    > FullscreenMedia  at="can"  duration=3  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHVvZ3FrdnRxc3Nidm81ZjN2Zmp2aGp5aWd1NHc2cWZlYWh3YmI5byZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MXu7qywxSwrm0/giphy.gif"  mediaType="gif"
+[218]  how can AI drive inclusive and equitable outcomes in these emerging economies?
+    > HOOK
+    > FullscreenMedia  at="inclusive"  duration=5  src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnhhZ2JtbzJ1MHo3d2F1dm04dzFhbTBtcmZ5bjlucXc1dW85YnRheSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/kiSmDXfBJwFYQsNEow/giphy.gif"  mediaType="gif"
+
+=== Sudhir ===
+
+[219]  Okay so maybe I take permission
+    > ChapterMarkerEnd  at="take permission"  duration=1
+    > ChapterMarker  at="take permission"  duration=5  chapterTitle="Productive Inclusion"
+[220]  from you and insert a word called productive. So I think, I call it productive
+    > ConceptExplainer  at="productive"  duration=10  keyPhrase="Productive Inclusion"  description="Measurable inclusion in AI development. Not just participation, but meaningful involvement in building, scaling, and governing AI. When local context drives AI design, people can create value and innovate, making inclusion economically productive."
+[221]  inclusion, because inclusion sometimes is not measurable, right? So if you have to measure it,
+[222]  we call it productive inclusion. And for productive inclusion, I think we
+[223]  need to lean on economics for concepts. And one of the concepts in economics is
+[224]  that if you want any resource to really
+[225]  flower and make it really sustainable, how
+[226]  it is used and who uses it becomes crucial, right? And hence, from a global south
+[227]  point of view, from an inclusion point
+[228]  of view, it's important to kind of design the AI systems in contexts which
+[229]  are closer to global south. And here I will again come back to
+[230]  language We speak around 7000 languages globally
+[231]  Out of these 7000 languages
+[232]  around 18 to 20% of people speak English.
+[233]  Rest of the people speak, for example
+[234]  , Bahasa in your country.
+    > CAM wide  at="country"  angle="angle2"
+[235]  So making models which are focused on local languages will expand the participation of people using
+[236]  AI application because it is closer to them. They understand the context.
+[237]  They understand the metaphors of the language. And so then you can really make
+[238]  it inclusive. So language and using local language in training of AI is extremely crucial to make inclusion
+    > HOOK "language and using local language in training of AI is extremely crucial to make inclusion" 1049.463-1057.810
+    > FullscreenMedia  at="language"  duration=5  src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTBnZ2s0MmpkYzhwbWoxcTFreGk2MjFyNmV4cTJnYXJ5bzdyY3hheCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QsY8yp5q4atcQ/giphy.gif"  mediaType="gif"
+[239]  productive. Because if this happens, then you can become creative and innovative.
+    > HOOK "productive" 1058.274-1058.778
+[240]  I'll give you a few examples.
+[241]  There are large chunks of population in global south who don't have access to banks
+[242]  . - Banks?
+[243]  To the banks Oh banks
+[244]  - So they don't have access
+[245]  to the banks.
+[246]  And hence can we conceive a situation, and this is already now used cases in
+[247]  global south, wherein we can create credit
+[248]  scoring based on how you use your mobile phone, because mobile phone most of the
+[249]  people are using. And then you can, using machine learning, create a model and then create a
+[250]  credit scoring.
+[251]  And then just using an AI app, you can transact, you can send
+[252]  money, you can receive money, you can get digital credits, and you become
+    > CAM wide  at="become"  angle="angle2"
+[253]  part of the digital economy. But you are formerly not part of any
+[254]  bank.
+[255]  This has happened and this has really created
+[256]  a lot of financial inclusion. Or can we create AI models where we
+[257]  are able to connect small producers, artisans in villages to bigger markets?
+[258]  Or can we connect the informal workers to
+[259]  opportunities which may not be visible to them? Now all of this is possible if your
+    > HOOK "Now all of this is possible if your" 1143.150-1150.427
+[260]  AI models are diverse, if they understand the local content, local context, local
+    > HOOK
+    > FullscreenMedia  at="diverse"  duration=3  src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3JzOGIwbmk5ZXE0b3ZjYzB4MmZoNzQzcjN4NjcxaHk1bGpyaTJ2eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lBe51i7Jc14FG/giphy.gif"  mediaType="gif"
+    > FullscreenMedia  at="local content"  duration=3  src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExanBqdXVuYjN5ejBtZGl5OTRqaGo4cXB5ajJiOXhya2FmNXQzeHEwayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/EshBrE0Y0Uz8QuAVfA/giphy.gif"  mediaType="gif"
+    > FullscreenMedia  at="local context"  duration=3  src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaW9lc3VqZmExZmt6bXpkbmtha3M1MXlnMXRpY3dhNTFqbjlnYjJueSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26Ff0VuQF9vtnzD1K/giphy.gif"  mediaType="gif"
+[261]  difficulties. But if I try to import a model from global north, they, for
+    > HOOK
+    > FullscreenMedia  at="difficulties"  duration=2  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTl5d2NkbmgxcDc2bDdnaWJ5Z2dvY3V2NnljaWJsb3hkeGp4MmRkeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cG0SacPUrVEXy4Qbe7/giphy.gif"  mediaType="gif"
+[262]  example, have a very specific way of
+    > HOOK
+[263]  determining credit score.
+    > HOOK
+    > FullscreenMedia  at="credit"  duration=2  src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzVrNGFvdWN1Zjd6dHU0NDExbXByOTRmdDQ3Y20zYnZnbTNpZmVyaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/RMGLE9EXcVD2gbMqQA/giphy.gif"  mediaType="gif"
+[264]  And if I use that model, most of the people, maybe including me,
+    > HOOK
+[265]  will be considered as a defaulter and nobody will give me a home loan
+    > HOOK
+    > CAM wide  at="will"  angle="angle3"
+    > FullscreenMedia  at="defaulter"  duration=3  src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWI5OXhyN3RxMTdmYzNvMWR6Ynhrdmd3c3NpZGl0MTljOTcxcTMyOCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2SpUoAPo0CBOkyxq/giphy.gif"  mediaType="gif"
+[266]  laughing So for inclusion for productive inclusion
+    > HOOK "for productive inclusion" 1180.545-1181.960
+    > TermTypewriter  at="productive"  duration=2  term="Productive Inclusion"  label="concept"  emoji="⚡"
+[267]  training your model in local context is
+    > HOOK
+    > FullscreenMedia  at="training"  duration=3  src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3NqazVoaWV3cmwwMnVkcHZuaGU0OXJ0NHBzZ3ExZXVobjFiMjVkZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sRFEa8lbeC7zbcIZZR/giphy.gif"  mediaType="gif"
+[268]  extremely important. I think there's one more thing,
+    > HOOK "extremely important" 1187.232-1187.880
+[269]  is around technological agency.
+    > ConceptExplainer  at="technological agency"  duration=10  keyPhrase="Technological Agency"  description="The power to shape and control technology, not just use it. Are we passive users paying subscriptions, or do we have agency to also ship the technology? Global South must have a seat at the table to articulate needs and co-create solutions."
+    > ChapterMarkerEnd  at="technological"  duration=1
+    > ChapterMarker  at="technological"  duration=5  chapterTitle="Technological Agency"
+[270]  Maybe I explained this a bit.
+[271]  We, in global north or in global
+[272]  south, we are users of technology, right?
+[273]  We are.
+[274]  And AI will transform societies, of course it will.
+[275]  The question is that are we just users? Getting shipped or do we have the
+[276]  agency to also ship the technology? I think this is where global south has
+[277]  to find a seat on the table.
+[278]  Because we have to articulate and we have to communicate that we are not going to
+[279]  be just passive users of technology and we
+[280]  are not going to pay monthly subscription
+[281]  and use a model which looks good but does not solve the problem of the
+[282]  larger groups.
+[283]  So getting a sense of this technological agency is extremely important. And if you go through the works of
+[284]  Elinor Ostrom, the 2009
+    > ImageWindow  at="Elinor"  duration=4  src="https://www.shareable.net/wp-content/uploads/2012/06/blog_top-image_elinor_ostrom.jpg"  title="Elinor Ostrom"
+[285]  Nobel Prize winner, she was the first woman to win a Nobel Prize in
+    > ConceptExplainer  at="Nobel"  duration=10  keyPhrase="Elinor Ostrom"  description="American political economist (1933–2012) and the first woman to win the Nobel Prize in Economics (2009). Her landmark book Governing the Commons (1990) challenged the 'Tragedy of the Commons' — showing that communities can sustainably self-govern shared resources through collective institutions and local rules, without privatisation or top-down control. Her design principles for commons governance are now central to debates about AI infrastructure and data ownership."
+[286]  economic studies and she has really done seminal
+[287]  work on resources and how community uses it and she says that the goal of governance
+    > HOOK "the goal of governance" 1276.305-1277.429
+    > FullscreenMedia  at="goal"  duration=3  src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdWVjdzgxZGVrZDNhM2RlZzZpYzY4dXhmYnp1ZGRkZGJoZWpsbjZmcCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/cNlXyzZaAv7HAsysqf/giphy.gif"  mediaType="gif"
+[288]  in the end is to ensure that users
+    > HOOK
+    > FullscreenMedia  at="users"  duration=3  src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExbXo5cG16Mmx1ZjZ6bzlqM2R2ZWF5ZTVoaTFoc2Z5aTJwdjRoZDB0MyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l2QDYWSIPsEtp56pi/giphy.gif"  mediaType="gif"
+[289]  are shaping technology because if you are not shaping technology, then technology will shape you
+    > HOOK
+    > Callout  at="technology will shape you"  duration=8  text="If you are not shaping technology, then technology will shape you."
+    > FullscreenMedia  at="technology will shape you"  duration=2  src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZjR5bTB4dmc0Y3duY3B4aW0xN2N4NDNwY2FtNzZzcnU1bGJidzZjcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/sQ6XjEnH4OBtuC2zen/giphy.gif"  mediaType="gif"
+[290]  . And this is exactly what has been the story of global south for the last four
+[291]  five hundred years that the important people in global south who had the
+[292]  chance to articulate and create value, they
+[293]  got shaped.
+[294]  They could not shape the ecosystem around them. So that is extremely important.
+[295]  So in the end, inclusion is an interplay of data, it's an
+[296]  interplay of policy, power structure, institutions.
+[297]  It is going to be a journey and
+[298]  a marathon for global south to leapfrog from where we are to where we want
+[299]  to reach. But I think the young people and the
+[300]  capabilities that this region as a whole has
+    > CAM wide  at="capabilities"  angle="angle2"
+[301]  , I think I'm pretty optimistic that we will have a role to play.
+[302]  Yeah I think that's a
+
+=== Natasha ===
+
+[303]  really good response to what inclusion should really look like. It's not just this like passive
+[304]  kind of waiting to be included kind of vibe but you introduced agency into
+[305]  that. You talked about how global south, we as global south need to take action into
+[306]  making this inclusiveness a productive one for ourselves. But at the same time, this usage
+[307]  of the word, this global word, we, right, can feel kind of
+[308]  like vague in the sense that, do you mean like we in terms of individuals
+[309]  where we have to have agency? Do you mean we as in technologists
+[310]  , somehow we need to involve ourselves better?
+[311]  But I think the bigger we I want to ask is the we in terms of
+[312]  governments. What can governments, do you talk a lot about policy?
+[313]  Eleanor herself says that the role of governance is to have the people shape policy.
+[314]  So in this case, it all boils down to policy, right? But then in your opinion, what role
+[315]  does policy play in this narrative then?
+    > ChapterMarkerEnd  at="does policy play"  duration=1
+    > ChapterMarker  at="does policy play"  duration=5  chapterTitle="Policy & Governance"
+
+=== Sudhir ===
+
+-[316]  I think policy firstly policy visavis governance So policy is the rules and governance
+-[317]  is the systems which ensures that these rules are then kind of followed.
+-[318]  And for global south, it has a different connotation.
+-[319]  So typically, when we say policy in global south, it's not technical regulation
+-[320]  . It's the social negotiation around the shape and change of technology because the stakes are
+-[321]  very different in global south.
+-[322]  And I think from a policy point of view, I'll just give you
+-[323]  one quick example because it creates focus.
+-[324]  And now we know that where is the challenge? The challenge is that global south is getting
+-[325]  locked, locked at the base of the pyramid.
+-[326]  We're getting locked in as generators of data. We're getting locked as people who can
+-[327]  label data, who can annotate labor, who can see harmful content and then
+-[328]  clean it up.
+-[329]  We are getting locked in the low value
+-[330]  of the chain. And now if we have a policy of a particular government in a particular country
+-[331]  in global south is that you know what? We have to support the local AI startups
+-[332]  , right?
+-[333]  We need to have southsouth collaboration and create compute clusters where in say 10
+-[334]  countries together can use that cluster because there
+-[335]  is limitation of resource.
+-[336]  The policy can drive that the countries in the global south and the technologists and
+-[337]  the programmers share best practices.
+-[338]  And also the policy can be that the data sits in the country and that the
+-[339]  platform distribution is driven by global south.
+-[340]  So policy actually is a direction and a negotiation.
+-[341]  And if this is implemented well, and there are challenges around it, but if
+-[342]  this is implemented well, it puts us on a different track and a different direction
+-[343]  So getting that direction is good The good news is that there is already
+-[344]  a lot of work happening around policy in global south around multiple topics, right
+-[345]  And the voice is already not weak anymore This is a visible voice
+-[346]  I think we need to make it, we need to kind of reinforce it a
+-[347]  bit.
+-[348]  Because in the end, I think life is about freedom, right? And development is basically, I remember Am
+-[349]  artya Sen,
+-[350]  so very famous economist, a Nobel
+-[351]  Prize laureate, and he said, "Development is freedom." And I think the
+-[352]  question that the stakeholders in global south need to ask and need to drive and need
+-[353]  to push is that is the AI in its current format giving us a chance to
+-[354]  build, shape, and govern AI, or it is just expanding participation of us
+-[355]  in foreign models without meaningful ownership and control?
+-[356]  And I deliberately used the word ownership. It's not just control. So both ownership and control.
+-[357]  What happened?
+
+=== Natasha ===
+
+-[358]  - I think the TV was moving.
+
+=== Saloni ===
+
+-[359]  Ah okay
+
+=== Sudhir ===
+
+-[360]  - Yeah.
+-[361]  It's not good I was in flow
+
+=== Saloni ===
+
+-[362]  laughing It's okay
+
+=== Natasha ===
+
+-[363]  We'll get you back in flow Yeah
+
+=== Sudhir ===
+
+-[364]  .
+
+=== Natasha ===
+
+-[365]  .
+
+=== Sudhir ===
+
+-[366]  .
+
+=== Natasha ===
+
+-[367]  - Yeah.
+-[368]  I'm surprised we got into the flow state quite quickly.
+
+=== Saloni ===
+
+-[369]  Yeah.
+
+=== Sudhir ===
+
+-[370]  How much do you think the remote from there is moving So now I forget where I was
+-[371]  and what was I saying?
+
+=== Saloni ===
+
+-[372]  laughing We can just
+
+=== Natasha ===
+
+-[373]  kind of go to the next question. Then you can kind of {...}
+
+=== Sudhir ===
+
+-[374]  - So can you tell us where we
+-[375]  were?
+-[376]  Ah I have to show myself
+-[377]  Ah shit
+
+=== Natasha ===
+
+-[378]  It's okay On the last question maybe we
+-[379]  can start from there Okay Would you like to start from the
+-[380]  last question on the role of policy and
+
+=== Sudhir ===
+
+-[381]  governance? Or would you rather go to the next
+
+=== Natasha ===
+
+-[382]  question No I think let's do
+
+=== Sudhir ===
+
+-[383]  policy is important. I think let's go to policy.
+
+=== Saloni ===
+
+-[384]  I think we're talking about Am rita
+
+=== Sudhir ===
+
+-[385]  Amartya Sen Amartya Sen
+-[386]  Amartya Sen Amartya Sen
+
+=== Natasha ===
+
+-[387]  continue with the Death example Yeah
+
+=== Saloni ===
+
+-[388]  continue with the Death example Yeah {--}
+
+=== Sudhir ===
+
+-[389]  But he's saying that {...}
+
+=== Saloni ===
+
+-[390]  What Oh it's gone Yeah It's good now Okay yeah
+
+=== Natasha ===
+
+-[391]  Maybe you can prompt Amartya Sen.
+
+=== Sudhir ===
+
+-[392]  Maybe let's do the maybe
+-[393]  the question again. The policy, the policy question, the policy question.
+-[394]  Yeah, okay.
+
+=== Natasha ===
+
+-[395]  Yeah okay Let us know when we can start Okay yeah So the question I really want to ask
+-[396]  is what role does policy and I guess governance play in shaping this new narrative for
+-[397]  the global self?
+
+=== Sudhir ===
+
+[398]  Okay yeah just to simplify this first is that policy is rules
+[399]  and then governance is the systems that ensure that these rules are all, rules
+[400]  are followed. But in global south, this takes a different connotation.
+[401]  Because in global south, policy is not just technical regulation, it is the social
+[402]  negotiation towards the systems because these systems are shaping {something, something,} something much bigger
+[403]  .
+[404]  And I think I have a good example to explain that how policy can drive change
+[405]  . We know that in the value chain of
+[406]  AI, we have data, then
+[407]  we have labor, and then we have infrastructure, and then we have say,
+[408]  model training, and then we have the platform distribution as a value chain.
+[409]  And unfortunately, global south is getting locked at the bottom of the pyramid.
+[410]  The global south is either a generator of data or a provider of data, and
+[411]  then there are the ghost workers in global
+[412]  south who are then labeling this data, annotating this data, data transcribing
+[413]  this data, or looking at the harmful content and making it beautiful for the
+[414]  users in global north.
+[415]  We are not playing up the value chain. And hence, the policy plays a role
+[416]  If the policy is created in such a manner and there is consensus and
+[417]  there is a drive, and there is incentive, that if we play up the
+[418]  value chain in the global south, the
+[419]  kind of ownership that we will get and the value flow that we will generate will
+[420]  be different.
+[421]  So what can be done, and what actually is also happening in global south is
+[422]  that the governments are, for example, encouraging the local AI startups.
+    > CAM wide  at="startups"  angle="angle2"
+[423]  There is southsouth collaboration in blocks like in African Union in ASE
+    > ImageWindow  at="ASEAN"  duration=5  src="https://www.eria.org/uploads/articles/eria-calls-for-stronger-asean-cooperation-on-ai-standards-and-cross-border-data-governance-at-asean-ai-malaysia-summit-2025.webp/"  title="Example of South-South Collaboration"
+[424]  AN, in Mercosur, in
+[425]  Indian subcontinent, where common compute
+[426]  clusters are being created, and multiple countries in global south can, for example,
+[427]  tap on it.
+[428]  The best practices are being shared.
+[429]  So this creates focus, right? And this creates a new direction, and
+[430]  this gives you a sense of a different kind of future where agency is not kind
+[431]  of compromised, and where there is a chance for us to create use cases which
+[432]  are needed in global south.
+[433]  I also recall this famous economist, Amartya Sen, who is a Nobel Prize winner, he once said that
+    > ImageWindow  at="economist"  duration=4  src="https://upload.wikimedia.org/wikipedia/commons/3/35/Amartya_Sen_20071128_cologne_cropped.jpg"  title="Amartya Sen"
+[434]  development is closely linked to freedom, or
+    > QuoteCard  at="development"  duration=12  quote="Development consists of the removal of various types of unfreedoms that leave people with little choice and little opportunity of exercising their reasoned agency. The removal of substantial unfreedoms, it is argued here, is constitutive of development."  attribution="Amartya Sen, Development as Freedom"
+[435]  development is freedom, freedom is development. You can paraphrase it anyway.
+[436]  And the question for global south is that
+[437]  as we interplay and as we engage with AI is it expanding
+[438]  freedom by enabling us to build, scale
+[439]  , and govern AI?
+[440]  Or is it just expanding participation of us in AI without meaningful ownership and control?
+[441]  I think policy can help us to regain control, and also motivate us and incentiv
+[442]  ize us to secure ownership. So role of policy and governance is extremely
+[443]  crucial in this journey of global south visavis AI
+
+=== Saloni ===
+
+[444]  Those were actually really good examples as well that you mentioned that the global
+[445]  south has already been partaking startups, collaboration between the different countries.
+[446]  I'm actually more interested in seeing,
+[447]  in hearing some of the examples that, where AI is actually already creating meaningful impact
+[448]  in global south Yeah I think that this is
+
+=== Sudhir ===
+
+[449]  interesting, and I think some of
+    > ChapterMarkerEnd  at="this is interesting"  duration=1
+    > ChapterMarker  at="this is interesting"  duration=5  chapterTitle="Real-World Impact"
+[450]  the examples you already know, but I
+[451]  can give you some very concrete and specific examples across countries. Maybe let's start with healthcare, right
+[452]  ?
+[453]  So in countries like, say, Vietnam
+[454]  in countries like Chile I have seen examples where in AI models which were
+[455]  trained from a computer vision point of view on diabetic eyes, and you can
+    > ImageWindow  at="diabetic"  duration=5  src="https://dlb7plj1xl6zs.cloudfront.net/wp-content/uploads/2016/12/deeplearningtopreventblindness.jpg"  title="Deep Learning for Diabetic Eye Screening"
+[456]  use these models to really predict eye blindness before it actually happens, right?
+[457]  And Asian eyes are different from the Western eyes, so you have to really train
+[458]  the model with images which belong to the
+[459]  region, yeah?
+[460]  For say highvalue reliability
+[461]  and we're talking of healthcare right So this is one In South Africa there were many
+[462]  many accidents when people go to do mining and this is now yeah
+[463]  deepearth mining and you can have predictive analytics based on imaging wherein which helps the safety and security
+    > ImageWindow  at="predictive"  duration=5  src="https://sitef.co.za/wp-content/uploads/2025/05/AI-in-mining-South-Africa.jpg"  title="Predictive Analytics for Mining"
+[464]  of deep miners, and we, you
+[465]  already hear in the past of many people getting trapped in the mines, even some
+[466]  dying, but with this AI model, there is predictive analysis and you can
+[467]  really secure them.
+[468]  The one which is very close to my heart is this platform called MP
+    > ImageWindow  at="MP"  duration=5  src="https://borgenproject.org/wp-content/uploads/M-Pesa_on_Nokia_1100_20120430.jpeg"  title="MPESA"
+[469]  esa in Kenya, and this is an
+[470]  example of how you can use an AI
+[471]  model to create really financial depth, wherein people can use this platform, and this
+[472]  platform has now multiple AI nodes attached to it, and you can really secure
+[473]  how you play in a digital economy using this particular app. In India, which is a high-
+[474]  growth country now, also has rural parts, and their AI models have been trained
+[475]  on the quality of soil, how the weather kind of interplays across seasons,
+    > ImageWindow  at="soil"  duration=5  src="https://media.licdn.com/dms/image/v2/D5612AQHeALkt4ByPZQ/article-cover_image-shrink_720_1280/B56ZoUviKGI4AI-/0/1761284602229?e=2147483647&v=beta&t=YaFQoGvwRxEDxgGEE3Fred9-ovYj7Ho7hM-OcWNL7Gg"  title="AI for Soil Quality"
+[476]  and they have a very unique sewing app, is that the exact time when
+[477]  you should sew your seeds for better productivity of a particular crop.
+[478]  In Bangladesh, which is the home for
+[479]  most of the luxury items that you could be using are made actually in Bangladesh,
+[480]  and there they are using AI with local
+[481]  context in garment industry for predictive maintenance of the plants, for even enhancing the
+    > ImageWindow  at="predictive"  duration=5  src="https://media.licdn.com/dms/image/v2/D5612AQFsTw-bHfP53A/article-inline_image-shrink_400_744/article-inline_image-shrink_400_744/0/1691820513165?e=2147483647&v=beta&t=fVS7jHcPMDUgSKkRSSyvNi3sryi4Sf5pFuSdheyXE80"  title="AI-Powered Safety Solution for Bangladesh Textile Factory"
+[482]  productivity of the machines that they're using.
+[483]  Also, for example, there are now
+[484]  apps which kind of enhance usage in such
+[485]  a manner that you use with local language. I think a good project that comes to
+[486]  my mind is Sea Lion, which is a project in Southeast Asia, wherein
+    > ImageWindow  at="sea"  duration=5  src="https://media.licdn.com/dms/image/v2/D5622AQE7u4QHPiSTNw/feedshare-shrink_800/B56ZZCnPALHQAg-/0/1744874304313?e=2147483647&v=beta&t=JqvL6eXhmgrDjeRDxWzkT3kwXivdEJWt8RJsNiwxW1U"  title="SEA Lion"
+[487]  the mandate is that the local languages in
+[488]  this region are utilized to train the models
+[489]  because as I said language is not just a marker of your identity
+[490]  it also connects you to your culture and your understanding so Sea Lion is
+[491]  a very, very interesting project in that sense.
+[492]  As I said in the start, maybe I'll use this phrase again,
+[493]  for the global north, AI is like a rocket, fast, big headlines.
+[494]  For global south, we don't need
+[495]  a rocket, we need a bicycle.
+[496]  We need use cases which help us on a daytoday basis
+[497]  We need use cases of education, wherein a student in La Paz or in
+[498]  Lagos in Nigeria can understand the concept of diffusion in physics in his own
+[499]  language, and that kind of motivates him to study further.
+[500]  So I think these are some examples that come to my mind, but ultimately to
+[501]  make this now sustainable, as I said
+[502]  , we need to continue to invest in AI education in the universities and colleges in
+[503]  global south.
+[504]  And when I say we it 's all of us It's the society it's the
+[505]  individuals, it's the communities, it
+[506]  's the think tanks, it's the governments. All of us have to play a role
+[507]  and create a bottomsup push
+[508]  where AI becomes a tool of augmentation and not replacement for AI, yeah?
+[509]  So that's important, augmentation
+[510]  and not replacement.
+[511]  Because global south is a region of constraints, so we have to innovate around constraints
+[512]  So we are not having a lot of money and resources and abundance and hence
+[513]  innovation under constraints is something that we need to really master.
+
+=== Natasha ===
+
+[514]  I think this narrative of frug al innovation and innovating under constraints
+[515]  was what I took away most from your book and what I related to the most
+[516]  , because this is kind of also our story of why we started engineering also.
+[517]  I started engineering because I refused to pay for SaaS services, I'm
+[518]  very frugal by that nature,
+[519]  and a lot of the things we've created, even now we're creating a
+[520]  video editor to automate our video editing flow, and a lot of it is us
+    > Callout  at="video"  duration=8  text="This episode was created with our own video editing tool — all models run locally on our own devices 🎬"
+[521]  telling ourselves we want to put in the constraint where we're only focusing on using
+[522]  models that can be run locally on CPU instead of like sending it out to
+[523]  a cloud model that we don't own. So what do these constraints produce?
+[524]  And we realize we can get really creative with it. And the same with the examples that you
+[525]  've shown, right? It's really optimistic way of looking at constraints, not as something that challenges and
+[526]  locks you in, but rather something that enhances your creativity. I mean, I think a lot of
+[527]  artists will agree that constraints are key to being creative, and that's what I
+[528]  really love about this narrative of the global self that you keep on pushing in
+[529]  your book. But of course, like with this narrative, it is very optimistic, but there
+[530]  are also blind spots when it comes to AI that I think your background in both
+[531]  ethics and philosophy can land a perspective too. So I really wanted to ask, how
+[532]  does having a background in ethics and philosophy influence your perspective on AI development?
+    > ChapterMarkerEnd  at="ethics"  duration=1
+    > ChapterMarker  at="ethics"  duration=300  chapterTitle="Ethics & Philosophy"
+
+=== Sudhir ===
+
+[533]  Yeah this is a good question Natasha Thanks for asking this So in this we move from the
+[534]  technical mode where we were into metaph
+[535]  ysics and ethics.
+[536]  So firstly, what is ethics? Yeah, so ethics is what we have
+    > ConceptExplainer  at="ethics"  duration=10  keyPhrase="Ethics"  description="Ethics asks two distinct questions: what is right to do, and what we have the right to do. In AI, ethics is inseparable from distributional outcomes — AI systems don't just make predictions, they allocate resources: who gets hired, who receives a loan, which app surfaces in a store. Philosophy frames AI progress as a question of fairness and participation, not merely efficiency and automation — making ethics foundational to whose values AI reflects and whose lives it shapes."
+[537]  what is right to do and what we have right to do right
+
+=== Saloni ===
+
+[538]  ?
+
+=== Sudhir ===
+
+[539]  So that's kind of broadly what ethics is, right?
+[540]  And ethics is very closely linked to distributional outcomes
+[541]  because AI is not just making a prediction and a recommendation. It is also driving the allocation of resources
+[542]  .
+[543]  So when AI predicts a pattern, it decides who gets the job, right?
+[544]  When AI determines a credit scoring, it
+[545]  decides who gets the next loan, right?
+[546]  And when AI recommends, it decides how the app, which an app developer
+[547]  in Kochi made, where it gets placed in the app store.
+[548]  So AI kind of decides your position in life. And if the AI systems are not fair
+[549]  , if they have not been developed with
+[550]  inclusive data sets, it can mess with your life, yeah?
+[551]  And if you are coming from global south
+[552]  where you have lived in, most
+[553]  of the people in abstract poverty, this
+[554]  can really have very difficult effect on how our children in the next generations will grow
+[555]  .
+[556]  Hence, ethics plays a big role in development of AI because the impact and the
+[557]  outcome is so, so, so difficult.
+[558]  And hence, you see voices even in global north, sane voices, talking
+[559]  about ethics of AI is because the impact and outcome is so different.
+[560]  From a philosophical point of view, I think I like to connect AI to progress
+
+=== Saloni ===
+
+[561]  .
+
+=== Sudhir ===
+
+[562]  And is AI, is the progress in AI linked to, say, efficiency
+[563]  and automation and speed, or is it linked to fairness and participation and feedback?
+[564]  For me, I think the latter part is what should matter most, is because
+[565]  if you are able to participate in giving feedback you can cocreate
+[566]  because now we have understood that the future of the AI is distributed agency and co
+[567]  creation And I think philosophy helps us in understanding why we should cocreate
+[568]  because when we cocreate we
+[569]  not only do justice to competing forces in
+[570]  the system, we also create a balance
+[571]  in interplay, because the interplay
+[572]  is very interesting also. This is interplay of labor, workforce, policy, incentives, models.
+[573]  So this interplay is unique. And if you have a background and
+[574]  if you have an orientation of ethics and
+[575]  philosophy and maybe sociology, then you understand interplay very well.
+[576]  Net summary is that ethics and philosophy can make AI filled with justice and aligned to
+[577]  values. Of course, now there is this discussion
+[578]  at whose values are we talking about, at the values of the East and the
+[579]  values of the West. Even the values in global South itself are so diverse.
+[580]  And that's not the topic for today, but that's also a very interesting
+[581]  topic.
+[582]  And that's why ultimately it converges
+[583]  to a very localized solution in a city
+[584]  , in a community where ultimately AI will
+[585]  solve problems. AI cannot solve problems and cut paste it for the entire globe.
+[586]  That's not possible because of our value propositions and our understanding of values and
+[587]  our aspirations are so different as people Actually I mean as I
+
+=== Saloni ===
+
+[588]  was talking to you initially, I did
+[589]  mention to you that this book is something that I personally would not pick up at
+[590]  a library or a bookshop, but when you sent it to me and when
+[591]  I read through it, exactly as you said, it came to me that
+[592]  what I'm missing out on, with say ethics, where you said, what
+[593]  are the data that's missing that belongs to me? And I mean, if AI is gonna
+[594]  decide on things for me but it 's missing out on perspectives or data points
+[595]  from an Indian female, for example,
+[596]  then that is something that's gonna affect me.
+[597]  And therefore, awareness of the whole topic of Global South and its impacts on
+[598]  artificial intelligence has, it's so important. And that leads me to the question on
+[599]  what are the key risk if AI is actually not developed in the Global South then
+    > ChapterMarkerEnd  at="key"  duration=1
+    > ChapterMarker  at="key"  duration=300  chapterTitle="Risks of Exclusion"
+[600]  ?
+
+=== Sudhir ===
+
+[601]  Okay if AI is not developed you mean completely or we don't
+[602]  develop it the way it should be developed, right? I think that's what you mean,
+[603]  right? So if AI is not developed in an inclusive manner, then it will,
+[604]  say, amplify the existing inequalities, for example, inequalities around gender.
+[605]  In Global South, we are aware that
+[606]  the difficulties in societal setup in Global South is already very difficult and if AI is
+[607]  not developed in an ethical manner, in
+[608]  a fair manner, it will kind of amplify what is already bad.
+[609]  That's what we exactly don't want, right? So that's the first point.
+[610]  Secondly, I think I want to pick up on this topic of labor in AI
+[611]  I think which we did not which I kind of did not get a
+[612]  chance to explain. So Global South is generating most of the data that is used to train models and
+[613]  then we have thousands and thousands of people who work on this data across Venezuela,
+[614]  to Chile, to Hanoi,
+[615]  to Bangalore,
+[616]  to Jakarta, there are these people who are now called, say, ghost workers
+    > ConceptExplainer  at="ghost"  duration=10  keyPhrase="Ghost Workers"  description="The hidden human labour force behind AI — millions of people, primarily in the Global South, who perform micro-tasks like data labelling, content moderation, and dataset cleaning for a few dollars a week. They work on unstructured, ad hoc contracts with no social security or labour protections, and are largely invisible to the end users of the AI systems they train. Popularised by Microsoft researcher Mary Gray in her 2019 book Ghost Work, the term highlights how AI automation rests on a precarious class of human workers — what Sudhir calls the Digital Proletariat."
+[617]  and they work on unstructured contracts. They are ad hoc, they don't
+[618]  have social security and their work is like a few dollars, sometimes in a week
+[619]  , to really clean up the data and
+[620]  they are now called the new class and this new class is called the Digital
+[621]  Proletariat because this is so precarious from that sense.
+    > ConceptExplainer  at="Proletariat"  duration=10  keyPhrase="Digital Proletariat"  description="A term borrowed from Marx's 'proletariat' — workers who own no means of production and sell only their labour. Applied to the AI economy, it describes ghost workers, data labellers, and content moderators whose precarious, low-paid micro-work is the invisible foundation of AI systems. Unlike Marx's industrial proletariat, this class is geographically dispersed, platform-mediated, and largely unorganised. Most are women in the Global South, working without contracts or social security — a structural vulnerability that Sudhir argues must be addressed as a core AI governance issue."
+[622]  And this class actually is pretty vulnerable class and most of these people are women.
+[623]  And we need to do something about it, right? And hence, if this topic of addressing
+[624]  the dignity that we need to provide to
+[625]  workers, whatever work they do is
+[626]  not done, then it really is not cool, right?
+[627]  So this is the second topic because these workers belong to Global South, most of
+[628]  them, then we need to really create pathways of dignity and pathways of security for
+[629]  these workers in Global South. This is a big risk that I see
+[630]  that in case we kind of hide it under the carpet.
+[631]  So this digital labor polarization, I think, is a big risk that I
+[632]  see.
+[633]  Another risk that I see in the development
+[634]  of AI is that commercial values overtaking the societal values and we should not run
+[635]  in a situation where in the local realities get overtaken because the commercial model is
+[636]  strong. So I think there we need alternative way of thinking and way of work and
+[637]  economic models wherein we are able to stay profitable from a company point of view who
+[638]  are making the models but also ensuring that
+[639]  the problems that the society has are also getting solved.
+[640]  This is another risk I see. The biggest risk for me is data colonization
+    > ConceptExplainer  at="data"  duration=10  keyPhrase="Data Colonization"  description="The extraction and control of a population's data by external powers — a digital parallel to historic land colonization, but invisible and harder to resist. Where colonial powers once seized territory, data colonization seizes the raw material of the AI economy: behavioural data, language, culture, and identity. Sudhir argues that data sovereignty — the right of communities to own and govern their own data — is the new marker of independence, replacing the flag, currency, and language of the nation-state era. Without it, Global South nations risk being colonised again: not by ship, but by server."
+[641]  right So in the past when colonization happened they would seize your land
+[642]  right? And then you had historical records of it. Yeah, the land was seized.
+[643]  With data colonization, what happens is that you don't even come to know,
+
+=== Saloni ===
+
+[644]  right?
+
+=== Sudhir ===
+
+[645]  In the past, what was the marker of independence? A marker of independence was a flag,
+[646]  a currency, and language. So if a country had these three things
+[647]  , it is free and it is independent
+
+=== Saloni ===
+
+[648]  .
+
+=== Sudhir ===
+
+[649]  The marker of independence in future will be data.
+[650]  And if you don't have control on your data, you will not be free
+[651]  yeah So this is a big risk that I see and hence the actors in Global South
+[652]  have to really ensure that they don't again get colonized, yeah? This time, not through a ship but
+[653]  via a server. So the ship can get replaced by a server but the end result would be the
+[654]  same. That you get colonized.
+
+=== Natasha ===
+
+[655]  (laughing) A shipping docker container, I guess.
+    > Callout  at="docker"  duration=6  text="🐳 Docker's logo is a whale carrying shipping containers — the colonising ship is now a dev tool"
+
+=== Sudhir ===
+
+[656]  So the risks are immense. Good news is that most of the policy
+[657]  owners and governments are aware of this risk and there is solid work going on.
+[658]  Right, right, yeah.
+
+=== Natasha ===
+
+[659]  Before Victoria goes on to her question,
+[660]  I also wanted to ask, so when I go out and I start talking more
+[661]  about the Global South, trying to advocate
+[662]  for more people to be mindful of the ethical implications of how AI is being
+[663]  developed mostly in the Global North, a lot of the feedback or like the counter
+    > HOOK "the counter" 2975.766-2976.069
+[664]  criticism, again, it's, wait, well, you talk about data colonization, right, but colonization has happened before
+    > HOOK
+    > FullscreenMedia  at="data"  duration=5  src="assets/episodes/sudhir/data-workers-women.mp4"  mediaType="video"
+    > FullscreenMedia  at="happened"  duration=5  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExc2RrOXlpYXkzcXFsYjYxamswNW55Z2VxbHVjOHo3c2F1cmVrOGV3cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/uvinNuSPa7LsrMZQvy/giphy.gif"  mediaType="gif"
+[665]  . There's a lot of other industries and sectors that the same things have happened,
+[666]  where the Global South is being exploited, when it comes to agriculture, when it'
+[667]  comes to anything related to supply chain. This has happened before, why should we
+    > HOOK "why should we" 2994.263-2995.750
+[668]  care? What message do you have to counter this
+    > HOOK "care?" 2995.974-2996.300
+[669]  kind of criticism that just because it has happened before, doesn't mean that
+    > ChapterMarkerEnd  at="kind"  duration=1
+    > ChapterMarker  at="kind"  duration=300  chapterTitle="Why It Still Matters"
+[670]  we shouldn't be talking about this now?
+
+=== Sudhir ===
+
+[671]  I think somebody once asked me, Dad, what's the purpose of life?
+[672]  I try to answer this question in a deeper manner is, and yeah, it
+[673]  's a difficult question, right?
+[674]  What's the purpose of life?
+[675]  For me, the purpose of life is to add value to the next generation.
+    > HOOK
+    > FullscreenMedia  at="purpose"  duration=3  src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMm16bWU2NnhjcHM3cngxaXllZndyejVub3dsMGJleHQwcm9mYThucCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xzYRoi6Detm4o/giphy.gif"  mediaType="gif"
+[676]  What we do now may not impact you
+    > HOOK
+[677]  , but it will impact the next generation.
+    > HOOK
+    > FullscreenMedia  at="impact"  duration=3  src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHdtbnAwbW8zNWRzYjh3bWU2c2pqbXRrZHUxbDcwb205aGk4dHV5ZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/lRdybfTVnAKPGWPHXS/giphy.gif"  mediaType="gif"
+[678]  And as responsible people, tech people,
+[679]  because we are the people who develop tech, I think it's important for us
+[680]  to keep a vigil on the future. And if we have this mindset that,
+[681]  yeah, it has happened in the past, how does it matter? It does not impact me, is I
+[682]  feel not deep, right?
+[683]  So I think we should push this back.
+[684]  The impact of technology happens across generations, right?
+[685]  So typically it takes two generations of time for any technology to become transformative.
+    > HOOK
+    > FullscreenMedia  at="two"  duration=3  src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExdzl1Zjljd3l0czZqcjk0M3BxdTZ5czR3MHMyN2JreThpazN0MnF6dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/p1pdQ17eyPp1RB54dr/giphy.gif"  mediaType="gif"
+    > FullscreenMedia  at="technology"  duration=3  src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2FxaXlramVnc3k2a3A3c2ZmNXEzOWtrdTN1bGVtcnU3OWphNnB3NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/IX2sn8cnqDyRq/giphy.gif"  mediaType="gif"
+[686]  The first generation, yeah, only plays. The impact is on the next generation.
+    > HOOK
+    > FullscreenMedia  at="impact"  duration=2  src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExYTRvdGo1N2h0NnV6ZTdtdmFsNW9uNDljbXo5NGEwMDVia204OTh0NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6G8lqq9njDVsYLTNuo/giphy.gif"  mediaType="gif"
+[687]  So it's extremely crucial and important that we understand this. And if someone discusses this at a shallow
+[688]  level, we tell them that it may not be you, but it could
+[689]  be your son or daughter, right?
+[690]  And hence it's important to really address this in a more serious manner.
+
+=== Saloni ===
+
+[691]  Yeah I think that's very
+
+=== Victoria ===
+
+[692]  relevant.
+[693]  And I know there's so much more
+[694]  we can talk about in this book. Just like we started from your whole writing
+[695]  process, what inspired you to write this book. And I, as a fellow writer,
+[696]  also understand that it's really about just continuously being passionate about what you write,
+[697]  and it just slowly accumulates into this one giant book. So I'm really grateful that you're
+[698]  sharing this with us. We come from this humble backgrounds, and then we move on to writing such a
+[699]  book.
+[700]  And we also talked about today about misconceptions, and then moving on to how we
+[701]  can have productive inclusion, and then how policy shapes AI adoption, and how even
+[702]  ethics, philosophy, these areas, and perspectives are just as important. It makes me realize that this is beyond
+[703]  what we think technology is, because we as technologists, we were so focused
+[704]  like at least me five years ago I was just so focused on learning
+[705]  the code, understanding syntax, shipping features. It's more so about executing all these
+[706]  and in a structured most efficient most scalable way rather than thinking
+[707]  about what it impacts, and how it impacts society, and so on and so
+[708]  forth. So all this has been so interesting so far. And as much as I would like to
+[709]  stay here and keep talking, unfortunately we have to wrap up, but if we
+[710]  are wrapping up, I wanna ask you one final question, which is what message
+[711]  would you like policy makers, technologists, and young innovators to take away
+    > ChapterMarkerEnd  at="would"  duration=1
+    > ChapterMarker  at="would"  duration=300  chapterTitle="Key Takeaways"
+[712]  from this book?
+
+=== Sudhir ===
+
+[713]  Okay for the technologists I think the message is demanding And the message is that when you design
+[714]  please design with context design
+[715]  with a sense of accountability, because what you design has an impact on an ecosystem
+[716]  that you may not be even aware of, so become more aware.
+[717]  That's my message to the technologists. For the young innovators, I think
+[718]  my message is that constraint could be the starting point of some interesting innovation.
+[719]  So don't be scared if you have
+[720]  constraints, if you don't have compute, if you don't have electricity. Yeah, sometimes in Global South that also
+[721]  happens. Electricity does not work. Don't get demotivated. Yeah, work with constraints, yeah.
+[722]  And for the policy makers, I think
+[723]  I want to talk about this thing called path dependency, which is that as technology
+[724]  shapes and scales, the early choices lock
+[725]  in longterm outcomes
+[726]  What you design and decide now is
+[727]  not easy to replace it at a later stage once it gains form and once it
+[728]  gains scale.
+[729]  So for the policy makers my message is that focus on longterm ad
+[730]  aption rather than shortterm adoption yeah
+[731]  Adoption versus adoption. So for Global South, adoption is not the mantra.
+[732]  Adoption is the mantra, because our reality is different compared to what we
+[733]  have the Global South. That's the message that I have for
+[734]  these three set of people.
+[735]  And I really want to give this message
+[736]  to myself also, is that this journey
+[737]  of creating awareness for Global South has
+[738]  just started, and this will continue.
+[739]  Yeah, definitely.
+
+=== Natasha ===
+
+[740]  And you've already started that journey for the three of us, who I think
+[741]  before this, before knowing you, I think that was two years ago, where
+[742]  we actually met Sudhir in context of women devs, as she wishes,
+[743]  a women in tech community, which is where three of us met, where we
+[744]  had our first AI ethics panel. That's when you came on board,
+[745]  and then we realized, wait, there are so many of these considerations that
+[746]  we, as Victoria said, as software engineers, we don't think about.
+[747]  We are more concerned with the cleverness of shipping the most optimal feature.
+[748]  We're so concerned about fixing this bug versus that, and in a way that
+[749]  has kind of overwhelmed our capacity to think about the impact of how the technology that
+[750]  we build affects society. And like you said, I think you
+[751]  always say you're an ordinary person, and to us, you're not, but I think at the same time,
+[752]  you have exemplified what it means for an ordinary person to do extraordinary things
+[753]  beyond your, what's pigeonholed for you. In your case, being a technologist
+[754]  , but going the extra mile to look into the global self and expand that awareness
+[755]  for other technologists and policy makers who might not have this awareness in the first
+[756]  place. And I know you gave that message for the three groups of people, but I
+[757]  think the main message and takeaway for us from you was as technologists, we
+[758]  have the privilege of having immense information that the lay people don't have,
+[759]  and we need to do something about it
+
+=== Saloni ===
+
+[760]  .
+
+=== Natasha ===
+
+[761]  But instead of sitting here feeling like we 're just individuals we can't do
+[762]  anything, there is always something that we can do. For example, for you, once you
+[763]  learn about a global self, you started asking, I think you even messaged
+[764]  Timnit Gebru, right? Which I think is crazy, to just
+    > ConceptExplainer  at="Timnit"  duration=10  keyPhrase="Timnit Gebru"  description="Ethiopian-American computer scientist and AI ethics researcher. Former co-lead of Google's Ethical AI team — controversially fired in 2020 over her co-authored paper 'Stochastic Parrots', which warned of the risks of large language models. Founder of DAIR (Distributed AI Research Institute) and a leading voice on algorithmic accountability and AI harms."
+[765]  send a LinkedIn message or email You've even emailed FeiFei Li and I realized like wait
+    > ConceptExplainer  at="FeiFei"  duration=10  keyPhrase="Fei-Fei Li"  description="Chinese-American computer scientist and Stanford Professor. Creator of ImageNet (2009) — the large-scale image dataset that sparked the deep learning revolution. Co-director of the Stanford Institute for Human-Centered AI (HAI), former Chief Scientist of AI at Google Cloud, and author of The Worlds I See (2023)."
+[766]  that's something we can do too Technology opens up these borders And not only that you went to
+[767]  ask them, they gave you resources, you went on to travel to like Kenya
+[768]  , to all these different countries to see
+[769]  for yourself, what is the global self? What does it look like?
+[770]  And then you took all of that feedback, wrote those essays, and that wasn
+[771]  't enough. You're like, I have so many essays now, it's been two years
+[772]  . I can turn it into a book so that I can create a bigger platform for
+[773]  distribution.
+[774]  Then you went on to World Scientific and they helped you publish it, and now
+[775]  you have this book.
+[776]  So that in itself is a message to be a technologist, policymakers,
+[777]  or just anybody watching this. You have the power to investigate, the
+[778]  power to be more aware, and you have so many different avenues to create impact
+[779]  Find any one of those avenues the one that's most accessible to you
+[780]  even if it's not accessible to you, make the effort to do that.
+[781]  And go that step beyond to try to understand how what you do has an impact
+[782]  on society and what you can do to help fix that. And we thank you so much for being
+[783]  on this podcast. It's been a long time for us speaking about this of you being here.
+[784]  And we're so excited to be here today to ask you about your book,
+[785]  Learn More About the Global South. And we hope our audience have taken away
+[786]  the same way that Saloni, Victoria, and myself have also taken away so
+[787]  much from this book.
+[788]  And also a little tidbit to think about, a lot of our audience
+[789]  are based in Singapore. Singapore is in this unique position where it
+[790]  's neither Global South, Global North. So I ask you to leave in the
+[791]  comments, do you think Singapore is Global South, Global North, or it just
+    > Callout  at="do"  duration=8  text="🇸🇬 Where does Singapore sit — Global South, Global North, or neither? Drop your thoughts below 👇"
+[792]  doesn't sit anywhere in between? And if it doesn't sit anywhere in
+[793]  between, what is our role to play then as people in Singapore?
+[794]  So leave your comments in the comment section below. And for the book that Sudhir
+[795]  wrote, we will place a QR code on this video.
+    > ImageWindow  at="qr"  duration=8  src="assets/episodes/sudhir/qrcode.jpeg"  title="Get Sudhir's Book"
+[796]  You're able to get it on Amazon on preorder right now and
+[797]  it will be available for anyone to order if you're an institution, a
+[798]  think tank, or even just a lay person who wants to learn more, you
+[799]  can go ahead and place your order for the book. So yeah, thank you again Sudh
+[800]  ir for being here. And yeah, as always, this was
+[801]  Ragtag, the place provides adventure.
+[802]  Stay tuned for the next episode. Bye.
