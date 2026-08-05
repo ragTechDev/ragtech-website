@@ -359,9 +359,10 @@ export async function getPendingNewsletterPosts(): Promise<MarkdownPost[]> {
   try {
     const allPosts = await loadMarkdownPosts();
 
+    // loadMarkdownPosts already excludes drafts and not-yet-due scheduled posts,
+    // so a scheduled post becomes newsletter-eligible once it goes live
     return allPosts.filter(
       (post) =>
-        post.status === 'published' &&
         post.newsletter?.send === true &&
         post.newsletter?.sent !== true
     );

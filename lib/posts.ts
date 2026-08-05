@@ -4,7 +4,8 @@
  */
 
 import 'server-only';
-import { loadMarkdownPosts, loadMarkdownPostBySlug } from './markdown';
+import { loadMarkdownPosts, loadMarkdownPostBySlug, shouldPublishPost } from './markdown';
+import type { MarkdownPost } from './markdown-types';
 import { loadArchivedPosts, loadArchivedPostBySlug } from './archived-posts';
 import type { UnifiedPost } from './posts-client';
 import { getUnifiedPostDate, getUnifiedPostSlug } from './posts-client';
@@ -75,6 +76,25 @@ export async function loadAllPosts(
 }
 
 /**
+ * Decide whether a markdown post may be served at its own URL.
+ *
+ * A `scheduled` post has an explicit go-live time, so serving it before that
+ * time would make the schedule leaky: the link could be shared or indexed ahead
+ * of the date. `draft` posts stay reachable by direct link, which is how they
+ * have always behaved and what makes it possible to send a work-in-progress to
+ * someone for review before it is listed.
+ *
+ * In development everything is viewable so `npm run dev` can preview a post
+ * before its date.
+ */
+function isViewableByUrl(post: MarkdownPost): boolean {
+  if (process.env.NODE_ENV !== 'production') {
+    return true;
+  }
+  return post.status === 'scheduled' ? shouldPublishPost(post) : true;
+}
+
+/**
  * Load a single post by slug from any source
  */
 export async function loadPostBySlug(
@@ -85,7 +105,7 @@ export async function loadPostBySlug(
   if (config.markdown) {
     try {
       const markdownPost = await loadMarkdownPostBySlug(slug);
-      if (markdownPost) {
+      if (markdownPost && isViewableByUrl(markdownPost)) {
         return markdownPost;
       }
     } catch (error) {

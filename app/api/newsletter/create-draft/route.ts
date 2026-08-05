@@ -4,7 +4,7 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { loadMarkdownPostBySlug } from '@/lib/markdown';
+import { loadMarkdownPostBySlug, shouldPublishPost } from '@/lib/markdown';
 import { createBlogPostBroadcast } from '@/lib/newsletter';
 import type { NewsletterTopic } from '@/lib/newsletter-topics';
 
@@ -30,10 +30,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Check if post is published
-    if (post.status !== 'published') {
+    // Check if post is live (a scheduled post qualifies once its date has passed)
+    if (!shouldPublishPost(post)) {
       return NextResponse.json(
-        { error: 'Only published posts can be sent as newsletters' },
+        { error: 'Only live posts can be sent as newsletters' },
         { status: 400 }
       );
     }

@@ -17,13 +17,13 @@ export interface MarkdownPostFrontmatter {
   title: string;
   slug: string;
   author: MarkdownPostAuthor;
-  publishedAt: string;
-  scheduledFor?: string;
+  publishedAt: string;  // Also acts as the go-live time when status is 'scheduled'
   coverImage: string;
   brief: string;
   tags: string[];
   readTimeInMinutes?: number;
   status: 'draft' | 'scheduled' | 'published';
+  canonical?: string;  // Original URL when the post is cross-posted from elsewhere
   newsletter?: {
     send: boolean;
     sent: boolean;
@@ -61,6 +61,7 @@ export interface MarkdownPost {
     markdown: string;
   };
   status: 'draft' | 'scheduled' | 'published';
+  canonical?: string;  // Original URL when the post is cross-posted from elsewhere
   newsletter?: {
     send: boolean;
     sent: boolean;
