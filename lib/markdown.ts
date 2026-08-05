@@ -125,6 +125,7 @@ async function parseMarkdownFile(filePath: string): Promise<MarkdownPost | null>
         markdown: content,
       },
       status: frontmatter.status || 'draft',
+      canonical: frontmatter.canonical,
       newsletter: frontmatter.newsletter,
       recommendedArticles: frontmatter.recommendedArticles,
       instagramEmbeds: frontmatter.instagramEmbeds,

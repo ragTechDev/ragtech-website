@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
@@ -7,6 +8,7 @@ import {
   getUnifiedPostDate,
   getUnifiedPostTitle,
   getUnifiedPostCoverImage,
+  getUnifiedPostBrief,
   getPostSource,
   isMarkdownPost,
   isArchivedPost,
@@ -90,11 +92,50 @@ function getPostTags(post: UnifiedPost): Array<{ name: string; slug: string }> {
 }
 
 
-export default async function BlogPostPage(props: { params: { slug: string } } | { params: Promise<{ slug: string }> }) {
-  let params = props.params;
-  if (params instanceof Promise) {
-    params = await params;
+type PageProps = { params: { slug: string } } | { params: Promise<{ slug: string }> };
+
+async function resolveParams(props: PageProps): Promise<{ slug: string }> {
+  const params = props.params;
+  return params instanceof Promise ? await params : params;
+}
+
+export async function generateMetadata(props: PageProps): Promise<Metadata> {
+  const { slug } = await resolveParams(props);
+  const post = await loadPostBySlug(slug);
+
+  if (!post) {
+    return {};
   }
+
+  const title = getUnifiedPostTitle(post);
+  const description = getUnifiedPostBrief(post);
+  const coverImage = getUnifiedPostCoverImage(post);
+  // Cross-posted articles point back to the original; everything else is self-referencing.
+  const canonical = (isMarkdownPost(post) && post.canonical) || `/blog/${slug}`;
+
+  return {
+    title,
+    description,
+    alternates: { canonical },
+    openGraph: {
+      title,
+      description,
+      type: 'article',
+      url: canonical,
+      publishedTime: getUnifiedPostDate(post).toISOString(),
+      ...(coverImage ? { images: [coverImage] } : {}),
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      ...(coverImage ? { images: [coverImage] } : {}),
+    },
+  };
+}
+
+export default async function BlogPostPage(props: PageProps) {
+  const params = await resolveParams(props);
   const post = await loadPostBySlug(params.slug);
 
   if (!post) {

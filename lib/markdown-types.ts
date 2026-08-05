@@ -24,6 +24,7 @@ export interface MarkdownPostFrontmatter {
   tags: string[];
   readTimeInMinutes?: number;
   status: 'draft' | 'scheduled' | 'published';
+  canonical?: string;  // Original URL when the post is cross-posted from elsewhere
   newsletter?: {
     send: boolean;
     sent: boolean;
@@ -61,6 +62,7 @@ export interface MarkdownPost {
     markdown: string;
   };
   status: 'draft' | 'scheduled' | 'published';
+  canonical?: string;  // Original URL when the post is cross-posted from elsewhere
   newsletter?: {
     send: boolean;
     sent: boolean;
