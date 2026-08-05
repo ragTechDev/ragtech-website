@@ -175,9 +175,10 @@ export async function loadMarkdownPosts(): Promise<MarkdownPost[]> {
       
       if (fs.existsSync(indexPath)) {
         const post = await parseMarkdownFile(indexPath);
-        
-        // Only include published posts
-        if (post && post.status === 'published') {
+
+        // Only include posts that are live right now (scheduled posts join the
+        // listing automatically once their publishedAt passes)
+        if (post && shouldPublishPost(post)) {
           posts.push(post);
         }
       }
@@ -237,17 +238,26 @@ export async function getMarkdownPostSlugs(): Promise<string[]> {
 }
 
 /**
- * Check if a post should be published based on scheduledFor date
+ * Check whether a post is live as of `now`.
+ *
+ * - `published` is always live
+ * - `scheduled` goes live once its `publishedAt` has passed, with no commit or
+ *   redeploy needed: both blog routes are server-rendered per request, so this
+ *   is re-evaluated on every page view
+ * - `draft` is never live, regardless of date
+ *
+ * `publishedAt` is compared as an absolute instant, so the UTC timestamps in
+ * frontmatter behave identically wherever the server happens to run. An
+ * unparseable date yields `false`, keeping a malformed post hidden rather than
+ * publishing it early.
  */
-export function shouldPublishPost(post: MarkdownPost): boolean {
+export function shouldPublishPost(post: MarkdownPost, now: Date = new Date()): boolean {
   if (post.status === 'published') {
     return true;
   }
 
   if (post.status === 'scheduled') {
-    const scheduledDate = new Date(post.publishedAt);
-    const now = new Date();
-    return scheduledDate <= now;
+    return new Date(post.publishedAt).getTime() <= now.getTime();
   }
 
   return false;

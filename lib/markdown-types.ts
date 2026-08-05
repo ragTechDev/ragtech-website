@@ -17,8 +17,7 @@ export interface MarkdownPostFrontmatter {
   title: string;
   slug: string;
   author: MarkdownPostAuthor;
-  publishedAt: string;
-  scheduledFor?: string;
+  publishedAt: string;  // Also acts as the go-live time when status is 'scheduled'
   coverImage: string;
   brief: string;
   tags: string[];
