@@ -4,11 +4,11 @@ slug: "vibe-coding-is-dead-long-live-agentic-engineering"
 author:
   name: "ragTech Team"
   profilePicture: "/assets/logo/ragtech-logo.png"
-publishedAt: "2026-08-10T12:00:00Z"
+publishedAt: "2026-08-10T00:00:00Z"
 coverImage: "https://i.ytimg.com/vi/96jN2OCOfLs/maxresdefault.jpg"
 brief: "Andrej Karpathy coined vibe coding in 2025. A year later, at Sequoia's AI Ascent 2026, he told everyone to move on from it. We break down what agentic engineering actually means, and why the data backs him up."
 tags: ["vibe coding", "agentic engineering", "coding agents", "software engineering", "AI tools"]
-status: "scheduled"
+status: "published"
 topic:
   - "ragTech"
 readTimeInMinutes: 5
