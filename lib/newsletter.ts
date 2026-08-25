@@ -664,7 +664,7 @@ async function updateContactWaitlistData(contactId: string, waitlistType?: strin
 export interface WelcomeEmailOptions {
   email: string;
   firstName?: string;
-  source: 'newsletter' | 'waitlist' | 'general';
+  source: 'newsletter' | 'waitlist' | 'general' | 'willage';
 }
 
 /**
@@ -691,8 +691,10 @@ export async function sendWelcomeEmail(
     const result = await resend.emails.send({
       from: `${RESEND_CONFIG.fromName} <${RESEND_CONFIG.fromEmail}>`,
       to: options.email,
-      subject: options.source === 'waitlist' 
+      subject: options.source === 'waitlist'
         ? 'Welcome to the Techie Taboo Waitlist! 🎉'
+        : options.source === 'willage'
+        ? 'Welcome to the Willage Waitlist! 🎉'
         : 'Welcome to ragTech! 🎉',
       html: emailHtml,
       headers: {

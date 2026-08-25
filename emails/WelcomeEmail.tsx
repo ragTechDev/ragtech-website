@@ -15,7 +15,7 @@ import SubscriptionFooter from './components/SubscriptionFooter';
 
 interface WelcomeEmailProps {
   firstName?: string;
-  source?: 'newsletter' | 'waitlist' | 'general';
+  source?: 'newsletter' | 'waitlist' | 'general' | 'willage';
 }
 
 export default function WelcomeEmail({
@@ -28,6 +28,8 @@ export default function WelcomeEmail({
     switch (source) {
       case 'waitlist':
         return "Thank you for joining the Techie Taboo cards waitlist! We're thrilled to have you on board.";
+      case 'willage':
+        return "Thank you for joining the Willage waitlist! We're thrilled to have you on board.";
       case 'newsletter':
         return "Thank you for subscribing to our newsletter! We're excited to share our latest updates with you.";
       default:
@@ -39,6 +41,8 @@ export default function WelcomeEmail({
     switch (source) {
       case 'waitlist':
         return "Welcome to the Techie Taboo waitlist! You're now on the list for our upcoming card game.";
+      case 'willage':
+        return "Welcome to the Willage waitlist! You're now on the list, and meet ragTech, the team building it.";
       case 'newsletter':
         return "Welcome to ragTech! Thanks for subscribing to our newsletter.";
       default:
@@ -55,7 +59,7 @@ export default function WelcomeEmail({
           {/* Header */}
           <Section style={header}>
             <Img
-              src="https://ragtechdev.com/assets/logo.png"
+              src="https://ragtechdev.com/assets/logo/ragtech-logo.png"
               width="120"
               alt="ragTech"
               style={logo}
@@ -73,7 +77,7 @@ export default function WelcomeEmail({
             {source === 'waitlist' && (
               <>
                 <Text style={paragraph}>
-                  <strong>Techie Taboo</strong> is our upcoming party card game designed for tech enthusiasts. 
+                  <strong>Techie Taboo</strong> is our upcoming party card game designed for tech enthusiasts.
                   You&apos;ll be among the first to know when we launch!
                 </Text>
                 <Text style={paragraph}>
@@ -84,6 +88,27 @@ export default function WelcomeEmail({
                   <li style={listItem}>Exclusive updates on game development</li>
                   <li style={listItem}>Special offers for waitlist members</li>
                 </ul>
+              </>
+            )}
+
+            {source === 'willage' && (
+              <>
+                <Text style={paragraph}>
+                  <strong>Willage</strong> is a safety-first creator platform — comment permissions, invite-gated trust,
+                  and a real moderation team, ahead of growth metrics. You&apos;ll be among the first to know when we launch!
+                </Text>
+                <Text style={paragraph}>
+                  In the meantime, here&apos;s what you can expect:
+                </Text>
+                <ul style={list}>
+                  <li style={listItem}>Early access notifications when Willage opens up</li>
+                  <li style={listItem}>Behind-the-scenes updates on what we&apos;re building</li>
+                  <li style={listItem}>A heads-up before waitlist spots open</li>
+                </ul>
+                <Text style={paragraph}>
+                  Willage is being built by <strong>ragTech</strong> — the same Singapore-based team behind the
+                  Bytes &amp; Banter podcast, dedicated to simplifying technology and making it accessible to everyone.
+                </Text>
               </>
             )}
 

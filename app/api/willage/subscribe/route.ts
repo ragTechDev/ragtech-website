@@ -37,7 +37,7 @@ export async function POST(request: NextRequest) {
 
     if (result.messageId !== 'already-subscribed') {
       try {
-        const welcomeResult = await sendWelcomeEmail({ email, source: 'general' });
+        const welcomeResult = await sendWelcomeEmail({ email, source: 'willage' });
         if (!welcomeResult.success) {
           console.error('Willage welcome email failed:', welcomeResult.error);
         }
