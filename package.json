@@ -35,9 +35,11 @@
     "remark-directive": "^3.0.0",
     "remark-gfm": "^4.0.0",
     "remark-html": "^16.0.1",
+    "remark-parse": "^11.0.0",
     "resend": "^6.9.1",
     "server-only": "^0.0.1",
-    "unified": "^11.0.4"
+    "unified": "^11.0.4",
+    "unist-util-visit": "^5.1.0"
   },
   "devDependencies": {
     "@react-email/preview-server": "^5.2.5",
