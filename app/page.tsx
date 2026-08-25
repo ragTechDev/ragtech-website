@@ -161,12 +161,10 @@ export default function Home() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Link
-              href="https://www.futurenet.ragtechdev.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/willage"
               className="px-8 py-4 bg-white dark:bg-neutral-800 text-primary border-2 border-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300 shadow-lg"
             >
-              See Our Research🔬
+              Join Willage Waitlist🏘️
             </Link>
             <Link
               href="/techie-taboo"
@@ -232,6 +230,15 @@ export default function Home() {
                   link="https://www.youtube.com/@ragTechDev"
                   linkText="Watch on YouTube"
                   image="/assets/techybara/techybara-holding-follow-card-saying-subscribe.png"
+                />
+              </div>
+              <div className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] snap-start h-full">
+                <ProjectCard
+                  title="🏘️ Willage"
+                  description="A safety-first creator platform putting comment permissions, invite-gated trust, and a real moderation team ahead of growth metrics. Join the waitlist and help us build a safer place to post!"
+                  link="/willage"
+                  linkText="Join Waitlist"
+                  icon="🏘️"
                 />
               </div>
               <div className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] snap-start h-full">

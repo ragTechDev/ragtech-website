@@ -7,9 +7,9 @@ import { motion } from 'framer-motion';
 import { HiMenu, HiX, HiChevronDown } from 'react-icons/hi';
 
 const projectLinks = [
-  { href: '/futurenet', label: 'FutureNet', status: 'Inactive' },
-  { href: '/techie-taboo', label: 'Techie Taboo', status: 'Waitlist' },
   { href: '/willage', label: 'Willage', status: 'Waitlist' },
+  { href: '/techie-taboo', label: 'Techie Taboo', status: 'Waitlist' },
+  { href: '/futurenet', label: 'FutureNet', status: 'Inactive' },
 ];
 
 const statusChipStyles: Record<string, string> = {
