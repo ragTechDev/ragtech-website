@@ -21,6 +21,7 @@ export const RESEND_CONFIG = {
   fromName: 'ragTech',
   generalSegmentId: process.env.RESEND_GENERAL_SEGMENT_ID,
   techieTabooSegmentId: process.env.RESEND_TECHIE_TABOO_SEGMENT_ID,
+  willageSegmentId: process.env.RESEND_WILLAGE_SEGMENT_ID || '1006b7a7-8104-430a-9f2d-bec07094f065',
   enabled: !!apiKey,
 };
 

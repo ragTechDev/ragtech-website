@@ -9,6 +9,7 @@ import { HiMenu, HiX, HiChevronDown } from 'react-icons/hi';
 const projectLinks = [
   { href: '/futurenet', label: 'FutureNet', status: 'Inactive' },
   { href: '/techie-taboo', label: 'Techie Taboo', status: 'Waitlist' },
+  { href: '/willage', label: 'Willage', status: 'Waitlist' },
 ];
 
 const statusChipStyles: Record<string, string> = {

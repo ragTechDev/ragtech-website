@@ -535,6 +535,97 @@ export async function subscribeWaitlisterToResend(
 }
 
 /**
+ * Subscribe a waitlister to Resend - adds to both General and Willage segments
+ */
+export async function subscribeToWillageWaitlist(
+  subscriber: SubscriberInfo
+): Promise<NewsletterSendResult> {
+  try {
+    if (!resend) {
+      return {
+        success: false,
+        error: 'Resend is not configured',
+      };
+    }
+
+    if (!RESEND_CONFIG.generalSegmentId) {
+      return {
+        success: false,
+        error: 'Resend general segment ID is not configured',
+      };
+    }
+
+    const results: { segmentId: string; success: boolean; alreadyExists: boolean; error?: string }[] = [];
+
+    // Subscribe to General segment
+    const generalResult = await resend.contacts.create({
+      email: subscriber.email,
+      firstName: subscriber.firstName,
+      lastName: subscriber.lastName,
+      audienceId: RESEND_CONFIG.generalSegmentId,
+      unsubscribed: false,
+    });
+
+    if (generalResult.error) {
+      if (generalResult.error.message?.includes('already exists')) {
+        results.push({ segmentId: 'general', success: true, alreadyExists: true });
+      } else {
+        console.error('Resend general segment error:', generalResult.error);
+        results.push({ segmentId: 'general', success: false, alreadyExists: false, error: generalResult.error.message });
+      }
+    } else {
+      results.push({ segmentId: 'general', success: true, alreadyExists: false });
+    }
+
+    // Subscribe to Willage segment (if configured)
+    if (RESEND_CONFIG.willageSegmentId) {
+      const willageResult = await resend.contacts.create({
+        email: subscriber.email,
+        firstName: subscriber.firstName,
+        lastName: subscriber.lastName,
+        audienceId: RESEND_CONFIG.willageSegmentId,
+        unsubscribed: false,
+      });
+
+      if (willageResult.error) {
+        if (willageResult.error.message?.includes('already exists')) {
+          results.push({ segmentId: 'willage', success: true, alreadyExists: true });
+        } else {
+          console.error('Resend willage segment error:', willageResult.error);
+          results.push({ segmentId: 'willage', success: false, alreadyExists: false, error: willageResult.error.message });
+        }
+      } else {
+        results.push({ segmentId: 'willage', success: true, alreadyExists: false });
+      }
+    }
+
+    // Check if at least one subscription succeeded
+    const successCount = results.filter(r => r.success).length;
+    if (successCount === 0) {
+      return {
+        success: false,
+        error: results.map(r => r.error).filter(Boolean).join(', '),
+      };
+    }
+
+    // Check if ALL successful subscriptions were already existing
+    const allAlreadyExisted = results.filter(r => r.success).every(r => r.alreadyExists);
+
+    console.log(`Willage waitlister ${subscriber.email} added to ${successCount} segment(s)`);
+    return {
+      success: true,
+      messageId: allAlreadyExisted ? 'already-subscribed' : `subscribed-to-${successCount}-segments`,
+    };
+  } catch (error) {
+    console.error('Error subscribing to Willage waitlist:', error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error',
+    };
+  }
+}
+
+/**
  * Get contact ID by email (for updating existing contacts)
  */
 async function getContactIdByEmail(email: string): Promise<string | null> {
