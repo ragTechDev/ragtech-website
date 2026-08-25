@@ -235,13 +235,13 @@ export default function Header() {
                   />
                 </button>
                 {isMobileProjectsOpen && (
-                  <div className="flex flex-col pl-4 space-y-1 pb-2">
+                  <div className="flex flex-col gap-2 pl-4 pt-2 pb-2">
                     {projectLinks.map((project) => (
                       <Link
                         key={project.href}
                         href={project.href}
                         onClick={() => setIsMobileMenuOpen(false)}
-                        className="flex items-center justify-between gap-3 text-brown hover:text-brownDark transition-colors duration-300 font-semibold py-1"
+                        className="flex items-center justify-between gap-3 text-brown hover:text-brownDark transition-colors duration-300 font-semibold py-3 px-2 -mx-2 rounded-lg active:bg-primary/10"
                       >
                         <span>{project.label}</span>
                         <StatusChip status={project.status} />
