@@ -64,13 +64,12 @@ export default function Header() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <Image 
-                src="/assets/logo/ragtech-logo-rectangle.png" 
-                alt="ragTech" 
-                width={180} 
+              <Image
+                src="/assets/logo/ragtech-logo-rectangle.png"
+                alt="ragTech"
+                width={180}
                 height={48}
                 className="h-12 w-auto hover:scale-105 transition-transform duration-300"
-                style={{ width: 'auto', height: 'auto' }}
                 priority
               />
             </motion.div>
