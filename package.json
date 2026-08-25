@@ -42,7 +42,7 @@
     "unist-util-visit": "^5.1.0"
   },
   "devDependencies": {
-    "@react-email/preview-server": "^5.2.5",
+    "@react-email/preview-server": "^5.2.11",
     "@types/node": "^20",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
