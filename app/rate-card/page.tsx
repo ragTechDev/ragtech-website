@@ -564,7 +564,7 @@ export default function RateCardPage() {
               </div>
             </div>
             <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4 mb-4">
-              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Engagement (Last 28 Days)</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Performance (Last 12 Months)</p>
               <div className="grid grid-cols-2 gap-3">
                 {[
                   { label: 'Total Views',     value: fmt(yt28dViews ?? 0) },
@@ -578,7 +578,7 @@ export default function RateCardPage() {
               </div>
             </div>
             <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4">
-              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-1">Audience (Last 28 Days)</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-1">Audience (Last 12 Months)</p>
               <p className="text-xs text-neutral-400 mb-3">Based on content views</p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
