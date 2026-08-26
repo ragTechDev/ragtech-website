@@ -49,11 +49,13 @@ const stats = [
 const igAge = ig.last_30_days.audience_age_range as Record<string, number>;
 const under35 = Math.round((igAge['18-24_percent'] || 0) + (igAge['25-34_percent'] || 0));
 const igCountries = ig.last_30_days.audience_top_countries as Record<string, number>;
-const topCountries = [
-  ['Singapore', igCountries['singapore_percent']],
-  ['India', igCountries['india_percent']],
-  ['United States', igCountries['united_states_percent']],
-].filter(([, v]) => typeof v === 'number') as [string, number][];
+const countryName = (k: string) =>
+  k.replace('_percent', '').replace(/_/g, ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+const topCountries = Object.entries(igCountries)
+  .filter(([, v]) => typeof v === 'number')
+  .sort(([, a], [, b]) => b - a)
+  .slice(0, 3)
+  .map(([k, v]) => [countryName(k), v]) as [string, number][];
 
 const hosts = [
   { name: 'Victoria Lo', role: 'Solutions Engineer', img: '/assets/team/victoria.PNG' },
@@ -176,7 +178,7 @@ export default function PressKitPage() {
               <div className="text-xs text-neutral-500 mt-1">they watch, save, and share</div>
             </div>
           </div>
-          <p className="text-center text-sm text-neutral-500 mt-4">Audience data from Instagram, last 30 days. Full demographics available on request.</p>
+          <p className="text-center text-sm text-neutral-500 mt-4">Audience data from recent Instagram content. Full demographics available on request.</p>
         </div>
       </section>
 

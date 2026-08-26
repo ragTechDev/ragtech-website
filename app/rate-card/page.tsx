@@ -510,8 +510,8 @@ export default function RateCardPage() {
               </div>
             </div>
             <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4">
-              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-1">Audience (Last 30 Days)</p>
-              <p className="text-xs text-neutral-400 mb-3">Based on content reach</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-1">Audience</p>
+              <p className="text-xs text-neutral-400 mb-3">From recent representative content</p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <p className="text-xs text-neutral-400 mb-2">Age</p>

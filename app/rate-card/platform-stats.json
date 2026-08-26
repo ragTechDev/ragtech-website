@@ -13,20 +13,24 @@
       "profile_visits": 3011,
       "external_link_taps": 69,
       "audience_top_countries": {
-        "india_percent": 18.0,
-        "united_states_percent": 11.3,
-        "singapore_percent": 8.3,
-        "germany_percent": 5.6
+        "singapore_percent": 50.4,
+        "indonesia_percent": 14.1,
+        "malaysia_percent": 9.9,
+        "united_states_percent": 4.7,
+        "india_percent": 3.8
       },
       "audience_age_range": {
-        "18-24_percent": 51.1,
-        "25-34_percent": 35.0,
-        "35-44_percent": 6.6,
-        "13-17_percent": 3.3
+        "13-17_percent": 2.9,
+        "18-24_percent": 17.5,
+        "25-34_percent": 51.5,
+        "35-44_percent": 21.4,
+        "45-54_percent": 4.0,
+        "55-64_percent": 1.7,
+        "65_plus_percent": 1.0
       },
       "audience_gender": {
-        "male_percent": 78.5,
-        "female_percent": 21.5
+        "male_percent": 58.4,
+        "female_percent": 41.6
       },
       "interactions": 55968,
       "content_insights": {
@@ -53,7 +57,8 @@
           "total_saves": 448,
           "avg_shares": 34
         }
-      }
+      },
+      "audience_source": "representative reel + post insights (2026-08)"
     }
   },
   "youtube": {
