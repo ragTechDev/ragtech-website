@@ -63,12 +63,6 @@ const hosts = [
   { name: 'Saloni Kaur', role: 'Software Developer', img: '/assets/team/saloni.PNG' },
 ];
 
-const awards = [
-  { title: 'Best Podcast', body: 'Youth Creator Awards 2026 (*SCAPE Singapore)' },
-  { title: 'Creative Use of Social Media', body: 'Makers and Shapers Awards' },
-  { title: 'Podcast for Impact (nominated)', body: 'Makers and Shapers Awards' },
-];
-
 const reasons = [
   { h: 'A trusting, engaged audience', p: 'Mostly 18 to 34, curious about tech, and highly engaged. Our reels see engagement rates most channels only dream of.' },
   { h: 'Made by working engineers', p: 'All three of us build software for a living. We explain products from the inside, which reads as credible to a technical and non-technical crowd alike.' },
@@ -188,22 +182,20 @@ export default function PressKitPage() {
           <h2 className="text-3xl font-bold text-center mb-10 text-brownDark">Recognition</h2>
           <div className="grid sm:grid-cols-2 gap-6 mb-6 max-w-3xl mx-auto">
             <figure className="bg-white rounded-2xl p-3 shadow-md border-2 border-primary/10">
-              <Image src="/assets/awards/scape-best-podcast.jpg" alt="ragTech winning Best Podcast at the Youth Creator Awards 2026" width={900} height={628} className="w-full h-56 object-cover rounded-xl" />
-              <figcaption className="text-sm text-brown mt-2 text-center font-semibold">Best Podcast · Youth Creator Awards 2026</figcaption>
+              <Image src="/assets/awards/scape-best-podcast.jpg" alt="ragTech winning Best Podcast at the Youth Creator Awards 2026" width={900} height={628} className="w-full h-64 object-cover object-center rounded-xl" />
+              <figcaption className="text-sm text-brown mt-2 text-center font-semibold">🏆 Best Podcast · Youth Creator Awards 2026</figcaption>
             </figure>
             <figure className="bg-white rounded-2xl p-3 shadow-md border-2 border-primary/10">
-              <Image src="/assets/awards/makers-shapers-social.jpg" alt="ragTech with the Creative Use of Social Media award at the Makers and Shapers Awards" width={900} height={1200} className="w-full h-56 object-cover object-top rounded-xl" />
-              <figcaption className="text-sm text-brown mt-2 text-center font-semibold">Creative Use of Social Media · Makers &amp; Shapers</figcaption>
+              <Image src="/assets/awards/makers-shapers-social.jpg" alt="ragTech with the Creative Use of Social Media award at the Makers and Shapers Awards" width={900} height={1200} className="w-full h-64 object-cover object-[center_38%] rounded-xl" />
+              <figcaption className="text-sm text-brown mt-2 text-center font-semibold">🏆 Creative Use of Social Media · Makers &amp; Shapers</figcaption>
             </figure>
           </div>
-          <div className="grid md:grid-cols-3 gap-6 items-stretch">
-            {awards.map((a) => (
-              <div key={a.title} className="bg-white rounded-2xl p-6 shadow-md border-2 border-primary/10">
-                <div className="text-2xl mb-2">🏆</div>
-                <div className="font-bold text-brownDark">{a.title}</div>
-                <div className="text-sm text-brown mt-1">{a.body}</div>
-              </div>
-            ))}
+          <div className="max-w-md mx-auto">
+            <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-primary/10 text-center">
+              <div className="text-2xl mb-2">🏅</div>
+              <div className="font-bold text-brownDark">Podcast for Impact — Nominated</div>
+              <div className="text-sm text-brown mt-1">Makers &amp; Shapers Awards</div>
+            </div>
           </div>
         </div>
       </section>
