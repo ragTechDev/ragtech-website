@@ -27,6 +27,31 @@ export interface NewsletterSendResult {
   error?: string;
 }
 
+export interface RecentPostSummary {
+  title: string;
+  slug: string;
+  coverImage: string | null;
+}
+
+/**
+ * Get the most recent live posts, excluding the one currently being sent,
+ * for the "more from the blog" section of the newsletter email
+ */
+async function getRecentPostsExcluding(
+  excludeSlug: string,
+  limit: number = 3
+): Promise<RecentPostSummary[]> {
+  const allPosts = await loadMarkdownPosts();
+  return allPosts
+    .filter((post) => post.slug !== excludeSlug)
+    .slice(0, limit)
+    .map((post) => ({
+      title: post.title,
+      slug: post.slug,
+      coverImage: post.coverImage || null,
+    }));
+}
+
 /**
  * Create a broadcast draft for a blog post
  * This creates the broadcast but does NOT send it
@@ -79,6 +104,9 @@ export async function createBlogPostBroadcast(
       day: 'numeric',
     });
 
+    // Fetch recent posts for the "more from the blog" section
+    const recentPosts = await getRecentPostsExcluding(post.slug);
+
     // Render email template
     const emailHtml = await render(
       BlogPostNewsletter({
@@ -93,6 +121,7 @@ export async function createBlogPostBroadcast(
         readTimeInMinutes: post.readTimeInMinutes,
         instagramEmbeds: post.instagramEmbeds,
         tiktokEmbeds: post.tiktokEmbeds,
+        recentPosts,
       })
     );
 
@@ -234,6 +263,9 @@ export async function sendBlogPostNewsletter(
       day: 'numeric',
     });
 
+    // Fetch recent posts for the "more from the blog" section
+    const recentPosts = await getRecentPostsExcluding(post.slug);
+
     // Render email template
     const emailHtml = await render(
       BlogPostNewsletter({
@@ -245,6 +277,7 @@ export async function sendBlogPostNewsletter(
         author: post.author.name,
         publishedAt: publishedDate,
         tags: post.tags.map((t) => t.name),
+        recentPosts,
       })
     );
 
