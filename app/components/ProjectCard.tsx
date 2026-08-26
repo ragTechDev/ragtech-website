@@ -12,6 +12,7 @@ interface ProjectCardProps {
   linkText?: string;
   delay?: number;
   image?: string;
+  badge?: string;
 }
 
 export default function ProjectCard({
@@ -22,6 +23,7 @@ export default function ProjectCard({
   linkText = 'Learn More',
   delay = 0,
   image,
+  badge,
 }: ProjectCardProps) {
   const cardContent = (
     <motion.div
@@ -32,6 +34,11 @@ export default function ProjectCard({
       whileHover={{ y: -4 }}
       className="bg-gradient-to-br from-white via-accent/20 to-pink-50 rounded-2xl p-8 shadow-md hover:shadow-lg transition-all duration-300 border-2 border-primary/20 cursor-pointer group h-full flex flex-col"
     >
+      {badge && (
+        <span className="self-start mb-4 text-xs font-semibold px-3 py-1 rounded-full bg-neutral-200 text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">
+          {badge}
+        </span>
+      )}
       {/* Icon or Image */}
       {image ? (
         <div className="mb-6 h-32 flex items-center">

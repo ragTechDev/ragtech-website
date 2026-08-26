@@ -9,11 +9,12 @@ import { HiMenu, HiX, HiChevronDown } from 'react-icons/hi';
 const projectLinks = [
   { href: '/willage', label: 'Willage', status: 'Waitlist' },
   { href: '/techie-taboo', label: 'Techie Taboo', status: 'Waitlist' },
-  { href: '/futurenet', label: 'FutureNet', status: 'Inactive' },
+  { href: '/futurenet', label: 'FutureNet', status: 'Past project' },
 ];
 
 const statusChipStyles: Record<string, string> = {
   Inactive: 'bg-neutral-200 text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300',
+  'Past project': 'bg-neutral-200 text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300',
   Waitlist: 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-400',
 };
 
