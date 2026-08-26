@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
   FaInstagram, FaSpotify, FaYoutube, FaTiktok,
-  FaLinkedin, FaEnvelope, FaUsers, FaMicrophoneAlt,
+  FaLinkedin, FaEnvelope, FaUsers, FaMicrophoneAlt, FaHeadphones,
   FaHeart, FaShareAlt,
 } from 'react-icons/fa';
 import { HiLink } from 'react-icons/hi';
@@ -30,6 +30,7 @@ const platformIcons = [
   { icon: FaYoutube,   label: 'YouTube',   href: 'https://www.youtube.com/@ragTechDev' },
   { icon: FaTiktok,    label: 'TikTok',    href: 'https://www.tiktok.com/@ragtechdev' },
   { icon: FaLinkedin,  label: 'LinkedIn',  href: 'https://sg.linkedin.com/company/ragtechdev' },
+  { icon: FaHeadphones, label: 'meLISTEN', href: 'https://www.melisten.sg/podcast/playlist/ragTech-3415841' },
 ];
 
 export default function RateCardPage() {

@@ -45,6 +45,21 @@ const stats = [
   { value: '3', label: 'awards and nominations', sub: 'and counting' },
 ];
 
+const igAge = ig.last_30_days.audience_age_range as Record<string, number>;
+const under35 = Math.round((igAge['18-24_percent'] || 0) + (igAge['25-34_percent'] || 0));
+const igCountries = ig.last_30_days.audience_top_countries as Record<string, number>;
+const topCountries = [
+  ['Singapore', igCountries['singapore_percent']],
+  ['India', igCountries['india_percent']],
+  ['United States', igCountries['united_states_percent']],
+].filter(([, v]) => typeof v === 'number') as [string, number][];
+
+const hosts = [
+  { name: 'Victoria Lo', role: 'Solutions Engineer', img: '/assets/team/victoria.PNG' },
+  { name: 'Natasha Ann Lum', role: 'Software Engineer', img: '/assets/team/natasha.PNG' },
+  { name: 'Saloni Kaur', role: 'Software Developer', img: '/assets/team/saloni.PNG' },
+];
+
 const awards = [
   { title: 'Best Podcast', body: 'Youth Creator Awards 2026 (*SCAPE Singapore)' },
   { title: 'Creative Use of Social Media', body: 'Makers and Shapers Awards' },
@@ -114,6 +129,53 @@ export default function PressKitPage() {
             Figures update as our channels grow. Full per-platform breakdown lives on the{' '}
             <Link href="/rate-card" className="text-brown font-semibold hover:underline">rate card</Link>.
           </p>
+        </div>
+      </section>
+
+      {/* Meet the hosts */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl font-bold text-center mb-3 text-brownDark">Meet the hosts</h2>
+          <p className="text-center text-brown mb-10">Three working software engineers who explain tech from the inside.</p>
+          <div className="grid sm:grid-cols-3 gap-6">
+            {hosts.map((h) => (
+              <div key={h.name} className="bg-white rounded-2xl p-6 shadow-md border-2 border-primary/10 text-center">
+                <img src={h.img} alt={h.name} className="w-28 h-28 rounded-full object-cover mx-auto mb-4" />
+                <div className="font-bold text-brownDark">{h.name}</div>
+                <div className="text-sm text-brown">{h.role}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Who you'll reach */}
+      <section className="py-16 px-6 bg-neutral-50">
+        <div className="container mx-auto max-w-5xl">
+          <h2 className="text-3xl font-bold text-center mb-10 text-brownDark">Who you&apos;ll reach</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-primary/10 text-center">
+              <div className="text-3xl md:text-4xl font-bold text-brownDark">{under35}%</div>
+              <div className="text-brown font-semibold mt-1">aged 18 to 34</div>
+              <div className="text-xs text-neutral-500 mt-1">young, tech-curious professionals</div>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-primary/10">
+              <div className="text-brown font-semibold mb-2 text-center">Top locations</div>
+              <ul className="text-sm text-brown space-y-1">
+                {topCountries.map(([c, v]) => (
+                  <li key={c} className="flex justify-between">
+                    <span>{c}</span><span className="font-semibold">{v}%</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-primary/10 text-center">
+              <div className="text-3xl md:text-4xl font-bold text-brownDark">{reelEngagement}%</div>
+              <div className="text-brown font-semibold mt-1">reel engagement</div>
+              <div className="text-xs text-neutral-500 mt-1">they watch, save, and share</div>
+            </div>
+          </div>
+          <p className="text-center text-sm text-neutral-500 mt-4">Audience data from Instagram, last 30 days. Full demographics available on request.</p>
         </div>
       </section>
 
