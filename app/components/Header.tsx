@@ -46,6 +46,7 @@ export default function Header() {
     { href: '/about', label: 'About', external: false },
     { href: 'https://www.youtube.com/@ragTechDev', label: 'Podcast', external: true },
     { href: '/blog', label: 'Blog', external: false },
+    { href: '/press-kit', label: 'Press Kit', external: false },
     { href: '/contact', label: 'Contact', external: false },
   ];
 
