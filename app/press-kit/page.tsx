@@ -38,11 +38,12 @@ const platforms = [
   { icon: FaSpotify, label: 'Spotify', href: 'https://open.spotify.com/show/1KfM9JTWsDQ5QoMYEh489d' },
 ];
 
+const ytViews: number = (statsData.youtube as { views?: number }).views || 0;
 const stats = [
-  { value: fmt(monthlyViews) + '+', label: 'monthly views', sub: 'Instagram, last 30 days' },
-  { value: reelEngagement + '%', label: 'reel engagement rate', sub: 'well above the usual 1 to 3%' },
-  { value: fmt(combinedFollowers) + '+', label: 'community across platforms', sub: 'YouTube, IG, TikTok, LinkedIn, Spotify' },
-  { value: '3', label: 'awards and nominations', sub: 'and counting' },
+  { value: fmt(ytViews) + '+', label: 'lifetime views on YouTube', sub: '985 subscribers and climbing' },
+  { value: fmt(monthlyViews) + '+', label: 'views in a standout month', sub: 'Instagram, at our peak' },
+  { value: 'up to ' + reelEngagement + '%', label: 'reel engagement', sub: 'the usual is 1 to 2%' },
+  { value: fmt(combinedFollowers) + '+', label: 'community across platforms', sub: 'and now on meLISTEN' },
 ];
 
 const igAge = ig.last_30_days.audience_age_range as Record<string, number>;
@@ -170,7 +171,7 @@ export default function PressKitPage() {
               </ul>
             </div>
             <div className="bg-white rounded-2xl p-6 shadow-md border-2 border-primary/10 text-center">
-              <div className="text-3xl md:text-4xl font-bold text-brownDark">{reelEngagement}%</div>
+              <div className="text-3xl md:text-4xl font-bold text-brownDark">up to {reelEngagement}%</div>
               <div className="text-brown font-semibold mt-1">reel engagement</div>
               <div className="text-xs text-neutral-500 mt-1">they watch, save, and share</div>
             </div>
