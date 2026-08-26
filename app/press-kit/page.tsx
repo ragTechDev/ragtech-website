@@ -88,7 +88,7 @@ export default function PressKitPage() {
             Press and Partnership Kit
           </motion.p>
           <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}
-            className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-brownDark bg-clip-text text-transparent">
+            className="text-4xl md:text-6xl font-bold mb-6 leading-[1.15] pb-2 bg-gradient-to-r from-primary via-secondary to-brownDark bg-clip-text text-transparent">
             Let&apos;s work together
           </motion.h1>
           <p className="text-lg text-brown max-w-2xl mx-auto mb-8">
