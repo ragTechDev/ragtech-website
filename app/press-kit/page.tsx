@@ -107,9 +107,6 @@ export default function PressKitPage() {
             <Link href="/contact" className="inline-flex items-center gap-2 border-2 border-primary text-brownDark font-semibold px-6 py-3 rounded-full hover:bg-primary hover:text-white transition">
               Get in touch <FaEnvelope />
             </Link>
-            <a href="/assets/ragtech-media-kit.pdf" download className="inline-flex items-center gap-2 bg-brownDark text-white font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">
-              One-pager (PDF) <FaDownload />
-            </a>
             <a href="/assets/logo/ragtech-logo.png" download className="inline-flex items-center gap-2 border-2 border-primary/40 text-brownDark font-semibold px-6 py-3 rounded-full hover:border-primary transition">
               Download logo <FaDownload />
             </a>
@@ -275,11 +272,6 @@ export default function PressKitPage() {
               <Image src="/assets/logo/ragtech-logo-rectangle.png" alt="ragTech logo" width={180} height={90} className="h-24 w-auto" />
               <a href="/assets/logo/ragtech-logo-rectangle.png" download className="text-sm font-semibold text-brown hover:underline">Download wordmark</a>
             </div>
-          </div>
-          <div className="mt-6">
-            <a href="/assets/ragtech-media-kit.pdf" download className="inline-flex items-center gap-2 bg-brownDark text-white font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">
-              Download one-page media kit (PDF) <FaDownload />
-            </a>
           </div>
           <p className="text-sm text-neutral-500 mt-4">Need brand colours, the Techybara mascot, or host headshots? Just ask and we will send them over.</p>
         </div>
