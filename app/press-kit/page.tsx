@@ -87,7 +87,7 @@ export default function PressKitPage() {
   return (
     <main className="min-h-screen">
       {/* Hero */}
-      <section className="py-20 px-6 bg-gradient-to-b from-accent/30 to-neutral-50">
+      <section className="pt-32 pb-20 px-6 bg-gradient-to-b from-accent/30 to-neutral-50">
         <div className="container mx-auto max-w-5xl text-center">
           <motion.p initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }}
             className="text-sm font-semibold tracking-wide text-brown uppercase mb-4">
@@ -186,6 +186,16 @@ export default function PressKitPage() {
       <section className="py-16 px-6 bg-neutral-50">
         <div className="container mx-auto max-w-5xl">
           <h2 className="text-3xl font-bold text-center mb-10 text-brownDark">Recognition</h2>
+          <div className="grid sm:grid-cols-2 gap-6 mb-6 max-w-3xl mx-auto">
+            <figure className="bg-white rounded-2xl p-3 shadow-md border-2 border-primary/10">
+              <Image src="/assets/awards/scape-best-podcast.jpg" alt="ragTech winning Best Podcast at the Youth Creator Awards 2026" width={900} height={628} className="w-full h-56 object-cover rounded-xl" />
+              <figcaption className="text-sm text-brown mt-2 text-center font-semibold">Best Podcast · Youth Creator Awards 2026</figcaption>
+            </figure>
+            <figure className="bg-white rounded-2xl p-3 shadow-md border-2 border-primary/10">
+              <Image src="/assets/awards/makers-shapers-social.jpg" alt="ragTech with the Creative Use of Social Media award at the Makers and Shapers Awards" width={900} height={1200} className="w-full h-56 object-cover object-top rounded-xl" />
+              <figcaption className="text-sm text-brown mt-2 text-center font-semibold">Creative Use of Social Media · Makers &amp; Shapers</figcaption>
+            </figure>
+          </div>
           <div className="grid md:grid-cols-3 gap-6 items-stretch">
             {awards.map((a) => (
               <div key={a.title} className="bg-white rounded-2xl p-6 shadow-md border-2 border-primary/10">
