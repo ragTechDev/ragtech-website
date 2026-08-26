@@ -162,7 +162,8 @@
   },
   "spotify": {
     "followers": 150,
-    "total_streams_all_time": 1072,
+    "audience_size": 1000,
+    "total_streams_all_time": 2279,
     "total_streams_last_30_days": 49,
     "unique_listeners_last_30_days": null,
     "avg_streams_per_episode": 11,

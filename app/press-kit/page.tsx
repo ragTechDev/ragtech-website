@@ -42,7 +42,7 @@ const ytViews: number = (statsData.youtube as { views?: number }).views || 0;
 const stats = [
   { value: fmt(ytViews) + '+', label: 'lifetime views on YouTube', sub: '985 subscribers and climbing' },
   { value: fmt(monthlyViews) + '+', label: 'views in a standout month', sub: 'Instagram, at our peak' },
-  { value: 'up to ' + reelEngagement + '%', label: 'reel engagement', sub: 'the usual is 1 to 2%' },
+  { value: 'up to ' + reelEngagement + '%', label: 'reel engagement', sub: 'on our top-performing reels' },
   { value: fmt(combinedFollowers) + '+', label: 'community across platforms', sub: 'and now on meLISTEN' },
 ];
 
@@ -107,6 +107,9 @@ export default function PressKitPage() {
             <Link href="/contact" className="inline-flex items-center gap-2 border-2 border-primary text-brownDark font-semibold px-6 py-3 rounded-full hover:bg-primary hover:text-white transition">
               Get in touch <FaEnvelope />
             </Link>
+            <a href="/assets/ragtech-media-kit.pdf" download className="inline-flex items-center gap-2 bg-brownDark text-white font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">
+              One-pager (PDF) <FaDownload />
+            </a>
             <a href="/assets/logo/ragtech-logo.png" download className="inline-flex items-center gap-2 border-2 border-primary/40 text-brownDark font-semibold px-6 py-3 rounded-full hover:border-primary transition">
               Download logo <FaDownload />
             </a>
@@ -200,7 +203,19 @@ export default function PressKitPage() {
       <section className="py-16 px-6">
         <div className="container mx-auto max-w-5xl text-center">
           <h2 className="text-3xl font-bold mb-4 text-brownDark">Where to find us</h2>
-          <p className="text-brown mb-8">Now streaming on meLISTEN, and posting everywhere below.</p>
+          <a
+            href="https://www.melisten.sg/podcast/playlist/ragTech-3415841"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-4 mb-8 rounded-2xl px-6 py-4 bg-sky-50 border-2 border-sky-200 hover:border-sky-400 transition-colors"
+          >
+            <Image src="/assets/logo/melisten-logo.png" alt="meLISTEN" width={150} height={51} className="h-8 w-auto" />
+            <span className="text-brown font-semibold">
+              Now streaming on{' '}
+              <span className="text-sky-600 font-bold underline underline-offset-2">meLISTEN</span>
+            </span>
+          </a>
+          <p className="text-brown mb-8">Catch us on every platform below too.</p>
           <div className="flex flex-wrap gap-4 justify-center">
             {platforms.map((p) => (
               <a key={p.label} href={p.href} target="_blank" rel="noopener noreferrer"
@@ -260,6 +275,11 @@ export default function PressKitPage() {
               <Image src="/assets/logo/ragtech-logo-rectangle.png" alt="ragTech logo" width={180} height={90} className="h-24 w-auto" />
               <a href="/assets/logo/ragtech-logo-rectangle.png" download className="text-sm font-semibold text-brown hover:underline">Download wordmark</a>
             </div>
+          </div>
+          <div className="mt-6">
+            <a href="/assets/ragtech-media-kit.pdf" download className="inline-flex items-center gap-2 bg-brownDark text-white font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">
+              Download one-page media kit (PDF) <FaDownload />
+            </a>
           </div>
           <p className="text-sm text-neutral-500 mt-4">Need brand colours, the Techybara mascot, or host headshots? Just ask and we will send them over.</p>
         </div>
