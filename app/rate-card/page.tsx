@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import {
   FaInstagram, FaSpotify, FaYoutube, FaTiktok,
-  FaLinkedin, FaEnvelope, FaUsers, FaMicrophoneAlt,
+  FaLinkedin, FaEnvelope, FaUsers, FaMicrophoneAlt, FaHeadphones,
   FaHeart, FaShareAlt,
 } from 'react-icons/fa';
 import { HiLink } from 'react-icons/hi';
@@ -30,6 +30,7 @@ const platformIcons = [
   { icon: FaYoutube,   label: 'YouTube',   href: 'https://www.youtube.com/@ragTechDev' },
   { icon: FaTiktok,    label: 'TikTok',    href: 'https://www.tiktok.com/@ragtechdev' },
   { icon: FaLinkedin,  label: 'LinkedIn',  href: 'https://sg.linkedin.com/company/ragtechdev' },
+  { icon: FaHeadphones, label: 'meLISTEN', href: 'https://www.melisten.sg/podcast/playlist/ragTech-3415841' },
 ];
 
 export default function RateCardPage() {
@@ -93,7 +94,7 @@ export default function RateCardPage() {
       videos_published: { 
         regular: videoCount, 
       } = {} } = {},
-    spotify:   { avg_streams_per_episode }                                       = {},
+    spotify:   { avg_streams_per_episode, total_streams_all_time: spotifyPlays, audience_size: spotifyAudience } = {},
     newsletter:{ subscribers: newsletterSubs }                                   = {},
     tiktok:    {
       followers: ttFollowers,
@@ -184,7 +185,7 @@ export default function RateCardPage() {
     <div className="min-h-screen bg-gradient-to-br from-accent/30 via-white to-secondary/10 dark:from-neutral-950 dark:via-neutral-900 dark:to-neutral-950">
       {/* Top Bar */}
       <div className="bg-gradient-to-r from-primary/80 via-accent/80 to-secondary/80 py-2 px-6 text-center text-xs font-semibold text-brownDark tracking-wide">
-        MEDIA KIT & RATE CARD March 2026 &middot; FOR BRAND PARTNERSHIP ENQUIRIES
+        MEDIA KIT & RATE CARD August 2026 &middot; FOR BRAND PARTNERSHIP ENQUIRIES
       </div>
 
       {/* Header */}
@@ -402,6 +403,36 @@ export default function RateCardPage() {
             </p>
           </div>
         </div>
+
+        {/* Other recognitions */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-4">
+          {[
+            { title: 'Creative Use of Social Media', body: 'Makers & Shapers Awards' },
+            { title: 'Podcast for Impact — Nominated', body: 'Makers & Shapers Awards' },
+          ].map((a) => (
+            <div key={a.title} className="bg-white dark:bg-neutral-800 rounded-2xl p-5 border-2 border-amber-200 dark:border-amber-700/50 shadow-sm flex items-center gap-3">
+              <span className="text-2xl shrink-0">🏆</span>
+              <div>
+                <p className="font-bold text-brownDark dark:text-brown text-sm leading-snug">{a.title}</p>
+                <p className="text-xs text-neutral-500 dark:text-neutral-400">{a.body}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Featured on meLISTEN */}
+        <a
+          href="https://www.melisten.sg/podcast/playlist/ragTech-3415841"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-4 flex items-center gap-5 rounded-2xl p-5 bg-sky-50 dark:bg-sky-900/20 border-2 border-sky-200 dark:border-sky-700/50 shadow-sm hover:border-sky-400 transition-colors"
+        >
+          <Image src="/assets/logo/melisten-logo.png" alt="meLISTEN" width={160} height={55} className="h-9 w-auto shrink-0" />
+          <div>
+            <p className="font-bold text-sky-700 dark:text-sky-300 text-base leading-snug">Now streaming on meLISTEN</p>
+            <p className="text-xs text-neutral-500 dark:text-neutral-400">Featured on Mediacorp&apos;s audio platform — tap to listen</p>
+          </div>
+        </a>
       </section>
 
       {/* Stats Grid — 5 columns on lg, 3 on md, 2 on mobile */}
@@ -429,7 +460,7 @@ export default function RateCardPage() {
       <section id="analytics" className="px-6 pb-16 max-w-6xl mx-auto">
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-brownDark dark:text-brown mb-2">ragTech Channel Analytics</h2>
-          <p className="text-sm text-neutral-500 dark:text-neutral-400">Last updated March 2026</p>
+          <p className="text-sm text-neutral-500 dark:text-neutral-400">Last updated August 2026</p>
         </div>
 
         {/* Instagram + YouTube: big cards with demographics */}
@@ -479,8 +510,8 @@ export default function RateCardPage() {
               </div>
             </div>
             <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4">
-              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-1">Audience (Last 30 Days)</p>
-              <p className="text-xs text-neutral-400 mb-3">Based on content reach</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-1">Audience</p>
+              <p className="text-xs text-neutral-400 mb-3">From recent representative content</p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
                   <p className="text-xs text-neutral-400 mb-2">Age</p>
@@ -533,7 +564,7 @@ export default function RateCardPage() {
               </div>
             </div>
             <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4 mb-4">
-              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Engagement (Last 28 Days)</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-3">Performance (Last 12 Months)</p>
               <div className="grid grid-cols-2 gap-3">
                 {[
                   { label: 'Total Views',     value: fmt(yt28dViews ?? 0) },
@@ -547,7 +578,7 @@ export default function RateCardPage() {
               </div>
             </div>
             <div className="border-t border-neutral-100 dark:border-neutral-700 pt-4">
-              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-1">Audience (Last 28 Days)</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-neutral-400 mb-1">Audience (Last 12 Months)</p>
               <p className="text-xs text-neutral-400 mb-3">Based on content views</p>
               <div className="grid grid-cols-2 gap-4">
                 <div>
@@ -623,7 +654,7 @@ export default function RateCardPage() {
               <FaLinkedin className="text-blue-600 text-lg" />
               <span className="font-bold text-brownDark dark:text-brown text-sm">LinkedIn</span>
             </div>
-            <p className="text-2xl font-bold text-primary">375</p>
+            <p className="text-2xl font-bold text-primary">500+</p>
             <p className="text-xs text-neutral-400">followers</p>
           </div>
 
@@ -633,12 +664,12 @@ export default function RateCardPage() {
               <FaSpotify className="text-green-500 text-lg" />
               <span className="font-bold text-brownDark dark:text-brown text-sm">Spotify</span>
             </div>
-            <p className="text-2xl font-bold text-primary">150</p>
-            <p className="text-xs text-neutral-400 mb-3">listeners</p>
+            <p className="text-2xl font-bold text-primary">{fmt(spotifyAudience ?? 1000)}</p>
+            <p className="text-xs text-neutral-400 mb-3">audience</p>
             <div className="border-t border-neutral-100 dark:border-neutral-700 pt-3 space-y-1.5">
               <div className="flex justify-between text-xs">
-                <span className="text-neutral-500">Episodes</span>
-                <span className="font-semibold text-primary">47</span>
+                <span className="text-neutral-500">Plays</span>
+                <span className="font-semibold text-primary">{(spotifyPlays ?? 2279).toLocaleString()}</span>
               </div>
               <div className="flex justify-between text-xs">
                 <span className="text-neutral-500">Avg streams</span>
