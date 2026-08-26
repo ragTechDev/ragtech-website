@@ -252,6 +252,7 @@ export default function Home() {
               </div>
               <div className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] snap-start h-full">
                 <ProjectCard
+                  badge="Past project"
                   title="🔬 FutureNet"
                   description="Human-centred research into the digital landscape for children and adolescents, with a focus on cyber safety and online harm. We aim to produce grounded insights that inform parents, educators, and future interventions!"
                   link="https://futurenet.ragtechdev.com/"
