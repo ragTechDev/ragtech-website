@@ -58,9 +58,12 @@ const topCountries = Object.entries(igCountries)
   .map(([k, v]) => [countryName(k), v]) as [string, number][];
 
 const hosts = [
-  { name: 'Victoria Lo', role: 'Solutions Engineer', img: '/assets/team/victoria.PNG' },
-  { name: 'Natasha Ann Lum', role: 'Software Engineer', img: '/assets/team/natasha.PNG' },
-  { name: 'Saloni Kaur', role: 'Software Developer', img: '/assets/team/saloni.PNG' },
+  { name: 'Victoria Lo', role: 'Solutions Engineer', img: '/assets/team/victoria.PNG',
+    cred: 'Women Devs SG Co-Director · GitHub Star · 24K+ blog readers' },
+  { name: 'Natasha Ann Lum', role: 'Software Engineer', img: '/assets/team/natasha.PNG',
+    cred: 'Conference speaker (Green.io & more) · 41.9K on Instagram' },
+  { name: 'Saloni Kaur', role: 'Software Developer', img: '/assets/team/saloni.PNG',
+    cred: 'Women Devs SG Co-Director · 10+ years as software developer & experienced mentor' },
 ];
 
 const reasons = [
@@ -143,6 +146,7 @@ export default function PressKitPage() {
                 <img src={h.img} alt={h.name} className="w-28 h-28 rounded-full object-cover mx-auto mb-4" />
                 <div className="font-bold text-brownDark">{h.name}</div>
                 <div className="text-sm text-brown">{h.role}</div>
+                <div className="text-xs text-neutral-500 mt-2 leading-relaxed">{h.cred}</div>
               </div>
             ))}
           </div>
