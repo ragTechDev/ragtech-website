@@ -58,13 +58,16 @@ const topCountries = Object.entries(igCountries)
   .map(([k, v]) => [countryName(k), v]) as [string, number][];
 
 const hosts = [
-  { name: 'Victoria Lo', role: 'Solutions Engineer', img: '/assets/team/victoria.PNG' },
-  { name: 'Natasha Ann Lum', role: 'Software Engineer', img: '/assets/team/natasha.PNG' },
-  { name: 'Saloni Kaur', role: 'Software Developer', img: '/assets/team/saloni.PNG' },
+  { name: 'Victoria Lo', role: 'Solutions Engineer', img: '/assets/team/victoria.PNG',
+    cred: 'Women Devs SG Co-Director · GitHub Star · 24K+ blog readers' },
+  { name: 'Natasha Ann Lum', role: 'Software Engineer', img: '/assets/team/natasha.PNG',
+    cred: 'Conference speaker (Green.io & more) · 41.9K on Instagram' },
+  { name: 'Saloni Kaur', role: 'Software Developer', img: '/assets/team/saloni.PNG',
+    cred: 'Women Devs SG Co-Director · 10+ years as software developer & experienced mentor' },
 ];
 
 const reasons = [
-  { h: 'A trusting, engaged audience', p: 'Mostly 18 to 34, curious about tech, and highly engaged. Our reels see engagement rates most channels only dream of.' },
+  { h: 'A trusting, engaged audience', p: 'Mostly 18 to 34 and curious about tech. They watch, save and share our reels, not just scroll past, because we talk about real life in tech.' },
   { h: 'Made by working engineers', p: 'All three of us build software for a living. We explain products from the inside, which reads as credible to a technical and non-technical crowd alike.' },
   { h: 'Honest by default', p: 'No hype, no gatekeeping. We only take on brands and products we actually believe in, and we say when something is a paid partnership.' },
   { h: 'On brand, always', p: 'Every collaboration stays in our voice and visual style, including our hand-drawn Techybara mascot. It never feels like a bolted-on ad.' },
@@ -103,6 +106,9 @@ export default function PressKitPage() {
             <Link href="/contact" className="inline-flex items-center gap-2 border-2 border-primary text-brownDark font-semibold px-6 py-3 rounded-full hover:bg-primary hover:text-white transition">
               Get in touch <FaEnvelope />
             </Link>
+            <a href="/assets/ragtech-media-kit.pdf" download className="inline-flex items-center gap-2 bg-brownDark text-white font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">
+              One-pager (PDF) <FaDownload />
+            </a>
             <a href="/assets/logo/ragtech-logo.png" download className="inline-flex items-center gap-2 border-2 border-primary/40 text-brownDark font-semibold px-6 py-3 rounded-full hover:border-primary transition">
               Download logo <FaDownload />
             </a>
@@ -140,6 +146,7 @@ export default function PressKitPage() {
                 <img src={h.img} alt={h.name} className="w-28 h-28 rounded-full object-cover mx-auto mb-4" />
                 <div className="font-bold text-brownDark">{h.name}</div>
                 <div className="text-sm text-brown">{h.role}</div>
+                <div className="text-xs text-neutral-500 mt-2 leading-relaxed">{h.cred}</div>
               </div>
             ))}
           </div>
@@ -276,6 +283,11 @@ export default function PressKitPage() {
               <Image src="/assets/logo/ragtech-logo-rectangle.png" alt="ragTech logo" width={180} height={90} className="h-24 w-auto" />
               <a href="/assets/logo/ragtech-logo-rectangle.png" download className="text-sm font-semibold text-brown hover:underline">Download wordmark</a>
             </div>
+          </div>
+          <div className="mt-6">
+            <a href="/assets/ragtech-media-kit.pdf" download className="inline-flex items-center gap-2 bg-brownDark text-white font-semibold px-6 py-3 rounded-full hover:opacity-90 transition">
+              Download one-page media kit (PDF) <FaDownload />
+            </a>
           </div>
           <p className="text-sm text-neutral-500 mt-4">Need brand colours, the Techybara mascot, or host headshots? Just ask and we will send them over.</p>
         </div>
