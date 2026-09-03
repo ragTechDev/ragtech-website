@@ -3,7 +3,7 @@ import Link from 'next/link';
 // DigitalOcean affiliate link (Awin, advertiser 123996 / publisher 3058277).
 // Points at DO Serverless Inference; clickref tags the placement for reporting.
 const DO_LINK =
-  'https://www.awin1.com/cread.php?awinmid=123996&awinaffid=3058277&clickref=blog&ued=https%3A%2F%2Ftry.digitalocean.com%2Fserverless-inference%2F';
+  'https://www.awin1.com/cread.php?awinmid=123996&awinaffid=3058277&clickref=septbonus&ued=https%3A%2F%2Ftry.digitalocean.com%2Fserverless-inference%2F';
 
 // FTC-disclosed promo copy supplied by DigitalOcean's affiliate team. These are
 // honest product descriptions (we are not claiming to use the product), rotated
@@ -43,9 +43,6 @@ export function AffiliateTools({ slug = '' }: { slug?: string }) {
   const promo = pickPromo(slug);
   return (
     <aside className="mb-12 rounded-2xl border border-neutral-200 bg-neutral-50 p-6 dark:border-neutral-700 dark:bg-neutral-900/40">
-      <span className="mb-3 inline-block rounded-full bg-neutral-200 px-2.5 py-0.5 text-xs font-semibold uppercase tracking-wide text-neutral-600 dark:bg-neutral-700 dark:text-neutral-300">
-        Ad
-      </span>
       <p className="mb-4 text-sm text-neutral-700 dark:text-neutral-300">{promo}</p>
       <Link
         href={DO_LINK}
