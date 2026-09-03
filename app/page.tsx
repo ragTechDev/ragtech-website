@@ -29,6 +29,18 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brown/10 rounded-full blur-3xl" />
 
         <div className="relative z-10 container mx-auto max-w-6xl text-center">
+          {/* Award badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="mb-6 flex justify-center"
+          >
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-white/70 dark:bg-neutral-800/60 px-4 py-1.5 text-sm font-semibold text-brownDark dark:text-brown shadow-sm backdrop-blur">
+              🏆 Award-winning tech podcast
+            </span>
+          </motion.div>
+
           {/* Subtitle */}
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
