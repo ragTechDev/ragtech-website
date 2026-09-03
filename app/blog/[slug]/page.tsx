@@ -18,6 +18,7 @@ import RecommendedArticles from '../RecommendedArticles';
 import TikTokEmbed from '../TikTokEmbed';
 import MermaidInit from '../MermaidInit';
 import AuthorSection from './AuthorSection';
+import { AffiliateDisclosure, AffiliateTools } from './AffiliateDisclosure';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
@@ -227,14 +228,22 @@ export default async function BlogPostPage(props: PageProps) {
           </div>
         )}
 
+        {/* Affiliate disclosure (top of post, before any links) */}
+        <AffiliateDisclosure />
+
         {/* Content */}
         <div
           className="blog-content prose prose-lg dark:prose-invert max-w-none"
           dangerouslySetInnerHTML={{ __html: content }}
         />
 
+        {/* Affiliate tools card */}
+        <div className="mt-16">
+          <AffiliateTools />
+        </div>
+
         {/* Footer */}
-        <div className="mt-16 pt-8 border-t-2 border-neutral-200 dark:border-neutral-700">
+        <div className="mt-8 pt-8 border-t-2 border-neutral-200 dark:border-neutral-700">
           {/* Recommended Articles */}
           {recommendedArticles.length > 0 && (
             <RecommendedArticles articles={recommendedArticles} />
