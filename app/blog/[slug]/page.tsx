@@ -239,7 +239,7 @@ export default async function BlogPostPage(props: PageProps) {
 
         {/* Affiliate tools card */}
         <div className="mt-16">
-          <AffiliateTools />
+          <AffiliateTools slug={post.slug} />
         </div>
 
         {/* Footer */}
