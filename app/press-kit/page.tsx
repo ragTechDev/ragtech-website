@@ -235,6 +235,20 @@ export default function PressKitPage() {
         </div>
       </section>
 
+      {/* Partners */}
+      <section className="py-16 px-6">
+        <div className="container mx-auto max-w-5xl text-center">
+          <h2 className="text-3xl font-bold mb-4 text-brownDark">Partners</h2>
+          <div className="inline-flex flex-col items-center gap-4 rounded-2xl px-8 py-8 bg-white border-2 border-primary/15 shadow-md">
+            <Image src="/assets/partners/digitalocean.png" alt="DigitalOcean" width={603} height={103} className="h-10 w-auto" />
+            <p className="text-brown font-semibold">ragTech is a proud <span className="text-brownDark font-bold">DigitalOcean Affiliate Partner</span>.</p>
+          </div>
+          <p className="text-sm text-neutral-500 mt-4 max-w-2xl mx-auto">
+            We earn a commission when you sign up through our DigitalOcean links, at no additional cost to you.
+          </p>
+        </div>
+      </section>
+
       {/* Why partner */}
       <section className="py-16 px-6 bg-neutral-50">
         <div className="container mx-auto max-w-5xl">
