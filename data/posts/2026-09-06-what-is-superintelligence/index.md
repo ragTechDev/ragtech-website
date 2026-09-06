@@ -5,7 +5,7 @@ author:
   name: "The ragTech Team"
   profilePicture: "/assets/logo/ragtech-logo.png"
 publishedAt: "2026-09-06T12:00:00Z"
-coverImage: "https://res.cloudinary.com/pjoe7tkc/image/upload/v1788668538/what-is-superintelligence_01.png"
+coverImage: "https://res.cloudinary.com/pjoe7tkc/image/upload/v1788670383/what-is-superintelligence-cover.png"
 brief: "Sanders and Casar want to ban superintelligent AI and pause frontier development. Here is what superintelligence actually means, and what the bill would do, in plain English."
 tags: ["superintelligence", "AI policy", "AGI", "AI regulation", "artificial intelligence", "tech policy"]
 status: "published"
