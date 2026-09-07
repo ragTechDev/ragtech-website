@@ -27,6 +27,31 @@ export interface NewsletterSendResult {
   error?: string;
 }
 
+export interface RecentPostSummary {
+  title: string;
+  slug: string;
+  coverImage: string | null;
+}
+
+/**
+ * Get the most recent live posts, excluding the one currently being sent,
+ * for the "more from the blog" section of the newsletter email
+ */
+async function getRecentPostsExcluding(
+  excludeSlug: string,
+  limit: number = 3
+): Promise<RecentPostSummary[]> {
+  const allPosts = await loadMarkdownPosts();
+  return allPosts
+    .filter((post) => post.slug !== excludeSlug)
+    .slice(0, limit)
+    .map((post) => ({
+      title: post.title,
+      slug: post.slug,
+      coverImage: post.coverImage || null,
+    }));
+}
+
 /**
  * Create a broadcast draft for a blog post
  * This creates the broadcast but does NOT send it
@@ -79,6 +104,9 @@ export async function createBlogPostBroadcast(
       day: 'numeric',
     });
 
+    // Fetch recent posts for the "more from the blog" section
+    const recentPosts = await getRecentPostsExcluding(post.slug);
+
     // Render email template
     const emailHtml = await render(
       BlogPostNewsletter({
@@ -93,6 +121,7 @@ export async function createBlogPostBroadcast(
         readTimeInMinutes: post.readTimeInMinutes,
         instagramEmbeds: post.instagramEmbeds,
         tiktokEmbeds: post.tiktokEmbeds,
+        recentPosts,
       })
     );
 
@@ -234,6 +263,9 @@ export async function sendBlogPostNewsletter(
       day: 'numeric',
     });
 
+    // Fetch recent posts for the "more from the blog" section
+    const recentPosts = await getRecentPostsExcluding(post.slug);
+
     // Render email template
     const emailHtml = await render(
       BlogPostNewsletter({
@@ -245,6 +277,7 @@ export async function sendBlogPostNewsletter(
         author: post.author.name,
         publishedAt: publishedDate,
         tags: post.tags.map((t) => t.name),
+        recentPosts,
       })
     );
 
@@ -359,9 +392,10 @@ export async function getPendingNewsletterPosts(): Promise<MarkdownPost[]> {
   try {
     const allPosts = await loadMarkdownPosts();
 
+    // loadMarkdownPosts already excludes drafts and not-yet-due scheduled posts,
+    // so a scheduled post becomes newsletter-eligible once it goes live
     return allPosts.filter(
       (post) =>
-        post.status === 'published' &&
         post.newsletter?.send === true &&
         post.newsletter?.sent !== true
     );
@@ -534,6 +568,97 @@ export async function subscribeWaitlisterToResend(
 }
 
 /**
+ * Subscribe a waitlister to Resend - adds to both General and Willage segments
+ */
+export async function subscribeToWillageWaitlist(
+  subscriber: SubscriberInfo
+): Promise<NewsletterSendResult> {
+  try {
+    if (!resend) {
+      return {
+        success: false,
+        error: 'Resend is not configured',
+      };
+    }
+
+    if (!RESEND_CONFIG.generalSegmentId) {
+      return {
+        success: false,
+        error: 'Resend general segment ID is not configured',
+      };
+    }
+
+    const results: { segmentId: string; success: boolean; alreadyExists: boolean; error?: string }[] = [];
+
+    // Subscribe to General segment
+    const generalResult = await resend.contacts.create({
+      email: subscriber.email,
+      firstName: subscriber.firstName,
+      lastName: subscriber.lastName,
+      audienceId: RESEND_CONFIG.generalSegmentId,
+      unsubscribed: false,
+    });
+
+    if (generalResult.error) {
+      if (generalResult.error.message?.includes('already exists')) {
+        results.push({ segmentId: 'general', success: true, alreadyExists: true });
+      } else {
+        console.error('Resend general segment error:', generalResult.error);
+        results.push({ segmentId: 'general', success: false, alreadyExists: false, error: generalResult.error.message });
+      }
+    } else {
+      results.push({ segmentId: 'general', success: true, alreadyExists: false });
+    }
+
+    // Subscribe to Willage segment (if configured)
+    if (RESEND_CONFIG.willageSegmentId) {
+      const willageResult = await resend.contacts.create({
+        email: subscriber.email,
+        firstName: subscriber.firstName,
+        lastName: subscriber.lastName,
+        audienceId: RESEND_CONFIG.willageSegmentId,
+        unsubscribed: false,
+      });
+
+      if (willageResult.error) {
+        if (willageResult.error.message?.includes('already exists')) {
+          results.push({ segmentId: 'willage', success: true, alreadyExists: true });
+        } else {
+          console.error('Resend willage segment error:', willageResult.error);
+          results.push({ segmentId: 'willage', success: false, alreadyExists: false, error: willageResult.error.message });
+        }
+      } else {
+        results.push({ segmentId: 'willage', success: true, alreadyExists: false });
+      }
+    }
+
+    // Check if at least one subscription succeeded
+    const successCount = results.filter(r => r.success).length;
+    if (successCount === 0) {
+      return {
+        success: false,
+        error: results.map(r => r.error).filter(Boolean).join(', '),
+      };
+    }
+
+    // Check if ALL successful subscriptions were already existing
+    const allAlreadyExisted = results.filter(r => r.success).every(r => r.alreadyExists);
+
+    console.log(`Willage waitlister ${subscriber.email} added to ${successCount} segment(s)`);
+    return {
+      success: true,
+      messageId: allAlreadyExisted ? 'already-subscribed' : `subscribed-to-${successCount}-segments`,
+    };
+  } catch (error) {
+    console.error('Error subscribing to Willage waitlist:', error);
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error',
+    };
+  }
+}
+
+/**
  * Get contact ID by email (for updating existing contacts)
  */
 async function getContactIdByEmail(email: string): Promise<string | null> {
@@ -572,7 +697,7 @@ async function updateContactWaitlistData(contactId: string, waitlistType?: strin
 export interface WelcomeEmailOptions {
   email: string;
   firstName?: string;
-  source: 'newsletter' | 'waitlist' | 'general';
+  source: 'newsletter' | 'waitlist' | 'general' | 'willage';
 }
 
 /**
@@ -599,8 +724,10 @@ export async function sendWelcomeEmail(
     const result = await resend.emails.send({
       from: `${RESEND_CONFIG.fromName} <${RESEND_CONFIG.fromEmail}>`,
       to: options.email,
-      subject: options.source === 'waitlist' 
+      subject: options.source === 'waitlist'
         ? 'Welcome to the Techie Taboo Waitlist! 🎉'
+        : options.source === 'willage'
+        ? 'Welcome to the Willage Waitlist! 🎉'
         : 'Welcome to ragTech! 🎉',
       html: emailHtml,
       headers: {

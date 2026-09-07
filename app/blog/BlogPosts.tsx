@@ -136,19 +136,19 @@ export default function BlogPosts({ allPosts }: BlogPostsProps) {
         </div>
       )}
 
-      {/* Newsletter CTA after first 3 posts */}
-      {visiblePosts.length > 0 && (
-        <div className="my-16">
-          <NewsletterCTA />
-        </div>
-      )}
-
       {/* Remaining Posts */}
       {remainingPosts.length > 0 && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
           {remainingPosts.map((post, index) => {
             return renderPostCard(post, index + 3);
           })}
+        </div>
+      )}
+
+      {/* Newsletter CTA below all posts */}
+      {visiblePosts.length > 0 && (
+        <div className="my-16">
+          <NewsletterCTA />
         </div>
       )}
 

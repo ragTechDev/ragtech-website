@@ -1,108 +1,112 @@
 {
   "instagram": {
-    "followers": 4638,
+    "followers": 6789,
     "last_30_days": {
-        "followers_gained": 1500,
-        "views": 392147,
-        "views_breakdown_by_viewer_type": {
-            "followers_percent": 9,
-            "non_followers_percent": 91
+      "followers_gained": 1500,
+      "views": 392147,
+      "views_breakdown_by_viewer_type": {
+        "followers_percent": 9,
+        "non_followers_percent": 91
+      },
+      "accounts_reached": 117566,
+      "profile_activity": 4337,
+      "profile_visits": 3011,
+      "external_link_taps": 69,
+      "audience_top_countries": {
+        "singapore_percent": 50.4,
+        "indonesia_percent": 14.1,
+        "malaysia_percent": 9.9,
+        "united_states_percent": 4.7,
+        "india_percent": 3.8
+      },
+      "audience_age_range": {
+        "13-17_percent": 2.9,
+        "18-24_percent": 17.5,
+        "25-34_percent": 51.5,
+        "35-44_percent": 21.4,
+        "45-54_percent": 4.0,
+        "55-64_percent": 1.7,
+        "65_plus_percent": 1.0
+      },
+      "audience_gender": {
+        "male_percent": 58.4,
+        "female_percent": 41.6
+      },
+      "interactions": 55968,
+      "content_insights": {
+        "total_content_published": 48,
+        "reels": {
+          "total_reels_published": 13,
+          "total_views": 392147,
+          "total_likes": 18772,
+          "avg_comments": 284,
+          "avg_saves": 3573,
+          "avg_shares": 4366,
+          "engagement_rate_percent": 13
         },
-        "accounts_reached": 117566,
-        "profile_activity": 4337,
-        "profile_visits": 3011,
-        "external_link_taps": 69,
-        "audience_top_countries": {
-            "india_percent": 18.0,
-            "united_states_percent": 11.3,
-            "singapore_percent": 8.3,
-            "germany_percent": 5.6
+        "stories": {
+          "total_stories_published": 23,
+          "total_views": 33669
         },
-        "audience_age_range": {
-            "18-24_percent": 51.1,
-            "25-34_percent": 35.0,
-            "35-44_percent": 6.6,
-            "13-17_percent": 3.3
-        },
-        "audience_gender": {
-            "male_percent": 78.5,
-            "female_percent": 21.5
-        },
-        "interactions": 55968,
-        "content_insights": {
-            "total_content_published": 48,
-            "reels": {
-                "total_reels_published": 13,
-                "total_views": 392147,
-                "total_likes": 18772,
-                "avg_comments": 284,
-                "avg_saves": 3573,
-                "avg_shares": 4366,
-                "engagement_rate_percent": 13
-            },
-            "stories": {
-                "total_stories_published": 23,
-                "total_views": 33669
-            },
-            "posts": {
-                "total_posts_published": 8,
-                "total_impressions": 33669,
-                "total_reach": 33669,
-                "total_likes": 1120,
-                "total_comments": 68,
-                "total_saves": 448,
-                "avg_shares": 34
-            }
+        "posts": {
+          "total_posts_published": 8,
+          "total_impressions": 33669,
+          "total_reach": 33669,
+          "total_likes": 1120,
+          "total_comments": 68,
+          "total_saves": 448,
+          "avg_shares": 34
         }
+      },
+      "audience_source": "representative reel + post insights (2026-08)"
     }
-    },
+  },
   "youtube": {
-    "subscribers": 680,
+    "subscribers": 985,
     "subscriber_geography": {
-        "usa_percent": 16.0,
-        "india_percent": 12.3,
-        "singapore_percent": 5.0,
-        "uk_percent": 3.3,
-        "germany_percent": 3.0
+      "india_percent": 25.7,
+      "united_states_percent": 23.8,
+      "singapore_percent": 10.5,
+      "canada_percent": 5.3,
+      "australia_percent": 5.3
     },
     "subscriber_age_range": {
-        "13-17_percent": 2.5,
-        "18-24_percent": 25.4,
-        "25-34_percent": 45.0,
-        "35-44_percent": 20.0,
-        "45-54_percent": 5.9,
-        "55-64_percent": 1.0,
-        "65_plus_percent": 0.3
+      "13-17_percent": 3.7,
+      "18-24_percent": 20.4,
+      "25-34_percent": 46.9,
+      "35-44_percent": 21.2,
+      "45-54_percent": 6.6,
+      "55-64_percent": 1.1,
+      "65_plus_percent": 0.2
     },
     "subscriber_gender": {
-        "female_percent": 33.6,
-        "male_percent": 66.3,
-        "otjhers_percent": 0.1
+      "male_percent": 68.4,
+      "female_percent": 31.7
     },
     "last_28_days": {
-        "views": 6706,
-        "watch_time_hours": 122.1,
-        "subscriber_growth": 81,
-        "audience_gender": {
-            "male_percent": 95.6,
-            "female_percent": 4.4
-        },
-        "audience_age_range": {
-            "13-17_percent": 0,
-            "18-24_percent": 13.6,
-            "25-34_percent": 46.0,
-            "35-44_percent": 28.8,
-            "45-54_percent": 10.2,
-            "55-64_percent": 1.4,
-            "65_plus_percent": 0
-        },
-        "audience_top_geographies": {
-            "united_states_percent": 10.7,
-            "india_percent": 10.0,
-            "singapore_percent": 7.2,
-            "malaysia_percent": 4.7,
-            "germany_percent": 3.8
-        }
+      "views": 85278,
+      "watch_time_hours": 122.1,
+      "subscriber_growth": 81,
+      "audience_gender": {
+        "male_percent": 68.4,
+        "female_percent": 31.7
+      },
+      "audience_age_range": {
+        "13-17_percent": 3.7,
+        "18-24_percent": 20.4,
+        "25-34_percent": 46.9,
+        "35-44_percent": 21.2,
+        "45-54_percent": 6.6,
+        "55-64_percent": 1.1,
+        "65_plus_percent": 0.2
+      },
+      "audience_top_geographies": {
+        "india_percent": 25.7,
+        "united_states_percent": 23.8,
+        "singapore_percent": 10.5,
+        "canada_percent": 5.3,
+        "australia_percent": 5.3
+      }
     },
     "videos_published": {
       "total": 268,
@@ -116,22 +120,31 @@
       "avg_view_duration_percent": 10.3,
       "avg_likes_last_30_days": "56/2",
       "avg_comments_last_30_days": "6/2",
-      "views_range_lifetime": { "min": 55, "max": 1364 }
+      "views_range_lifetime": {
+        "min": 55,
+        "max": 1364
+      }
     },
     "shorts": {
       "avg_views_last_30_days": "17,249/221",
       "avg_likes": "1,753/221",
       "avg_comments": "52/221",
       "avg_view_duration_percent": 40.3,
-      "views_range_lifetime": { "min": 8, "max": 5765 }
+      "views_range_lifetime": {
+        "min": 8,
+        "max": 5765
+      }
     },
     "ctas_click_through_rate_last_30_days": 0,
     "subscriber_growth_last_30_days": 81,
     "retention_rate_last_30_days": null,
-    "engagement_percent": 10
+    "engagement_percent": 10,
+    "views": 218189,
+    "videos": 350,
+    "demographics_window": "2025-08-26..2026-08-26"
   },
   "tiktok": {
-    "followers": 441,
+    "followers": 1187,
     "videos_published_last_12_months": 93,
     "avg_views_per_video_last_30_days": "19000/17",
     "avg_likes_per_video_last_30_days": "542/17",
@@ -140,7 +153,7 @@
     "total_likes_last_30_days": 542
   },
   "linkedin": {
-    "followers": 396,
+    "followers": 508,
     "avg_engagement_per_post_last_12_months": {
       "likes": 903,
       "comments": 97,
@@ -154,7 +167,8 @@
   },
   "spotify": {
     "followers": 150,
-    "total_streams_all_time": 1072,
+    "audience_size": 1000,
+    "total_streams_all_time": 2279,
     "total_streams_last_30_days": 49,
     "unique_listeners_last_30_days": null,
     "avg_streams_per_episode": 11,

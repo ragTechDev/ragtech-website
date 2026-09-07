@@ -1,7 +1,7 @@
 import { Section, Text, Link, Hr } from '@react-email/components';
 import * as React from 'react';
 
-export type SubscriptionSource = 'newsletter' | 'waitlist' | 'general';
+export type SubscriptionSource = 'newsletter' | 'waitlist' | 'general' | 'willage';
 
 interface SubscriptionFooterProps {
   source?: SubscriptionSource;
@@ -25,10 +25,12 @@ export default function SubscriptionFooter({ source = 'general', isBroadcast = f
     switch (source) {
       case 'waitlist':
         return "You're receiving this email because you joined the waitlist for Techie Taboo cards on our website.";
+      case 'willage':
+        return "You're receiving this email because you joined the waitlist for Willage on our website.";
       case 'newsletter':
         return "You're receiving this email because you subscribed to our newsletter.";
       default:
-        return "You're receiving this email because you subscribed through our ragTech website, FutureNet website, or by joining our Techie Taboo cards waitlist.";
+        return "You're receiving this email because you subscribed through our ragTech website or by joining one of our waitlists.";
     }
   };
 
@@ -42,10 +44,6 @@ export default function SubscriptionFooter({ source = 'general', isBroadcast = f
         <Text style={footerText}>
           <Link href="https://ragtechdev.com" style={link}>
             Visit ragTech
-          </Link>
-          {' • '}
-          <Link href="https://futurenet.ragtechdev.com" style={link}>
-            Visit FutureNet
           </Link>
           {' • '}
           <Link href={unsubscribeUrl} style={link}>

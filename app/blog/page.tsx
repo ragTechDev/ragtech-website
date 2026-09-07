@@ -2,6 +2,7 @@ import { Suspense } from 'react';
 import { loadAllPosts, UnifiedPost } from '@/lib/posts';
 import BlogPosts from './BlogPosts';
 import BlogHeader from './BlogHeader';
+import NewsletterSection from './NewsletterSection';
 
 export const dynamic = 'force-dynamic';
 export const revalidate = 0;
@@ -21,6 +22,9 @@ export default async function BlogPage() {
     <main>
       {/* Blog Header - Title and Description */}
       <BlogHeader />
+
+      {/* Newsletter Subscription */}
+      <NewsletterSection />
 
       {/* Blog Posts Section with embedded Newsletter CTA */}
       <section className="py-12 px-6 bg-neutral-50 dark:bg-neutral-900">

@@ -29,6 +29,18 @@ export default function Home() {
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brown/10 rounded-full blur-3xl" />
 
         <div className="relative z-10 container mx-auto max-w-6xl text-center">
+          {/* Award badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="mb-6 flex justify-center"
+          >
+            <span className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-white/70 dark:bg-neutral-800/60 px-4 py-1.5 text-sm font-semibold text-brownDark dark:text-brown shadow-sm backdrop-blur">
+              🏆 Award-winning tech podcast
+            </span>
+          </motion.div>
+
           {/* Subtitle */}
           <motion.h2
             initial={{ opacity: 0, y: 30 }}
@@ -161,12 +173,10 @@ export default function Home() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <Link
-              href="https://www.futurenet.ragtechdev.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/willage"
               className="px-8 py-4 bg-white dark:bg-neutral-800 text-primary border-2 border-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300 shadow-lg"
             >
-              See Our Research🔬
+              Join Willage Waitlist🏘️
             </Link>
             <Link
               href="/techie-taboo"
@@ -236,6 +246,15 @@ export default function Home() {
               </div>
               <div className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] snap-start h-full">
                 <ProjectCard
+                  title="🏘️ Willage"
+                  description="A safety-first creator platform putting comment permissions, invite-gated trust, and a real moderation team ahead of growth metrics. Join the waitlist and help us build a safer place to post!"
+                  link="/willage"
+                  linkText="Join Waitlist"
+                  icon="🏘️"
+                />
+              </div>
+              <div className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] snap-start h-full">
+                <ProjectCard
                   title="🎲 Techie Taboo"
                   description="A card game inspired by Taboo for techies and non-techies, using technical concepts to encourage explanation and discussion. Come make tech concepts approachable and fun for non-experts, classrooms, and workplaces with us!"
                   link="/techie-taboo"
@@ -245,6 +264,7 @@ export default function Home() {
               </div>
               <div className="flex-shrink-0 w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.33rem)] snap-start h-full">
                 <ProjectCard
+                  badge="Past project"
                   title="🔬 FutureNet"
                   description="Human-centred research into the digital landscape for children and adolescents, with a focus on cyber safety and online harm. We aim to produce grounded insights that inform parents, educators, and future interventions!"
                   link="https://futurenet.ragtechdev.com/"

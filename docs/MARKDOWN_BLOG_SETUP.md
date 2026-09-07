@@ -72,7 +72,6 @@ author:
   email: "author@ragtechdev.com"
   profilePicture: "/assets/authors/author.png"
 publishedAt: "2026-02-15T10:00:00Z"
-scheduledFor: "2026-02-15T10:00:00Z"
 coverImage: "./images/cover.jpg"
 brief: "Short description for preview and SEO"
 tags: ["tag1", "tag2", "tag3"]
@@ -126,9 +125,34 @@ Reference images using relative paths:
 ### 4. Set Post Status
 
 The `status` field controls visibility:
-- `draft` - Not visible on the blog
-- `scheduled` - Will be published when `scheduledFor` date is reached
+- `draft` - Not listed on the blog. Still reachable at its own URL, so a
+  work-in-progress can be shared for review before it goes out.
+- `scheduled` - Goes live on its own when `publishedAt` is reached. Until then it
+  is neither listed nor reachable at its URL.
 - `published` - Visible on the blog immediately
+
+### Scheduling a Post
+
+Set `status: "scheduled"` and put the go-live time in `publishedAt`:
+
+```yaml
+publishedAt: "2026-08-10T12:00:00Z"
+status: "scheduled"
+```
+
+Commit and deploy as usual. **No second commit is needed to publish it.** Both
+`/blog` and `/blog/[slug]` are server-rendered on every request, so the date is
+re-checked on each page view and the post appears by itself once the time
+passes. It also becomes eligible for its newsletter at that point, which is
+still sent manually with `npm run newsletter:send`.
+
+Use a UTC timestamp (the trailing `Z`) or an explicit offset such as
+`+08:00`. The comparison is made on absolute time, so the post goes live at the
+same real-world moment regardless of the server's timezone.
+
+To preview a scheduled post before its date, run `npm run dev` and visit its URL
+directly. Unpublished posts are viewable in development and hidden in
+production.
 
 ## Frontmatter Fields Reference
 
@@ -137,14 +161,15 @@ The `status` field controls visibility:
 - `slug` - URL-friendly slug (must be unique)
 - `author.name` - Author name
 - `author.profilePicture` - Path to author photo
-- `publishedAt` - Publication date (ISO 8601 format)
+- `publishedAt` - Publication date (ISO 8601 format). When `status` is
+  `scheduled`, this doubles as the go-live time.
 - `coverImage` - Path to cover image (relative or absolute)
 - `brief` - Short description (1-2 sentences)
 - `tags` - Array of tags
 - `status` - Post status (draft/scheduled/published)
 
 ### Optional Fields
-- `scheduledFor` - Future publication date
+- `canonical` - Original URL, for posts cross-posted from another site
 - `readTimeInMinutes` - Reading time (auto-calculated if omitted)
 - `author.email` - Author email
 - `newsletter.send` - Send as newsletter (default: false)
