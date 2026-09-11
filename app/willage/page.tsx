@@ -3,30 +3,30 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { FaShieldAlt, FaUserFriends, FaCommentSlash, FaStream } from 'react-icons/fa';
+import { FaShieldAlt, FaUserFriends, FaCommentSlash, FaAndroid, FaLinkedin } from 'react-icons/fa';
 import InstagramEmbed from './InstagramEmbed';
 import WillageWaitlistSection from './WillageWaitlistSection';
 
 const features = [
   {
-    icon: <FaCommentSlash className="text-4xl text-primary" />,
-    title: 'Comment Permission Controls',
-    text: 'Set who can comment on each post — followers-only, minimum account age, or off entirely. No more all-or-nothing comment lockdowns.',
-  },
-  {
     icon: <FaUserFriends className="text-4xl text-secondary" />,
     title: 'Invite-Only, Real Accountability',
-    text: 'Every account joins through an invite chain, with a real human moderation team reviewing reports — not a black-box algorithm.',
+    text: 'Every account joins through an invite chain, requiring inviter approval.',
   },
   {
-    icon: <FaStream className="text-4xl text-accent" />,
-    title: 'Chronological Feed',
-    text: 'No engagement-optimized ranking that rewards harassment with more reach. What you post is what your followers see, in order.',
+    icon: <FaAndroid className="text-4xl text-primary" />,
+    title: 'Real People, Not Bots',
+    text: 'hCaptcha and other anti-bot measures to keep fake accounts, harassment and spam off the platform.',
+  },
+  {
+    icon: <FaCommentSlash className="text-4xl text-accent" />,
+    title: 'Real Accountability for Repeat Harrassers',
+    text: 'A moderation system that tracks patterns of harassment and enforces consequences for repeat offenders.',
   },
   {
     icon: <FaShieldAlt className="text-4xl text-primary" />,
     title: 'Built for Creator Safety',
-    text: 'Block, mute, and report tools that persist — designed with creators who\'ve actually lived through online harassment.',
+    text: 'Select the specific audience you want to allow to see your content, along with block, mute, and report tools.',
   },
 ];
 
@@ -35,6 +35,57 @@ const borderColors = [
   'border-secondary hover:border-secondary/70',
   'border-accent hover:border-accent/70',
   'border-primary hover:border-primary/70',
+];
+
+const howItWorksSteps = [
+  {
+    gif: '/assets/willage/create-account.gif',
+    alt: 'Demo of creating a Willage account',
+    step: '1',
+    title: 'Create Your Account',
+    text: 'Sign up with an invite code to verify you’re a real person — no bots, no fakes, no anonymous burner accounts.',
+  },
+  {
+    gif: '/assets/willage/invite-someone.gif',
+    alt: 'Demo of inviting someone to Willage',
+    step: '2',
+    title: 'Invite Someone You Trust',
+    text: 'Bring friends and community members in through your own invite chain with your own invite code, so every account can be traced back to a real relationship.',
+  },
+  {
+    gif: '/assets/willage/approve-account.gif',
+    alt: 'Demo of approving an invited account',
+    step: '3',
+    title: 'Approve New Members',
+    text: 'Inviters review and approve requests to verify their invite code is used by the intended recipient, keeping the community accountable from the very first step.',
+  },
+];
+
+const founders = [
+  {
+    name: 'Saloni',
+    role: 'Software Developer',
+    text: 'Software developer who loves breaking down complex concepts into bite-sized, understandable pieces.',
+    image: '/assets/team/saloni.PNG',
+    linkedInUrl: 'https://www.linkedin.com/in/saloni-kaur/',
+    borderColor: 'border-primary hover:border-primary/70',
+  },
+  {
+    name: 'Victoria',
+    role: 'Solutions Engineer',
+    text: 'Combines technical expertise with storytelling to make tech topics engaging and relatable.',
+    image: '/assets/team/victoria.PNG',
+    linkedInUrl: 'https://www.linkedin.com/in/victoria2666/',
+    borderColor: 'border-secondary hover:border-secondary/70',
+  },
+  {
+    name: 'Natasha',
+    role: 'Software Engineer',
+    text: 'Passionate about making technology inclusive and accessible for everyone, regardless of their background.',
+    image: '/assets/team/natasha.PNG',
+    linkedInUrl: 'https://www.linkedin.com/in/natashaannn/',
+    borderColor: 'border-accent hover:border-accent/70',
+  },
 ];
 
 export default function WillagePage() {
@@ -55,7 +106,7 @@ export default function WillagePage() {
             >
               <div className="relative rounded-[3.5rem] overflow-hidden shadow-2xl border-4 border-white dark:border-neutral-800 max-w-xs w-full">
                 <Image
-                  src="/assets/willage/willage-signup-flow.gif"
+                  src="/assets/willage/create-account.gif"
                   alt="Demo of the Willage invite signup flow"
                   width={764}
                   height={1594}
@@ -80,7 +131,7 @@ export default function WillagePage() {
                 Willage
               </h1>
               <p className="text-xl md:text-2xl mb-8 text-neutral-700 dark:text-neutral-300">
-                A safety-first creator platform. Join the waitlist.
+                A women-led safety-first creator platform. Join the waitlist.
               </p>
 
               <p className="text-lg text-neutral-600 dark:text-neutral-400 mb-8 max-w-2xl mx-auto lg:mx-0">
@@ -133,6 +184,57 @@ export default function WillagePage() {
                 <span className="mb-3">{feature.icon}</span>
                 <p className="font-bold text-brownDark dark:text-brown mb-2">{feature.title}</p>
                 <p className="text-sm text-neutral-700 dark:text-neutral-300">{feature.text}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* How It Works Section */}
+      <section className="py-20 px-6 bg-gradient-to-br from-secondary/10 via-white to-primary/10 dark:bg-neutral-900">
+        <div className="container mx-auto max-w-6xl">
+          <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-3xl md:text-4xl font-bold text-center mb-4 text-brownDark dark:text-brown"
+          >
+            How It Works
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.1 }}
+            className="text-lg text-neutral-600 dark:text-neutral-400 text-center mb-12 max-w-2xl mx-auto"
+          >
+            Willage&apos;s invite chain keeps every member accountable, from the moment they sign up.
+          </motion.p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {howItWorksSteps.map((item, index) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.15 }}
+                className="flex flex-col items-center text-center"
+              >
+                <div className="relative rounded-[3rem] overflow-hidden shadow-2xl border-4 border-white dark:border-neutral-800 max-w-[220px] w-full mb-6">
+                  <Image
+                    src={item.gif}
+                    alt={item.alt}
+                    width={722}
+                    height={1510}
+                    unoptimized
+                    className="w-full h-auto"
+                  />
+                </div>
+                <span className="flex items-center justify-center w-8 h-8 rounded-full bg-gradient-primary text-white font-bold mb-3">
+                  {item.step}
+                </span>
+                <p className="font-bold text-brownDark dark:text-brown mb-2">{item.title}</p>
+                <p className="text-sm text-neutral-700 dark:text-neutral-300 max-w-xs">{item.text}</p>
               </motion.div>
             ))}
           </div>
@@ -207,6 +309,65 @@ export default function WillagePage() {
               </div>
             </blockquote>
           </motion.div>
+        </div>
+      </section>
+
+      {/* Founders Section */}
+      <section className="py-20 px-6 bg-white dark:bg-neutral-900">
+        <div className="container mx-auto max-w-6xl">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-brownDark dark:text-brown">
+              Built by Women, For Everyone
+            </h2>
+            <p className="text-lg text-neutral-600 dark:text-neutral-400 max-w-2xl mx-auto">
+              Willage is founded and built by the three women behind the ragTech podcast —
+              engineers who&apos;ve lived the exact problem Willage solves, and designed it
+              with women and creators&apos; safety in mind from day one.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {founders.map((founder, index) => (
+              <motion.div
+                key={founder.name}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: index * 0.1 }}
+                className={`flex flex-col items-center text-center p-6 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border-2 ${founder.borderColor}`}
+              >
+                <div className="relative w-32 h-32 mb-4 rounded-full overflow-hidden border-4 border-white dark:border-neutral-800 shadow-lg">
+                  <Image
+                    src={founder.image}
+                    alt={founder.name}
+                    width={200}
+                    height={200}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <p className="font-bold text-lg text-brownDark dark:text-brown">{founder.name}</p>
+                <p className="text-sm font-semibold text-primary dark:text-primary-light mb-3">
+                  {founder.role}
+                </p>
+                <p className="text-sm text-neutral-700 dark:text-neutral-300 mb-4">{founder.text}</p>
+                <a
+                  href={founder.linkedInUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`${founder.name}'s LinkedIn profile`}
+                  className="text-neutral-500 hover:text-primary dark:text-neutral-400 dark:hover:text-primary-light transition-colors"
+                >
+                  <FaLinkedin className="text-2xl" />
+                </a>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
