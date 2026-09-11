@@ -20,8 +20,8 @@ const features = [
   },
   {
     icon: <FaCommentSlash className="text-4xl text-accent" />,
-    title: 'Real Accountability for Repeat Harrassers',
-    text: 'A moderation system that tracks patterns of harassment and enforces consequences for repeat offenders.',
+    title: 'Traceability of Offenders',
+    text: 'Traceable invite-chain allows for accountability and tracking of offenders back to their inviter.',
   },
   {
     icon: <FaShieldAlt className="text-4xl text-primary" />,
